@@ -3,6 +3,16 @@
 \usepackage{ifxetex,ifluatex}
 
 \usepackage{longtable}
+\usepackage{tabularx}
+%\usepackage{pdflscape} % альбомное положение
+\usepackage{booktabs}
+\usepackage{ltablex} 
+\usepackage{colortbl}
+
+%\usepackage{circuitikz} %схемы электрические
+% \usepackage{showframe} % для отладки LaTeX
+\usepackage{multicol} %чтобы оформлять текст в колонки 
+
 
 % \usepackage[utf8]{inputenc} 
 \usepackage[utf8x]{inputenc} 
@@ -68,7 +78,9 @@ $if(url)$
 \usepackage{url}
 $endif$
 
-\usepackage{graphicx}
+\usepackage{graphicx, subfigure}
+\usepackage{wrapfig}
+
 % We will generate all images so they have a width \maxwidth. This means
 % that they will get their normal width if they fit onto the page, but
 % are scaled down if they would overflow the margins.
@@ -126,14 +138,14 @@ $endfor$
 \begin{document}
 \input{tex/nord-title.tex}
 
-\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
+%\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
 
 $for(include-before)$
 $include-before$
 $endfor$
 
 \setcounter{tocdepth}{3}
-\setcounter{secnumdepth}{4}
+\setcounter{secnumdepth}{3}
 \tableofcontents
 
 \newpage
