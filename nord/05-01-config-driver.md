@@ -12,31 +12,67 @@
 
 При первом подключении прибора к компьютеру в системной области панели задач появится уведомление о том, что найдено новое оборудование.
 
-![Уведомление о том, что найдено новое оборудование][id-05-01-01]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[keepaspectratio=true,scale=0.5]{img/05-01-driver-01.png}
+ 	}
+	\captionof{figure}{Уведомление о том, что найдено новое оборудование}
+\end{minipage}
+
 
 Необходимо щелкнуть левой кнопкой мыши по окну с уведомлением и выполнить установку драйвера для прибора так, как описано далее.
 
-![Отказ от автоматического поиска драйвера][id-05-01-02]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-02.png}
+ 	}
+	\captionof{figure}{Отказ от автоматического поиска драйвера}
+\end{minipage}
 
 Нужно отказаться от предложения автоматически найти драйвер для нового оборудования.
 
-![Выбор установки из указанного места][id-05-01-03]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-03.png}
+ 	}
+	\captionof{figure}{Выбор установки из указанного места}
+\end{minipage}
 
 Далее выбрать установку драйвера из указанного места.
 
-![Выбор места поиска драйвера][id-05-01-04]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-04.png}
+ 	}
+	\captionof{figure}{Выбор места поиска драйвера}
+\end{minipage}
 
 Указать путь к папке **Driver**.
 
-![Подтверждение установки драйвера без цифровой подписи][id-05-01-05]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-05.png}
+ 	}
+	\captionof{figure}{Подтверждение установки драйвера без цифровой подписи}
+\end{minipage}
 
 Драйвер для прибора «Норд GSM» не имеет цифровой подписи. Поэтому необходимо явно подтвердить операционной системе необходимость его установки.
 
-![Завершение установки драйвера][id-05-01-06]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-06.png}
+ 	}
+	\captionof{figure}{Завершение установки драйвера}
+\end{minipage}
 
 После завершения установки драйвера необходимо нажать на кнопку «Готово».
 
-![Последовательный порт прибора в «Диспетчере устройств»][id-05-01-07]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-07.png}
+ 	}
+	\captionof{figure}{Последовательный порт прибора в «Диспетчере устройств»}
+\end{minipage}
 
 Для того, чтобы убедиться в том, что драйвер для устройства установлен, можно открыть диспетчер устройств Windows и найти виртуальный последовательный порт, который соответсвует прибору, который подключенном к компьютеру.
 
@@ -48,42 +84,57 @@
 
 Нажать комбинацию клавиш **Win+I**, после чего, удерживая кнопку **Shift** выбрать пункт «**Выключение**» – «**Перезагрузка**»:
 
-![Перезагрузка для изменения параметров загрузки][id-05-01-08]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-08.png}
+ 	}
+	\captionof{figure}{Перезагрузка для изменения параметров загрузки}
+\end{minipage}
 
 После того, как операционная система перезагрузится, появится окно параметров запуска. Необходимо выбрать пункт «**Диагностика**»:
 
-![Вход в режим диагностики][id-05-01-09]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-09.png}
+ 	}
+	\captionof{figure}{Вход в режим диагностики}
+\end{minipage}
 
 В окне «**Диагностика**» необходимо выбрать пункт «**Дополнительные параметры**»:
 
-![Дополнительные параметры диагностики][id-05-01-10]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-10.png}
+ 	}
+	\captionof{figure}{Дополнительные параметры диагностики}
+\end{minipage}
 
 В окне «**Дополнительные параметры**» нужно выбрать пункт «**Параметры загрузки**»:
 
-![Параметры загрузки операционной системы][id-05-01-11]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-11.png}
+ 	}
+	\captionof{figure}{Параметры загрузки операционной системы}
+\end{minipage}
 
 В окне «**Параметры загрузки**» нужно щелкнуть левой кнопкой мыши по кнопке «**Перезагрузить**»:
 
-![Перезагрузка][id-05-01-12]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-12.png}
+ 	}
+	\captionof{figure}{Перезагрузка}
+\end{minipage}
 
 Операционная система перезагрузится еще раз, после чего появится окно «**Параметры загрузки**». В этом окне необходимо нажать на кнопку F7, для того чтобы продолжить загрузку операционной системы с отключенной проверкой подписи драйверов:
 
-![Отключение обязательно проверки подписи драйверов][id-05-01-13]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-01-driver-13.png}
+ 	}
+	\captionof{figure}{Отключение обязательно проверки подписи драйверов}
+\end{minipage}
 
 После того, как операционная система загрузится, нужно установить драйвер прибора так же, как и в операционных системах Windows XP / Windows 7. После того, как драйвер будет установлен, необходимо еще раз перезагрузить компьютер, для того, чтобы включить проверку подписи драйверов.
-
-[id-05-01-01]: img/05-01-driver-01.png
-[id-05-01-02]: img/05-01-driver-02.png
-[id-05-01-03]: img/05-01-driver-03.png
-[id-05-01-04]: img/05-01-driver-04.png
-[id-05-01-05]: img/05-01-driver-05.png
-[id-05-01-06]: img/05-01-driver-06.png
-[id-05-01-07]: img/05-01-driver-07.png
-[id-05-01-08]: img/05-01-driver-08.png
-[id-05-01-09]: img/05-01-driver-09.png
-[id-05-01-10]: img/05-01-driver-10.png
-[id-05-01-11]: img/05-01-driver-11.png
-[id-05-01-12]: img/05-01-driver-12.png
-[id-05-01-13]: img/05-01-driver-13.png
-
 

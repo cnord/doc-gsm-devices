@@ -13,17 +13,12 @@
 % \usepackage{showframe} % для отладки LaTeX
 \usepackage{multicol} %чтобы оформлять текст в колонки 
 
+\usepackage{caption}
 
-% \usepackage[utf8]{inputenc} 
 \usepackage[utf8x]{inputenc} 
 \usepackage[russian]{babel} % правила переноса
 \usepackage{cmap} % чтобы работал поиск по PDF
 \pdfcompresslevel=9 % сжимать PDF
-
-% \DeclareUnicodeCharacter{00B0}{"°"}
-% \DeclareUnicodeCharacter{00B1}{"±"}
-% \DeclareUnicodeCharacter{00B7}{"·"}
-% \DeclareUnicodeCharacter{00F7}{"÷"}
 
 \usepackage{geometry}
 \geometry{top=2cm} %поле сверху
@@ -139,11 +134,7 @@ $endfor$
 \begin{document}
 \input{tex/nord-title.tex}
 
-<<<<<<< HEAD
-\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=0.5\maxwidth]{#1}}
-=======
 %\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
->>>>>>> master
 
 $for(include-before)$
 $include-before$

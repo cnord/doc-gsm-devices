@@ -2,14 +2,13 @@
 ## ТМ-ключ
 
 \begin{wrapfigure}{R}{0.35\textwidth}
-\begin{center}
-\includegraphics[width=0.25\textwidth]{img/TM.png}
-\end{center}
-\vspace{-15pt}
-\caption{ТМ-ключ и TM-считыватель}
-\vspace{-10pt}
+	\begin{center}
+		\includegraphics[width=0.25\textwidth]{img/TM.png}
+	\end{center}
+	\vspace{-15pt}
+	\caption{ТМ-ключ и TM-считыватель}
+	\vspace{-10pt}
 \end{wrapfigure}
-
 
 Прибор «Норд GSM» обладает встроенным интерфейсом для подключения считывателей ТМ-ключей. Кроме того, в приборе предусмотрена возможность подключение светодиодного индикатора, который размещен непосредственно в корпусе [некоторых моделей](http://shop.cnord.ru/control-devices/rtm-01.html) считывателей ТМ-ключей.
 

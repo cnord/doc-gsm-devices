@@ -2,7 +2,7 @@
 
 echo "Start to make Nord manual"
 
-pandoc --template tex/nord-template.latex -V lang=russian -o nord-manual.pdf nord/03-00-arm-general.md nord/03-01-arm-tm-key.md nord/03-02-arm-rx-6.md nord/03-03-arm-rxn-400.md nord/03-04-arm-wrl-key.md nord/03-05-arm-myalarm.md nord/05-00-config-general.md nord/05-01-config-driver.md nord/05-02-config-version.md
+pandoc --template tex/nord-template.latex -V lang=russian -o nord-manual.pdf nord/03-00-arm-general.md nord/03-01-arm-tm-key.md nord/03-02-arm-rx-6.md nord/03-03-arm-rxn-400.md nord/03-04-arm-wrl-key.md nord/03-05-arm-myalarm.md nord/04-01-installation.md nord/05-00-config-general.md nord/05-01-config-driver.md nord/05-02-config-version.md nord/99-01-codes-latex.md
 
 echo "Stop to make Nord manual"
 
