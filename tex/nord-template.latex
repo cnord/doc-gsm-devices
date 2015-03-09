@@ -144,7 +144,7 @@ $for(include-before)$
 $include-before$
 $endfor$
 
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
 \tableofcontents
 
