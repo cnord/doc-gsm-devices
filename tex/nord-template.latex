@@ -127,7 +127,7 @@ $endfor$
 \begin{document}
 \input{tex/nord-title.tex}
 
-%\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=0.5\maxwidth]{#1}}
 
 $for(include-before)$
 $include-before$
