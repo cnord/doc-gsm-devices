@@ -1,6 +1,7 @@
 \pagebreak
 
-# Таблица кодов событий (ContactID)
+# Таблица кодов событий (ContactID) {#codes-table}
+
 
 \definecolor{light-gray}{gray}{0.7}
 \renewcommand{\arraystretch}{1.4}
