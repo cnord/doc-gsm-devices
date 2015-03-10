@@ -22,8 +22,8 @@
 
 \usepackage{geometry}
 \geometry{top=2cm} %поле сверху
-\geometry{bottom=2.5cm} %поле снизу
-\geometry{left=2.5cm} %поле справа
+\geometry{bottom=2cm} %поле снизу
+\geometry{left=2cm} %поле справа
 \geometry{right=2cm} %поле слева
 
 $if(natbib)$
@@ -140,7 +140,7 @@ $for(include-before)$
 $include-before$
 $endfor$
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 \tableofcontents
 
