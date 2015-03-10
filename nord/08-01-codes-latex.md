@@ -18,14 +18,14 @@ E142 & Неисправность & Шлейф закорочен. В случа
 E144 & Тревога & Вскрыт тампер датчика. \\ \arrayrulecolor{light-gray}\hline
 E146 & Тревога & Охранный шлейф без сирены (тихая тревога). \\ \arrayrulecolor{light-gray}\hline
 E150 & Тревога & Круглосуточный 24-часовой шлейф. \\ \arrayrulecolor{light-gray}\hline
-E151 & Неисправность & Утечка газа. \\ \arrayrulecolor{light-gray}\hline
-E154 & Неисправность & Протечка воды. \\ \arrayrulecolor{light-gray}\hline
+E151 & Тревога & Утечка газа. \\ \arrayrulecolor{light-gray}\hline
+E154 & Тревога & Протечка воды. \\ \arrayrulecolor{light-gray}\hline
 E300 & Неисправность & \\ \arrayrulecolor{light-gray}\hline
 E301 & Неисправность & Отключение 220В \\ \arrayrulecolor{light-gray}\hline
-E302 & Неисправность & АКБ разряжен \\ \arrayrulecolor{light-gray}\hline
+E302 & Неисправность & АКБ разряжена \\ \arrayrulecolor{light-gray}\hline
 E305 & Другое & Включение прибора \\ \arrayrulecolor{light-gray}\hline
-E309 & Неисправность & АКБ неисправен \\ \arrayrulecolor{light-gray}\hline
-E311 & Неисправность & АКБ отключен. Код оповещает об отключении резерва по питанию как для прибора, так и для отдельных датчиков. \\ \arrayrulecolor{light-gray}\hline
+E309 & Неисправность & АКБ неисправна \\ \arrayrulecolor{light-gray}\hline
+E311 & Неисправность & АКБ отключена. Код оповещает об отключении резерва по питанию как для прибора, так и для отдельных датчиков. \\ \arrayrulecolor{light-gray}\hline
 E312 & Неисправность & Перегрузка по питанию \\ \arrayrulecolor{light-gray}\hline
 E314 & Неисправность & Основная батарея датчика отключена или неисправна \\ \arrayrulecolor{light-gray}\hline
 E321 & Неисправность & Сирена неисправна \\ \arrayrulecolor{light-gray}\hline
@@ -54,8 +54,8 @@ R120 & Сброс & ТК \\ \arrayrulecolor{light-gray}\hline
 R130 & Сброс & Охранные шлейфы. \\ \arrayrulecolor{light-gray}\hline
 R133 & Сброс & 24-часовой охранный. \\ \arrayrulecolor{light-gray}\hline
 R137 & Сброс & Корпус прибора  \\ \arrayrulecolor{light-gray}\hline
-R141 & Переустановка & Восстановление после обрыва шлейфа под охраной. \\ \arrayrulecolor{light-gray}\hline
-R142 & Переустановка & Шлейф закорочен. В случае, если раздел под охраной. \\ \arrayrulecolor{light-gray}\hline
+R141 & Сброс & Восстановление после обрыва шлейфа под охраной. \\ \arrayrulecolor{light-gray}\hline
+R142 & Сброс & Шлейф закорочен. В случае, если раздел под охраной. \\ \arrayrulecolor{light-gray}\hline
 R144 & Сброс & Тампер датчика. \\ \arrayrulecolor{light-gray}\hline
 R146 & Сброс & Охранный шлейф без сирены (тихая тревога). \\ \arrayrulecolor{light-gray}\hline
 R150 & Сброс & Круглосуточный 24-часовой шлейф. \\ \arrayrulecolor{light-gray}\hline
