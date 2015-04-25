@@ -14,6 +14,8 @@
 \usepackage{multicol} %чтобы оформлять текст в колонки 
 
 \usepackage{caption}
+\captionsetup{font=footnotesize,textfont=it}
+\captionsetup[table]{belowskip=5pt}
 
 \usepackage[utf8x]{inputenc} 
 \usepackage[russian]{babel} % правила переноса
@@ -140,7 +142,7 @@ $for(include-before)$
 $include-before$
 $endfor$
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 \tableofcontents
 
