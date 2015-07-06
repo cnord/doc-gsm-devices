@@ -1,19 +1,17 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$]{$documentclass$}
+
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 
 \usepackage{longtable}
 
-% \usepackage[utf8]{inputenc} 
 \usepackage[utf8x]{inputenc} 
 \usepackage[russian]{babel} % правила переноса
 \usepackage{cmap} % чтобы работал поиск по PDF
 \pdfcompresslevel=9 % сжимать PDF
 
-% \DeclareUnicodeCharacter{00B0}{"°"}
-% \DeclareUnicodeCharacter{00B1}{"±"}
-% \DeclareUnicodeCharacter{00B7}{"·"}
-% \DeclareUnicodeCharacter{00F7}{"÷"}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
 
 \usepackage{geometry}
 \geometry{top=2cm} %поле сверху
