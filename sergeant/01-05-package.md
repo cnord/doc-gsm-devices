@@ -1,21 +1,28 @@
-\pagebreak
-
 ## Комплект поставки, маркировка и упаковка
 
 ### Комплект поставки
 
--------------------------------------------------- -----
-Интерфейс связи «Сержант GSM»	                    1 шт.
+\definecolor{light-gray}{gray}{0.7}
+\renewcommand{\arraystretch}{1.4}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
-Вставка плавкая ВПБ6-7, 1 А, 250 В                 1 шт.
+\begin{tabularx}{\textwidth}{Yl}
 
-Паспорт	                                           1 шт.
+\toprule
 
-Упаковка                                           1 шт.
+Интерфейс связи «Сержант GSM» & 1 шт. \\ 
+\arrayrulecolor{light-gray}\hline 
 
---------------------------------------------------------
+Вставка плавкая ВПБ6-7, 1 А, 250 В & 1 шт. \\ 
+\arrayrulecolor{light-gray}\hline 
 
-> *Примечание:  (м) - для изделия в металлическом корпусе*
+Паспорт & 1 шт. \\ 
+\arrayrulecolor{light-gray}\hline 
+
+Упаковка & 1 шт. \\ 
+
+\bottomrule
+\end{tabularx}
 
 ### Маркировка
 

@@ -4,13 +4,10 @@
 
 \usepackage{longtable}
 \usepackage{tabularx}
-%\usepackage{pdflscape} % альбомное положение
 \usepackage{booktabs}
 \usepackage{ltablex} 
 \usepackage{colortbl}
 
-%\usepackage{circuitikz} %схемы электрические
-% \usepackage{showframe} % для отладки LaTeX
 \usepackage{multicol} %чтобы оформлять текст в колонки 
 
 \usepackage{caption}
@@ -21,6 +18,9 @@
 \usepackage[russian]{babel} % правила переноса
 \usepackage{cmap} % чтобы работал поиск по PDF
 \pdfcompresslevel=9 % сжимать PDF
+
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
 
 \usepackage{geometry}
 \geometry{top=2cm} %поле сверху

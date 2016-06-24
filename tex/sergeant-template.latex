@@ -1,9 +1,18 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$]{$documentclass$}
-
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 
 \usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{ltablex} 
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{multicol} %чтобы оформлять текст в колонки 
+
+\usepackage{caption}
+\captionsetup{font=footnotesize,textfont=it}
+\captionsetup[table]{belowskip=5pt}
 
 \usepackage[utf8x]{inputenc} 
 \usepackage[russian]{babel} % правила переноса
