@@ -1,6 +1,6 @@
 \pagebreak
 
-## Подключение расширителя «РПШ-8»
+## Подключение расширителя «РПШ-8» {#install-wze-8}
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
