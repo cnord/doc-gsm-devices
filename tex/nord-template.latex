@@ -4,31 +4,28 @@
 
 \usepackage{longtable}
 \usepackage{tabularx}
-%\usepackage{pdflscape} % альбомное положение
 \usepackage{booktabs}
 \usepackage{ltablex} 
 \usepackage{colortbl}
 
-%\usepackage{circuitikz} %схемы электрические
-% \usepackage{showframe} % для отладки LaTeX
 \usepackage{multicol} %чтобы оформлять текст в колонки 
 
+\usepackage{caption}
+\captionsetup{font=footnotesize,textfont=it}
+\captionsetup[table]{belowskip=5pt}
 
-% \usepackage[utf8]{inputenc} 
 \usepackage[utf8x]{inputenc} 
 \usepackage[russian]{babel} % правила переноса
 \usepackage{cmap} % чтобы работал поиск по PDF
 \pdfcompresslevel=9 % сжимать PDF
 
-% \DeclareUnicodeCharacter{00B0}{"°"}
-% \DeclareUnicodeCharacter{00B1}{"±"}
-% \DeclareUnicodeCharacter{00B7}{"·"}
-% \DeclareUnicodeCharacter{00F7}{"÷"}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
 
 \usepackage{geometry}
 \geometry{top=2cm} %поле сверху
-\geometry{bottom=2.5cm} %поле снизу
-\geometry{left=2.5cm} %поле справа
+\geometry{bottom=2cm} %поле снизу
+\geometry{left=2cm} %поле справа
 \geometry{right=2cm} %поле слева
 
 $if(natbib)$
@@ -85,10 +82,11 @@ $endif$
 % that they will get their normal width if they fit onto the page, but
 % are scaled down if they would overflow the margins.
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
-\else\Gin@nat@width\fi}
+	\def\maxwidth
+		{\ifdim\Gin@nat@width>\linewidth\linewidth
+		\else\Gin@nat@width\fi}
 \makeatother
-\let\Oldincludegraphics\includegraphics
+	\let\Oldincludegraphics\includegraphics
 
 \usepackage[unicode=true,
             bookmarks=true,
@@ -144,7 +142,7 @@ $for(include-before)$
 $include-before$
 $endfor$
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 \tableofcontents
 
