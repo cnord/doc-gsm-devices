@@ -7,7 +7,7 @@
 	\captionof*{figure}{Вкладка «Разное», раздел «Управление и индикация»}
 \end{minipage}
 
-**Световой оповещатель (12 В)**
+**Настройка светового оповещателя выполняется на вкладке «Автоматика»**
 
 **Подключена клавиатура «Риф-КТМ (Си-Норд)»**
 
@@ -15,20 +15,6 @@
 
 **Разрешить использование клавиатуры в качестве тревожной кнопки**
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-06-02.png}
- 	}
-	\captionof*{figure}{Вкладка «Разное», раздел «Управление и индикация», для параметра «Световой оповещатель (12 В) указано значение «Подключен к FIRE»}
-\end{minipage}
-
-
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-06-03.png}
- 	}
-	\captionof*{figure}{Вкладка «Разное», раздел «Управление и индикация», для параметра «Световой оповещатель (12 В) указано значение «Подключен к SMOKE»}
-\end{minipage}
 
 
 \begin{minipage}{\linewidth}
