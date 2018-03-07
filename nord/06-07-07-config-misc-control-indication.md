@@ -1,4 +1,4 @@
-### Раздел «Управление и индикация»
+### Раздел «Управление и индикация» {#control-indication}
 
 
 \begin{minipage}{\linewidth}
