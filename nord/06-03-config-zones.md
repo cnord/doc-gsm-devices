@@ -87,7 +87,9 @@
 \arrayrulecolor{light-gray}\hline
 Утечка газа & E151 / R151 & Нет & Да \\ 
 \arrayrulecolor{light-gray}\hline
-Датчик температуры & E158 / R158 <br/> E159 / R159 & Нет & Да & Высокая температура <br/> Низкая температура \\ 
+Датчик температуры & E158 / R158 & Нет & Да & Высокая температура \\ 
+\arrayrulecolor{light-gray}\hline
+Датчик температуры & E159 / R159 & Нет & Да & Низкая температура \\ 
 \bottomrule
 \end{tabularx}
 \captionof*{table}{Типы проводных шлейфов}
