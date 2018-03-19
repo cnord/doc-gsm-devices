@@ -1,4 +1,6 @@
-## Вкладка «Беспроводные устройства»
+\pagebreak
+
+## Беспроводные устройства
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{

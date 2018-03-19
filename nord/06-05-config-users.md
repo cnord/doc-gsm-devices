@@ -1,4 +1,6 @@
-## Вкладка «Пользователи»
+\pagebreak
+
+## Пользователи
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
