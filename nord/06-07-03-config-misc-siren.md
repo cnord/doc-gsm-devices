@@ -1,4 +1,4 @@
-### Раздел «Сирена»
+### Раздел «Сирена» {#config-misc-siren}
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
