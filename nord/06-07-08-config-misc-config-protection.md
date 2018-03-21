@@ -4,7 +4,7 @@
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[keepaspectratio=true,scale=0.8]{img/06-07-config-nord-07-01.png}
+ 		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-07-01.png}
  	}
 	\captionof*{figure}{Вкладка «Разное», раздел «Защита конфигурации»}
 \end{minipage}
@@ -52,7 +52,7 @@
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[keepaspectratio=true,scale=1]{img/06-07-config-nord-07-04.png}
+ 		\includegraphics[keepaspectratio=true,scale=0.7]{img/06-07-config-nord-07-04.png}
  	}
 	\captionof*{figure}{Вкладка «Разное», раздел «Защита конфигурации», предупреждение о включении «Защиты от угона»}
 \end{minipage}

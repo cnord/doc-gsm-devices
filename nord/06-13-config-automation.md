@@ -154,7 +154,7 @@ _Решение_
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[keepaspectratio=true,scale=0.8]{img/06-13-config-automation-07.png}
+ 		\includegraphics[width=0.9\textwidth]{img/06-13-config-automation-07.png}
  	}
 	\captionof*{figure}{Все созданные правила}
 \end{minipage}

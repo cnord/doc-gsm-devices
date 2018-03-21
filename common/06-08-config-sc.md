@@ -29,7 +29,7 @@
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=\textwidth]{img/06-08-config-common-02.png}
+ 		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-02.png}
  	}
 	\captionof*{figure}{Модуль «Менеджер объектов», вкладка «Оборудование»}
 \end{minipage}
