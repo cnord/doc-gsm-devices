@@ -35,7 +35,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-16-config-dashboard-02.png}
  	}
-	\captionof*{figure}{Вкладка «Панель состояния», состояние проводных шлейфов}
+	\captionof*{figure}{Вкладка «Панель состояния», Шлейфы в состоянии: норма, тревога, короткое замыкание, обрыв}
 \end{minipage}
 
 
@@ -58,7 +58,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-16-config-dashboard-03.png}
  	}
-	\captionof*{figure}{Вкладка «Панель состояния», Беспроводные устройства ()}
+	\captionof*{figure}{Вкладка «Панель состояния». вверху - значки беспроводных устройств, внизу - детальная информация}
 \end{minipage}
 
 
