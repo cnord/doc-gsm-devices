@@ -1,4 +1,6 @@
-## Вкладка «Центр охраны» {#config-sc}
+\pagebreak
+
+## Центр охраны {#config-sc}
 
 На вкладке «Центр охраны» можно указать параметры, которые будет использовать прибор при передаче событий на пульт охраны по каналам GSM и Ethetnet.
 
@@ -27,7 +29,7 @@
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=\textwidth]{img/06-08-config-common-02.png}
+ 		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-02.png}
  	}
 	\captionof*{figure}{Модуль «Менеджер объектов», вкладка «Оборудование»}
 \end{minipage}
