@@ -4,3 +4,4 @@
 
 
 \includegraphics[width=\maxwidth]{img/04-03-v51-resistors.png}
+
