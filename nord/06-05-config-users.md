@@ -8,7 +8,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-05-config-nord-01.png}
  	}
-	\captionof*{figure}{Вкладка «Пользователи»}
+	\captionof{figure}{Вкладка «Пользователи»}
 \end{minipage}
 
 
@@ -19,7 +19,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.6]{img/06-05-config-nord-02.png}
  	}
-	\captionof*{figure}{Вкладка «Пользователи», диалог ввода кода}
+	\captionof{figure}{Вкладка «Пользователи», диалог ввода кода}
 \end{minipage}
 
 
@@ -29,7 +29,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.6]{img/06-05-config-nord-03.png}
  	}
-	\captionof*{figure}{Вкладка «Пользователи», добавление TM-ключа}
+	\captionof{figure}{Вкладка «Пользователи», добавление TM-ключа}
 \end{minipage}
 
 
@@ -39,7 +39,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.6]{img/06-05-config-nord-04.png}
  	}
-	\captionof*{figure}{Вкладка «Пользователи», добавление TM-ключа}
+	\captionof{figure}{Вкладка «Пользователи», добавление TM-ключа}
 \end{minipage}
 
 

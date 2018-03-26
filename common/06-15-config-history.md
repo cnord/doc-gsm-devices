@@ -1,12 +1,14 @@
+\pagebreak
+
 ## История событий
 
 Вкладка предназначена для отображения событий, которые хранятся в энергонезависимой памяти прибора.
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=0.7\textwidth]{img/06-15-config-history-01.png}
+ 		\includegraphics[width=0.6\textwidth]{img/06-15-config-history-01.png}
  	}
-	\captionof*{figure}{Вкладка «История событий», панель управления}
+	\captionof{figure}{Вкладка «История событий»}
 \end{minipage}
 
 
@@ -18,7 +20,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-15-config-history-02.png}
  	}
-	\captionof*{figure}{Вкладка «История событий», список событий}
+	\captionof{figure}{Вкладка «История событий», список событий}
 \end{minipage}
 
 

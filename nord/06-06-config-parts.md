@@ -9,7 +9,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.5]{img/06-06-config-nord-01.png}
  	}
-	\captionof*{figure}{Вкладка «Разделы»}
+	\captionof{figure}{Вкладка «Разделы»}
 \end{minipage}
  
 

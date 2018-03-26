@@ -1,4 +1,4 @@
-/pagebreak
+\pagebreak
 
 ## Панель состояния
 
@@ -9,9 +9,9 @@
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=0.9\textwidth]{img/06-16-config-dashboard-01.png}
+ 		\includegraphics[width=0.95\textwidth]{img/06-16-config-dashboard-01.png}
  	}
-	\captionof*{figure}{Вкладка «Панель состояния», каналы связи}
+	\captionof{figure}{Вкладка «Панель состояния», каналы связи}
 \end{minipage}
 
 
@@ -33,9 +33,9 @@
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=0.9\textwidth]{img/06-16-config-dashboard-02.png}
+ 		\includegraphics[width=0.95\textwidth]{img/06-16-config-dashboard-02.png}
  	}
-	\captionof*{figure}{Вкладка «Панель состояния», Шлейфы в состоянии: норма, тревога, короткое замыкание, обрыв}
+	\captionof{figure}{Вкладка «Панель состояния», Шлейфы в состоянии: норма, тревога, короткое замыкание, обрыв}
 \end{minipage}
 
 
@@ -56,9 +56,9 @@
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=0.9\textwidth]{img/06-16-config-dashboard-03.png}
+ 		\includegraphics[width=0.95\textwidth]{img/06-16-config-dashboard-03.png}
  	}
-	\captionof*{figure}{Вкладка «Панель состояния». вверху - значки беспроводных устройств, внизу - детальная информация}
+	\captionof{figure}{Вкладка «Панель состояния». вверху - значки беспроводных устройств, внизу - детальная информация}
 \end{minipage}
 
 

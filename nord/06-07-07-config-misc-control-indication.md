@@ -5,7 +5,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-06-01.png}
  	}
-	\captionof*{figure}{Вкладка «Разное», раздел «Управление и индикация»}
+	\captionof{figure}{Вкладка «Разное», раздел «Управление и индикация»}
 \end{minipage}
 
 **Настройка светового оповещателя выполняется на вкладке «Автоматика»**

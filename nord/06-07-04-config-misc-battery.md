@@ -10,7 +10,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-03-01.png}
  	}
-	\captionof*{figure}{Вкладка «Разное», раздел «Резервное питание»}
+	\captionof{figure}{Вкладка «Разное», раздел «Резервное питание»}
 \end{minipage}
 
 Если в качестве резервного источника выбран аккумулятор, то есть возможность включить два параметра:

@@ -17,7 +17,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.9]{img/06-13-config-automation-01.png}
  	}
-	\captionof*{figure}{Кнопки для создания правил, вкладка «Автоматика»}
+	\captionof{figure}{Кнопки для создания правил, вкладка «Автоматика»}
 \end{minipage}
 
 
@@ -36,15 +36,16 @@
 
 **Подключение светового оповещателя**
 
-Для того чтобы подключить маяк к прибору, нужно: 
-		* «Плюсовой» кабель оповещателя подключить к любому плюсовому выходу контрольной панели, например, к выходу для питания клавиатуры или шлейфов. 
-		* «Минусовой» кабель оповещателя должен быть подключен к одному из семи открытых коллекторов: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
+Для того чтобы подключить маяк к прибору, нужно:
+
+* «Плюсовой» кабель оповещателя подключить к любому плюсовому выходу контрольной панели, например, к выходу для питания клавиатуры или шлейфов. 
+* «Минусовой» кабель оповещателя должен быть подключен к одному из семи открытых коллекторов: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.8]{img/06-13-config-automation-03.png}
  	}
-	\captionof*{figure}{Подключение светового оповещателя к прибору}
+	\captionof{figure}{Подключение светового оповещателя к прибору}
 \end{minipage}
 
 
@@ -61,7 +62,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.8]{img/06-13-config-automation-02.png}
  	}
-	\captionof*{figure}{Создание правила «Маяк»}
+	\captionof{figure}{Создание правила «Маяк»}
 \end{minipage}
 
 
@@ -99,7 +100,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.8]{img/06-13-config-automation-04.png}
  	}
-	\captionof*{figure}{Создание правила «Сирена»}
+	\captionof{figure}{Создание правила «Сирена»}
 \end{minipage}
 
 
@@ -116,7 +117,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.8]{img/06-13-config-automation-05.png}
  	}
-	\captionof*{figure}{Окно создания правила}
+	\captionof{figure}{Окно создания правила}
 \end{minipage}
 
 
@@ -145,7 +146,7 @@ _Решение_
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.8]{img/06-13-config-automation-06.png}
  	}
-	\captionof*{figure}{Окно создания правила}
+	\captionof{figure}{Окно создания правила}
 \end{minipage}
 
 
@@ -156,7 +157,7 @@ _Решение_
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-13-config-automation-07.png}
  	}
-	\captionof*{figure}{Все созданные правила}
+	\captionof{figure}{Все созданные правила}
 \end{minipage}
 
 

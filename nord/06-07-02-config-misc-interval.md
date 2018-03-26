@@ -4,7 +4,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-01.png}
  	}
-	\captionof*{figure}{Вкладка «Разное», раздел «Интервалы»}
+	\captionof{figure}{Вкладка «Разное», раздел «Интервалы»}
 \end{minipage}
 
 

@@ -6,7 +6,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-04.png}
  	}
-	\captionof*{figure}{Вкладка «Разное», раздел «Взятие и снятие»}
+	\captionof{figure}{Вкладка «Разное», раздел «Взятие и снятие»}
 \end{minipage}
 
 **Запретить взятие при тревоге в шлейфах с задержкой на выход**
