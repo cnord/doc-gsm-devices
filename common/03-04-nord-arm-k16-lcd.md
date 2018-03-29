@@ -7,7 +7,7 @@
 \includegraphics[width=0.35\textwidth]{img/k16-lcd.png}
 \end{center}
 \vspace{-15pt}
-\caption{Клавиатура К16-LCD}
+\captionof{figure}{Клавиатура К16-LCD}
 \vspace{-20pt}
 \end{wrapfigure}
 
