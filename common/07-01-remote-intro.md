@@ -16,7 +16,13 @@
 
 Схема подключения выглядит следующим образом:
 
-\includegraphics[width=0.5\maxwidth]{img/remote-intro.png}
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\maxwidth]{img/remote-intro.png}
+ 	}
+	\captionof{figure}{}
+\end{minipage}
+
 
 Прибор подключается и к пультовому ПО, и к «Облаку» по протоколу CML с использованием потокового шифрования *(Протокол CML – C.Nord Markup Language – разработка компании Си-Норд)*. Пультовое ПО также подключается к «Облаку» по зашифрованному протоколу.
 

@@ -7,7 +7,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[keepaspectratio=true,scale=0.6]{img/04-10-install-keyboard.png}
  	}
-	\captionof*{figure}{Схема подключения проводных клавиатур}
+	\captionof{figure}{Схема подключения проводных клавиатур}
 \end{minipage}
 
 

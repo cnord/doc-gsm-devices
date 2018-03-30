@@ -6,7 +6,7 @@
 		\includegraphics[width=0.25\textwidth]{img/tm-with-key.png}
 	\end{center}
 	\vspace{-15pt}
-	\caption{TM-считыватель и ТМ-ключ}
+	\captionof{figure}{TM-считыватель и ТМ-ключ}
 	\vspace{-10pt}
 \end{wrapfigure}
 

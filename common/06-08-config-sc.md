@@ -10,7 +10,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-01.png}
  	}
-	\captionof*{figure}{Вкладка «Центр охраны», раздел «Идентификация»}
+	\captionof{figure}{Вкладка «Центр охраны», раздел «Идентификация»}
 \end{minipage}
 
 В разделе «Индентификация» можно указать номер объекта, который будет использоваться при передаче событий с прибора. 
@@ -31,7 +31,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-02.png}
  	}
-	\captionof*{figure}{Модуль «Менеджер объектов», вкладка «Оборудование»}
+	\captionof{figure}{Модуль «Менеджер объектов», вкладка «Оборудование»}
 \end{minipage}
 
 ### Параметры передачи по GPRS
@@ -40,7 +40,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-03.png}
  	}
-	\captionof*{figure}{Вкладка «Центр охраны», раздел «Передача по TCP/IP (GPRS)»}
+	\captionof{figure}{Вкладка «Центр охраны», раздел «Передача по TCP/IP (GPRS)»}
 \end{minipage}
 
 В разделе «Передача по TCP/IP (GPRS)» можно задать до двух пар «адрес:порт», которые будут использоваться прибором при подключении к пульту охраны по каналу GSM/GPRS.
@@ -65,7 +65,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.4\textwidth]{img/06-08-config-common-04.png}
  	}
-	\captionof*{figure}{Контекстное меню модуля «Менеджера событий»}
+	\captionof{figure}{Контекстное меню модуля «Менеджера событий»}
 \end{minipage}
 
 Для того, чтобы добавить источник событий «Си-Норд GSM (CML)» в службу источников событий, нужно нажать на кнопку «Добавить» и выбрать пункт, соответствующий источник, в появившемся меню.
@@ -74,14 +74,14 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.4\textwidth]{img/06-08-config-common-05.png}
  	}
-	\captionof*{figure}{Меню окна настроек службы источников событий}
+	\captionof{figure}{Меню окна настроек службы источников событий}
 \end{minipage}
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-06.png}
  	}
-	\captionof*{figure}{Окно настроек источника событий «Си-Норд GSM (CML)»}
+	\captionof{figure}{Окно настроек источника событий «Си-Норд GSM (CML)»}
 \end{minipage}
 
 Подробнее о назначении параметров источника событий «Си-Норд GSM (CML)» можно прочитать в документации на программное обеспечение «Центр охраны».
@@ -100,7 +100,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-07.png}
  	}
-	\captionof*{figure}{Вкладка «Центр охраны», раздел «Передача по TCP/IP (Ethernet)»}
+	\captionof{figure}{Вкладка «Центр охраны», раздел «Передача по TCP/IP (Ethernet)»}
 \end{minipage}
 
 В разделе «Передача по TCP/IP (Ethernet)», так же, как и в предыдущем разделе можно задать две пары «адрес:порт», которые будут использоваться прибором при подключении к пульту охраны по каналу Ethernet. Все комментарии, которые даны в отношении пар «адрес:порт» в описании раздела «Передача по TCP/IP (GPRS)» распространяются и на параметры в разделе «Передача по TCP/IP (Ethernet)».
@@ -117,7 +117,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-08.png}
  	}
-	\captionof*{figure}{Вкладка «Центр охраны», раздел «Передача в CSD-канале GSM»}
+	\captionof{figure}{Вкладка «Центр охраны», раздел «Передача в CSD-канале GSM»}
 \end{minipage}
 
 В разделе «Передача в CSD-канале GSM» можно указать номера телефонов, которые будут использоваться для дозвона на пульт охраны при передаче событий в CSD-канале GSM.
@@ -141,7 +141,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-09.png}
  	}
-	\captionof*{figure}{Вкладка «Центр охраны», раздел «Передача в голосовом канале GSM»}
+	\captionof{figure}{Вкладка «Центр охраны», раздел «Передача в голосовом канале GSM»}
 \end{minipage}
 
 В разделе «Передача в голосовом канале GSM» можно указать номера телефонов, которые будут использоваться для дозвона на пульт охраны при передаче событий в голосовом канале GSM. Передача в голосом канале осуществляется с помощью аналоговых сигналов DTMF, в качестве информационного протокола используется Ademco Contact ID.
@@ -162,7 +162,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-10.png}
  	}
-	\captionof*{figure}{Вкладка «Центр охраны», раздел «Передача по SMS»}
+	\captionof{figure}{Вкладка «Центр охраны», раздел «Передача по SMS»}
 \end{minipage}
 
 В разделе «Передача по SMS» можно указать номера телефонов, которые будут использоваться для передачи событий на пульт охраны с помощью канала SMS. 
@@ -195,7 +195,7 @@
 	\makebox[\linewidth]{
  		\includegraphics[width=0.9\textwidth]{img/06-08-config-common-11.png}
  	}
-	\captionof*{figure}{Схема переключения каналов связи}
+	\captionof{figure}{Схема переключения каналов связи}
 \end{minipage}
 
 Порядок переключения IP-каналов при отсутствии событий показана на рисунке синими прерывистыми линиями. Черными сплошными линиями показана схема переключения всех настроенных каналов при наличии событий на передачу.

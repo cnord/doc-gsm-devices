@@ -5,7 +5,7 @@
 \includegraphics[width=0.25\textwidth]{img/rx-6.png}
 \end{center}
 \vspace{-15pt}
-\caption{Клавиатура RX-6}
+\captionof{figure}{Клавиатура RX-6}
 \vspace{-70pt}
 \end{wrapfigure}
 
@@ -56,7 +56,7 @@
 \subfigure[Светодиод «Охрана»]{\label{fig:a}\includegraphics[width=50mm]{img/rx-6-arm.png}}\hspace{1em}%
 \subfigure[Светодиод «Авария питания»]{\label{fig:b}\includegraphics[width=50mm]{img/rx-6-power.png}}\hspace{1em}%
 \subfigure[Светодиод «Авария шлейфа»]{\label{fig:c}\includegraphics[width=50mm]{img/rx-6-zone.png}}
-\caption{Индикация на клавиатуре RX-6}
+\captionof{figure}{Индикация на клавиатуре RX-6}
 \end{figure}
 
 **Светодиод «Охрана» («Arm»)**
@@ -97,7 +97,7 @@
 \includegraphics[width=0.25\textwidth]{img/rx-6-part.png}
 \end{center}
 \vspace{-20pt}
-\caption{Состояния охраны первых шести разделов}
+\captionof{figure}{Состояния охраны первых шести разделов}
 \vspace{-10pt}
 \end{wrapfigure}
 
