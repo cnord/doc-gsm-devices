@@ -11,70 +11,78 @@
 ## Установка драйвера в Windows XP и Windows 7
 
 При первом подключении прибора к компьютеру в системной области панели задач появится уведомление о том, что найдено новое оборудование.
+Установку драйвера можно оуществить через Диспетчер устройств. Для этого нужно войти в меню «Пуск», щелкнуть правой кнопкой мыши на пункт «Компьютер» и выбрать Управление.
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[keepaspectratio=true,scale=0.5]{img/05-02-driver-01.png}
+ 		\includegraphics[keepaspectratio=true,scale=0.5]{img/05-02-driver-02.png}
  	}
-	\captionof{figure}{Уведомление о том, что найдено новое оборудование}
+	\captionof{figure}{}
 \end{minipage}
-
-
-Необходимо щелкнуть левой кнопкой мыши по окну с уведомлением и выполнить установку драйвера для прибора так, как описано далее.
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-02.png}
+ 		\includegraphics[keepaspectratio=true,scale=0.5]{img/05-02-driver-03.png}
  	}
-	\captionof{figure}{Отказ от автоматического поиска драйвера}
+	\captionof{figure}{}
 \end{minipage}
 
-Нужно отказаться от предложения автоматически найти драйвер для нового оборудования.
+Необходимо щелкнуть правой кнопкой мыши по устройству Souz CDC и выбрать пункт меню «Обновить драйверы».
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-03.png}
+ 		\includegraphics[keepaspectratio=true,scale=0.5]{img/05-02-driver-04.png}
  	}
-	\captionof{figure}{Выбор установки из указанного места}
+	\captionof{figure}{}
 \end{minipage}
 
-Далее выбрать установку драйвера из указанного места.
-
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-04.png}
- 	}
-	\captionof{figure}{Выбор места поиска драйвера}
-\end{minipage}
-
-Указать путь к папке **Driver**.
+Нужно отказаться от предложения автоматически найти драйвер для нового оборудования, выбрать установку драйвера вручную.
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
  		\includegraphics[width=0.5\textwidth]{img/05-02-driver-05.png}
  	}
-	\captionof{figure}{Подтверждение установки драйвера без цифровой подписи}
+	\captionof{figure}{Выбор установки вручную}
 \end{minipage}
 
-Драйвер для прибора «Норд GSM» не имеет цифровой подписи. Поэтому необходимо явно подтвердить операционной системе необходимость его установки.
+Указать путь к папке **Driver** и нажать Далее.
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
  		\includegraphics[width=0.5\textwidth]{img/05-02-driver-06.png}
  	}
-	\captionof{figure}{Завершение установки драйвера}
+	\captionof{figure}{Выбор места поиска драйвера}
+\end{minipage}
+
+
+Драйвер для прибора «Норд GSM» не имеет цифровой подписи. Поэтому необходимо явно подтвердить операционной системе необходимость его установки.
+
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-07.png}
+ 	}
+	\captionof{figure}{Подтверждение установки драйвера без цифровой подписи}
 \end{minipage}
 
 После завершения установки драйвера необходимо нажать на кнопку «Готово».
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-07.png}
+ 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-08.png}
+ 	}
+	\captionof{figure}{Завершение установки драйвера}
+\end{minipage}
+
+Для того чтобы убедиться в том, что драйвер для устройства установлен, можно открыть диспетчер устройств Windows и найти виртуальный последовательный порт, который соответствует прибору, подключенному к компьютеру.
+
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+ 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-09.png}
  	}
 	\captionof{figure}{Последовательный порт прибора в «Диспетчере устройств»}
 \end{minipage}
 
-Для того чтобы убедиться в том, что драйвер для устройства установлен, можно открыть диспетчер устройств Windows и найти виртуальный последовательный порт, который соответствует прибору, подключенному к компьютеру.
+
 
 ## Установка драйвера в Windows 8
 
@@ -131,7 +139,7 @@
 
 \begin{minipage}{\linewidth}
 	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-13.png}
+ 		\includegraphics[width=0.8\textwidth]{img/05-02-driver-13.png}
  	}
 	\captionof{figure}{Отключение обязательно проверки подписи драйверов}
 \end{minipage}
