@@ -18,18 +18,10 @@
 \usepackage[utf8x]{inputenc} 
 \usepackage[russian]{babel} % правила переноса
 \usepackage{cmap} % чтобы работал поиск по PDF
-%\pdfcompresslevel=9 % сжимать PDF
+\pdfcompresslevel=9 % сжимать PDF
 
 %\usepackage[ddmmyyyy]{datetime}
 %\renewcommand{\dateseparator}{.}
-
-%\usepackage{titlesec}
-%\titleformat{\chapter}[display]
-%  {\normalfont\sffamily\Huge\bfseries}
-%\titleformat{\section}
-%  {\normalfont\sffamily\huge\bfseries}
-%\titleformat{\subsection}
-%  {\normalfont\sffamily\LARGE\bfseries}
 
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 
