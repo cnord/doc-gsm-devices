@@ -8,5 +8,5 @@
 * клавиатура [К14-LED](https://shop.cnord.ru/control-devices/k14led.html);
 * клавиатура [К16-LCD](http://shop.cnord.ru/control-devices/k16lcd.html);
 * [беспроводной брелок](http://shop.cnord.ru/control-devices/sn-brelok.html);
-* [мобильное приложение MyAlarm](https://www.cnord.ru/dashboard.html).
+* [мобильное приложение MyAlarm](https://www.cnord.ru/myalarm).
 

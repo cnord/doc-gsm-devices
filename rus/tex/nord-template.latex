@@ -1,4 +1,5 @@
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$]{$documentclass$}
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$]{$documentclass$}
+
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 
@@ -17,16 +18,23 @@
 \usepackage[utf8x]{inputenc} 
 \usepackage[russian]{babel} % правила переноса
 \usepackage{cmap} % чтобы работал поиск по PDF
-\pdfcompresslevel=9 % сжимать PDF
+%\pdfcompresslevel=9 % сжимать PDF
 
-\usepackage[ddmmyyyy]{datetime}
-\renewcommand{\dateseparator}{.}
+%\usepackage[ddmmyyyy]{datetime}
+%\renewcommand{\dateseparator}{.}
 
-\usepackage{geometry}
-\geometry{top=2cm} %поле сверху
-\geometry{bottom=2cm} %поле снизу
-\geometry{left=2cm} %поле справа
-\geometry{right=2cm} %поле слева
+%\usepackage{titlesec}
+%\titleformat{\chapter}[display]
+%  {\normalfont\sffamily\Huge\bfseries}
+%\titleformat{\section}
+%  {\normalfont\sffamily\huge\bfseries}
+%\titleformat{\subsection}
+%  {\normalfont\sffamily\LARGE\bfseries}
+
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 $if(natbib)$
 \usepackage{natbib}
@@ -111,11 +119,6 @@ $endif$
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 
-$if(numbersections)$
-$else$
-\setcounter{secnumdepth}{2}
-$endif$
-
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
 $endif$
@@ -135,8 +138,6 @@ $endfor$
 
 \begin{document}
 \input{tex/nord-title.tex}
-
-%\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
 
 $for(include-before)$
 $include-before$
