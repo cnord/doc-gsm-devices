@@ -2,14 +2,7 @@
 
 ## Клавиатура К16-LCD
 
-\begin{wrapfigure}{r}{0.4\textwidth}  
-\begin{center}
-\includegraphics[width=0.35\textwidth]{img/k16-lcd.png}
-\end{center}
-\vspace{-15pt}
-\captionof{figure}{Клавиатура К16-LCD}
-\vspace{-20pt}
-\end{wrapfigure}
+\imgcapt{img/k16-lcd.png}{Клавиатура К16-LCD}
 
 С помощью клавиатуры К16-LCD пользователь может выполнить следующие задачи:
 

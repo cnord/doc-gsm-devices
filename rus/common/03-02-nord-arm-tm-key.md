@@ -1,14 +1,7 @@
 
 ## ТМ-ключ
 
-\begin{wrapfigure}{R}{0.35\textwidth}
-	\begin{center}
-		\includegraphics[width=0.25\textwidth]{img/tm-with-key.png}
-	\end{center}
-	\vspace{-15pt}
-	\captionof{figure}{TM-считыватель и ТМ-ключ}
-	\vspace{-10pt}
-\end{wrapfigure}
+\imgcapt{img/tm-with-key.png}{TM-считыватель и ТМ-ключ}
 
 Прибор обладает встроенным интерфейсом для подключения считывателей ТМ-ключей. Кроме того, в приборе предусмотрена возможность подключения светодиодного индикатора, который размещен непосредственно в корпусе некоторых моделей считывателей ТМ-ключей.
 
