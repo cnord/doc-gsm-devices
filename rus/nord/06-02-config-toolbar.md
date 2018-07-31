@@ -4,12 +4,7 @@
 
 В верхней части главного окна конфигуратора расположена панель управления:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=\textwidth]{img/06-02-config-nord-01.png}
- 	}
-	\captionof{figure}{Панель управления}
-\end{minipage}
+\imgcapt{img/06-02-config-nord-01.png}{Панель управления}
 
 В левой части панели управления отображается следующая информация:
 

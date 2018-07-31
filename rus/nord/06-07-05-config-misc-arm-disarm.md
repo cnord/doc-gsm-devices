@@ -2,12 +2,7 @@
 
 В этом разделе можно указать различные параметры, которые повлияют на процесс взятия на охрану или снятия с неё.
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-04.png}
- 	}
-	\captionof{figure}{Вкладка «Разное», раздел «Взятие и снятие»}
-\end{minipage}
+\imgcapt{img/06-07-config-nord-04.png}{Вкладка «Разное», раздел «Взятие и снятие»}
 
 **Запретить взятие при тревоге в шлейфах с задержкой на выход**
 

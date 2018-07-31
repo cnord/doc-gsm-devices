@@ -4,12 +4,7 @@
 
 На вкладке «Шлейфы» выполняется настройка параметров проводных шлейфов, подключенных к прибору.
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=\textwidth]{img/06-03-config-nord-01.png}
- 	}
-	\captionof{figure}{Вкладка «Шлейфы»}
-\end{minipage}
+\imgcapt{img/06-03-config-nord-01.png}{Вкладка «Шлейфы»}
 
 ### Расширители
 
