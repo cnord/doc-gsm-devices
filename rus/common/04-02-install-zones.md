@@ -35,51 +35,21 @@
 
 ### Шлейф без оконечных резисторов
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics{img/04-02-v51-52-no-resitor-normal-open.png}
- 	}
-	\captionof*{figure}{Нормально разомкнутый шлейф}
-\end{minipage}
+\imgcapt{img/04-02-v51-52-no-resitor-normal-open.png}{Нормально разомкнутый шлейф}
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics{img/04-02-v51-52-no-resitor-normal-close.png}
- 	}
-	\captionof*{figure}{Нормально замкнутый шлейф}
-\end{minipage}
+\imgcapt{img/04-02-v51-52-no-resitor-normal-close.png}{Нормально замкнутый шлейф}
 
 ### Шлейф с одним оконечным резистором
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics{img/04-02-v52-one-resitor-normal-open.png}
- 	}
-	\captionof*{figure}{Нормально разомкнутый шлейф}
-\end{minipage}
+\imgcapt{img/04-02-v52-one-resitor-normal-open.png}{Нормально разомкнутый шлейф}
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics{img/04-02-v52-one-resitor-normal-close.png}
- 	}
-	\captionof*{figure}{Нормально замкнутый шлейф}
-\end{minipage}
+\imgcapt{img/04-02-v52-one-resitor-normal-close.png}{Нормально замкнутый шлейф}
 
 ### Шлейф с двумя оконечными резисторами
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics{img/04-02-v52-two-resitor-normal-open.png}
- 	}
-	\captionof*{figure}{Нормально разомкнутый шлейф}
-\end{minipage}
+\imgcapt{img/04-02-v52-two-resitor-normal-open.png}{Нормально разомкнутый шлейф}
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics{img/04-02-v52-two-resitor-normal-close.png}
- 	}
-	\captionof*{figure}{Нормально замкнутый шлейф}
-\end{minipage}
+\imgcapt{img/04-02-v52-two-resitor-normal-close.png}{Нормально замкнутый шлейф}
 
 ### Проводные шлейфы в конфигураторе
 

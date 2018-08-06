@@ -11,77 +11,35 @@
 ## Установка драйвера в Windows XP и Windows 7
 
 При первом подключении прибора к компьютеру в системной области панели задач появится уведомление о том, что найдено новое оборудование.
-Установку драйвера можно оуществить через Диспетчер устройств. Для этого нужно войти в меню «Пуск», щелкнуть правой кнопкой мыши на пункт «Компьютер» и выбрать Управление.
+Установку драйвера можно оуществить через Диспетчер устройств. Для этого нужно войти в меню «Пуск», щелкнуть правой кнопкой мыши на пункт «Компьютер» и выбрать Управление, затем в меню слева выбрать «Диспетчер устройств».
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[keepaspectratio=true,scale=0.5]{img/05-02-driver-02.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/05-02-driver-02.png}{}
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[keepaspectratio=true,scale=0.5]{img/05-02-driver-03.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/05-02-driver-03.png}{}
 
 Необходимо щелкнуть правой кнопкой мыши по устройству Souz CDC и выбрать пункт меню «Обновить драйверы».
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[keepaspectratio=true,scale=0.5]{img/05-02-driver-04.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/05-02-driver-04.png}{}
 
 Нужно отказаться от предложения автоматически найти драйвер для нового оборудования, выбрать установку драйвера вручную.
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-05.png}
- 	}
-	\captionof{figure}{Выбор установки вручную}
-\end{minipage}
+\imgcapt{img/05-02-driver-05.png}{Выбор установки вручную}
 
 Указать путь к папке **Driver** и нажать Далее.
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-06.png}
- 	}
-	\captionof{figure}{Выбор места поиска драйвера}
-\end{minipage}
-
+\imgcapt{img/05-02-driver-06.png}{Выбор места поиска драйвера}
 
 Драйвер для прибора «Норд GSM» не имеет цифровой подписи. Поэтому необходимо явно подтвердить операционной системе необходимость его установки.
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-07.png}
- 	}
-	\captionof{figure}{Подтверждение установки драйвера без цифровой подписи}
-\end{minipage}
+\imgcapt{img/05-02-driver-07.png}{Подтверждение установки драйвера без цифровой подписи}
 
-После завершения установки драйвера необходимо нажать на кнопку «Готово».
+После завершения установки драйвера необходимо нажать на кнопку «Закрыть».
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-08.png}
- 	}
-	\captionof{figure}{Завершение установки драйвера}
-\end{minipage}
+\imgcapt{img/05-02-driver-08.png}{Завершение установки драйвера}
 
 Для того чтобы убедиться в том, что драйвер для устройства установлен, можно открыть диспетчер устройств Windows и найти виртуальный последовательный порт, который соответствует прибору, подключенному к компьютеру.
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-09.png}
- 	}
-	\captionof{figure}{Последовательный порт прибора в «Диспетчере устройств»}
-\end{minipage}
-
+\imgcapt{img/05-02-driver-09.png}{Последовательный порт прибора в «Диспетчере устройств»}
 
 
 ## Установка драйвера в Windows 8
@@ -92,57 +50,27 @@
 
 Нажать комбинацию клавиш **Win+I**, после чего, удерживая кнопку **Shift** выбрать пункт «**Выключение**» – «**Перезагрузка**»:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-08.png}
- 	}
-	\captionof{figure}{Перезагрузка для изменения параметров загрузки}
-\end{minipage}
+\imgcapt{img/05-02-driver-10.png}{Перезагрузка для изменения параметров загрузки}
 
 После того как операционная система перезагрузится, появится окно параметров запуска. Необходимо выбрать пункт «**Диагностика**»:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-09.png}
- 	}
-	\captionof{figure}{Вход в режим диагностики}
-\end{minipage}
+\imgcapt{img/05-02-driver-11.png}{Вход в режим диагностики}
 
 В окне «**Диагностика**» необходимо выбрать пункт «**Дополнительные параметры**»:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-10.png}
- 	}
-	\captionof{figure}{Дополнительные параметры диагностики}
-\end{minipage}
+\imgcapt{img/05-02-driver-12.png}{Дополнительные параметры диагностики}
 
 В окне «**Дополнительные параметры**» нужно выбрать пункт «**Параметры загрузки**»:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-11.png}
- 	}
-	\captionof{figure}{Параметры загрузки операционной системы}
-\end{minipage}
+\imgcapt{img/05-02-driver-13.png}{Параметры загрузки операционной системы}
 
 В окне «**Параметры загрузки**» нужно щелкнуть левой кнопкой мыши по кнопке «**Перезагрузить**»:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.5\textwidth]{img/05-02-driver-12.png}
- 	}
-	\captionof{figure}{Перезагрузка}
-\end{minipage}
+\imgcapt{img/05-02-driver-14.png}{Перезагрузка}
 
 Операционная система перезагрузится еще раз, после чего появится окно «**Параметры загрузки**». В этом окне необходимо нажать на кнопку F7, чтобы продолжить загрузку операционной системы с отключенной проверкой подписи драйверов:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.8\textwidth]{img/05-02-driver-13.png}
- 	}
-	\captionof{figure}{Отключение обязательно проверки подписи драйверов}
-\end{minipage}
+\imgcapt{img/05-02-driver-15.png}{Отключение обязательно проверки подписи драйверов}
 
 После того как операционная система загрузится, нужно установить драйвер прибора так же, как и в операционных системах Windows XP / Windows 7. После установки драйвера необходимо еще раз перезагрузить компьютер, для того чтобы включить проверку подписи драйверов.
 

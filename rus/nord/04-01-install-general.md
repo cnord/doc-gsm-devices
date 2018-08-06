@@ -4,5 +4,5 @@
 
 ## Монтажная схема прибора
 
-\includegraphics[width=\maxwidth]{img/04-01-nord-gsm-installation-scheme.png}
+\imgcapt{img/04-01-nord-gsm-installation-scheme.png}{}
 

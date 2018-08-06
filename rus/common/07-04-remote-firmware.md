@@ -8,21 +8,11 @@
 
 Для удалённого обновления «прошивок» в приборах предназначена вкладка «Обновление программного обеспечения на объектах» в панели инженера:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.95\maxwidth]{img/remote-firmware.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/remote-firmware.png}{}
 
 На данной вкладке отображается статистика по версиям программного обеспечения, сгруппированная по типам приборов. Например, для прибора «Норд GSM»:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.7\maxwidth]{img/nord-firmware.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/nord-firmware.png}{}
 
 * 20 устройств «Норд GSM» работают на данный пульт
 * Актуальная версия ПО для «Норд GSM» – 5.40
@@ -71,21 +61,11 @@
 
 Для этого на странице обновления ПО нужно нажать на кнопку «Обновить по номеру объекта...»:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.7\maxwidth]{img/remote-update.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/remote-update.png}{}
 
 В появившемся диалоге ввести номер объекта для обновления:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.7\maxwidth]{img/remote-update-single.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/remote-update-single.png}{}
 
 И нажать кнопку «Обновить». После этого данный объект будет добавлен в очередь на обновление ПО.
 
@@ -97,12 +77,7 @@
 
 В появившемся диалоге:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.7\maxwidth]{img/remote-update-all.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/remote-update-all.png}{}
 
 нажать кнопку «Обновить все объекты». После этого все объекты данного типа с неактуальной версией ПО будут добавлены в очередь на обновление.
 

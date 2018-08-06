@@ -1,12 +1,6 @@
 ### Сирена {#config-misc-siren}
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=0.9\textwidth]{img/06-07-config-nord-02.png}
- 	}
-	\captionof{figure}{Вкладка «Разное», раздел «Сирена»}
-\end{minipage}
-
+\imgcapt{img/06-07-config-nord-02.png}{Вкладка «Разное», раздел «Сирена»}
 
 **Сирена подключена**  
 

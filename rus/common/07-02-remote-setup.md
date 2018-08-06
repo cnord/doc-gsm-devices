@@ -10,21 +10,12 @@
 
 Для того чтобы создать учетную запись для инженера в программном обеспечении «Центр охраны», необходимо запустить модуль «Менеджер персонала» и нажать на кнопку «Создать» на вкладке «Инженеры»:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=\maxwidth]{img/sc-eng-list-1.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/sc-eng-list-1.png}{}
 
 В открывшемся окне необходимо заполнить все поля с информацией об инженере:
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=\maxwidth]{img/sc-eng-list-2.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+\imgcapt{img/sc-eng-list-2.png}{}
+
 
 Особо внимательно следует указывать значение для поля «Электронная почта». Именно на адрес электронной почты, указанный в этом поле, будет отправлено письмо со ссылкой, по которой инженеру необходимо будет перейти для завершения регистрации учётной записи в «Облаке». Электронная почта инженера служит для его идентификации в «Облаке». После того как инженер будет создан, изменить значение этого поля нельзя.
 
@@ -45,24 +36,14 @@
 3. Перейти на вкладку «Обслуживание»
 
 4. Нажать на кнопку «Добавить разрешение»
+   
+\imgcapt{img/sc-eng-perm-1.png}{}
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=\maxwidth]{img/sc-eng-perm-1.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
-
-5. В появившемся окне выбрать инженера, которому необходимо предоставить удалённый доступ к объекту
-
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[width=\maxwidth]{img/sc-eng-perm-2.png}
- 	}
-	\captionof{figure}{}
-\end{minipage}
+5. В появившемся окне выбрать инженера, которому необходимо предоставить удалённый доступ к объекту 
+   
+\imgcapt{img/sc-eng-perm-2.png}{}
 
 6. Указать временной интервал, в течение которого будет действовать разрешение.
-
+   
 7. Нажать на кнопку «Выдать разрешение».
 

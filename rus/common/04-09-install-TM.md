@@ -7,12 +7,7 @@
 
 Touch Memory считыватель подключается к прибору на клеммы LED, DATA и GND группы «Считыватель».
 
-\begin{minipage}{\linewidth}
-	\makebox[\linewidth]{
- 		\includegraphics[keepaspectratio=true,scale=0.6]{img/04-09-install-tm.png}
- 	}
-	\captionof{figure}{Схема подключения Touch Memory считывателя}
-\end{minipage}
+\imgcapt{img/04-09-install-tm.png}{Схема подключения Touch Memory считывателя}
 
 Вместо ТМ-считывателя можно подключить любой считыватель с эмуляцией протокола Dallas Touch Memory (DS1990A). Например, Proxymity-считыватели ("ПС-01", "CP-Z2B"). 
 
