@@ -1,0 +1,207 @@
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$]{$documentclass$}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+
+\usepackage[russian]{babel} 
+\usepackage[utf8x]{inputenc} 
+\usepackage{cmap} % чтобы работал поиск по PDF
+\pdfcompresslevel=9 % сжимать PDF
+
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{ltablex} 
+\usepackage{colortbl}
+
+\usepackage{multicol} %чтобы оформлять текст в колонки 
+
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{caption}
+\captionsetup{font=it}
+  
+$if(natbib)$
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+$endif$
+
+$if(biblatex)$
+\usepackage{biblatex}
+$if(biblio-files)$
+\bibliography{$biblio-files$}
+$endif$
+$endif$
+
+$if(listings)$
+\usepackage{listings}
+$endif$
+
+$if(lhs)$
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+$endif$
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+$endif$
+
+$if(fancy-enums)$
+% Redefine labelwidth for lists; otherwise, the enumerate package will cause
+% markers to extend beyond the left margin.
+\makeatletter\AtBeginDocument{%
+  \renewcommand{\@listi}
+    {\setlength{\labelwidth}{4em}}
+}\makeatother
+\usepackage{enumerate}
+$endif$
+
+$if(tables)$
+\usepackage{ctable}
+\usepackage{float} % provides the H option for float placement
+$endif$
+
+$if(url)$
+\usepackage{url}
+$endif$
+
+% imgcapt – обертка, которая позволяет вставлять картинки с заголовком,
+% причем картинки жмутся в 0.75 своего размера, либо ширины страницы
+\usepackage{calc}
+\usepackage{graphicx, subfigure}
+\usepackage{wrapfig}
+
+\newlength{\imgwidth}
+
+\newcommand\imgcapt[2]{   
+ \begin{minipage}{\linewidth}
+  \begin{center}
+   \settowidth{\imgwidth}{\includegraphics{#1}}
+   \setlength{\imgwidth}{\minof{.75\imgwidth}{.75\textwidth}}
+   \includegraphics[width=\imgwidth]{#1}
+   \captionof{figure}{#2}
+  \end{center}
+ \end{minipage}
+}
+
+% We will generate all images so they have a width \maxwidth. This means
+% that they will get their normal width if they fit onto the page, but
+% are scaled down if they would overflow the margins.
+\makeatletter
+	\def\maxwidth
+		{\ifdim\Gin@nat@width>\linewidth\linewidth
+		\else\Gin@nat@width\fi}
+\makeatother
+  \let\Oldincludegraphics\includegraphics
+  
+% Меняем размер шрифтов для заголовков на 5 уровней
+% Command             10pt    11pt    12pt
+% \tiny               5       6       6
+% \scriptsize         7       8       8
+% \footnotesize       8       9       10
+% \small              9       10      10.95
+% \normalsize         10      10.95   12
+% \large              12      12      14.4
+% \Large              14.4    14.4    17.28
+% \LARGE              17.28   17.28   20.74
+% \huge               20.74   20.74   24.88
+% \Huge               24.88   24.88   24.88
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\normalsize\bfseries}
+\titleformat*{\subparagraph}{\small\bfseries}
+
+% для заголовков уровней 4 и 5 добавляет строку между заголовком и текстом
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+
+\usepackage[unicode=true,
+            bookmarks=true,
+            pdfauthor={$author-meta$},
+            pdftitle={$title-meta$},
+            colorlinks=true,
+            linkcolor=blue]{hyperref}
+            
+\hypersetup{breaklinks=true, pdfborder={0 0 0}}
+
+$if(strikeout)$
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+$endif$
+
+$if(subscript)$
+\newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
+$endif$
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+\setcounter{secnumdepth}{3}
+
+$if(verbatim-in-note)$
+\VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+
+$if(lang)$
+\ifxetex
+  \usepackage{polyglossia}
+  \setmainlanguage{$mainlang$}
+\else
+  \usepackage[$lang$]{babel}
+\fi
+$endif$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+\input{$title-source$}
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\newpage
+
+$body$
+
+$if(natbib)$
+$if(biblio-files)$
+$if(biblio-title)$
+$if(book-class)$
+\renewcommand\bibname{$biblio-title$}
+$else$
+\renewcommand\refname{$biblio-title$}
+$endif$
+$endif$
+\bibliography{$biblio-files$}
+
+$endif$
+$endif$
+$if(biblatex)$
+\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
+
+$endif$
+$for(include-after)$
+$include-after$
+
+$endfor$
+\end{document}
