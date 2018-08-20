@@ -4,7 +4,7 @@
 
 On the "Zones" tab it is possible to configure parameters of wired zones, connected to the device. 
 
-\imgcapt{img/06-03-config-nord-01.png}{Вкладка «Шлейфы»}
+\imgcapt{img/06-03-config-nord-01.png}{"Zones" tab}
 
 ### Expanders
 
@@ -149,7 +149,6 @@ The "Delay on the entry" parameter allows to delay the generation of the "Alarm"
 
 How does the delay on the entry work? Suppose that we have a zone, it includes a magnetic detector, which is installed on the front door to the office. For this zone, the delay on the entry is set to 15 seconds. Code dialing, which you can use to disarm, is inside the office, that is, you need to open the door in order to reach it. The user opens the front door, the magnetic detector is triggered, but the device does not generate an alarm, and begins counting the delay on the entry. If within 15 seconds the user enters the code by means of which the alarm will be disarmed, the alarm will not be generated, instead an event about disarming the device will be sent to the alarm monitoring software. If the device is not disarmed within 15 seconds, an alarm will be generated.
 
-Значение параметра «Задержка на вход» можно указать только для шлейфов, тип которых задан, как «Охранный» или «Охранный без сирены». Связано это с тем, что шлейфы всех остальных типов (за исключением «Проходного») не могут быть взяты или сняты с охраны: они находятся под охраной всегда. Что же касается типа шлейфа «Проходной», то шлейфы этого типа обрабатываются при взятии или снятии специальным образом, так, как описано выше, в разделе «Типы шлейфов».
 The value of the "Delay on the entry" parameter can be specified only for zones, the type of which is set as "Arm" or "Arm without siren". This is due to the fact that the zones of all other types (except for the "Entrance") can not be armed or disarmed: they are always protected. As for the type of zone "Entrance", the zones of this type are processed when arming or disarming in a special way, as described above, in the section "Types of zones".
 
 **Event "Probable alarm"**
