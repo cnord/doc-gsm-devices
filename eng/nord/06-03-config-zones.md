@@ -8,29 +8,28 @@ On the "Zones" tab it is possible to configure parameters of wired zones, connec
 
 ### Expanders
 
-It is possible to connect to the device "Nord GSM" up to 8 wired zones without using additional equipment. in case, if using the expander of wired zones "EW-8" or "EW-12", the amount of wired zones increases up to 16. 
+It is possible to connect to the device "Nord GSM" up to 8 wired zones without using additional equipment. in case, if using the expander of wired zones "EW-8" or "EW-12", the amount of wired zones increases up to 16.
 
-**«EW-8»** 
+#### "EW-8"
  
-If "EW-8" is connected to the device, it is necessary to set the “EW-8 is connected" parameter in the check-box, then the mechanism of pooling wired zones is changed, and the totatl amount of zones on the tab increases up to 16. 
+If "EW-8" is connected to the device, it is necessary to set the “EW-8 is connected" parameter in the check-box, then the mechanism of pooling wired zones is changed, and the total amount of zones on the tab increases up to 16.
 
-The connection diagram of the expander to the device and also connection diagrams of zones to the expander are given in the section ["Connection of "EW-8""](#install-wze-8).
+The connection diagram of the expander to the device and also connection diagrams of zones to the expander are given in the section ["Connection of "EW-8"](#install-wze-8).
 
-**«EW-12»**    
+#### "EW-12"
 
 If "EW-12" is connected to the device, additional zones will appear in the configurator automatically.
-Features of working and connection diagram of the extender to the device are given in the section ["Connection of "EW-12""](#install-wze-12).
+Features of working and connection diagram of the extender to the device are given in the section ["Connection of "EW-12"](#install-wze-12).
 
 "EW-12" can not to be connected together with "EW-8".
 
 ### Numbering of the zones
 
-The zones numbers displayed in the configurator and correspond to the terminals markings on the printed circuit board: "Z1" – zone №1," Z2 " - zone №2 and so on.
+The zones numbers displayed in the configurator and correspond to the terminals markings on the printed circuit board: "Z1" – zone 1, "Z2" - zone 2 and so on.
 
-If the expander "EW-12" is connected to the device, then the zones of the expander correspond to the numbers 9-16, that is, the terminal " Z1 "on the expander corresponds to the zone number 9 in the configurator, the terminal "Z2" - zone number 10, (...), terminal "ZN" corresponds to the zone (N+8).
+If the expander "EW-12" is connected to the device, then the zones of the expander correspond to the numbers 9-16, that is, the terminal "Z1" on the expander corresponds to the zone number 9 in the configurator, the terminal "Z2" - zone number 10, (...), terminal "Zn" corresponds to the zone (n+8).
 
-If the expander "EW-8" is connected to the device, then the terminal" Z1 "is designed to connect the signal cables from the zones №1 and №9, terminal" Z2 " - for cables from the zones №2 and №10 and so on. In other words, the N terminal intended for connection of cables from the zones of "N" and "N+8". 
-
+If the expander "EW-8" is connected to the device, then the terminal" Z1 "is designed to connect the signal cables from the zones 1 and 9, terminal "Z2" - for cables from the zones 2 and 10 and so on. In other words, the N terminal intended for connection of cables from the zones of "N" and "N+8". 
 
 ### Zone on and off
 
@@ -50,9 +49,7 @@ Setting the type for the zone is a key point in the zone setting, because this p
 * what event code will be sent to the control panel in case of alarm in the zone;
 * whether the siren will be activated when the alarm in the zone;
 * whether the power at the "SMOKE" terminal be turned off and back on after the alarm in the zone;
-* whether the normal state of the zone will be monitored when the partitoin in which it is included is armed.
-
-
+* whether the normal state of the zone will be monitored when the partition in which it is included is armed.
 
 \pagebreak
 
@@ -98,33 +95,32 @@ If for the type of zone is "Yes"in the"Arming/Disarming" column, this means that
   
 If for the zone type is set " Yes "in the"Siren" column, it means that the alarm in the zone of this type will be activated siren.
 
-**"Entrance" zone type**
+#### "Entrance" zone type
 
 If the type "Entrance" is specified for the zone, such a zone is processed in a special way when arming and disarming.
 
-When arming, the condition of the zone is ignored: the device will be armed even if the zone, configured as an entrance, is in alarm. Besides, the entrznce zone state is ignored until the end of the delay on the exit for all zones in partition that are armed. In this case, the delay on the exit for the entrance zone itself can not be set, it always has a delay on the exit equal to the greatest delay on the exit of other zones included in the partition.
+When arming, the condition of the zone is ignored: the device will be armed even if the zone, configured as an entrance, is in alarm. Besides, the entrance zone state is ignored until the end of the delay on the exit for all zones in partition that are armed. In this case, the delay on the exit for the entrance zone itself can not be set, it always has a delay on the exit equal to the greatest delay on the exit of other zones included in the partition.
 
-If partition, which includes a entrance zone, armed and the entrance zone becomes alarming, it first checks if the countdown of the delay on the entry for the other zone in partiotion. If there is a countdown delay on the entry, the alarm in the zone is ignored. If there is no delay on the entry, an "Alarm" event (**E130**) will be generated along the zone.
+If partition, which includes a entrance zone, armed and the entrance zone becomes alarming, it first checks if the countdown of the delay on the entry for the other zone in partition. If there is a countdown delay on the entry, the alarm in the zone is ignored. If there is no delay on the entry, an "Alarm" event (**E130**) will be generated along the zone.
 
-**"Fire" zone type**
+#### "Fire" zone type
 
-When forming an alarm on zones with the "Fire" type, the device uses the "Attention"/"Fire" mechanism: it is based on the logic of repeated operation of the detector after power reset. The device goes into a generalized state of "Fire", which is accompanied by the inclusion of a fire siren, as well as the repetition of fire alarms. This state is stored in the device memory, it means when the power supply is reset or the panel is reset, the generalized state "Fire" is saved.
+When forming an alarm on zones with the "Fire" type, the device uses the "Attention"/"Fire" mechanism: it is based on the logic of repeated operation of the detector after power reset. The device goes into a generalised state of "Fire", which is accompanied by the inclusion of a fire siren, as well as the repetition of fire alarms. This state is stored in the device memory, it means when the power supply is reset or the panel is reset, the generalised state "Fire" is saved.
 
-**"Punic button without fixation" zone type**
+#### "Panic button without fixation" zone type
 
-If the type "punic button without fixation" is specified for the zone, such zone has its own interval of alarm repetition. 
+If the type "panic button without fixation" is specified for the zone, such zone has its own interval of alarm repetition.
 
 For this type of zone, the alarm repeat interval specified for the instrument is not used. Instead, a value of 5 seconds is set. Thus, repeated pressing of the alarm button not earlier than in 5 seconds will result in transmission of one more event to the alarm monitoring software.
 
-**"Temperature sensor" zone type**
+#### "Temperature sensor" zone type
 
 If a wired temperature sensor is connected to the device, and the 1-Wire line polling mode is enabled (enabled on the [Other](#control-indication) tab), it will appear on the "Zones" tab automatically and will have a zone number in the range from 48 to 51. For temperature sensors, the upper and lower thresholds must be specified, upon reaching which alarms will be generated. The range of acceptable values for the thresholds: -55°C to 127°C. Read More [about temperatures sensors connection](#install-temp).
 In total, 4 temperature sensors can be connected to the device.
 
-
 ### The normal state of the zone
 
-Using the value wich is set in the "Norm" column, you can determine the *normal* state for the alarm zone:
+Using the value which is set in the "Norm" column, you can determine the *normal* state for the alarm zone:
 
 * if the normal state for the zone is defined as *closed*, then detectors also have *closed* contacts of their exit relay in the normal state should be used in such zone. In case of alarm, such detectors should *open* exit relay contacts;
 * if the normal condition for the zone is defined as *open*, then detectors which have *open* contacts of their exit relay in the normal state should be used in such zone. In case of alarm, these detectors must *close* the exit relay contacts.
@@ -147,17 +143,17 @@ Two terminal resistors allow to define both breakage, and short circuit for a zo
 
 The "Delay on the entry" parameter allows to delay the generation of the "Alarm" signal for the time specified as the value for this parameter. Typically, this parameter is set for zones that the user *needs* to break in order to get to the alarm control device. As a common example of such zones can result in magnetic sensors protecting entrance doors in a secure facility.
 
-How does the delay on the entry work? Suppose that we have a zone, it includes a magnetic detector, which is installed on the front door to the office. For this zone, the delay on the entry is set to 15 seconds. Code dialing, which you can use to disarm, is inside the office, that is, you need to open the door in order to reach it. The user opens the front door, the magnetic detector is triggered, but the device does not generate an alarm, and begins counting the delay on the entry. If within 15 seconds the user enters the code by means of which the alarm will be disarmed, the alarm will not be generated, instead an event about disarming the device will be sent to the alarm monitoring software. If the device is not disarmed within 15 seconds, an alarm will be generated.
+How does the delay on the entry work? Suppose that we have a zone, it includes a magnetic detector, which is installed on the front door to the office. For this zone, the delay on the entry is set to 15 seconds. Keypad, which you can use to disarm, is inside the office, that is, you need to open the door in order to reach it. The user opens the front door, the magnetic detector is triggered, but the device does not generate an alarm, and begins counting the delay on the entry. If within 15 seconds the user enters the code by means of which the alarm will be disarmed, the alarm will not be generated, instead an event about disarming the device will be sent to the alarm monitoring software. If the device is not disarmed within 15 seconds, an alarm will be generated.
 
 The value of the "Delay on the entry" parameter can be specified only for zones, the type of which is set as "Arm" or "Arm without siren". This is due to the fact that the zones of all other types (except for the "Entrance") can not be armed or disarmed: they are always protected. As for the type of zone "Entrance", the zones of this type are processed when arming or disarming in a special way, as described above, in the section "Types of zones".
 
-**Event "Probable alarm"**
+#### Event "Probable alarm"
 
 In case of violation of the zone with a delay on the entry device certainly generates an event "Probable alarm" (**E138**). The event arguments are the number of the broken zone and the smallest number of the partition in which this zone is included. If they violated a few zones with a delay on the entry, for each zone an event will be generated "Probable alarm".
 
 At some sites, the control panel cannot be placed in a separate protected part of the room. Usually, such objects include small premises: shopping pavilions, garages, small offices and apartments. This means that the control panel may be disabled during the delay on the entry countdown. The event "Probable alarm" allows the security panel to monitor the operation of the device after the countdown of the delay on the entry begins: if after the start of the delay on the entry there is no event about disarming the device, then this is an occasion to find out what is happening at the facility.
 
-For automatic control of receipt of disarming after the Probable alarm in the "Security Center", you must use the event handler to the "Entrance through alarm" or event handler, "Control of a chain of events". 
+For automatic control of receipt of disarming after the Probable alarm in the "Security Center", you must use the event handler to the "Entrance through alarm" or event handler, "Control of a chain of events".
 
 ### Delay on the exit
 
@@ -169,7 +165,7 @@ After the user takes a partition (using the keyboard, wireless keyfob or TM-read
 * if a faulty zone is detected, the device refuses to arming;
 * if a zone is detected in the alarm, the device also refuses to arming;
 * if there are no faulty or alarming zones, the device is armed and starts c
-* ounting the delay on the exit, if there is one.
+* counting the delay on the exit, if there is one.
 
 The arming event (**E401**) is generated immediately upon arming, before the start of the delay on the exit, if it exist. The event arguments are the number of the armed partition, and also the number of the user who performed the arming.
 
@@ -180,4 +176,3 @@ For wireless devices for current is taken by the state which was obtained during
 It may happen that during the arming it is impossible to achieve the normal state of one or more zones, for example, if the detectors in the zones control the keyboard area. In this case, the zones must be configured as *entrance*. More details of the entrance zone are described above in the Section "Types of zones".
 
 The alarm in zones with a delay on the exit at the time of arming is ignored. This is to ensure that the user does not need to check and close the front door. But, if you want to be sure that all the alarm zones are normal at the time of arming, you can turn on the alarm control in the zones with a delay on the exit on the exit at the time of taking. To do this, you need to put a "check" for the parameter "Prohibit taking when the alarm is in the zone with a delay on the exit", which is located on the "Other" tab, in the "Arming and disarming"section.
-
