@@ -1,123 +1,132 @@
 \pagebreak
 
-## Автоматика {#config-automation}
+## Automatic controls {#config-automation}
 
-Механизм «Автоматика» предназначен для программирования поведения прибора в зависимости от тех или иных условий. В качестве условий могут выступать любые события, сформированные прибором или время. А в качестве действий, которые прибор может выполнить, выступают взятия или снятия, а также действия с открытыми коллекторами.
+"Automatic controls" mechanism is designed to program the behavior of the device depending on certain conditions. Any events formed by the device or time can act as the conditions. Arming or disarming and actions with open collectors are actions that the device can perform.
 
-Автоматика может применяться для решения следующих задач на объектах:
+Automation can be used to solve the following tasks on sites:
 
-* взятие и снятие объектов по расписанию;
-* взятие и снятие нескольких разделов одновременно;
-* отображение состояния раздела на световом оповещателе;
-* включние звуковых оповещателей, подключенных к открытым коллекторам прибора;
-* управление внешними устройствами, подключенными к открытым коллекторам прибора.
+* scheduled arming and disarming;
+* arming and disarming of several partitions at the same time;
+* display of the partition status on the light indicator;
+* activation of sound annunciators connected to the device open collectors;
+* control of external devices connected to the device open collectors.
 
-При переходе на вкладку «Автоматика» вверху окна отображаются кнопки, с помощью которых можно сконфигурировать правила.
+When switching to the "Automatic controls" tab, the buttons at the top of the window allow to configure the rules.
 
-\imgcapt{img/06-13-config-automation-01.png}{Кнопки для создания правил, вкладка «Автоматика»}
+\imgcapt{img/06-13-config-automation-01.png}{Buttons for creating rules, "Automatic controls” tab}
 
-> В прибор уже заложена логика работы со световыми и звуковыми оповещателями. Для настройки открытых коллекторов, к которым подключены оповещатели, нужно использовать кнопки «Маяк...» или «Сирена...», в зависимости от типа оповещателя.
+> The device already has the logic of working with light and sound annunciators. To set up open collectors to which the annunciators are connected, it is necessary to use the buttons “Light indicator..." or "Siren ...", depending on the type of the annunciator.
 
-При создании правил важно помнить следующие утверждения:
+When creating rules, it is important to remember the following:
 
-* Если коллектор используется для подключения других устройств (например, БВИ), то он не может использоваться больше нигде, включая удаленное управление, которое появится немного позже.
-* Если коллектор уже используется для ролей (Маяк, Сирена), то он не может использоваться больше нигде.
-* Если к прибору подключен РПШ-12 и шлейф расширителя включен в настройках прибора, то коллектор-на-шлейфе нельзя использовать для правил автоматики или для ролей.
-* Всего можно создать 8 правил с ролью «Маяк» или «Сирена». Причем эти правила не зависят от количества стандартных правил автоматики.
+* If the collector is used to connect other devices (for example, fire indication device), it cannot be used anywhere else, including remote control, which will appear a little later.
+* If the collector is already used for roles (Light indicator, Siren), then it cannot be used anywhere else.
+* If the EW-12 is connected to the device and the zone is enabled in the device settings, then the collector-on-circuit cannot be used for automation rules or for roles.
+* It is possible to create 8 rules with the role of “Light indicator" or "Siren". And these rules do not depend on the number of standard rules of automation.
 
-### Маяк
 
-#### Подключение светового оповещателя
+### Light indicator
 
-Для того чтобы подключить маяк к прибору, нужно:
+**Light indicator connection**
 
-* «Плюсовой» кабель оповещателя подключить к любому плюсовому выходу контрольной панели, например, к выходу для питания клавиатуры или шлейфов. 
-* «Минусовой» кабель оповещателя должен быть подключен к одному из семи открытых коллекторов: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
+Connect the light indicator to the device as follows:
 
-\imgcapt{img/06-13-config-automation-03.png}{Подключение светового оповещателя к прибору}
+* Connect the siren "plus" cable to any plus output of the control panel, for example, to the output for powering the keypad or zones. 
+* Connect the siren "minus" cable to one of seven open collectors: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
-Если к Норду подключен расширитель РПШ-12, то можно задействовать клеммы «Z1» - «Z8» расширителя.   
-К приборам можно подключить любой световой оповещатель с напряжением питания 12 В. Максимальный коммутируемый ток не должен превышать 250 мА.
+\imgcapt{img/06-13-config-automation-03.png}{Light indicator connection to the device}
 
-#### Настройка правила
+If the EW-12 expander is connected to the Nord, then the terminals "Z1" - "Z8" of the expander can be used.   
+Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
-Для светового оповещателя, который индицирует состояние объекта или раздела нужно настроить правило с ролью «Маяк». Для создания правила во вкладке «Автоматика» следует нажать кнопку «Маяк» и выбрать выход, к которому подключен оповещатель. 
-В случае если на приборе сконфигурированно несколько разделов, то при создании правила можно указать раздел, для которого маяк будет отображать состояние.
+**Rule setting**
 
-\imgcapt{img/06-13-config-automation-02.png}{Создание правила «Маяк»}
+For a light indicator that indicates the state of site or partition, it is necessary to set up a rule with the role of "Light indicator". To create a rule in the "Automatic controls" tab, click the "Light indicator" button and select the output to which the annunciator is connected. 
+In the event that several partitions are configured on the device, then when creating the rule, it is possible to specify the partition for which the light indicator will display the state.
 
-#### Описание работы оповещателя
 
-Если правило «Маяк» настроено для отображения состояния раздела:
+\imgcapt{img/06-13-config-automation-02.png}{Creating “Light indicator” rule}
 
-* Маяк непрерывно горит, если раздел поставлен на охрану;
-* Маяк не горит, если раздел снят с охраны;
-* Маяк мигает, если раздел в тревоге;
-* Маяк мигает двойными вспышками во время задержки на выход.
 
-Если правило «Маяк» настроено для отображения состояния объекта: 
+**Annunciator operation description**
 
-* Маяк непрерывно горит, если все разделы взяты под охрану;
-* Маяк не горит, если хотя бы один из разделов снят с охраны;
-* Маяк мигает, если есть хотя бы один раздел в тревоге;
-* Маяк мигает двойными вспышками во время задержки на выход.
+If the "Light indicator" rule is configured to display the partition state:
 
-### Сирена
+* The light indicator is continuously lit when the partition is armed;
+* The light indicator is not lit if the partition is disarmed;
+* The light indicator flashes if the partition is in an alarm;
+* The light indicator flashes with double flashes during the exit delay.
 
-#### Подключение звукового оповещателя
+If the "Light indicator" rule is configured to display the site state: 
 
-Подключение сирены на открытый коллектор осуществляется следующим образом:
+* The light indicator is continuously lit if all partitions are armed;
+* The light indicator does not light if at least one of the partitions is disarmed;
+* The light indicator flashes if there is at least one partition in the alarm;
+* The light indicator flashes with double flashes during the exit delay.
 
-* «Плюсовой» кабель оповещателя может быть подключен к любому плюсовому выходу контрольной панели, например, к выходу для питания клавиатуры или шлейфов. 
-* «Минусовой» кабель оповещателя должен быть подключен к одному из семи открытых коллекторов: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
-Если к Норду подключен расширитель РПШ-12, то можно задействовать клеммы «Z1» - «Z8» расширителя.   
-К приборам можно подключить любой световой оповещатель с напряжением питания 12 В. Максимальный коммутируемый ток не должен превышать 250 мА.
+### Siren
 
-#### Настройка правила
+** Siren connection**
 
-Для звукового оповещателя нужно настроить правило с ролью «Сирена». Для создания правила во вкладке «Автоматика» следует нажать кнопку «Сирена» и выбрать выход, к которому она подключена. 
+The siren is connected to the open collector as follows:
 
-\imgcapt{img/06-13-config-automation-04.png}{Создание правила «Сирена»}
+* The "plus" cable of the siren can be connected to any plus output of the control panel, for example, to the output for powering keypad or zones. 
+* Connect the siren "minus" cable to one of seven open collectors: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
-Сирена подключенная на открытый коллектор отличается от сирены, подключенной на одноименный выход «Сирена» тем, что в первом случае прибор не контролирует состояние этой линии.
-Для настройки параметров звучания сирены нужно перейти в блок [Сирена](#config-misc-siren) вкладки Разное.
+If the EW-12 expander is connected to the Nord, then the terminals "Z1" - "Z8" of the expander can be used.   
+Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
-### Другое
 
-Помимо предустановленных правил, в приборе можно создать до 16 других правил. При наступлении указанных в правиле условий прибор может выполнить взятие или снятие с охраны одного или всех разделов, замкнуть или разомкнуть дискретный выход, а также начать периодическое замыкание и размыкание дискретного выхода с заданным интервалом.
+**Rule setting**
 
-\imgcapt{img/06-13-config-automation-05.png}{Окно создания правила}
+For siren it is necessary to set up a rule with the role of "Siren". To create a rule in the "Automatic controls" tab, click the “Siren" button and select the output to which the annunciator is connected. 
 
-#### Настройка правила
+\imgcapt{img/06-13-config-automation-04.png}{Creating “Siren” rule}
 
-Рассмотрим настройку правил на конкретном примере.
+The siren connected to the open collector differs from the siren connected to the same name "Siren" output: in the first case the device does not control the condition of this line.
+To configure the siren sound settings, go to the [Siren](#config-misc-siren) section of the “Miscellaneous” tab.
 
-_Задача_
 
-Настроить взятие раздела №1 под охрану по расписанию в 19 часов 30 минут по вторникам и средам.
+### Miscellaneous
 
-_Решение_
+In addition to the predefined rules, up to 16 other rules can be created in the device. When the conditions specified in the rule are met, the device can perform arming or disarming of one or all partitions, close or open the digital output, and also start the periodic closing and opening of the digital output at a predetermined interval.
 
-Для решения поставленной задачи необходимо создать действие, выполняющее взятие раздела под охрану по расписанию.
+\imgcapt{img/06-13-config-automation-05.png}{Window for creating rule}
 
-1. На вкладке «Автоматика» нажать кнопку «Другое».
-2. В поле «Действие» из выпадающего списка выберите значение «Взять под охрану».
-3. В поле «Раздел» выберите значение «1».
-4. В поле «Условие» выберите значение «по расписанию».
-5. С помощью выпадающих меню в поле «Время» установите значение «19:30».
-6. В поле «День недели» выберите значение «указать». В появившемся при этом списке дней недели оставьте галочки в чек-боксах «вт» и «ср». В остальных чек-боксах галочки снимите.
 
-\imgcapt{img/06-13-config-automation-06.png}{Окно создания правила}
+**Rule setting**
 
-7. Нажмите «ОК» для сохранения правила. Правила вступят в силу после записи настроек в прибор.
+Let’s consider setting up rules for a specific example.
 
-\imgcapt{img/06-13-config-automation-07.png}{Все созданные правила}
+_Task_
 
-В данном примере рассматривается автоматическое взятие под охрану, однако в качестве действия можно указать снятие объекта с охраны. В таком случае объект будет сниматься с охраны по заданному расписанию. Так же можно настроить автоматическое замыкание или/и размыкание дискретных выходов прибора.
+Configure arming of partition No. 1 on a schedule at 19.30 on Tuesdays and Wednesdays.
 
-Настроить взятие под охрану всех разделов объекта можно с помощью значения «Все разделы» поля «Раздел». Чтобы настроить взятие под охрану нескольких конкретных разделов, для каждого из них следует выполнить настройку взятия отдельно.
+_Solution_
 
-Взятие под охрану можно задать для определенных дней недели, как в рассмотренном примере; для каждого дня; только для будних дней (с понедельника по пятницу); а также - только для выходных.
+To solve the task, it is necessary to create an action that arms the partition on a schedule.
 
-Автоматическое взятие под охрану, как и любое другое действие, можно осуществить не только по расписанию, но и по событию. В этом случае нужно знать код события, которое будет использоваться в правиле.
+
+1. On the "Automatic controls" tab, click the “Miscellaneous" button.
+2. In the "Action" field, from the drop-down list, select the “Arming".
+3. In the “Partition" field, select "1".
+4. In the "Condition" field, select "on schedule".
+5. Use the drop-down menus in the "Time" field to set the value to "19:30".
+6. In the "Day" field, select "specify". In the days of the week that appear with this list, check "Tu" and "Wd” boxes. Uncheck other boxes.
+
+\imgcapt{img/06-13-config-automation-06.png}{Window for creating rule}
+
+7. Click "OK" to save the rule. The rules will take effect after recording the settings in the device.
+
+\imgcapt{img/06-13-config-automation-07.png}{All created rules}
+
+In this example, automatic arming is considered, but it is possible to specify the site disarming as an action. In this case, the site will be disarmed according on a specified schedule. It is also possible to configure the automatic closing and/or opening of the discrete outputs of the device.
+
+It is possible to configure arming of all site partitions using the “All partitions” value of the “Partition” field. To configure the arming of several specific partitions, for each of them it is necessary to configure the arming separately.
+
+Arming can be set for certain days of the week, as in the example considered; for each day; only for weekdays (from Monday to Friday); and also for weekends only.
+
+Automatic arming, like any other action, can be performed not only on a schedule, but also for an event. In this case, it is necessary to know the event code that will be used in the rule.
+

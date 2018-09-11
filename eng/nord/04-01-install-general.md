@@ -1,8 +1,8 @@
 \pagebreak
 
-# Монтаж и первый запуск
+# Installation and First Start
 
-## Монтажная схема прибора
+## Device Wiring Diagram
 
 \imgcapt{img/04-01-nord-gsm-installation-scheme.png}{}
 

@@ -1,103 +1,110 @@
-### Интервалы
+### Intervals
 
-\imgcapt{img/06-07-config-nord-01.png}{Вкладка «Разное», раздел «Интервалы»}
+\imgcapt{img/06-07-config-nord-01.png}{“Miscellaneous” tab, “Intervals” section}
 
-#### Интервал повтора тревог
+**Interval for repeating alarms**  
 
-С помощью параметра «Интервал повтора тревог» можно задать интервал, с которым прибор будет формировать *одинаковые* тревоги и передавать их на пульт охраны. *Одинаковыми* считаются тревоги, которые возникли в одном и том же проводном шлейфе или были переданы одним и тем же беспроводным извещателем.
+Use the “Interval for repeating alarms" parameter to specify the interval with which the device will generate *similar* alarms and transmit them to the receiver. The alarms are considered *similar* if they are originated in the same wired zone or were transmitted by the same wireless detector.
 
-Значение параметра «Интервал повтора тревог» применяется для шлейфов всех [типов](#config-zones-types), за исключением шлейфов, имеющих тип  «Пожарный» и «КТС без фиксации». Интервал повтора тревог для шлейфов с типом «КТС без фиксации» всегда равен 5 секундам, а интервал повтора тревог для шлейфов, имеющих тип «Пожарный», задается отдельным параметром (см. ниже).
+The value of the “Interval for repeating alarms" parameter is used for zones of all [types](# config-zones-types), with the exception of zones of the "Fire" and “Panic button without fixation” type. The alarm repetition interval for zones with the “Panic button without fixation” type is always 5 seconds, and the alarm repetition interval for zones of the "Fire" type is set by a separate parameter (see below).
 
-> Зачем нужен этот параметр? В первую очередь для того, чтобы снизить количество событий, которые будут передаваться на пульт охраны: одного тревожного события может быть вполне достаточно для того, чтобы оператор приступил к отработке тревоги по объекту. Повторная тревога по тому же шлейфу, как правило, ничего не изменит. Если же прибор обнаружит тревогу в другом шлейфе, то такая тревога будет передана на пульт и для этого шлейфа начнется отсчет собственного интервала повтора тревог.
+> Why is this parameter necessary? First of all, to reduce the number of events that will be transmitted to the repeater: one alarm event can be quite enough for the operator to start handling the site alarm. Repeated alarm on the same zone, as a rule, will not change anything. If the device detects an alarm in another zone, then such an alarm will be transmitted to the repeater and a countdown of its own alarm repetition interval will begin for this zone.
 
-Если для параметра «Интервал повтора тревог» задано любое численное значение, то прибор будет формировать события по конкретному шлейфу следующим образом:
+If the “Interval for repeating alarms" parameter is set to any numerical value, the device will generate events on a specific zone as follows:
 
-* при обнаружении тревоги в шлейфе будет сформировано тревожное событие и начнется отсчет заданного интервала;
-* при обнаружении сброса тревоги в шлейфе будет сформировано событие о сбросе, отсчет заданного интервала будет продолжен;
-* при повторном формировании тревоги или сброса тревоги в шлейфе события формироваться не будут до тех пор, пока отсчет заданного интервала не будет завершен.
+* if an alarm is detected in the zone, an alarm event will be generated and the count of the specified interval will start;
+* if an alarm reset is detected in the zone, a reset event will be generated, the count of the specified interval will be continued;
+* in case of repeated alarm generation or reset in the zone, events will not be generated until the count of the specified interval is completed.
 
-> Численное значение означает, что в течении интервала будут переданы только одна тревога и сброс по одному шлейфу.
+> Numerical value means that only one alarm and one zone reset will be transmitted during the interval.
 
-Если для параметра «Интервал повтора тревог» задано значение «Не повторять», то прибор будет формировать события следующим образом:
+If the “Interval for repeating alarms" parameter is set to “Do not repeat” value, the device will generate events on a specific zone as follows:
 
-* при обнаружении тревоги в шлейфе будет сформировано тревожное событие и начнется ожидание сброса тревоги в шлейфе;
-* повторные события о тревоге в шлейфе *не будут* сформированы до тех пор, пока по шлейфу не будет сформировано событие о сбросе тревоги;
-* при обнаружении сброса тревоги в шлейфе будет сформировано событие о сбросе, ожидание сброса тревоги в шлейфе будет прекращено, прибор сформирует событие о тревоге в шлейфе снова, когда она будет обнаружена.
+* if an alarm is detected in the zone, an alarm event will be generated and the waiting of the zone alarm reset start;
+* repeated events about the alarm in the zone *will not* be generated until an event about the alarm reset is generated on the zone;
+* if an alarm reset is detected in the zone, a reset event will be generated, the alarm reset waiting in the zone will be terminated, the device will generate an alarm event in the zone again when it is detected.
 
-> Значение «Не повторять» означает, что повторная тревога по шлейфу может быть передана только после того, как по шлейфу будет передан сброс предыдущей тревоги.
+> The "Do not repeat" value means that a repeated zone alarm can only be transmitted after a reset of the previous alarm is transmitted on the zone.
 
-Параметр «Интервал повтора тревог» не распространяет на тревоги, которые формируются при срабатывании тампера прибора. События о нарушении или восстановлении тампера всегда формируются по факту изменения состояния тампера.
+The “Interval for repeating alarms” parameter does not relate to the alarms that are generated when the device tamper is triggered. Events about breaking or restoring a tamper are always generated after the tamper state changes.
 
-#### Интервал повтора пожарных тревог
 
-Параметр «Интервал повтора пожарных тревог» задает интервал, с которым прибор будет формировать *одинаковые* тревоги по шлейфам, имеющим тип «Пожарный», и передавать их на пульт охраны. *Одинаковыми* считаются тревоги, которые возникли в одном и том же проводном шлейфе или были переданы одним и тем же беспроводным извещателем.
+**Interval for repeating fire alarms**
 
-Интервал повтора пожарных тревог предназначен для того, чтобы, с одной стороны, снизить количество одинаковых событий, которые буду переданы на пульт охраны, а с другой стороны – не допустить ситуации, при которой персонал пульта охраны выпустит из виду тот факт, что прибор на объекте находится в обобщенном состоянии «Пожар»: если [автоматический сброс обобщенного состояния «Пожар»](#config-fire-alarm-auto-reset) запрещен, то для его сброса необходимо набрать код на клавиатуре.
+The "Interval for repeating fire alarms" parameter specifies the interval with which the device will generate *similar* alarms on zones of the "Fire” type, and transmit them to the receiver. The alarms are considered *similar* if they are originated in the same wired zone or were transmitted by the same wireless detector.
 
-Значение для параметра «Интервал повтора пожарных тревог» применяется следующим образом:
+The interval of fire alarm repetition is on the one hand designed to reduce the number of identical events that will be transmitted to the receiver, and on the other hand, to prevent a situation in which the personnel of the receiver will not pay attention to the fact that the device at the site is in the generalized "Fire” state: if [automatic reset of the generalized "Fire” state](# config-fire-alarm-auto-reset) is prohibited, then to reset it, it is necessary to type the code on the keypad.
 
-* при обнаружении пожарной тревоги в шлейфе будет сформировано событие «Пожар», прибор перейдет в состояние «Пожар» и начнется отсчет заданного интервала;
-* по завершению отсчета заданного интервала событие «Пожар» будет сформировано повторно по всем шлейфам, по которым оно было сформировано во время отсчета интервала. После этого отсчет интервала начнется вновь;
-* при сбросе обобщенного состояния «Пожар» отсчет интервала будет завершен.
+The value of the "Interval for repeating fire alarms" parameter is applied as follows:
+
+* if a fire alarm is detected, “Fire” event will be generated in the zone, the device will switch to the “Fire” state and the count of the specified interval will start;
+* upon completion of the specified interval, the "Fire" event will be generated repeatedly on all zones along which it was generated during the interval counting. After that, the interval count will start again;
+* if the generalized "Fire” state is reset, the interval count will be completed.
   
-#### Интервал повтора неисправностей
 
-С помощью параметра «Интервал повтора неисправностей» можно задать интервал, с которым прибор будет формировать *одинаковые* неисправности по шлейфам и беспроводным устройствам, подключенным к прибору. *Одинаковыми* считаются неисправности, которые возникли в одном и том же проводном шлейфе или были переданы одним и тем же беспроводным устройством. При этом, в отличии от интервалов повтора охранных или пожарных тревог, отсчет интервала повтора неисправностей *прекращается*, если будет обнаружено восстановление неисправности и сформировано событие об этом.
+**Interval for repeating troubles**
 
-Для проводных шлейфов неисправностями, на которые распространяется «Интервал повтора неисправностей» являются физические неисправности шлейфа – обрыв и короткое замыкание. Эти неисправности формируются только в том случае, если в шлейф включены один или два оконечных резистора.
+The "Interval for repeating troubles" parameter specifies the interval with which the device will generate *similar* troubles on zones and wireless devices, connected to the device. The alarms are considered *similar* if they are originated in the same wired zone or were transmitted by the same wireless detector. In this case, in contrast to the repetition intervals of repetition of security or fire alarms, the interval for repeating faults *stops*, if a recovery of the fault is detected and an event about it is generated.
 
-Если для проводного шлейфа указан тип, который подразумевает взятие под охрану, то коды событий, которые формируются при обнаружении неисправностей/восстановлений в таком шлейфе, будут зависеть от состояния (взят или снят), в котором находился шлейф на момент обнаружения неисправности:
+For the wired zones, faults that are covered by the "Interval for repeating troubles" include the physical faults of the zone – a break and short circuit. These faults are only generated if one or two terminating resistors are connected to the zone.
 
-* коды **E331** / **R331** будут сформированы при обнаружении обрыва/восстановления шлейфа, который *снят с охраны*;
-* коды **E141** / **R141** будут сформированы при обнаружении обрыва/восстановления шлейфа, который *взят под охрану*;
-* коды **E332** / **R332** будут сформированы при обнаружении короткого замыкания/восстановления шлейфа, который *снят с охраны*;
-* коды **E142** / **R142** будут сформированы при обнаружении короткого замыкания/восстановления шлейфа, который *взят под охрану*.
+If a type is specified for a wired zone, which implies arming, the event codes that are generated in case of faults/recoveries in such a zone will depend on the state (armed or disarmed) in which the zone was at the time of the fault detection:
 
-Не смотря на то, что коды **E141** и **E142** считаются тревогами, на события с этими кодами распространяется интервал повтора неисправностей, а не тревог.
+* codes **E331** / **R331** will be generated if a break/recovery is detected for the zone, which is *disarmed*;
+* codes **E141** / **R141** will be generated if a break/recovery is detected for the zone, which is *armed*;
+* codes **E332** / **R332** will be generated if a short circuit/recovery is detected for the zone, which is *disarmed*;
+* codes **E142** / **R142** will be generated if a short circuit/recovery is detected for the zone, which is *armed*;
 
-Список неисправностей для беспроводных устройств, на которые распространяется «Интервал повтора неисправностей», выглядит следующим образом:
+Despite the fact that the codes **E141** and **E142** are considered alarms, the fault repetition intervals, rather that alarm repetition intervals, are used for the events with these codes.
 
-* потеря связи;
-* разряд основной батареи;
-* разряд резервной батареи (если установка резервной батареи предусмотрена конструкцией устройства);
-* неисправность шлейфа датчика затопления, подключенного к извещателю «СН-Вода» (индивидуально для каждого шлейфа), неисправности датчика температуры.
+The list of faults for wireless devices covered by the “Interval for repeating troubles" is as follows:
 
-Значение параметра «Интервал повтора неисправностей» не распространяется на следующие события о неисправностях, которые формируются прибором:
+* loss of communication;
+* main battery discharge;
+* backup battery discharge (if the installation of the backup battery is provided by the device design);
+* fault of the flood sensor zone connected to the "CN-Water" detector (individually for each zone), temperature sensor faults.
 
-* разряд резервной батареи, подключенной к прибору. Событие о разряде резервной батареи (код **E302**) формируется однократно и повторяется только при включении прибора;
-* неисправность резервной батареи, подключенной к прибору. Событие о неисправности резервной батареи (код **E309**) формируется каждые 12 часов, по результатам каждой проверки качества резервной батареи;
+The value of the “Interval for repeating troubles" parameter does not cover the following events about the faults that are generated by the device:
 
-#### Интервал перехода на основной канал
+* discharge of the backup battery connected to the device. The event about the backup battery discharge (code **E302**) is formed once and repeated only when the device is turned on;
+* malfunction of the backup battery connected to the device. The event about the backup battery failure (code **E309**) is formed every 12 hours, based on the results of each quality test of the backup battery;
 
-С помощью параметра «Интервал перехода на основной канал» можно задать интервал, через который прибор выполнит попытку инициализировать подключение к пульту по IP-каналу, который является основным. Какой канал связи является основным, зависит от того, подключен ли к прибору «Адаптер Ethernet»:
 
-* если «Адаптер Ethernet» подключен к прибору, то основным каналом связи является Ethernet;
-* если «Адаптер Ethernet» к прибору не подключен, то основным каналом связи является канал GPRS на SIM1.
+**Interval for switching to the main channel**
 
-Подробнее об особенностях настройки IP-каналов, а также о правилах переключения каналов связи можно прочитать в разделе описания, посвященном [вкладке «Центр охраны»](#config-sc).
+With the "Interval for switching to the main channel” parameter, it is possible to set the interval over which the device will attempt to initialize the connection to the repeater via the main IP channel. Which communication channel is the main one depends on whether the Ethernet Adapter is connected to the device:
 
-Необходимо отметить, что в качестве значения для параметра «Интервал перехода на основной канал» можно указать значение «Не переходить». В этом случае принудительный переход на основной канал связи будет отключен. Такая возможность позволяет использовать «равнозначные» SIM – если прибор подключился по GPRS на SIM2, то он будет оставаться на этом канале до тех пор, пока канал будет работать.
+* if the Ethernet Adapter is connected to the device, the main communication channel is Ethernet;
+* if the Ethernet Adapter is not connected to the device, the main communication channel is the GPRS channel on SIM1.
 
-#### Интервал передачи тестов
+For more details about the configuration of IP channels, as well as the rules for switching channels, see the description of the [“Security Center” tab](# config-sc).
 
-С помощью параметра «Интервал передачи тестов» можно задать интервал, с которым прибор будет генерировать тестовое событие и отправлять его по доступному в данный момент каналу связи. Важно понимать, что этот интервал всегда отсчитывается от последнего события, которое было передано прибором. В случае, если по истечению интервала не будет событий на передачу, будет сформировано и передано тестовое событие.
-Если для этого параметра указано значение «Не передавать», то прибор не будет формировать тестовые события ( код **E602**). 
+It shall be noted that it is possible to specify "Do not switch” as the value for the "Interval for switching to the main channel" parameter. In this case, the forced switching to the main communication channel will be disabled. This feature allows to use "equivalent" SIMs - if the device is connected via GPRS on SIM2, it will remain on this channel until the channel is operational.
 
-#### Интервал контроля передачи событий
 
-С помощью параметра «Интервал контроля передачи событий» задается интервал, в течение которого система аудита ожидает отправки события. *Система аудита* - это программный механизм, который контролирует факт передачи событий на пульт охраны.
+**Test transfer interval** 
 
-Если для параметра «Интервал контроля передачи событий» задано любое численное значение, то прибор будет работать следующим образом:
+Use the "Test transfer interval" parameter to specify the interval with which the device will generate a test event and transfer it over the currently available communication channel. It is important to understand that this interval is always counted from the last event that was transmitted by the device. If there are no events for transfer at the expiration of the interval, a test event will be generated and transferred.
+If this parameter is set to "Do not transfer", then the device will not generate test events (code **E602**). 
 
-* В случае если система аудита фиксирует отсутствие передачи событий в указанный в параметре интервал времени, то сначала выполняется переключение канала связи, который используется прибором в настоящий момент;
-* В тот момент, когда система аудита выполнила переключение канала связи, формируется событие с кодом **E754**. Аргументом для события с кодом E754 служит тип канала связи, который прекратил передачу событий (1 – Ethernet или GSM, 3 – радио). Значение аргумента передается в поле, предназначенном для номера шлейфа или пользователя.
 
-* Если переключение канала не помогло, и события по-прежнему не отправляются, то через интервал контроля передачи событий система аудита выполняет перезагрузку прибора.
-* После перезагрузки будет сформировано два события. Код первого события – **R305**, это событие регистрирует сам факт перезагрузки прибора. Код второго события – **R754**, это событие означает, что перезагрузка произошла по команде системы аудита.
+**Interval for event transfer control**
 
-Значение по-умолчанию для этого параметра составляет 7 минут. При необходимости, это значение можно увеличить. Если же для этого параметра указать значение «Не контролировать», то система аудита будет отключена.
+Use the "Interval for event transfer control" parameter to specify the interval during which the audit system is waiting for the event to be sent. The *audit system* is a program mechanism that controls the fact of the event transfer to the receiver.
 
-#### Интервалы контроля связи с беспроводными устройствами
+If the "Interval for event transfer control" parameter is set to any numerical value, the device will work as follows:
 
-«Интервал контроля связи с беспроводными устройствами» – это интервал, в течении которого от беспроводного устройства должна быть получена хотя бы одна посылка. Если в течении этого интервала беспроводное устройство ничего не пришлет, то будет сформировано сообщение о потере связи. Беспроводные устройства отправляют тестовые посылки раз в 30 секунд.
-Если для этого параметра указано значение «Не контролировать», то прибор не будет контролировать тестовые посылки от беспроводных устройств.
+* If the audit system registers the absence of the event transfer within the time interval specified by the parameter, then first the communication channel, which is currently used by the device, is switched;
+* At the moment when the audit system has switched the communication channel, an event with the code **E754** is generated. The argument for the event with code E754 is the type of communication channel that stopped the event transfer (1 – Ethernet or GSM, 3 – radio). The argument value is transferred to the field assigned to the zone or user number.
+
+* If the channel switching does not help, and events are still not transferred, then the audit system reboots the device after the expiry of the event transfer control interval.
+* After the reboot, two events will be generated. The code of the first event is **R305**, this event registers the very fact of the device reboot. The second event code is **R754**, this event means that the reboot occurred by the audit system command.
+
+The default value for this parameter is 7 minutes. If necessary, the value can be increased. If "Do not monitor" is specified for this parameter, the audit system will be disabled. 
+
+
+**Interval for control of communication with wireless devices**
+
+"Interval for control of communication with wireless devices" is the interval within which at least one package shall be received from a wireless device. If the wireless device does not send anything within this interval, a message about the loss of communication will be generated. Wireless devices send test packages every 30 seconds.     
+If this parameter is set to "Do not monitor", the device will not monitor test packages from wireless devices.
+

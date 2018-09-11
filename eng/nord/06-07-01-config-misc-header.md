@@ -1,5 +1,6 @@
 \pagebreak
 
-## Разное
+## Miscellaneous
 
-На вкладке «Разное» можно указать различные параметры, определяющие работу прибора.
+On the "Miscellaneous" tab, it is possible to specify various parameters that determine the device operation.
+

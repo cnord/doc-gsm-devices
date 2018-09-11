@@ -1,28 +1,28 @@
 \pagebreak
 
-## Разделы
+## Partitions
 
-На вкладке «Разделы» выполняется конфигурирование разделов объекта.
-В приборе возможно создать до 32 разделов с возможностью их независимого взятия под охрану и снятия с охраны.
+The "Partitions" tab configures the partitions of the site.
+It is possible to create up to 32 partitions i the device with the possibility of their independent arming and disarming.
 
-\imgcapt{img/06-06-config-nord-01.png}{Вкладка «Разделы»}
+\imgcapt{img/06-06-config-nord-01.png}{“Partitions” tab}
 
-Для создания раздела нужно нажать кнопку «Добавить раздел». Каждому разделу присваивается свой номер, номера выдаются последовательно от 1 до 32.
-Для каждого раздела есть кнопка «Добавить шлейф» и «Добавить код», расположенные во втором и третьем столбце соотвественно.
+To create a partition, click the “Add partition” button. Each partition is assigned its own number, the numbers are given sequentially from 1 to 32.
+Each partition has the "Add zone" and "Add code” buttons located in the second and third column respectively.
 
-При помощи кнопки «Добавить шлейф» в выпадающем меню можно выбрать шлейфы, которые будут добавлены в этот раздел. В выпадающем меню отображаются только *включенные* шлейфы.
+Use the "Add zone" button in the drop-down menu to select the zones that will be added to this partition. The drop-down menu displays only *enabled* zones.
 
-С помощью значка корзины можно удалять ранее созданные разделы.
+Use the recycle bin icon to delete previously created partitions.
 
-### Управление разделами
+### Partition Management
 
-Для того, чтобы пользователь мог использовать свой личный код при взятии раздела на охрану и снятии с неё, пользователя необходимо сопоставить этому разделу. Для этого надо нажать кнопку «Добавить код» и в выпадающем списке выбрать тех пользователей, которые смогут управлять конкретным разделом.
+In order for a user to use his or her personal code during the partition arming or disarming, the user shall be mapped to this partition. To do this, click the "Add code" button and select those users from the drop-down list who will be able to manage a particular partition.
 
-Если пользователь имеет беспроводной брелок или tm-ключ и хочет с их помощью управлять разделами, то их тоже нужно добавить к выбранному разделу.
+If a user has a wireless keyfob or TM-key and wants to manage partitions with them, they also shall be added to the selected partition.
 
-Важно учитывать следующее:
+It is important to consider the following:
 
-* В случае если TM-ключ или брелок не добавлен ни к одному разделу, то он будет автоматически приписан к первому разделу.
-* Одним брелком нельзя управлять несколькими разделами, только одним. Такая же ситуация с TM-ключом: одному ключу может соответствовать только один раздел.
-* Один пользователь может быть закреплен за несколькими разделами. Тогда для взятия и снятия ему нужно будет указать номер раздела, который он собирается взять или снять с охраны.
-* Один и тот же шлейф может быть добавлен в несколько разделов, но при этом следует помнить, что шлейф находится под охраной, когда все разделы, в которые он входит, взяты под охрану.
+* If the TM-key or keyfob is not added to any partition, it will be automatically assigned to the first partition.
+* One keyfob cannot manage several partitions, only one. The same situation is with a TM-key: only one partition can correspond to one key.
+* One user can be assigned to several partitions. In this case, for arming or disarming, the user will have to specify the number of the partition that he/she is going to arm or disarm.
+* The same zone can be added to several partitions, but remember that the zone is armed when all partitions into which it is included are armed.

@@ -1,52 +1,56 @@
 \pagebreak
 
-## Панель состояния
+## State panel
 
-При выполнении работ по монтажу объекта инженеру обычно нужно выполнить проверку, что размещение и подключение датчиков выполнено правильно и неисправностей в их работе нет.
+When performing work on the installation of a site, the engineer usually needs to check that the placement and connection of the sensors is correct and there are no malfunctions in their operation.
 
-В конфигураторе на вкладке "Панель состояния" отображается актуальная информация о состоянии проводных шлейфов, беспроводных устройств, подключенных к прибору, а так же состояние каналов связи.
+In the configurator, the “State panel” tab displays the current information on the status of wired zones, wireless devices connected to the device, and the status of communication channels.
 
-\imgcapt{img/06-16-config-dashboard-01.png}{Вкладка «Панель состояния», каналы связи}
+\imgcapt{img/06-16-config-dashboard-01.png}{“State panel” tab, communication channels}
 
-### Каналы связи
+### Communication channels
 
-При монтаже и обслуживании прибора важно знать актуальную информацию о состоянии каналов связи. С помощью вкладки "Панель состояния" можно видеть на какой SIM-карте и по какому каналу связи работает прибор в данный момент. 
+When installing and maintaining the device, it is important to know the current information about the status of communication channels. Use the “State panel" tab to see on which SIM-card and on what communication channel the device is currently operating. 
 
-Для каждого канала связи, имеющегося в настройках прибора, отображается его текущее состояние: активен / не активен, есть ли подключение к «Центру охраны» и «Облаку», какие ошибки возникли при инициализации канала, подключении к пульту или передаче событий.
+For each communication channel available in the device settings, its current status is displayed: active/not active, whether there is connection to the Security Center and Cloud, what errors occurred when the channel was initialized, connected to the receiver or transmitted events.
 
-С помощью кнопки «Вкл.» можно выполнить принудительный переход на тот канал связи, работу которого нужно проверить. Для того чтобы инженер мог убедиться, что канал действительно работает, при нажатии на кнопку «Вкл.» формируется тестовое событие с кодом **E602**, которое будет передано по каналу, если он будет успешно инициализирован.
+Click the "On" button to force a transition to the communication channel that you want to check. In order for the engineer to make sure that the channel really works, pressing the "On" button generates a test event with the code **E602**, which will be transmitted over the channel if it is successfully initialized.
 
-Слева от кнопки «Вкл.» отображается количество событий, которые были переданы на пульт с того момента, как канал в последний раз был активен.
+To the left of the "On" button, the number of events, that have been transferred to the receiver since the last time the channel was active, is displayed.
 
-### Проводные шлейфы
+### Wired zones
 
-Для каждого проводного шлейфа, который включен на вкладке [Шлейфы](#config-zones), отображается его физическое состояние. Например, если шлейф в данный момент в нарушен (в тревоге), то значок, с номером соответствующим номеру шлейфа, будет красным. Если по шлейфу есть неисправность, то это также будет указано в панели состояния. Если шлейф выключен в настройках прибора, то информация по нему отображаться не будет.
+For each wired zone that is enabled on the [Zones](#config-zones) tab, its physical state is displayed. For example, if the zone is currently disturbed (in alarm), then the icon with the number corresponding to the zone number will be red. If there is a fault on the zone, this will also be indicated in the state panel. If the zone is disabled in the device settings, then information on it will not be displayed.
 
-\imgcapt{img/06-16-config-dashboard-02.png}{Вкладка «Панель состояния», Шлейфы в состоянии: норма, тревога, короткое замыкание, обрыв}
+\imgcapt{img/06-16-config-dashboard-02.png}{“State panel” tab, Zones in states: norm, alarm, short circuit, break}
 
-### Беспроводные устройства
 
-Для беспроводных устройств в "Панели состояния" отображается следующая информация:
+### Wireless devices
 
-* Оценка качества связи;
-* Текущее состояние устройства.
+For wireless devices, the following information is displayed in the “State panel”:
 
-\imgcapt{img/06-16-config-dashboard-03.png}{Вкладка «Панель состояния». вверху - значки беспроводных устройств, внизу - детальная информация}
+* Evaluation of the communication quality;
+* Current status of the device.
 
-#### Состояние устройства
 
-На вкладке Беспроводные устройства отображается информация обо всех беспроводных устройствах, записанных в конфигурацию прибора.
+\imgcapt{img/06-16-config-dashboard-03.png}{“State panel” tab, at the top - icons of wireless devices, at the bottom - detailed information}
 
-Если устройство в тревоге, то весь значок будет окрашен в красный цвет, а при наличии какой-либо неисправности, это будет указано внизу значка.
-При нажатии на значок беспроводного устройства, можно получить более детальную информацию о его состоянии.
 
-#### Оценка качества сигнала беспроводных устройств
+**Device status**
 
-Беспроводной расширитель, подключенный к прибору, выполняет оценку качества сигнала каждого беспроводного устройства. Индикатором качества связи является кольцо вокруг номера и названия устройства. 
+The “Wireless devices” tab displays information about all wireless devices recorded in the device configuration.
 
-Цвет и заполнение кольца соответствует измеренному радиомодулем отношению _сигнал / шум_ в сигнале, принятом от беспроводного устройства:
+If the device is in alarm, the entire icon will be colored red, and if there is any malfunction, this will be indicated at the bottom of the icon.
+By clicking on the wireless device icon, it is possible to get more detailed information about its status.
 
-* Отличное - зеленый цвет, кольцо полностью заполненно;
-* Хорошее - желтый цвет, кольцо частично заполненно;
-* Плохое - красный цвет, кольцо частично заполненно;
-* Нет связи - красный цвет, кольцо полностью заполненно. 
+**Evaluation of wireless device signal quality**
+
+The wireless expander connected to the device performs evaluation of the signal quality of each wireless device. The communication quality indicator is a circle around the number and name of the device. 
+
+The color and filling of the circle corresponds to the signal-to-noise ratio measured by the radio module in the signal received from the wireless device:
+
+* Excellent - green, the circle is completely filled;
+* Good - yellow, the ring is partially filled;
+* Bad - red, ring partially filled;
+* No connection - red, ring completely filled. 
+

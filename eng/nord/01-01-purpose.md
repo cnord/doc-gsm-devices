@@ -1,20 +1,20 @@
-# Техническое описание
+# Technical Description
 
-## Назначение и возможности
+## Purpose and Capabilities
 
-Прибор «Норд GSM» предназначен  для  эксплуатации в качестве головного устройства охранно-пожарного комплекса – прибора приёмо-контрольного охранно-пожарного (ППКОП), устанавливаемого в помещениях на охраняемых  объектах.
+The "Nord GSM" device is intended for operation as the head unit of the security and fire complex - the receiving and monitoring security and fire alarm device (PKKOP), installed in the premises at the protected sites.
 
-К прибору могут быть подключены различные проводные и беспроводные охранные, пожарные и технологические извещатели и устройства. Для подключения беспроводных устройств используется опциональный радиорасширитель «СН-Радио».
+Various wired and wireless security, fire and process detectors and devices can be connected to the device. An optional CN-WRL wireless expander is used to connect wireless devices.
 
-Прибор может формировать и передавать на пульт охраны сообщения о событиях, возникающих в процессе его эксплуатации и связанных:
+The device can generate and transmit to the control panel messages about events occurring during its operation and related to:
 
-* со взятием прибора под охрану или снятием с охраны;
-* c изменениями состояния его охранных зон;
-* c изменениями состояния его источников электропитания (основного и резервного);
-* c нарушениями в работе задействованных изделием каналов связи и возникновением иных неисправностей;
-* со срабатыванием и восстановлением состояния датчика вскрытия его корпуса.
+* the device arming or disarming;
+* changes in the state of its security zones;
+* changes in the state of its power sources (main and backup);
+* disruptions in the operation of communication channels used by the product and other malfunctions;
+* activation and restoration of the state of the housing tamper switch.
 
-Передачу извещений на пульт охраны прибор осуществляет с помощью встроенного GSM/GPRS-коммуникатора по голосовому каналу, SMS или GPRS. Есть возможность передавать сообщения по сети Ethernet с помощью опционально устанавливаемого в изделие модуля «Адаптер Ethernet», а так же по радиоканалу с помощью устанавливаемого в изделие радиопередатчика CB, VHF или UHF диапазона.
+The device transmits notifications to the receiver using the built-in GSM/GPRS-communicator via voice channel, SMS or GPRS. It is possible to transmit messages over the Ethernet network using the optional Ethernet Adapter module installed in the product, as well as via the radio channel using the midrange, VHF or UHF radio transmitter installed in the product.
  
-Прибор имеет источник бесперебойного электроснабжения и осуществляет автоматическое обслуживание установленного в его корпус источника резервного электропитания на протяжении всего срока его эксплуатации. Изделие способно обеспечивать электроснабжение подключаемых модулей связи (коммуникаторов) и устройств расширения его функциональных возможностей в рамках допустимых потребляемых мощностей.
+The device is equipped with uninterrupted power supply and automatically maintains its backup power source installed in its case during its entire operating life. The product is capable of providing power supply to the connected communication modules (communicators) and devices for expanding its functionality within the limits of permissible consumed capacities.
 

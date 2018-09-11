@@ -1,41 +1,45 @@
-### Защита конфигурации
+### Configuration protection
 
-С помощью этого раздела возможно настроить параметры для защиты от несанкционированного доступа и злоумышленного внесения изменений в параметры приборов.
+This section is used to configure parameters to protect against unauthorized access and malicious modification of device settings.
 
-\imgcapt{img/06-07-config-nord-07-01.png}{Вкладка «Разное», раздел «Защита конфигурации»}
+\imgcapt{img/06-07-config-nord-07-01.png}{“Miscellaneous” tab, “Configuration protection” section}
 
-#### Пароль для доступа к прибору
 
-Обязательная аутентификация по паролю при подключении к прибору по USB - еще один способ обеспечения безопасности.
-По умолчанию пароль для подключения к прибору по USB - **0000**. Чтобы повысить безопасность, следует изменить стандартный пароль доступа на новый. Длина пароля может быть от 4 до 16 цифр. Рекомендуется установить пароль, состоящий из максимально допустимого количества цифр.   
+**Password for access to the device**
 
-\imgcapt{img/06-07-config-nord-07-02.png}{Вкладка «Разное», раздел «Защита конфигурации», диалог для изменения пароля для доступа к прибору.}
+Mandatory password authentication during connection to the device via USB is another way to ensure security.   
+By default, the password for connecting to the device via USB is **0000**. To increase security, it is necessary to change the default access password to a new one. The password length can be from 4 to 16 digits. It is recommended to set a password consisting of the maximum number of digits allowed.   
 
-Если пароль утерян, а удаленное подключение к прибору невозможно, восстановить доступ к прибору можно только при сбросе значений всех его параметров в заводские. При этом будут удалены все настройки прибора, включая шлейфы, пользователей, разделы и прочее, а пароль для подключения к прибору по USB примет значение по умолчанию.
+\imgcapt{img/06-07-config-nord-07-02.png}{“Miscellaneous” tab, "Configuration protection” section, dialog for changing password for accessing the device.}
 
-#### Разрешить сброс значений параметров в заводские
+If the password is lost and the remote connection to the device is not possible, it is possible to restore access to the device only if all its parameters are reset to the factory ones. This will delete all device settings, including zones, users, partitions, etc., and the password for connecting to the device via USB will be default.
+   
 
-Функцию сброса значений можно включить или выключить для конкретного прибора. Разрешая сброс значений параметров, можно задать **паузу перед сбросом**. По умолчанию этот параметр установлен на 30 секунд, однако, можно выбрать значение 5 минут, 30 минут, 12 часов или 24 часа. Сброс конфигурации возможен только при подключении по USB.
+**Enable restore of factory defaults**  
 
-Если функция сброса конфигурации включена, окно для ввода пароля будет содержать кнопку «Сбросить конфигурацию».
+The reset function can be enabled or disabled for a specific device. If you allow resetting the parameters, it is possible to set a **pause before reset**. By default, this parameter is set to 30 seconds, however, it is possible to select 5 minutes, 30 minutes, 12 hours or 24 hours. The configuration reset is possible only in case of USB connection.
 
-\imgcapt{img/06-07-config-nord-07-03.png}{Вкладка «Разное», раздел «Защита конфигурации», диалог для сброса конфигурации прибора.}
+If the reset function is enabled, the password entry window will contain the "Reset configuration" button.
 
-При нажатии на кнопку «Сбросить конфигурацию» прибор формирует событие с кодом **E752** и начинает отсчет заданной паузы.
+\imgcapt{img/06-07-config-nord-07-03.png}{“Miscellaneous” tab, "Configuration protection” section, dialog for resetting the device configuration.}
 
-Рекомендуется устанавливать максимальные значения параметра *Пауза перед сбросом*, так как подобная задержка обеспечивает дополнительную защиту. В случае, если конфигурацию прибора сбрасывает злоумышленник, ЧОП успевает отреагировать на несанкционированный доступ к прибору.
+When the "Reset configuration" button is clicked, the device generates an event with the code **E752** and starts counting the set pause.
 
-#### Включить функцию «Защита от угона»
+It is recommended to set the maximum values of the *pause before reset* parameter, since such a delay provides additional protection. If the device is reset by an intruder, the private security company manages to react to unauthorized access to the device.
+   
 
-Если эта функция включена и изменения сохранены в приборе, то для этого прибора больше нельзя будет изменить значения следующих параметров:
+**Enable Theft protection function**
 
-* адреса для подключения по GPRS;
-* адреса для подключения по Ethernet;
-* формат станции для передачи по радио.   
+If this function is enabled and the changes are stored in the device, then the values of the following parameters can no longer be changed for this device:
 
-Перед сохранением конфигурации в прибор выдается предупреждение:
+* addresses for GPRS connection;
+* addresses for connecting over Ethernet;
+* station format for radio transmission.   
 
-\imgcapt{img/06-07-config-nord-07-04.png}{Вкладка «Разное», раздел «Защита конфигурации», предупреждение о включении «Защиты от угона»}
+Before saving the configuration, the device issues a warning:
 
-Включить функцию «Защита от угона» можно как при подключении по USB, так и при удаленном программировании.
-Отключить функцию «Защита от угона» можно только, обратившись в [техническую поддержку компании](mailto:support@cnord.ru) с официальным запросом в «Си-Норд».
+\imgcapt{img/06-07-config-nord-07-04.png}{“Miscellaneous” tab, “Configuration protection” section, warning about enabling "Theft protection"}
+
+The “Theft protection" function can be enabled both for USB connection and for remote programming.   
+It is possible to disable the “Theft protection" function only by contacting the [company technical support](mailto: support@cnord.ru) with an official request to “C.Nord".
+

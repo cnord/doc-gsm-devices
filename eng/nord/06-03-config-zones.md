@@ -1,175 +1,178 @@
 \pagebreak
 
-## Шлейфы {#config-zones}
+## Zones {#config-zones}
 
-На вкладке «Шлейфы» выполняется настройка параметров проводных шлейфов, подключенных к прибору.
+Use the “Zones" tab to configure the parameters of the wired zones connected to the device.
 
-\imgcapt{img/06-03-config-nord-01.png}{Вкладка «Шлейфы»}
+\imgcapt{img/06-03-config-nord-01.png}{“Zones” tab}
 
-### Расширители
+### Expanders
 
-Без использования дополнительного оборудования к прибору «Норд GSM» можно подключить до 8 проводных шлейфов. В случае, если используется расширитель проводных шлейфов «РПШ-8» или «РПШ-12», количество проводных шлейфов увеличивается до 16.
+Without the use of additional equipment, up to 8 wired zones can be connected to the "Nord GSM" device. If the EW-8 or EW12 expander of wired zones is used, the number of wired zones can be increased to 16.
 
-#### «РПШ-8»
+**EW-8** 
 
-Если к прибору подключен расширитель «РПШ-8», то необходимо установить «галочку» для параметра «РПШ-8 подключен», тогда механизм опроса проводных шлейфов изменяется, а общее количество шлейфов на вкладке увеличивается до 16. 
+If the EW-8 expander is connected to the device, it is necessary to set check the “EW-8 expander connected” parameter, then the polling mechanism of the wired zones is changed, and the total number of loops on the tab is increased to 16. 
 
-Схема подключения расширителя к прибору, а также схемы подключения шлейфов к расширителю, приведены в разделе [«Подключение расширителя РПШ-8»](#install-wze-8).
+The connection diagram of the expander to the device and the wiring diagrams of the zones to the expander are given in section [“Connection of EW-8 Expander"](#install-wze-8).
 
-#### «РПШ-12»
+**EW-12**    
 
-Если к прибору подключен расширитель «РПШ-12», то дополнительные шлейфы появятся в конфигураторе автоматически.
-Особенности работы и схема подключения расширителя к прибору приведены в разделе [«Подключение расширителя РПШ-12»](#install-wze-12).
+If the expander EW-12 is connected to the device, additional zones will appear automatically in the configurator.
+Operation details and connection diagram of the expander to the device are given in section [“Connection of EW-12 Expander”](#install-wze-12).
 
-«РПШ-12» нельзя подключать совместно с «РПШ-8».
+EW-12 cannot be connected together with EW-8.
 
-### Нумерация шлейфов
+### Zones Numbering
 
-Номера шлейфов, которые отображаются в конфигураторе, соответствуют маркировке клемм на печатной плате: «Z1» – шлейф №1, «Z2» – шлейф №2 и так далее.
+The numbers of zones displayed in the configurator correspond to the marking of the terminals on the printed circuit board: "Z1" - zone No. 1, "Z2" - zone No. 2 and so on.
 
-Если к прибору подключен расширитель «РПШ-12», то шлейфы расширителя соответствуют номерам 9-16, то есть клемма «Z1» на расширителе соответствует шлейфу №9 в конфигураторе, клемма «Z2» – шлейфу №10, (...), клемма «ZN» соответствует шлейфу (N+8).
+If the expander EW-12 is connected to the device, the expander zones correspond to the numbers 9-16, that is, the "Z1" terminal on the expander corresponds to the zone No. 9 in the configurator, the "Z2" terminal to the zone No. 10, (...), the "ZN" terminal corresponds to a zone (N + 8).
 
-Если к прибору подключен расширитель «РПШ-8», то клемма «Z1» предназначена для подключения сигнальных кабелей от шлейфов №1 и №9, клемма «Z2» - для кабелей от шлейфов №2 и №10 и так далее. Другими словами, клемма N предназначена для подключения кабелей от шлейфов «N» и «N+8». 
+If the expander EW-8 is connected to the device, the terminal "Z1" is intended for connection of signal cables from zones No. 1 and No. 9, terminal "Z2" - for cables from zones No. 2 and No. 10 and so on. In other words, the N terminal is intended to connect the cables from the "N" and "N + 8" zones. 
 
-### Включение и выключение шлейфа
 
-Кнопка включения / выключения шлейфа находится в левой колонке, сразу за номером шлейфа. Цвет кнопки отражает текущее состояние шлейфа: если кнопка зеленая, то шлейф включен, если кнопка красная, то выключен. Надпись на кнопке соответствует операции, которая будет выполнена при нажатии на кнопку: на зеленой кнопке написано «Выключить», потому что при нажатии на кнопку шлейф будет выключен, а на красной кнопке написано «Включить», так как при нажатии на красную кнопку шлейф будет включен.
+### Turning Zone On and Off
 
-Для того, чтобы прибор начал контролировать состояние шлейфа, а также для того, чтобы можно было выполнить настройку шлейфа, его необходимо включить. Если в приборе есть хотя бы один *включенный* шлейф, имеющий тип «Охранный», «Охранный без сирены» или «Проходной», то такой шлейф должен быть добавлен к разделу.
+The on/off button of the zone is in the left column, just behind the zone number. The button color reflects the current status of the zone: if the button is green, the zone is on, if the button is red, then it is off. The inscription on the button corresponds to the operation that will be performed when the button is pressed: the green button says “Disable", because when the button is pressed, the zone is turned off, and the red button says "Enable", because when the red button is pressed, the zone is turned on.
 
-Если проводной шлейф *выключен*, то его состояние, а также изменения состояния игнорируются прибором. Кроме того, если шлейф выключен, то его нельзя добавить в раздел: в списке доступных для добавления в раздел шлейфов он не отображается.
+In order for the device to start monitoring the zone condition, and also for the user to configure the zone, it shall be turned on. If the device has at least one *enabled* zone, which is of the type “Arm", “Arm without siren" or “Bypass", then such a zone shall be added to the part.
 
-Выключение шлейфа может быть полезным в том случае, если необходимо временно прекратить контроль шлейфа, например, вследствие его неисправности. Выключить шлейф можно как при подключении к прибору локально (по USB), так и при удаленном подключении из web-конфигуратора.
+If the wired zone is *disabled*, its state, as well as the state changes, are ignored by the device. In addition, if the zone is disabled, it cannot be added to the part: it is not displayed in the list of zones available for adding to the part.
 
-### Тип шлейфа {#config-zones-types}
+The zone disabling can be useful in case it is necessary to temporarily stop the zone monitoring, for example, due to its malfunction. It is possible to disable the zone either when connecting to the device locally (via USB) or when connecting remotely from the web-configurator.
 
-Установка типа для шлейфа является ключевым моментом в настройке шлейфа, так как этот параметр полностью определяет реакцию прибора на изменение состояния шлейфа. От того, какой указан тип для шлейфа, зависит следующее:
+### Zone Type {#config-zones-types}
 
-* будет ли прибор реагировать на переход шлейфа в состояние «Тревога» всегда, либо только в то время, когда раздел, в который включен шлейф, взят под охрану;
-* какой код события будет передан на пульт охраны при тревоге в шлейфе;
-* будет ли включена сирена при тревоге в шлейфе;
-* будет ли выключено и снова включено питание на клемме «SMOKE» после тревоги в шлейфе;
-* будет ли контролироваться нормальное состояние шлейфа при взятии под охрану раздела, в который он включен.
+Setting the type for the zone is a key moment for the zone configuration, since this parameter completely determines the device response to the change in the zone state. The following depends on the zone type: 
+
+* whether the device will react to the zone transition to the "Alarm" state always, or only at the time when the part, into which the zone is included, is armed;
+* what event code will be sent to the receiver in case of alarm in the zone;
+* whether the siren is activated in case of alarm in the zone;
+* whether the power is turned off and on again at the "SMOKE" terminal after an alarm in the zone;
+* whether the normal condition of the zone will be monitored while arming the part, into which the zone is included.
 
 \pagebreak
 
-Отличия между типами проводных шлейфов, приведены в таблице ниже:
+Differences between the types of wired zones are shown in the table below:
 
 \definecolor{light-gray}{gray}{0.7}
 \renewcommand{\arraystretch}{1.4}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \begin{tabularx}{\textwidth}{llccY}
 \toprule
-\textbf{Тип шлейфа} & \textbf{Коды событий} & \textbf{Взятие / снятие} & \textbf{Сирена} & \textbf{Примечание} \\
+\textbf{Zone type} & \textbf{Event codes} & \textbf{Arming/disarming} & \textbf{Siren} & \textbf{Note} \\
 \midrule
-Охранный & E130 / R130 & Да & Да \\
+Arm & E130 / R130 & Yes & Yes \\
 \arrayrulecolor{light-gray}\hline
-Охранный без сирены & E146 / R146 &  Да & Нет \\
+Arm without siren & E146 / R146 &  Yes & No \\
 \arrayrulecolor{light-gray}\hline
-Проходной & E130 / R130 & Да & Да & Тревога в шлейфе специальным образом обрабатывается при взятии и снятии (см. ниже). \\
+Bypass & E130 / R130 & Yes & Yes & Zone alarm is specially handled during arming and disarming (see below). \\
 \arrayrulecolor{light-gray}\hline
-Пожарный & E110 / R110 & Нет & Да & Тревога в шлейфе сопровождается сбросом питания пожарных датчиков (см. ниже). \\
+Fire & E110 / R110 & No & Yes & Zone alarm is accompanied by power reset of fire sensors (see below). \\
 \arrayrulecolor{light-gray}\hline
-КТС с фиксацией & E120 / R120 & Нет & Нет \\
+Panic button with fixation & E120 / R120 & No & No \\
 \arrayrulecolor{light-gray}\hline
-КТС без фиксации & E120 / R120 & Нет & Нет & Для шлейфа этого типа используется отдельный интервал повтора тревог (см. ниже).  \\
+Panic button without fixation & E120 / R120 & No & No & Separate alarm repetition interval is used for the zone of this type (see below).  \\
 \arrayrulecolor{light-gray}\hline
-Тампер датчиков & E144 / R144 & Нет & Да \\
+Sensor tamper & E144 / R144 & No & Yes \\
 \arrayrulecolor{light-gray}\hline
-24-часовой охранный & E133 / R133 & Нет & Да \\
+24-hour arm & E133 / R133 & No & Yes \\
 \arrayrulecolor{light-gray}\hline
-24-часовой & E150 / R150 & Нет & Да \\
+24-hour & E150 / R150 & No & Yes \\
 \arrayrulecolor{light-gray}\hline
-Протечка воды & E154 / R154 & Нет & Да \\
+Water leak & E154 / R154 & No & Yes \\
 \arrayrulecolor{light-gray}\hline
-Утечка газа & E151 / R151 & Нет & Да \\
+Gas leak & E151 / R151 & No & Yes \\
 \arrayrulecolor{light-gray}\hline
-Датчик температуры & E158 / R158 & Нет & Да & Высокая температура \\
+Temperature sensor & E158 / R158 & No & Yes & High temperature \\
 \arrayrulecolor{light-gray}\hline
-Датчик температуры & E159 / R159 & Нет & Да & Низкая температура \\
+Temperature sensor & E159 / R159 & No & Yes & Low temperature \\
 \bottomrule
 \end{tabularx}
-\captionof*{table}{Типы проводных шлейфов}
+\captionof*{table}{Wired zone types}
 
-Если для типа шлейфа указано «Да» в колонке «Взятие / снятие», то это означает, что шлейф такого типа может быть взят под охрану или снят с охраны вместе с любым из разделов, в который он включен. Если же для типа шлейфа указано «Нет» в колонке «Взятие / снятие», то это означает, что шлейф такого типа взят под охрану *всегда*.   
-Если для типа шлейфа указано «Да» в колонке «Сирена», то это означает, что при тревоге в шлейфе такого типа будет включена сирена.
+If "Yes" is specified in the “Arming/disarming" column for the zone type, it means that this type of zone can be armed or disarmed together with any of the part, into which it is included. If "No" is specified in the “Arming/disarming" column for the zone type, it means that this type of zone is *always* armed.   
+If "Yes" is specified in the “Siren" column for the zone type, it means that in case of an alarm in a zone, the horn will be activated.
 
-#### Тип шлейфа «Проходной»
+**”Bypass” Zone Type**
 
-Если для шлейфа указан тип «Проходной», то такой шлейф специальным образом обрабатывается при взятии и снятии.
+If the zone type is set to “Bypass", then this zone is specially handled during arming and disarming.
 
-При взятии под охрану состояние проходного шлейфа игнорируется: прибор будет взят под охрану даже в том случае, если шлейф, сконфигурированный, как проходной, находится в тревоге. Кроме того, состояние проходного шлейфа игнорируется вплоть до окончания задержки на выход для всех шлейфов раздела, который берется под охрану. При этом задержку на выход для самого проходного шлейфа задать нельзя, у него всегда есть задержка на выход, равная наибольшей задержке на выход других шлейфов, включенных в раздел.
+When arming the bypass zone state is ignored: the device will be armed even if the zone configured as bypass is in alarm. In addition, the bypass zone state is ignored until the exit delay ends for all the zones of the part being armed. In this case, the exit delay for the zone itself cannot be set, it always has an exit delay equal to the largest exit delay of the other zones included in the part.
 
-Если раздел, в который включен проходной шлейф, взят под охрану и проходной шлейф становится тревожным, то сначала выполняется проверка, не начался ли отсчет задержки на вход для другого шлейфа раздела. Если идет отсчет задержки на вход, то тревога в проходном шлейфе игнорируется. Если задержки на вход нет, то по проходному шлейфу будет сформировано событие «Тревога» (**E130**).
+If the part, into which the bypass zone is included, is armed and the bypass zone becomes alarming, then first the check is made to see if the entry delay count for another part zone has started. If the entry delay count is in process, the alarm in the bypass zone is ignored. If there is no entry delay, the "Alarm" (**E130**) event will be generated for the bypass zone.
 
-#### Тип шлейфа «Пожарный»
+**”Fire” Zone Type**
 
-При формировании тревоги по шлейфам с типом «Пожарный» прибор применяет механизм «Внимание»/«Пожар»: в её основу положена логика повторного срабатывания извещателя после сброса питания. Прибор переходит в обобщенное состояние «Пожар», которое сопровождается включением пожарной сирены, а также повтором пожарных тревог. Это состояние запоминается в памяти прибора, т.е. при сбросе питания или перезагрузке панели обобщенное состояние «Пожар» сохраняется.
+When generating an alarm on zones with the "Fire” type, the device uses the "Warning"/"Fire" mechanism: it is based on the logic of the detector's repeated operation after a power reset. The device switches to the generalized "Fire” state, which is accompanied by fire siren, as well as the repetition of fire alarms. This state is stored in the device memory, i.e. when the power or panel is reset, the generalized "Fire” state is saved.
 
-#### Тип шлейфа «КТС без фиксации»
+**”Panic button without fixation” Zone Type**
 
-Если для шлейфа указан тип «КТС без фиксации», то такой шлейф имеет собственный интервал повтора тревог. 
+If the zone type is “Panic button without fixation", then such a zone has its own interval of alarm repeat. 
 
-Для данного типа шлейфа интервал повтора тревог, заданный для прибора, не используется. Вместо него выставляется значение, равное 5 секундам. Таким образом, повторное нажатие на тревожную кнопку не раннее, чем через 5 секунд, приведет к передаче еще одного события на пульт.
+The alarm repeat interval set for the device is not used for this type of zone. Instead, it is set to a value of 5 seconds. Thus, pressing the panic button again not earlier than after 5 seconds will result in the transition of another event to the panel.
 
-#### Тип шлейфа «Датчик температуры»
+**"Temperature Sensor" Zone Type**
 
-Если к прибору подключен проводной датчик температуры, и режим опроса линии 1-Wire включен (включается на вкладке [Разное](#control-indication)), то он появится на вкладке «Шлейфы» автоматически и будет иметь номер шлейфа в диапазоне от 48 до 51. Для датчиков температуры должны быть указаны верхний и нижний пороги, при достижении которых будут сформированы тревоги. Диапазон допустимых значений для порогов: от -55°С до 127°С. Подробнее [о подключении датчиков температуры](#install-temp).
-Всего к прибору можно подключить 4 датчика температуры.
+If a wired temperature sensor is connected to the device, and the 1-Wire line polling mode is enabled (enabled on the [Miscellaneous] tab(#control-indication)), it will appear automatically in the "Zones" tab and will have a zone number in the range from 48 to 51. For temperature sensors, the upper and lower thresholds shall be specified, at which alarms will be generated. Range of permissible values for thresholds: from -55°С to 127°С. Read more [about connecting temperature sensors](#install-temp).
+A total of 4 temperature sensors can be connected to the device.
 
-### Нормальное состояние шлейфа
 
-С помощью значения, которое задается в колонке «Норма», можно определить *нормальное* состояние для шлейфа сигнализации:
+### Zone Normal State
 
-* если нормальное состояние для шлейфа определено, как *замкнутый*, то в таком шлейфе должны использоваться извещатели, которые также имеют *замкнутые* контакты своего выходного реле в нормальном состоянии. При тревоге такие извещатели должны *размыкать* контакты выходного реле;
-* если нормальное состояние для шлейфа определено, как *разомкнутый*, то в таком шлейфе должны использоваться извещатели, которые имеют *разомкнутые* контакты своего выходного реле в нормальном состоянии. При тревоге такие извещатели должны *замыкать* контакты выходного реле.
+Using the value that is set in the "Norm" column, it is possible to define *normal* state for the alarm zone:
 
-Необходимо отметить, что подавляющее большинство современных инфракрасных и магнитоконтактных извещателей имеют *нормально замкнутые* контакты своего выходного реле. Таким образом, для шлейфов, в которые включены эти датчики, нормальное состояние должно быть определено, как *замкнутый*.
+* if the normal state for the zone is defined as *closed*, then there shall be detectors in this zone. which also have *closed* contacts of their output relay in the normal state. In case of alarm, these detectors shall *open* the contacts of the output relay;
+* if the normal state for the zone is defined as *open*, then there shall be detectors in this zone, which have *open* contacts of their output relay in the normal state. In case of alarm, these detectors shall *close* the contacts of the output relay;
 
-### Оконечные резисторы
+It shall be noted that the vast majority of modern infrared and magnetic contact detectors have *normally closed* contacts of their output relay. Thus, for zones with these detectors, the normal state shall be defined as *closed*.
 
-С помощью значения, которое задается в колонке «Резисторы» можно указать количество оконечных резисторов, установленных в шлейфе.
+### Terminating Resistors
 
-Если при подключении шлейфа не используются оконечные резисторы, то для такого шлейфа прибор может определить только одно из двух состояний: «Тревога» или «Норма». Такой шлейф весьма уязвим: если нормальное состояние для шлейфа определено, как *разомкнутый*, то достаточно просто перекусить кабель шлейфа в любом доступном месте, и шлейф навсегда останется в нормальном состоянии, тревоги по такому шлейфу не будет никогда. Ничуть не лучше выглядит шлейф, нормальное состояние для которого определено, как *замкнутый*: если удастся замкнуть сигнальные кабели шлейфа накоротко, то тревоги по нему также никогда не будет.
+Using the value, which is set in the "Resistors" column, it is possible to specify the number of terminating resistors installed in the zone.
 
-Один оконечный резистор, установленный в шлейфе, позволяет отличить неисправность в шлейфе от тревоги. Какая именно неисправность может быть определена – обрыв или короткое замыкание – зависит от нормального состояния шлейфа: для нормального состояния шлейфа *разомкнутый* один оконечный резистор позволяет определить обрыв шлейфа, а для нормального состояния *замкнутый* – короткое замыкание.
+If the terminating resistors are not used when connecting the zone, then for this zone the device can determine only one of two states: "Alarm" or "Norm". This zone is very vulnerable: if the normal state for the zone is defined as *open*, then it is very simple to cut the zone cable in any accessible location, and the zone will remain in the normal state forever, there will never be any alarms on such a zone. The zone, which normal state is defined as *closed*, does not look any better: if one can short-circuit the signal cables of the zone, then there will never be any alarms on it.
 
-Два оконечных резистора позволяют определить и обрыв, и короткое замыкание для шлейфа с любым нормальным состоянием.
+One terminating resistor, installed in the zone, allows to distinguish the failure in the zone from the alarm. What kind of fault can be detected - break or short circuit - depends on the normal state of the zone: for the zone *open* normal state, one terminating resistor allows to determine the zone break, and for the *closed* normal state – short circuit.
 
-> Для *минимального* противодействия выводу шлейфов сигнализации из строя, рекомендуется включать в шлейфы один оконечный резистор.
+Two terminating resistors allow to determine both break and short circuit for a zone with any normal state.
 
-### Задержка на вход
+> For *minimal* counteraction against the alarm zone disabling, it is recommended to include one terminating resistor in the zones.
 
-Параметр «Задержка на вход» позволят отложить формирование сигнала «Тревога» на время, которое указано в качестве значения для этого параметра. Как правило, этот параметр задается для шлейфов, которые пользователю *необходимо* нарушить для того, чтобы добраться до устройства управления сигнализацией. В качестве распространенных примеров таких шлейфов можно привести магнитоконтактные датчики, защищающие входные двери в охраняемое помещение.
+### Entry Delay
 
-Как работает задержка на вход? Предположим, что у нас есть шлейф, в него включен магнитоконтактный извещатель, который установлен на входной двери в офис. Для этого шлейфа задана задержка на вход, равная 15 секундам. Кодонаборник, с помощью которого можно снять охранную сигнализацию с охраны, находится внутри офиса, то есть нужно открыть входную дверь для того, чтобы до него добраться. Пользователь открывает входную дверь, магнитоконтактный извещатель срабатывает, но прибор не формирует тревогу, а начинает отсчет задержки на вход. Если в течение 15 секунд пользователь введет код, с помощью которого сигнализация будет снята с охраны, то тревога так и не будет сформирована, вместо нее на пульт охраны будет отправлено событие о снятии прибора с охраны. Если же в течение 15 секунд прибор не будет снят с охраны, то будет сформирована тревога.
+The "Entry delay" parameter will allow delaying the generation of the "Alarm" signal for the time, which is indicated as the value for this parameter. Typically, this parameter is set for zones that the user *shall* violate to get to the alarm management device. As common examples of such zones, one can mention magnetic contact detectors that protect entrance doors to a guarded room.
 
-Значение параметра «Задержка на вход» можно указать только для шлейфов, тип которых задан, как «Охранный» или «Охранный без сирены». Связано это с тем, что шлейфы всех остальных типов (за исключением «Проходного») не могут быть взяты или сняты с охраны: они находятся под охраной всегда. Что же касается типа шлейфа «Проходной», то шлейфы этого типа обрабатываются при взятии или снятии специальным образом, так, как описано выше, в разделе «Типы шлейфов».
+How does the entry delay work? Suppose that we have a zone, it includes a magnetic contact detector, which is installed on the entrance door to the office. For this zone, an entry delay of 15 seconds is specified. The codebook, with which it is possible to disarm it, is inside the office, that is, it is necessary to open the front door to get to it. The user opens the entrance door, the magnetic contact detector is triggered, but the device does not generate an alarm, but starts counting the entry delay. If within 15 seconds the user enters the code with which the alarm will be disarmed, the alarm will not be generated, instead of it an event will be sent to the security panel to disarm the device. If the device is not disarmed within 15 seconds, an alarm will be generated.
 
-#### Событие «Вероятная тревога»
+The value of the "Entry delay" parameter can be specified only for zones of the type specified as “Arm" or “Arm without siren". This is due to the fact that zones of all other types (with the exception of “Bypass") cannot be armed or disarmed: they are always armed. As for the “Bypass” zone, the zones of this type are handled during arming or disarming in a special way, as described above, in the section "Zone Types".
 
-При нарушении шлейфа с задержкой на вход прибор безусловно формирует событие «Вероятная тревога» (**E138**). В качестве аргументов события передаются номер нарушенного шлейфа и наименьший номер раздела, в который этот шлейф включен. Если будут нарушены несколько шлейфов с задержкой на вход, то для каждого шлейфа будет сформировано событие «Вероятная тревога».
+**"Probable Alarm” Event**
 
-На некоторых объектах контрольную панель нельзя разместить так, чтобы она находилась в отдельно охраняемой части помещения. Как правило, к таким объектам можно отнести небольшие помещения: торговые павильоны, гаражи, маленькие офисы и квартиры. Это означает, что во время отсчета задержки на вход контрольная панель может быть выведена из строя. Событие «Вероятная тревога» позволяет пульту охраны контролировать работоспособность прибора после того, как начнется отсчет задержки на вход: если после начала задержки на вход не будет получено события о снятии прибора с охраны, то это повод выяснить, что происходит на объекте.
+If the zone with entry delay is violated, the device certainly generates the "Probable alarm" event (** E138 **). The number of the violated zone and the smallest number of the part, into which this zone is included, are transmitted as the event arguments. If several zones with entry delay are violated, an event "Probable alarm" will be generated for each zone.
 
-Для автоматического контроля получения снятия после возможной тревоги в «Центре охраны», необходимо воспользоваться обработчиком событий «Вход через тревогу» или обработчиком событий «Контроль цепочки событий».
+On some sites, the control panel cannot be placed so that it is located in a separately guarded part of the room. Typically, these sites can include small rooms: shopping pavilions, garages, small offices and apartments. This means that during the entry delay countdown, the control panel can be disabled. The "Probable alarm" event allows the security panel to monitor the device operability after the entry delay countdown begins: if there is no event after the start of the entry delay, when the device is disarmed, it is an occasion to find out what is happening at the site.
 
-### Задержка на выход
+To automatically monitor the reception of a disarming after a possible alarm in the Security Center, it is necessary to use the “Alarm entering" event handler or the "Event chain monitor" event handler. 
 
-Назначение параметра «Задержка на выход» очень схоже с назначением параметра «Задержка на вход», но только он предназначен для того, чтобы дать возможность пользователю выйти из охраняемого помещения после того, как он выполнил взятие прибора под охрану. Задержка на выход, как правило, устанавливается для шлейфов, которые защищают входные двери в охраняемые помещения.
+### Exit Delay
 
-После того, как пользователь выполняет взятие раздела (с помощью клавиатуры, беспроводного брелока или ТМ-считывателя), прибор проверяет состояние всех шлейфов, включенных в раздел:
+The purpose of the "Exit delay" parameter is very similar to that of the "Entry delay" parameter, but it is intended to allow the user to exit the guarded premises after he/she performed the arming. As a rule, the exit delay is set for zones that protect the entrance doors to the protected premises.
 
-* если обнаруживается неисправный шлейф, то прибор отказывается от взятия;
-* если обнаруживается шлейф в тревоге, то прибор тоже отказывается от взятия;
-* если неисправных или тревожных шлейфов нет, то прибор берется под охрану и начинается отсчет задержки на выход, если она есть.
+After the user arms the part (using the keyboard, wireless controller or TM reader), the device checks the status of all zones included in the part:
 
-Событие о взятии под охрану (**E401**) формируется непосредственно при взятии, перед началом задержки на выход, если она есть. В качестве аргументов события передаются номер взятого под охрану раздела, а также номер пользователя, который выполнил взятие.
+* if a faulty cable is detected, the device refuses to arm;
+* if the alarm zone is detected, the device also refuses to arm;
+* if there are no faulty or alarm zones, the device is armed and the exit delay counts, if any.
 
-После того, как начался отсчет задержки на выход, прибор игнорирует состояние всех шлейфов, для которых задана задержка на выход, а также шлейфов с типом «Проходной». Если пользователь успеет покинуть помещение и закрыть входную дверь до того, как закончится отсчет задержки на выход, то тревоги после взятия не будет. Если же какой-то из шлейфов будет нарушен после того, как закончится задержка на выход, то будет сформирована тревога.
+The arming event (**E401**) is generated immediately during arming, before the exit delay starts, if any. The number of the protected part and the number of the user, who performed the arming, are transmitted as arguments of the event.
 
-Для беспроводных устройств за актуальное принимается то состояние, которое было получено при последнем опросе устройства. Таким образом, пользователю беспроводной системы может потребоваться подождать, пока беспроводной извещатель не пришлет в прибор норму. В случае, если ждать не хочется, можно задать для беспроводных извещателей минимально возможную задержку на выход.
+After the exit delay countdown starts, the device ignores the status of all zones for which an exit delay is specified, as well as zones with a “Bypass" type. If the user has time to leave the premises and close the entrance door before the exit delay countdown has expired, then there will be no alarm after arming. If any of the zones are violated after the exit delay ends, an alarm will be generated.
 
-Может случится так, что во время взятия нельзя добиться нормального состояния одного или нескольких шлейфов, например, в том случае, если извещатели в шлейфах контролируют область клавиатуры. В этом случае шлейфы необходимо сконфигурировать, как *проходные*. Подробнее проходные шлейфы описаны выше, в разделе «Типы шлейфов».
+For wireless devices, the state that was received during the last poll of the device is taken as current. Thus, the user of the wireless system may need to wait until the wireless detector sends a normal state to the device. In case you do not want to wait, it is possible to set the minimum possible delay for the wireless detectors.
 
-Тревога в шлейфах с задержкой на выход на момент взятия игнорируется. Это сделано для того, чтобы пользователю не нужно было проверять и закрывать входную дверь. Но, если хочется быть уверенным, что все шлейфы сигнализации находятся в норме на момент взятия, можно включить контроль тревоги в шлейфах с задержкой на выход на момент взятия. Для этого нужно поставить «галочку» для параметра «Запретить взятие при тревоге в шлейфе с задержкой на выход», который находится на вкладке «Разное», в разделе «Взятие и снятие».
+It may happen that during the arming it is impossible to achieve the normal state of one or several zones, for example, if the detectors in the zones monitor the keyboard area. In this case, the zones shall be configured as *bypass*. The bypass zones are described in more detail above, in the section "Zone Types".
+
+An alarm in the zones with exit delay at the time of arming is ignored. This is done so that the user does not have to check and close the front door. But, if you want to be sure that all alarm zones are normal at the time of arming, it is possible to turn on alarm monitoring in zones with exit delay at the time of arming. To do this, check the parameter “Disable arming when triggering the alarm in zones with exit delay” in the "Miscellaneous" tab, in the “Arm and disarm" section. 
+

@@ -1,23 +1,25 @@
-### Сирена {#config-misc-siren}
+### Siren {#config-misc-siren}
 
-\imgcapt{img/06-07-config-nord-02.png}{Вкладка «Разное», раздел «Сирена»}
+\imgcapt{img/06-07-config-nord-02.png}{“Miscellaneous” tab, “Siren” section}
 
-#### Сирена подключена
+** Siren connected**  
 
-Если сирена подключена к одноименному выходу «Сирена», то необходимо установить соответствующую галочку. При этом включится контроль линии связи с сиреной, позволяющий детектировать обрыв и короткое замыкание линии, причем как при выключенной, так и при включенной сирене. При обнаружении любой из указанных неисправностей формируется  событие с кодом **E321** - *Сирена неисправна*, который передается на пульт охраны.
+If the siren is connected to the same name output "Siren", then it is necessary to check the appropriate box. This will turn on the monitoring of the communication line with the siren, which allows to detect break and short circuit of the line, both with the siren turned off and with the siren turned on. If any of these faults are detected, an event with the code **E321** - *Faulty siren* is generated, which is sent to the receiver.
 
-Помимо одноименного выхода сирену можно подключить к любому из семи открытых коллекторов, при этом не нужно устанавливать галочку «Сирена подключена». Важно отметить, что прибор не контролирует состояние линии, если сирена подключена на открытый коллектор.
+In addition to the same name output, the siren can be connected to any of the seven open collectors, without the need to check the "Siren connected" box. It is important to note that the device does not monitor the line status if the siren is connected to an open collector.
 
-Подключение сирены на открытый коллектор осуществляется следующим образом:
+The siren is connected to the open collector as follows:
 
-* «Плюсовой» кабель оповещателя может быть подключен к любому плюсовому выходу контрольной панели, например, к выходу для питания клавиатуры или шлейфов. 
-* «Минусовой» кабель оповещателя должен быть подключен к одному из семи открытых коллекторов: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
-* После подключения оповещателя, выход необходимо настроить с помощью правил автоматики. Подробнее о правилах в [разделе Автоматика](#config-automation)
+* The "plus" cable of the siren can be connected to any plus output of the control panel, for example, to the output for powering keypad or zones. 
+* The "minus" siren cable shall be connected to one of seven open collectors: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
+* After connecting the siren, the output shall be configured using the automation rules. See more about the rules in the partition [Automatic controls section](# config-automation)
 
-#### Интервал звучания сирены
 
-Параметр «Интервал звучания сирены» отвечает за длительность звучания сирены, независимо от способа её подключения. По истечению времени, указанного в значении параметра, сирена перестанет звучать.
+**Siren interval**
 
-#### Интервал повторного включения сирены
+The "Siren interval" parameter is responsible for duration of the siren sound, regardless of how it is connected. After the parameter interval expires, the siren will stop.
 
-В значении параметра «Интервал повторного включения сирены» указывается время, через которое сирена начнет звучать вновь, если сброс тревоги не произошел.
+**Interval for repeated enabling of the sound**
+
+Use the "Interval for repeated enabling of the sound" parameter to specify the interval within which the siren will start to sound again, if the alarm reset has not occurred.
+

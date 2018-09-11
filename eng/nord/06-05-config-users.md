@@ -1,30 +1,30 @@
 \pagebreak
 
-## Пользователи
+## Users
 
-На вкладке «Пользователи» выполняется создание пользователей объекта. В приборе возможно создать до 32 пользователей, а каждый пользователь, помимо личного кода, может иметь еще беспроводные брелоки и TM-ключи.
+On the "Users" tab, the users of the site are created. It is possible to create up to 32 users in the device, and each user, in addition to personal code, can also have wireless keyfobs and TM-keys.
 
-\imgcapt{img/06-05-config-nord-01.png}{Вкладка «Пользователи»}
-
-
-Для создания нового пользователя нужно нажать кнопку _Добавить пользователя_ и в открывшемся окне ввести код, который созданный пользователь будет использовать при взятии объекта под охрану и снятии с неё.
-
-\imgcapt{img/06-05-config-nord-02.png}{Вкладка «Пользователи», диалог ввода кода}
+\imgcapt{img/06-05-config-nord-01.png}{“Users” tab}
 
 
-Для добавления Touch Memory ключа нужно напротив выбранного пользователя нажать кнопку **Считать** в колонке «Ключи», после этого приложить ТМ-ключ к считывателю. Если считыватель подключен верно, то отобразится код ключа. 
-Добавить ТМ-ключ пользователю можно вручную. Для этого нужно нажать кнопку **Ввести номер** и в открывшемся окне ввести информацию с ключа.
+To create a new user, it is necessary to click the _Add user_ button and enter the code in the new window, which the user will use when arming or disarming the site.
 
-Далее следует перейти на вкладку [Разделы](#06-06-config-parts) и добавить ключ в раздел, которым он будет управлять. Одному пользователю можно добавить несколько ТМ-ключей, но с помощью одного ТМ-ключа можно управлять состоянием только одного раздела.
-
-\imgcapt{img/06-05-config-nord-03.png}{Вкладка «Пользователи», добавление TM-ключа}
-\imgcapt{img/06-05-config-nord-05.png}{Вкладка «Пользователи», добавление номера TM-ключа вручную}
+\imgcapt{img/06-05-config-nord-02.png}{“Users” tab, code entry dialog}
 
 
-Если к прибору привязан беспроводной брелок, его можно добавить конкретному пользователю с помощью кнопки _Добавить брелок_. Подключать беспроводной брелок к прибору нужно на вкладке «[Беспроводные устройства](#06-04-config-wireless)». После того, как брелок добавлен, можно перейти на вкладку «[Разделы](#06-06-config-parts)» и сопоставить брелок разделу, которым он будет управлять. 
+To add a Touch Memory key, click the **Scan** button in the "Keys" column, then attach the TM-key to the reader. If the reader is connected correctly, the key code will be displayed. 
+It is possible to manually add a TM-key. To do this, press the button **Enter the number** and enter information from the key in the new window.
 
-\imgcapt{img/06-05-config-nord-04.png}{Вкладка «Пользователи», добавление брелока}
+Next, go to the [Partitions](# 06-06-config-parts) tab and add the key to the partition it will control. One user can have several TM-keys, but a single TM-key can control the state of only one partition.
+
+\imgcapt{img/06-05-config-nord-03.png}{“Users” tab, adding TM-key}
+\imgcapt{img/06-05-config-nord-05.png}{“Users” tab, manually adding TM-key number}
 
 
-С помощью значка корзины можно удалять ранее созданных пользователей.
+If the wireless keyfob is attached to the device, it is possible to add it to a specific user using the _Add keyfob_ button. Connect the wireless keyfob to the device on the “[Wireless devices](# 06-04-config-wireless)” tab. After the keyfob is added, it is possible to go to the “[Partitions](# 06-06-config-parts)" and match the keyfob with the partition it will control. 
+
+\imgcapt{img/06-05-config-nord-04.png}{“Users” tab, adding a keyfob}
+
+
+Use the recycle bin icon to delete previously created users.
 

@@ -1,33 +1,38 @@
-### Взятие и снятие
+### Arm and disarm
 
-В этом разделе можно указать различные параметры, которые повлияют на процесс взятия на охрану или снятия с неё.
+In this section, it is possible to specify various parameters that will affect the process of arming or disarming.
 
-\imgcapt{img/06-07-config-nord-04.png}{Вкладка «Разное», раздел «Взятие и снятие»}
+\imgcapt{img/06-07-config-nord-04.png}{“Miscellaneous” tab, “Arm and disarm” section}
 
-#### Запретить взятие при тревоге в шлейфах с задержкой на выход
+**Disable arming when triggering the alarm in zones with exit delay**
 
-По умолчанию тревога в шлейфах с задержкой на выход игнорируется на момент взятия на охрану. Это сделано для того, чтобы пользователь мог поставить объект на охрану и спокойно закрыть за собой входную дверь. Но, если хочется быть уверенным, что все шлейфы сигнализации находятся в норме на момент взятия, можно включить контроль тревоги в шлейфах с задержкой на выход. Для этого нужно поставить «галочку» для параметра *Запретить взятие при тревоге в шлейфе с задержкой на выход*.
+By default, the alarm in zones with exit delay is ignored at the time of arming. This is done so that the user can arm the site and close the entrance door behind him/her without hurry. But, if you want to be sure that all alarm zones are normal at the time of arming, it is possible to enable alarm monitoring in zones with exit delay. To do this, check the *Disable arming when triggering the alarm in zones with exit delay* box.
+   
 
-#### Запретить взятие при отсутствии основного электропитания (220 В)
+**Disable arming when no main power supply (AC) is available**
 
-При установке этого параметра прибор будет невозможно поставить на охрану, если он работает на резервном питании, а основное отсутствует.
+If this parameter is set, the device cannot be armed if it is running on a backup power supply and the main one is not available.
+   
 
-#### Запретить взятие при отсутствии IP-связи с «Центром охраны»
+**Disable arming when no IP communication with the Security Center is available**
 
-При установке этого параметра прибор будет невозможно поставить на охрану, если связь по GPRS или Ethernet отсутствует.
+If this parameter is set, the device cannot be armed if there is no GPRS or Ethernet communication.
+   
 
-#### Разрешить удаленное взятие и снятие из «Центра охраны»
+**Enable remote arm/disarm from the Security Center**
 
-Включение этого параметра позволит удаленно управлять состоянием охраны из мобильного приложения и пульта охраны.
+This parameter allows to remotely control the protection state from the mobile application and the repeater.
+   
 
-#### Включить коды снятия под принуждением
+**Enable duress codes**
 
-Кодом снятия под принуждением считается код, отличающийся от кода пользователя на единицу в большую или меньшую сторону. Например, если код пользователя – «1234», то кодами снятия под принуждением будут «1233» и «1235». При этом:
+The code of forced disarming is a code that differs from the user code by one unit plus or minus. For example, if the user code is "1234", then the forced disarming codes will be "1233" and "1235". At the same time:
 
-* если код пользователя заканчивается на цифру «0», то код снятия под принуждением будет только один – на единицу больше. Например, если код пользователя равен «5840», то кодом снятия под принуждением будет только код «5841».
-* если код пользователя заканчивается на цифру «9», то код снятия под принуждением тоже будет только один – на единицу меньше. Например, если код пользователя равен «5849», то кодом снятия под принуждением будет только код «5848».
+* if the user code ends with "0", then the forced disarming code will be only one – one more. For example, if the user code is "5840", then the forced disarming code will be only "5841".
+* if the user code ends with "9", then the forced disarming code will be only one – one less. For example, if the user code is "5849", then the forced disarming code will be only "5848".
+    
 
-#### Не индицировать задержку на вход на «СН-К»
+**No indication for entry delay for CN-K**
 
-Поскольку клавиатура «СН-К» беспроводная и работает на батарейках, то выключение индикации задержки на вход позволит увеличить время работы батарей в клавиатуре «СН-К».
+Since the CN-K keypad is wireless and runs on batteries, disabling the indication of the entry delay will increase the battery life in the CN-Keypad keypad.
 

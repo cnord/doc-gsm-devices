@@ -1,25 +1,27 @@
-### Резервное питание
+### Backup Power Supply
 
-#### Тип резервного источника питания
+**Type of backup power supply**  
 
-В пункте «Тип резервного источника питания» можно указать, какой резервный источник подключен к прибору: аккумулятор или ИБП.
+Use the "Type of backup power supply" parameter to specify which backup source is connected to the device: Battery or UPS.
+   
 
-#### Если подключена АКБ
+**If battery is connected**
 
-\imgcapt{img/06-07-config-nord-03-01.png}{Вкладка «Разное», раздел «Резервное питание»}
+\imgcapt{img/06-07-config-nord-03-01.png}{“Miscellaneous” tab, “Backup power supply” section}
 
-Если в качестве резервного источника выбран аккумулятор, то есть возможность включить два параметра:
+If the battery is selected as a backup power source, then it is possible to include two parameters:
 
-* *Защищать резервный источник от глубокого разряда.* 
+* *Protect backup source against deep discharge.* 
 
-Если этот параметр включен, то при достижении напряжения 8.5 В на клеммах АКБ прибор отключится, чтобы предотвратить возможность разряда аккумулятора до критически низкого уровня, при котором его заряд не может быть восстановлен. 
+If this parameter is selected, then when voltage reaches 8.5 V on the battery terminals, the device will turn off to prevent the battery from discharging to a critically low level at which its charge cannot be restored. 
 
-* *Проверять качество аккумулятора.* 
+* *Check battery quality.* 
 
-Для проверки качества аккумулятора прибор периодически подключает нагрузку и контролирует падение напряжения. В случае, если значение падения напряжения под нагрузкой превысило 2 В, формируется событие **E309** - *АКБ неисправна*.
+To check the battery quality, the device periodically connects the load and monitors the voltage drop. If the voltage drop under the load exceeds 2 V, the event **E309** - *Faulty battery* is generated.
+   
 
-#### Если подключен ИБП
+**If UPS is connected**
 
-\imgcapt{img/06-07-config-nord-03-02.png}{Вкладка «Разное», раздел «Резрвное питание», выбрано значение «ИБП» для параметра «Тип резервного источника питания».}
+\imgcapt{img/06-07-config-nord-03-02.png}{“Miscellaneous” tab, “Backup power supply” section, "UPS" is selected for “Type of backup power supply"}
 
-Если в качестве резервного источника выбран ИБП, то включение дополнительных параметров (защита от глубокого разряда и контроль качества АКБ) недоступно.
+If the UPS is selected as a backup power source, enabling of the additional parameters (protection against deep discharge and battery quality control) is not available.

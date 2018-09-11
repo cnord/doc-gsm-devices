@@ -1,65 +1,65 @@
-## Панель управления и панель вкладок
+## Control Panel and Tab Panel
 
-### Панель управления
+## Control Panel
 
-В верхней части главного окна конфигуратора расположена панель управления:
+The control panel is located at the top of the configurator main window:
 
-\imgcapt{img/06-02-config-nord-01.png}{Панель управления}
+\imgcapt{img/06-02-config-nord-01.png}{Control panel}
 
-В левой части панели управления отображается следующая информация:
+The following information is displayed on the left side of the control panel:
 
-* тип прибора;
-* версия программного обеспечения прибора;
-* версия программного обеспечения беспроводного расширителя, если он подключен; 
-* номер объекта, указанный в настройках прибора;
-* серийный номер прибора.
-Серийный номер прибора присваивается ему при производстве и является уникальным для всей популяции приборов, выпускаемых компанией «Си-Норд».
+* device type;
+* device software version;
+* software version of the wireless expander, if it is connected; 
+* site number, specified in the device settings;
+* device serial number.
+The serial number of the device is assigned to it during production and is unique for the entire population of devices manufactured by the C.Nord company.
 
-Кнопка «Считать» предназначена для того, чтобы загрузить в интерфейс конфигуратора те настройки, которые в данный момент сохранены в приборе. Необходимо помнить, что если произвести какие-то изменения в настройках прибора в конфигураторе, а потом нажать на кнопку «Считать», то все изменения будут потеряны: настройки, которые были сделаны в конфигураторе, будут заменены на настройки, загруженные с прибора.
+The "Read" button is designed to load the settings, that are currently stored in the device, into the configurator interface. It shall be remembered that if you make any changes in the device settings in the configurator, and then click on the "Read" button, all changes will be lost: the settings that were made in the configurator will be replaced with the settings loaded from the device.
 
-Кнопка «Записать» нужна для того, чтобы сохранить изменения настроек, выполненные в конфигураторе, в прибор.
+The “Record" button is needed to save the configuration changes made in the configurator to the device.
 
-Кнопка «Сохранить...» предназначена для того, чтобы сохранить в файл текущие настройки, которые отображаются в конфигураторе. С помощью кнопки «Открыть...», в свою очередь, можно загрузить настройки из файла. 
+The "Save..." button is designed to save the current settings to the file, which are displayed in the configurator. Use the "Open..." button to load the settings from the file. 
 
-> Для того, чтобы избежать ошибок, связанных с настройкой каналов связи, рекомендуется сохранять в файл на диске все настройки, связанные с подключением к «Центру охраны» и «Облаку», а конфигурирование прибора, устанавливаемого на объекте, начинать c того, что загружать в конфигуратор файл с этими настройками.
+> To avoid errors related to setting up communication channels, it is recommended to save all settings related to connection to the Security Center and Cloud to the file on the disk, and begin to configure the device installed on the site with loading the file with these settings to the configurator.
 
 \pagebreak
 
-### Панель вкладок
+### Tab Panel
 
 \begin{wrapfigure}{L}{0.25\textwidth}
 \begin{center}
 \includegraphics{img/06-02-config-nord-02.png}
 \end{center}
 \vspace{-5pt}
-\caption{Панель вкладок}
+\caption{Tab panel}
 \end{wrapfigure}
 
-В левой части главного окна конфигуратора расположена панель вкладок, с помощью которой осуществляется переключение между группами настроек прибора.
+In the left part of the main window of the configurator there is a tab panel, with which it is possible to switch between groups of device settings.
 
-На вкладке «Шлейфы» выполняется настройка параметров проводных шлейфов, подключенных к прибору.
+On the "Zones" tab, the parameters of the wired zones connected to the device are configured.
 
-Вкладка «Беспроводные устройства» предназначена для подключения к прибору беспроводных устройств – извещателей, брелоков, клавиатур и ретрансляторов. На этой же вкладке выполняется настройка их параметров. Эта вкладка отображается в конфигураторе только в том случае, если к прибору подключен беспроводной расширитель.
+The "Wireless devices" tab is intended for connection of wireless devices to the device – detectors, keyfobs, keypads and repeaters. On the same tab, it is possible to configure their settings. This tab is displayed in the configurator only if a wireless extender is connected to the device.
 
-Коды пользователей, которые будут брать и снимать прибор с охраны можно задать на вкладке «Пользователи». Здесь же можно закрепить за пользователем один или несколько ТМ-ключей, а также указать беспроводной брелок, выданный пользователю. 
+User codes that will arm and disarm the device can be set on the "Users" tab. Here it is possible to assign one or more TM-keys to the user, and also specify the wireless keyfob given to a user. 
 
-На вкладке «Разделы» выполняется конфигурирование разделов объекта. На этой вкладке можно указать, какие проводные и беспроводные шлейфы в какие разделы включены, а кроме того, указать какие пользователи могут брать или снимать разделы с охраны.
+The "Partitions" tab configures the partitions of the site. On this tab it is possible to specify in which partitions which wired and wireless zones are included, and in addition, specify which users can arm or disarm the partitions.
 
-На вкладке «Разное» можно настроить интервалы, которые используются при повторе событий, передаваемых в «Центр охраны», указать тип резервного источника питания, подключенного к прибору, включить или выключить звуковой и световой оповещатель и т.д.
+On the "Miscellaneous" tab, it is possible to set the intervals that are used when repeating the events sent to the Security Center, specify the type of backup power source connected to the device, turn on or off the sound and light indicator, etc.
 
-Настройки, которые должен использовать прибор при передаче событий по каналам связи GSM и Ethernet, можно указать на вкладке «Центр охраны».
+Settings that the device shall use when transmitting events via GSM and Ethernet communication channels can be specified on the “Security Center” tab.
 
-Параметры, которые определяют передачу событий по радиоканалу, указываются на вкладке «Радио».
+Parameters that determine the transmission of events over a radio channel are specified on the “Radio” tab.
 
-Вкладка «Облако» предназначена для указания к какому «Облаку» прибор должен подключаться для того, чтобы у инженера была возможность удаленного доступа к нему. Значения параметров на этой вкладке необходимо изменять только в том случае, если используется «Частное облако», либо параметры для подключения к «Облаку» необходимо указать вручную.
+The "Cloud" tab is intended to indicate to which Cloud the device shall be connected in order for the engineer to have a remote access to it. The parameter values on this tab shall only be changed if you are using Private Cloud, or it is necessary to specify the parameters for connecting to the Cloud manually.
 
-На вкладке «Ethernet» можно изменить настройки подключения прибора к локальной сети. Эта вкладка отображается в конфигураторе только если к прибору подключен опциональный модуль «Адаптер Ethernet».
+On the "Ethernet" tab, it is possible to change the device connection settings to the local network. This tab is displayed in the configurator only if an optional Ethernet Adapter module is connected to the device.
 
-Параметры операторов сотовой связи, такие как адрес точки доступа (APN), имя пользователя и пароль для доступа к услугам пакетной передачи данных, можно изменить на вкладке «Операторы GSM».
+The parameters of cellular operators, such as the access point name (APN), user name and password for access to packet data services, can be changed on the "GSM Operators" tab.
 
-Вкладка «Автоматика» предназначена для программирования поведения прибора в зависимости от тех или иных условий. В качестве условий могут выступать любые события, сформированные прибором или время. А в качестве действий, которые прибор может выполнить, выступают взятия или снятия, а также действия с открытыми коллекторами.
+The “Automatic controls” tab is intended for programming the device behavior depending on various conditions. Any events formed by the device or time can act as the conditions. Arming or disarming and actions with open collectors are actions that the device can perform.
 
-События, которые хранятся в энергонезависимой памяти прибора, можно просмотреть на вкладке «История событий». Здесь же можно пометить, как отправленные, те события, которые ожидают доставки в «Центр охраны» в очереди на передачу.
+Events that are stored in the device non-volatile memory can be viewed on the "Event history" tab. Here it is possible to mark, as posted, the events that are waiting for delivery to the Security Center in the transmission queue.
 
-Вкладка «Панель состояния» в реальном времени отображает состояние каналов связи, проводных и беспроводных шлейфов.
+The “State panel" tab displays the status of communication channels, wired and wireless zones in real time.
 

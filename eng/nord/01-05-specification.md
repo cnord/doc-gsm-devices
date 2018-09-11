@@ -1,45 +1,45 @@
-## Основные технические характеристики
+## Main Technical Characteristics
 
-* Минимальное число обслуживаемых изделием проводных охранных шлейфов, рассчитанных на подключение различных извещателей – 8;
-* Число обслуживаемых изделием охранных шлейфов при комплектации его расширителем числа проводных шлейфов – 16;
-* Максимально допустимое суммарное сопротивление двух проводов каждого шлейфа – не более 330 Ом;
-* Число беспроводных (автономных) оконечных устройств, поддерживаемых изделием при установке в него  радиоканального блока расширения шлейфов сигнализации «СН-Радио» – до 31;
-* Для совместной работы с изделием в варианте исполнения «Норд GSM/WRL» (с установленным радиорасширителем «СН-Радио») могут использоваться следующие радиоканальные оконечные устройства:
-	* извещатель охранный ручной «СН-Брелок»;
-	* извещатель охранный объемный оптико-электронный «СН-ИК»;
-	* извещатель охранный объемный оптико-электронный уличный «СН-ИК-Улица»;
-	* извещатель охранный магнитоконтактный «СН-СМК»;
-	* извещатель охранный поверхностный звуковой «СН-Стекло»;
-	* извещатель пожарный «СН-Дым»;
-	* извещатель пожарный ручной «СН-ИПР»;
-	* сигнализатор затопления «СН-Вода»;
-	* сигнализатор температурный «СН-Цельсий»;
-	* ретранслятор извещений «СН-РЕТР»;
-	* сирена «СН-Сирена»;
-	* клавиатура «СН-К».
+* The minimum number of the product wired security zones, designed to connect different detectors, is 8;
+* The number of the product security zones, when the product is equipped with an expander for the number of wired zones, is 16;
+* The maximum allowable total resistance of two wires of each zone - no more than 330 Ω;
+* The number of wireless (stand-alone) terminal units supported by the product when installing the radio channel signaling zone extension unit CN-WRL is up to 31;
+* For joint operation with the product in the version of the "Nord GSM/WRL" (with the installed radio expander CN-WRL), the following radio channel terminal units can be used:
+	* manual security detector «CN-KeyFob»;
+	* volume electro-optical security detector «CN-PIR»;
+	* volume electro-optical street security detector «CN-PIR-Outdoor»;
+	* manual security detector magnetic contact «CN-Magnetic»;
+	* surface sound security detector «CN-Glass»;
+	* fire detector «CN-Smoke»;
+	* manual fire detector «CN-Fire»;
+	* flooding detector «CN-Flood»;
+	* temperature detector «CN-Celsius»;
+	* notification repeater «CN-Repeater»;
+	* siren «CN-Siren»;
+	* keypad “CN-Keypad”.
 
-	> Опциональный радиорасширитель «СН-РАДИО» подключается  к основной плате изделия посредством специализированного 4-х контактного разъема по интерфейсу RS-232 v.24 (с уровнями сигналов TTL-логики), через этот же разъем осуществляется электропитание радиорасширителя.
+	> The optional radio expander CN-WRL is connected to the product main board by means of a special 4-pin connector via RS-232 v.24 interface (with TTL logic signal levels), and the radio extender is powered through the same connector.
 
-* Число контролируемых изделием состояний проводных шлейфов – до четырех («норма», «тревога», «обрыв», «замыкание»). При этом тип каждого из организуемых шлейфов – нормально замкнутый или нормально разомкнутый, а также количество оконечных резисторов, с одним или двумя оконечными резисторами – задается пользователем при конфигурировании изделия;
-* Изделие допускает подключение в охранные проводные шлейфы четырехпроводных пожарных датчиков, обеспечивая возможность их автоматического перезапуска (сброса тревожного состояния) коммутацией в линии их электропитания. 
-* Максимальный ток потребления всеми подключаемыми к изделию проводными датчиками ограничен номиналом самовосстанавливающегося термопредохранителя и не должен превышать 200 мА;
-* Изделие оборудовано микропереключателем, установленным на его плате, и выполняющим роль датчика вскрытия корпуса (тампер).
+* The maximum number of wired zone states controlled by the product is four ("norm", "alarm", "break", "closing"). In this case, the type of each of the organized zones is normally closed or normally open, as well as the number of termination resistors, with one or two termination resistors - is set by the user when configuring the product;
+* The product allows connection of four-wire fire sensors to the security wired zones, providing the possibility of their automatic restart (alarm reset) by switching in their power lines. 
+* The maximum current consumption of all wired sensors connected to the product is limited by the value of self recovering thermal switch and shall not exceed 200 mA;
+* The product is equipped with a microswitch installed on its board, which acts as a tamper switch.
 
-	> Дополнительно предусмотрена возможность установки на плату изделия клеммной колодки для подключения внешнего датчика вскрытия (для варианта исполнения изделия в металлическом корпусе);
+	> In addition, it is possible to install a terminal block on the board to connect an external tamper switch (for the product version in a metal case);
 	
-* Изделие имеет энергонезависимую память для хранения сформированных им извещений;
-* Изделие обеспечивает поддержку протокола 1-Wire в ранге «master» на разъеме соответствующего интерфейса, позволяя осуществлять постановку и снятие его с охраны, например, устройствами из серии DS1990A, подключать выносные датчики температуры, устройства аппаратного расширения портов контроллера и т. п. (поддержка тех или иных устройств на шине 1-Wire определяется программной версией контроллера изделия). Линия «LED» интерфейса 1-Wire защищена от короткого замыкания и предназначена для подключения внешнего светодиода, отображающего статусное состояние изделия, с током потребления до 8 мА (например, светодиода, расположенного в лузе TM-считывателя);
-* Изделие оборудовано клеммами для подключения проводных клавиатур K16-LCD и K14-LED. Силовые линии клавиатурного интерфейса защищены от короткого замыкания самовосстанавливающимся термопредохранителем,  отсутствие или нарушение трафика в клавиатурном интерфейсе выявляется контроллером изделия;
-* К изделию может быть подключена пьезоэлектрическая сирена для акустического подтверждения состояния «Тревога» с током потребления до 200 мА, при этом изделием выявляются такие неисправности в цепи ее подключения, как обрыв и короткое замыкание, причем как при отсутствии, так и при наличии сигнала «Тревога». Выход для подключения сирены защищен самовосстанавливающимся термопредохранителем;
-* Изделие имеет семь управляемых дискретных выхода типа «открытый коллектор», позволяющих подключать к изделию коммутируемую нагрузку, например, электромагнитные реле, акустические  или опто-электрические  приборы. Максимально допустимый  втекающий ток нагрузки дискретных выходов – 500 мА; максимально допустимое постоянное напряжение, подводимое к выходам - плюс 50 В;
-* На основной плате установлен многофункциональный трёхцветный технологический светодиод, предназначенный для отображения текущего состояния изделия и оценочных значений некоторых контролируемых им параметров; 
-* Изделие обеспечивает голосовую поддержку пользователя (обслуживающего персонала) путем воспроизведения через встроенную динамическую головку  аудио-файлов при обнаружении проблем, препятствующих  нормальной эксплуатации изделия, например, при выявлении неисправностей в охранных шлейфах c конкретизацией ее характера и места обнаружения, достижении отрицательного баланса счета за услуги охраны и т.п. 
-* Изделие снабжено вертикальным разъемом типа «mini USB B» для возможности его  конфигурирования после подключения к USB – порту компьютера;
-* Посредством специализированного программного обеспечения возможно удаленное изменение конфигурационных параметров изделия, а также обновления программного обеспечения его контроллера;
-* Изделие  рассчитано  на  непрерывный  (круглосуточный)  режим  работы  в  диапазоне рабочих температур (без учета температурных ограничений на резервный источник электропитания)  от минус 30 ºС до плюс 50 ºС;
+* The product has non-volatile memory for storing messages generated by it;
+* The product provides support for the 1-Wire protocol in the rank of "master" on the connector of the corresponding interface, allowing its arming and disarming, for example, with the help of devices of the DS1990A series, connecting remote temperature sensors, hardware devices for expanding the controller ports, etc. (support of different device on the 1-Wire bus is determined by the software version of the product controller). The "LED" line of the 1-Wire interface is short-circuit protected and is designed to connect an external LED indicating the product status, with a current consumption of up to 8 mA (for example, LED located in the TM reader);
+* The product is equipped with terminals for connecting K16-LCD and K14-LED wired keypads. The power lines of the keypad interface are short-circuit protected by a self recovering thermal switch, the absence or violation of traffic in the keypad interface is detected by the product controller;
+* A piezoelectric siren can be connected to the product for sound confirmation of the "Alarm" state with a current consumption up to 200 mA, at the same time the product detects such malfunctions in its connection circuit as a break and short circuit, both in the absence and in the presence of “Alarm” signal. The output for the siren connection is protected by the self recovering thermal switch;
+* The product has seven controlled discrete outputs of "open collector” type, allowing connecting the switched load to the product, for example, electromagnetic relays, acoustic or electrooptical devices. The maximum allowable sink load current of discrete outputs is 500 mA; the maximum permissible DC voltage supplied to the outputs is plus 50 V;
+* The main board is equipped with a multifunctional three-color process LED designed to display the current state of the product and the estimated values of some of the parameters monitored by it; 
+* The product provides voice support to the user (maintenance staff) by playing audio files through the built-in speaker if problems are detected that prevent the normal operation of the product, for example, when troubleshooting security zones with the specification of the failure nature and location, reaching a negative balance of the bill for security services, etc. 
+* The product is equipped with a vertical connector of the "mini USB B" type for its configuration after connecting to the computer USB port;
+* By means of special software it is possible to remotely change the product configuration parameters, as well as update the controller software;
+* The product is designed for continuous (twenty-four-hour) operation in the operating temperature range (without taking into account the temperature limitations of the backup power supply) from minus 30°С to plus 50°С;
 	
-	> Допустимый диапазон температур  эксплуатации изделия с резервным источником определяется характеристиками установленной в нем АКБ, и в первую очередь – предельно допустимыми значениями температур при ее заряде.
+	> The permissible product operating temperature range with a backup source is determined by the characteristics of the battery installed in it, and first of all by the maximum permissible temperature values during charging.
 
-* Габаритные размеры корпуса изделия из  пластика, мм, не более, - 188х200х62;
-* Масса изделия в пластиковом корпусе (без резервного источника электропитания, сетевого шнура и упаковки), кг, не более, - 0,6;
+* Overall dimensions of the plastic case, mm, maximum, - 188х200х62;
+* The product weight in a plastic case (without a backup power source, power cord and packaging), kg, maximum, - 0,6;
 

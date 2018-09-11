@@ -1,11 +1,11 @@
 \pagebreak
 
-# Управление прибором
+# Device Control
 
-Для взятия / снятия прибора могут использоваться следующие устройства управления:
+The following control devices can be used to for the device arming/disarming:
 
-* [ТМ-ключ](https://www.cnord.ru/katalog#keyboards);
-* клавиатура [К14-LED](https://www.cnord.ru/katalog#keyboards);
-* клавиатура [К16-LCD](https://www.cnord.ru/katalog#keyboards);
-* [беспроводной брелок](https://www.cnord.ru/katalog#keyboards);
-* [мобильное приложение MyAlarm](https://www.cnord.ru/myalarm).
+* [ТМ-key](https://www.cnord.ru/katalog#keypads);
+* keypad [К14-LED](https://www.cnord.ru/katalog#keypads);
+* keypad [К16-LCD](https://www.cnord.ru/katalog#keypads);
+* [wireless keyfob](https://www.cnord.ru/katalog#keypads);
+* [mobile application MyAlarm](https://www.cnord.ru/myalarm).

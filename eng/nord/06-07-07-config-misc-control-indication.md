@@ -1,27 +1,33 @@
-### Управление и индикация {#control-indication}
+### Control and indication {#control-indication}
 
-\imgcapt{img/06-07-config-nord-06-01.png}{Вкладка «Разное», раздел «Управление и индикация»}
+\imgcapt{img/06-07-config-nord-06-01.png}{“Miscellaneous” tab, “Management and indication” section}
+   
 
-#### Настройка светового оповещателя выполняется на вкладке «Автоматика»
+**Light alarm is set up on the "Automatic controls" tab**
 
-Для того, чтобы пользователь мог визуально контролировать состояние охранной сигнализации на объекте, к прибору можно подключить световой оповещатель с напряжением питания 12 В. Настройка этого оповещателя производится на вкладке [Автоматика](#config-automation).
+In order for the user to visually monitor the alarm status on the site, a 12 V light alarm can be connected to the device. This alarm is set up on the [Automatic controls](#config-automation) tab.
+   
 
-#### Подключена клавиатура «Риф-КТМ (Си-Норд)»
+**Rif-KTM (C.Nord) keypad connected**
 
-Если используется беспроводная клавиатура «Риф-КТМ (Си-Норд)», необходимо установить соответствующую галочку, чтобы индикация клавиатуры работала правильно.
+If Rif-KTM (C.Nord) wireless keypad is used, it is necessary to check the corresponding box to ensure that the keypad display is working correctly.
+   
 
-#### Коды пользователей длиной 6 цифр
+**User codes containing 6 numbers**
 
-Для использования шестизначных кодов для взятия и снятия с охраны, сначала нужно установить этот параметр, а после этого создать пользователей. Если в приборе уже есть пользователи с четырехзначным кодом, то сперва их нужно удалить, а потом установить параметр для использования шестизначных кодов.
+To use six-digit codes for arming and disarming, first it is necessary to set this parameter, and then create users. If the device already has users with a four-digit code, first it is necessary to delete them and set the parameter for using six-digit codes.
+   
 
-#### Разрешить использование клавиатуры в качестве тревожной кнопки
+**Enable using keypad as panic button**
 
-Для использования клавиатуры в качестве тревожной кнопки, необходимо установить соответствующую галочку. 
+To use the keypad as a panic button, it is necessary to check the appropriate box. 
 
-* Для клавиатур «К14-LED» и «СН-К» тревожная кнопка активируется длительным одновременным нажатием кнопок с изображением домика .
-* Для клавиатуры «K16-LCD» тревожная кнопка активируется длительным нажатием кнопок звёздочка и решетка.
+* For "K14-LED" and "CN-Keypad” keypads, the panic button is activated by a long simultaneous pressing of buttons with the house icon.
+* For the "K16-LCD" keypad, the panic button is activated by a long pressing of the asterisk and hash sign buttons.
 
-#### Включить режим постоянного опроса интерфейса 1-Wire
 
-Режим постоянного опроса 1-Wire необходимо включать, если к прибору подключены проводные датчики температуры или расширитель «РПШ-12».
-Этот режим несовместим с некоторыми считывателями proximity-карт и клавиатурой «Риф-КТМ (Си-Норд)».
+**Enable continuous poll mode for the 1-Wire interface**
+
+The continuous poll mode of 1-Wire shall be switched on if the wired temperature sensors or EW-12 expander are connected to the device.
+This mode is incompatible with some proximity card readers and the Rif-KTM (C.Nord) keypad.
+
