@@ -1,9 +1,9 @@
-## Мобильное приложение MyAlarm
+### MyAlarm Mobile Application
 
-[MyAlarm](https://play.google.com/store/apps/details?id=ru.cnord.myalarm) – это мобильное приложение для работы с охранной сигнализацией.
+[MyAlarm](https://play.google.com/store/apps/details?id=ru.cnord.myalarm) – is a mobile application for working with security alarm.
 
-Приложение MyAlarm доступно только для клиентов охранного предприятия. 
+The MyAlarm application is available only to security company customers. 
 
-С помощью мобильного приложения можно управлять состоянием приборов «Норд GSM», работающих по GPRS или Ethernet. Для этого нужно предоставить ответственному лицу доступ к объекту в ПО «Центр охраны». 
+With the help of the mobile application, it is possible to control the state of "Nord GSM” devices, operating over GPRS or Ethernet. To do this, it is necessary to give access to the site in the Security Center software to the person in charge. 
 
-Для взятия или снятия из приложения нужно нажать на значок с изображение замка. После этого необходимо ввести код пользователя. Более детальную информацию можно найти в разделе [«MyAlarm»](https://support.cnord.ru/hc/ru/sections/206265568) на сайте технической поддержки.
+To arm or disarm from the application, click the lock icon. After that, enter the user code. More detailed information can be found in section [«MyAlarm»](https://support.cnord.ru/hc/ru/sections/206265568) on the technical support site.

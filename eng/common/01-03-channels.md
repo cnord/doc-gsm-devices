@@ -1,24 +1,24 @@
-## Каналы передачи извещений
+## Notification Channels
 
-Отправка изделием извещений может осуществляться по следующим независимым каналам связи:
+The product notifications can be sent by the following independent communication channels:
 
-* по сетям сотовой телефонной связи стандарта GSM 900/1800 двух различных операторов посредством встроенного GSM-модема;
-* по сети Ethernet с помощью опционально устанавливаемого в изделие модуля «Адаптер Ethernet», который подключается к специализированной гнездовой линейке основной платы изделия;
-* По радиоканалу в диапазонах СВ, VHF, UHF с помощью дополнительно устанавливаемого радиопередатчика, подключаемого к разъему интерфейса «TR-100 OUT» изделия (для исполнения
-изделия в металлическом корпусе).
+* via GSM 900/1800 cellular networks of two different carriers through the built-in GSM-modem;
+* via Ethernet network using the optional "Ethernet Adapter" module, which is installed in the product and connected to the dedicated socket of the product main board;
+* via the radio channel in the midband, VHF, UHF bands with the help of an optional radio transmitter connected to the interface connector "TR-100 OUT" of the product (for 
+the product in a metal case).
 
-Изделие в пластиковом корпусе комплектуется малогабаритной штыревой GSM-антенной без фидера с угловым разъемом типа SMA-male, подключенной к разъему типа SMA-female. Для изделий в пластиковом корпусе предусмотрена возможность подключения выносной антенной дипольного типа (с  разъемом того же типа) в целях улучшения качества связи с базовой станцией оператора сотовой связи. Изделие в металлическом корпусе комплектуется исключительно выносной антенной дипольного типа.
+The product in a plastic case is equipped with a small GSM stub antenna without a feeder with an angular connector of SMA-male type, connected to the connector type of SMA-female type. For products in a plastic case, it is possible to connect a remote dipole antenna (with a connector of the same type) to improve the communication quality with the base station of the carrier. The product in a metal case is equipped exclusively with a remote dipole antenna.
 
-Для передачи событий на пульт наблюдения прибор может использовать следующие каналы связи:
+To transmit events to the monitoring panel, the device can use the following communication channels:
 
 * GPRS;
-* CSD (для приборов аппаратной версии 5.1, 5.2, 5.7);
-* VOICE (голосовой канал с использованием DTMF-кодировки);
+* CSD (for devices of hardware version 5.1, 5.2, 5.7);
+* VOICE (voice channel with DTMF-encoding);
 * SMS.
 
-В режиме пакетной передачи извещений (GPRS) осуществляется шифрование контента.
+In the mode of packet transmission of notifications (GPRS), the content is encrypted.
 
-Прибор имеет двухъярусный держатель SIM-карт, в который можно установить две SIM различных операторов сотовой связи. Выбор активной SIM происходит автоматически, в соответствии с установленным алгоритмом работы модуля сотовой связи. Помимо этого предусмотрен безусловный переход на другую SIM при нажатии пользователем на кнопку, установленную  рядом с держателем SIM.
+The device has a two-tier SIM-card holder, in which it is possible to install two SIMs of different carriers. The active SIM is selected automatically, in accordance with the established algorithm of the cellular communication module. In addition, there is an unconditional transfer to another SIM when the user presses a button installed next to the SIM holder.
 
-Прибор может оценивать уровень сигнала в сетях сотовой связи задействованных операторов в месте установки изделия раздельно по каждой из двух SIM и отображать полученную оценку в интерфейсе конфигуратора.
+The device can estimate the signal level in the carrier networks at the device installation site separately for each of the two SIMs and display the received result in the configurator interface.
 

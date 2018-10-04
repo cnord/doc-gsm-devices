@@ -1,81 +1,81 @@
 \pagebreak
 
-# Удалённый доступ к прибору {#remote-access}
+# Remote Access to Device {#remote-access}
 
-## Описание технологии удалённого доступа
+## Description of Remote Access Technology
 
-Удалённый доступ к прибору включает в себя следующие функции:
+Remote access to the device includes the following functions:
 
-* Удалённое обновление программного обеспечения на объекте
-* Удалённое конфигурирование объекта
-* Удалённое взятие и снятие объекта с охраны пользователем
-* Удалённое взятие и снятие объекта с охраны оператором пульта
-* Управление состоянием дебиторской задолженности
+* Remote software update on site
+* Remote configuration of the site
+* Remote arming and disarming of the site by the user
+* Remote arming and disarming of the site by the receiver operator
+* Payment status management
 
-Для работы всех перечисленных функций необходимо совместимое пультовое программное обеспечение, например, «Центр охраны». Дополнительно, для работы функций удалённого обновления «прошивок», конфигурирования и взятия/снятия пользователем, необходимо подключение прибора к «Облаку» (публичному Облаку Си-Норда – `cloud.cnord.net` – или частному Облаку охранной организации).
+All the above functions require a compatible remote software, for example, "Security Center". In addition, to operate the functions of remote firmware update, configuration and arming/ disarming by the user, it is necessary to connect the device to the “Cloud” (C.Nord public cloud - `cloud.cnord.net` - or the private Cloud of the security organization).
 
-Схема подключения выглядит следующим образом:
+The connection diagram is as follows:
 
 \imgcapt{img/remote-intro.png}{}
 
 
-Прибор подключается и к пультовому ПО, и к «Облаку» по протоколу CML с использованием потокового шифрования *(Протокол CML – C.Nord Markup Language – разработка компании Си-Норд)*. Пультовое ПО также подключается к «Облаку» по зашифрованному протоколу.
+The device connects both to the alarm monitoring software and to the "Cloud" via CML protocol using streaming encryption *(CML protocol - C.Nord Markup Language - developed by C.Nord company)*. The alarm monitoring software is also connected to the "Cloud" via the encrypted protocol.
 
-### Канал связи прибор ⟷ пульт
+### Communication Channel Device ⟷ Receiver
 
-Данный канал связи используется для работы охранных функций прибора, таких как:
+This communication channel is used to operate the device security functions, such as:
 
-* Передача событий (тревоги/постановки/снятия/неисправности) на пультовое ПО
-* Удалённое взятие и снятие объекта с охраны оператором пульта
-* Управление состоянием дебиторской задолженности
+* Transmission of events (alarm/arming/disarming/failure) to the receiver software
+* Remote arming and disarming of the site by the receiver operator
+* Payment status management
 
-В общем случае прибор соединяется с пультом через публичную сеть (Интернет). Однако, некоторые охранные предприятия используют для связи `прибор ⟷ пульт` выделенные внутренние подсети операторов GSM-связи или локальные сети Ethernet.
+In the general case, the device connects to the receiver through a public network (Internet). However, some security companies use the allocated internal subnets of GSM carriers or Ethernet LANs for communication 'device ⟷ receiver'.
 
-Для передачи событий на пульт могут использоваться разнообразные каналы связи: Ethernet, GPRS, CSD, Voice, SMS.
+To transmit events to the receiver, various communication channels can be used: Ethernet, GPRS, CSD, Voice, SMS.
 
-**Важно:** удалённое взятие/снятие и управление дебиторской задолженностью работают только при подключении прибора по IP-каналу связи: Ethernet или GPRS.
+** Important:** remote arming/disarming and payment status management work only when the device is connected via IP communication channel: Ethernet or GPRS.
 
-### Канал связи прибор ⟷ «Облако»
+### Communication Channel Device ⟷ "Cloud"
 
-Данный канал связи используется для работы сервисных функций прибора, таких как:
+This communication channel is used for the device service functions, such as:
 
-* Удалённое обновление программного обеспечения на объекте
-* Удалённое конфигурирование объекта
-* Удалённое взятие и снятие объекта с охраны пользователем
+* Remote software update on site
+* Remote configuration of the site
+* Remote arming and disarming of the site by the user
 
-В случае использования публичного «Облака» прибор соединяется с «Облаком» через сеть Интернет. Если же используется «Частное облако», возможна организация подключения через выделенные внутренние подсети операторов GSM-связи или локальные сети Ethernet.
+In case of using the public "Cloud" the device connects to the "Cloud" via the Internet. If the Private Cloud is used, it is possible to connect through dedicated internal subnets of GSM carriers or local Ethernet networks.
 
-Для работы всех сервисных функций прибор должен находиться на IP-связи с «Облаком» по Ethernet или GPRS.
+To operate all service functions, the device shall have IP connection with the "Cloud" via Ethernet or GPRS.
 
-**Важно:** возможные перерывы в связи `прибор ⟷ «Облако»` никак не влияют на охранные функции прибора.
+** Important:** Possible interruptions in connection of ‘device ⟷ "Cloud"’ do not affect the security functions of the device in any way.
 
-### Канал связи пульт ⟷ «Облако»
+### Communication Channel Receiver ⟷ "Cloud"
 
-Данный канал связи используется для обеспечения работы сервисных функций прибора.
+This communication channel is used to ensure the operation of the device service functions.
 
-**Пультовое ПО передает в «Облако»:**
+** The alarm monitoring software transmits the following to the "Cloud":**
 
-* информацию об инженерах и их разрешениях  
-  *для работы панели инженера*
+* information about engineers and their permissions  
+  * for the engineering panel operation*
   
-* информацию об администраторах личного кабинета и их объектах  
-  *для работы личного кабинета `my.cnord.net` и мобильного приложения `MyAlarm`*
+* information about administrators of the personal account and their sites  
+  * for operation of the personal account `my.cnord.net` and the `MyAlarm` mobile application*
   
-* события по объектам  
-  *для работы личного кабинета и мобильного приложения*
+* events by sites  
+  * for operation of the personal account and mobile applications*
   
-**«Облако» передает в Пультовое ПО:**
+**"Cloud" transmits the following to the alarm monitoring software:**
 
-* события о попытках подключения инженера к объекту  
-  *для работы панели инженера*
+* events about engineer’s attempts to connect to a site  
+  * for the engineering panel operation*
   
-* события о попытках взятия/снятия из мобильного приложения `MyAlarm`  
-  *для работы мобильного приложения*
+* events about attempts to arm/disarm from the `MyAlarm` mobile application  
+  *for the mobile application operation*
   
-* события о проверке тревожной кнопки при помощи `Call-центра`  
-  *для работы автоматизированной проверки тревожной кнопки*
+* events about checking the panic button using the `Call-center`  
+  * for automatic check of the panic button*
   
-В случае использования публичного «Облака» пультовое ПО соединяется с «Облаком» через сеть Интернет. Если же используется «Частное облако», возможна организации подключения через локальные сети Ethernet.
+In case of using the public "Cloud" the alarm monitoring software connects to the "Cloud" via the Internet. If Private Cloud is used, it is possible to connect using Ethernet LANs.
 
-**Важно:** возможные перерывы в связи `пульт ⟷ «Облако»` никак не влияют на охранные функции прибора.
+** Important:** Possible interruptions in connection of ‘receiver ⟷ "Cloud"’ do not affect the security functions of the device in any way.
 

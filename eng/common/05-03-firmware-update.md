@@ -1,19 +1,19 @@
-## Утилита для обновления программного обеспечения {#firmware-update}
+## Utility to update software {#firmware-update}
 
-Исполняемый файл утилиты называется **CnordFirmware.exe**, именно этот файл необходимо запускать для обновления версии программного обеспечения прибора.
+The executable utility file is called **CnordFirmware.exe**, this file shall be run to update the software version of the device.
 
-После запуска утилита выполняет поиск прибора, который подключен к компьютеру, определяет его тип и отображает версию программного обеспечения, которое на нем установлено:
+After the start, the utility searches for the device that is connected to the computer, determines its type, and displays the version of the software that is installed on it:
 
-\imgcapt{img/05-03-version-01.png}{Отображение версии программного обеспечения на устройстве}
+\imgcapt{img/05-03-version-01.png}{Display of software version on the device}
 
-Если версия программного обеспечения на устройстве меньше, чем версия обновления, необходимо обновить прошивку на устройстве. Для этого необходимо нажать на кнопку «Обновить устройство».
+If the software version on the device is smaller than the version of the update, it is necessary to update the firmware on the device. For this press the “Update device” button.
 
-В процессе обновления прибор может быть несколько раз перезапущен. После того как обновление прошивки на устройстве будет завершено, в окне утилиты появится сообщение об этом:
+The device can be restarted several times during the update. After the firmware update is completed on the device, the corresponding message will appear in the utility window:
 
-\imgcapt{img/05-03-version-02.png}{Процесс обновления версии программного обеспечения}
-\imgcapt{img/05-03-version-03.png}{Обновление версии программного обеспечения завершено}
+\imgcapt{img/05-03-version-02.png}{Software version update process}
+\imgcapt{img/05-03-version-03.png}{Software version update is complete}
 
-После этого утилиту для обновления прошивки по USB можно закрыть.
+After that, the utility for updating the firmware via USB can be closed.
 
-Если в процессе обновления появится сообщение об ошибке, рекомендуется отключить прибор от компьютера, завершить работу утилиты для обновления версии, после чего опять подключить прибор к компьютеру и запустить утилиту.
+If an error message appears during the update process, it is recommended to disconnect the device from the computer, close the utility for updating the firmware, then reconnect the device to the computer and start the utility.
 

@@ -1,89 +1,89 @@
-## Удалённое обновление ПО на устройстве
+##Remote Software Update on Device
 
-**Важно:** удалённое обновление программного обеспечения работает только для устройств, которые сконфигурированы для использования IP-каналов связи: Ethernet или GPRS.
+**Important:** Remote software update works only for devices that are configured to use IP communication channels: Ethernet or GPRS.
 
-**Важно:** описанные в данном разделе функции работают только, если устройство подключено к программному обеспечению «Центр охраны».
+**Important:** The functions described in this section work only if the device is connected to the Security Center software.
 
-### Информация об объектах на пульте
+###Information about Sites on Receiver
 
-Для удалённого обновления «прошивок» в приборах предназначена вкладка «Обновление программного обеспечения на объектах» в панели инженера:
+To remotely update the "firmware" in devices, the tab “Site software update" is located in the engineering panel:
 
 \imgcapt{img/remote-firmware.png}{}
 
-На данной вкладке отображается статистика по версиям программного обеспечения, сгруппированная по типам приборов. Например, для прибора «Норд GSM»:
+This tab displays statistics on software versions, grouped by device types. For example, for the "Nord GSM” device:
 
 \imgcapt{img/nord-firmware.png}{}
 
-* 20 устройств «Норд GSM» работают на данный пульт
-* Актуальная версия ПО для «Норд GSM» – 5.40
-* 10 приборов в данный момент работают на старой версии, из них:
-  * 6 – обозначены красным – не планируется обновлять
-  * 4 – обозначены жёлтым – находятся в процессе обновления
-* 10 приборов работают на актуальной версии ПО для данного оборудования
+* 20 "Nord GSM" devices work for this receiver
+* Current software version for "Nord GSM" - 5.40
+* 10 devices are currently working on the old version, of which:
+  * 6 - marked red - no plans to update
+  * 4 - marked yellow - are in the process of updating
+* 10 devices work on the current software version for this equipment
 
-Чтобы открыть страницу обновления ПО на устройствах данного типа, необходимо нажать на кнопку «Обновить...»
+To open the software update page on devices of this type, click the "Update ..." button
 
-### Процесс удалённого обновления ПО на устройстве
+### Process of Remote Software Update on Device
 
-Процесс обновления программного обеспечения на устройстве состоит из нескольких этапов и спроектирован таким образом, чтобы работать даже в сетях с очень неустойчивым GPRS-сигналом.
+The software update process on the device consists of several steps and is intended to work even on networks with a very unstable GPRS signal.
 
-**Постановка в очередь на обновление**
+**Queuing for Upgrade**
 
-Из панели инженера «Облаку» подаётся команда для постановки устройства в очередь на обновление.
+From the "Cloud" engineering panel, a command is given to set the device in the queue for updating.
 
-Если устройство находится на связи с «Облаком», то на устройство будет отправлена команда для повторного подключения и инициации процесса обновления.
+If the device is connected to the "Cloud", then a command will be sent to the device to reconnect and initiate the update process.
 
-Если устройство не находится на связи с «Облаком», то процесс обновления не начнётся до тех пор, пока устройство не выйдет на связь.
+If the device is not connected to the Cloud, then the update process will not start until the device is connected.
 
-**Загрузка актуальной «прошивки»**
+**Downloading Current "Firmware"**
 
-Как только устройство получило команду на обновление, оно начинает загрузку архива с актуальной версией программного обеспечения. Полный объем файла составляет от 200 до 500 Кб в зависимости от типа устройства. Загрузка «прошивки» происходит по частям, чтобы сократить влияние обрывов связи.
+Once the device has received the update command, it starts downloading the archive with the current software version. The total file size is from 200 to 500 Kb, depending on the type of device. "Firmware" is downloaded in parts to reduce the impact of communication interruptions.
 
-Длительность этапа загрузки сильно зависит от качества связи и может составлять от нескольких минут на канале Ethernet до нескольких часов на канале GPRS.
+Downloading duration heavily depends on the communication quality and can range from several minutes on the Ethernet channel to several hours on the GPRS channel.
 
-**Проверка архива**
+**Archive Checking**
 
-После полной загрузки файла «прошивки» прибор проверяет его целостность и пригодность к использованию на данном типе прибора и на данной аппаратной версии платы. Если все контрольные суммы совпадают и все проверки совместимости пройдены, «прошивка» помечается, как «готова к установке».
+After the "firmware" file is fully downloaded, the device checks its integrity and suitability for use on this type of device and on this hardware version of the board. If all checksums match and all compatibility checks are completed, the "firmware" is marked as "ready for installation".
 
-**Обновление**
+**Update**
 
-Далее прибор ожидает состояния, когда хотя бы один из разделов будет снят с охраны, и перезагружается для применения обновления.
+Next, the device waits for a state when at least one of the partitions is disarmed, and reboots to apply the update.
 
-Длительность этапа обновления составляет не более 10 секунд.
+Upgrade duration is no more than 10 seconds.
 
-**Включение**
+**Start**
 
-После обновления «прошивки» идет обычное включение прибора. Все настройки и состояние охраны для разделов сохраняются в том же состоянии, как были до обновления.
+After updating the firmware, the device starts normally. All settings and protection status for partitions are saved in the same state as they were before updating.
 
-### Обновление ПО на выбранном объекте
+###Updating Software on Selected Site
 
-Если есть необходимость проверить функции новой версии программного обеспечения на одном или нескольких объектах перед массовой установкой, можно воспользоваться обновлением ПО на выбранном объекте.
+If it is necessary to check the functions of the new software version on one or more sites before mass installation, it is possible to use the software update on the selected site.
 
-Для этого на странице обновления ПО нужно нажать на кнопку «Обновить по номеру объекта...»:
+To do this, click the "Update using site number...” button on the software update page:
 
 \imgcapt{img/remote-update.png}{}
 
-В появившемся диалоге ввести номер объекта для обновления:
+In the dialog that appears, enter the site number for the update:
 
 \imgcapt{img/remote-update-single.png}{}
 
-И нажать кнопку «Обновить». После этого данный объект будет добавлен в очередь на обновление ПО.
+And click the "Update" button. After that, this site will be added to the queue for software update.
 
-### Обновление ПО на всех объектах
+### Updating Software on all Sites
 
-После проверки ПО на нескольких объекта, можно добавить в очередь на обновление все оставшиеся с предыдущей версией ПО объекты.
+After checking the software on several sites, it is possible to add all the remaining sites with the previous version of the software to the upgrade queue.
 
-Для этого на странице обновления ПО нужно нажать на кнопку «Обновить программное обеспечение на всех объектах...»
+To do this, click the "Update software at all sites” button on the software update page:
 
-В появившемся диалоге:
+In the dialog that appears:
 
 \imgcapt{img/remote-update-all.png}{}
 
-нажать кнопку «Обновить все объекты». После этого все объекты данного типа с неактуальной версией ПО будут добавлены в очередь на обновление.
+click the "Update all sites” button. After that, all sites of this type with the irrelevant version of the software will be added to the update queue.
 
-### Остановка процесса обновления
+### Update Process Stopping
 
-Если по какой-то причине появилась необходимость остановить процесс обновления, то его можно прервать до тех пор, пока прибор целиком не загрузил файл обновления.
+If for some reason there is a need to stop the update process, it can be interrupted until the device has completely downloaded the update file.
 
-Для этого необходимо нажать «Отменить обновление...» и подтвердить действие.
+To do this, click "Cancel update..." and confirm the action.
 

@@ -1,19 +1,19 @@
 \pagebreak
 
-## Подключение пожарных извещателей
+## Connection of Fire Detectors
 
-### Четырехпроводные пожарные извещатели
+### Four-wire Fire Detectors
 
-Сигнальные кабели, к которым подключены четырехпроводные пожарные извещатели подключаются к клеммам «Z1»–«Z8».
+The signal cables to which the four-wire fire detectors are connected are connected to the terminals "Z1"-"Z8".
 
-Общие кабели шлейфов подключаются к клеммам «GND».
+The common zone cables are connected to the “GND” terminals.
 
-Если необходимо осуществлять сброс питания пожарных извещателей после тревоги, то плюсовой кабель питания шлейфа нужно подключить к клемме SMOKE. В таком случае после завершения интервала повтора тревог (см. раздел «Конфигурирование») питание с датчиков будет кратковременно отключаться.
+If it is necessary to reset the power of the fire detectors after an alarm, the plus power cable of the zone shall be connected to the SMOKE terminal. In this case, after the alarm repetition interval is over (see section "Configuration"), the power supply from the detectors will be switched off for a short time.
 
-Если сброс питания пожарных извещателей не требуется, то плюсовой кабель питания пожарного шлейфв нужно подключить к клемме PWR. 
+If resetting the power of the fire detectors is not required, the plus power cable of the fire zone shall be connected to the PWR terminal. 
 
-### Двухпроводные пожарные извещатели
+### Two-wire Fire Detectors
 
-Двухпроводные _дымовые_ пожарные извещатели подключаются к прибору только через устройство согласования «ППШ-2», которое позволяет подключать двухпроводные извещатели по четырехпроводной схеме.
+Two-wire _smoke_ fire detectors are connected to the device only through the matcher "EFW-2", which allows connection of two-wire detectors according to four-wire circuit.
 
-\imgcapt{img/04-04-ppsh-2.png}{Схема подключения двухпроводных дымовых пожарных извещателей через «ППШ-2»}
+\imgcapt{img/04-04-ppsh-2.png}{Connection diagram for two-wire smoke detectors via “EFW-2”}

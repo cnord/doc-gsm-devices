@@ -1,22 +1,22 @@
 \pagebreak
 
-# Конфигурирование прибора {#config-info}
+# Device Configuration {#config-info}
 
-Для конфигурирования (изменения настроек) прибора предназначен специальный конфигуратор, который называется «Хаббл».
+A special configurator, called “Hubble”, is used to configure (change settings of) the device.
 
-Актуальную версию конфигуратора можно загрузить с официального сайта технической поддержки НТКФ «Си-Норд» ([support.cnord.ru](http://support.cnord.ru)), со страницы «[Файлы для загрузки](https://support.cnord.ru/hc/ru/articles/203372340)».
+The current version of the configurator can be downloaded from the official support site of C.Nord company ([support.cnord.ru](http://support.cnord.ru)), from page «[Files for download](https://support.cnord.ru/hc/ru/articles/203372340)».
 
-Конфигуратор поставляется в виде zip-архива с именем **hubble-X.XX.zip**, где **X.XX** – цифры, соответствующие версии конфигуратора. Содержимое архива необходимо распаковать на жесткий диск компьютера, желательно – в корневую папку. 
+The configurator is supplied as a zip-archive with the name **hubble-X.XX.zip**, where **X.XX** is digits corresponding to the configurator version. Unpack the archive to the hard drive of the computer, preferably - to the root folder. 
 
-> Если распаковать архив в корень диска по каким-то причинам нельзя, необходимо распаковать его в папку, в названии которой нет кириллических символов и пробелов. Если это условие не будет соблюдено, то конфигуратор прибора будет работать некорректно. 
+> If you cannot unzip the archive to the root of the disk for some reason, unpack it to a folder in the name of which there are no Cyrillic symbols and spaces. If this condition is not met, then the device configurator will not work correctly. 
 
-Исполняемый файл конфигуратора называется **hubble.exe**, именно этот файл необходимо запускать для изменения настроек прибора.
+The executable configurator file is called **hubble.exe**, this file shall be run to change the device settings.
 
-> Конфигуратор «Хаббл» предназначен для изменения настроек следующих приборов: «Норд GSM», «Норд RF», «Норд LAN», «Союз GSM», «Союз PCB GSM», «ТР-100 GSM IV» и «Сержант GSM».   
+> The Hubble configurator is intended for changing the settings of the following devices: “Nord GSM”, “Nord RF”, “Nord LAN”, “Soyuz GSM”, “Soyuz PCB GSM”, “ТР-100 GSM IV” and “Serzhant GSM”.   
 
-Для того, чтобы приступить к конфигурированию прибора, необходимо подключить его к компьютеру по USB и запустить конфигуратор. Для того, чтобы конфигуратор было удобнее запускать, рекомендуется разместить ярлык для его запуска на рабочем столе или в папке часто используемых программ.
+To start configuring the device, it is necessary to connect it to the computer via USB and run the configurator. In order for the configurator to be more convenient to run, it is recommended to place a shortcut for launching it on the desktop or in a folder of frequently used programs.
 
-После того, как конфигуратор будет запущен, он автоматически обнаружит подключенный к компьютеру прибор, выполнит проверку версии программного обеспечения, установленного на приборе, и загрузит настройки прибора.
+After the configurator is started, it automatically detects the device connected to the computer, checks the software version installed on the device, and loads the device settings.
 
-Если версия программного обеспечения, установленного на приборе, не соответствует версии, необходимой для работы конфигуратора, будет выведено сообщение об ошибке с просьбой обновить программное обеспечение на приборе. В этом случае необходимо завершить работу конфигуратора и выполнить обновление программного обеспечения на приборе так, как это описано в разделе [«Обновление программного обеспечения»](#firmware-update).
+If the version of the software installed on the device does not match the version required for the configurator, an error message will be displayed asking you to update the software on the device. In this case, it is necessary to shut down the configurator and update the software on the device as described in the ["Software Update”](#firmware-update) section.
 

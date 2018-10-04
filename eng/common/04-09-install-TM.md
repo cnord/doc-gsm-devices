@@ -1,15 +1,15 @@
 \pagebreak
 
 
-## Подключение Touch Memory считывателя
+## Connection of Touch Memory Reader
 
-Прибор обладает встроенным интерфейсом для подключения считывателей ТМ-ключей. В прибор можно добавить до 32 ТМ-ключей.   
+The device has a built-in interface for connecting the TM-key readers. It is possible to can add up to 32 TM keys to the device.   
 
-Touch Memory считыватель подключается к прибору на клеммы LED, DATA и GND группы «Считыватель».
+Touch Memory reader is connected to the device to LED, DATA and GND terminals of the "Reader" group.
 
-\imgcapt{img/04-09-install-tm.png}{Схема подключения Touch Memory считывателя}
+\imgcapt{img/04-09-install-tm.png}{Touch Memory card reader connection diagram}
 
-Вместо ТМ-считывателя можно подключить любой считыватель с эмуляцией протокола Dallas Touch Memory (DS1990A). Например, Proxymity-считыватели ("ПС-01", "CP-Z2B"). 
+Instead of the TM-reader, it is possible to connect any reader with the Dallas Touch Memory protocol emulation (DS1990A). For example, Proximity-readers ("PS-01", "CP-Z2B"). 
 
-При этом нужно принять во внимание, что для подключения некоторых считывателей, эмулирующих протокол DS1990A, необходимо отключить режим постоянного опроса интерфейса 1-Wire, который по умолчанию включен. Чтобы это сделать, нужно в конфигураторе перейти на вкладку [Разное](#control-indication) и снять галочку для параметра «Включить режим постоянного опроса интерфейса 1-Wire». 
+It shall be taken into account that to connect some readers that emulate the DS1990A protocol, it is necessary to disable the mode of constant polling of the 1-Wire interface, which is enabled by default. To do this, go to the [Miscellaneous](#control-indication) tab in the configurator and uncheck the "Enable constant polling of the 1-Wire interface" option. 
 

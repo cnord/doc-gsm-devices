@@ -1,8 +1,8 @@
-## Настройка GSM-канала
+## GSM Channel Setting
 
-Прибор оснащён встроенным GSM-модемом, который может работать поочерёдно с одной из двух установленных SIM-карт.
+The device is equipped with an built-in GSM-modem, which can work alternately with one of the two installed SIM-cards.
 
-### Установка SIM-карт
+### SIM Card Installation
 
 \begin{wrapfigure}{R}{0.35\textwidth}
 \vspace{-10pt}
@@ -10,15 +10,15 @@
 \vspace{-10pt}
 \end{wrapfigure}
 
-Держатель для SIM-карт расположен в правой части платы прибора.
+The SIM card holder is located on the right side of the device board.
 
-Снизу находится основная SIM-карта (SIM1), сверху – резервная (SIM2). SIM-карты устанавливаются в держатель контактной площадкой в сторону платы. Перед установкой SIM-карт в прибор полностью обесточьте его, в противном случае SIM-карта может быть выведена из строя статическим электричеством.
+The main SIM-card (SIM1) is below, the reserve on (SIM2) is on top. SIM-cards are installed in the holder with the contact pad towards the board. Before installing SIM-cards in the device, completely disconnect it, otherwise the SIM-card can be disabled by static electricity.
 
-Не забудьте отключить запрос PIN-кода. Если PIN-код не отключить: во-первых, прибор не сможет использовать данную SIM-карту; во-вторых, SIM-карта может заблокироваться после нескольких попыток активации.
+Do not forget to turn off the PIN code request. If the PIN code is not disabled: firstly, the device will not be able to use this SIM card; secondly, the SIM card can be blocked after several activation attempts.
 
-Если вы используете только одну SIM-карту, обязательно устанавливайте её в слот для основной SIM-карты – ближе к плате.
+If you use only one SIM card, be sure to install it in the slot for the main SIM card - closer to the card.
 
-### Проверка уровня GSM-сигнала
+### Check of GSM Signal Level
 
 \begin{wrapfigure}{R}{0.35\textwidth}
 \vspace{-10pt}
@@ -26,26 +26,26 @@
 \vspace{-10pt}
 \end{wrapfigure}
 
-Перед началом эксплуатации прибора обязательно нужно проверить уровень сигнала в предполагаемом месте установки прибора. Это можно сделать при помощи светодиода HL1, который находится в левой части платы прибора или с помощью вкладки Панель состояния конфигуратора Хаббл. Подробнее о проверке каналов связи в разделе 5.14.
+Before starting the device, it is essential to check the signal level at the intended installation site. This can be done with the HL1 LED on the left side of the device board or with the Hubble Configurator “State panel" tab. For more information on checking the communication channels, see section 5.14.
 
-При плохом уровне сигнала GSM необходимо перенести прибор в другое место, либо установить выносную GSM-антенну.
+If the GSM signal level is weak, it is necessary to move the device to another location, or to install a remote GSM antenna.
 
-### Подключение выносной GSM-антенны
+### Connection of Remote GSM Antenna
 
-Для того чтобы подключить выносную антенну вместо внутренней, нужно выполнить следующую последовательность действий:
+To connect the remote antenna instead of the internal antenna, it is necessary to perform the following:
 
-* вынуть плату прибора из корпуса, открутив крепежные саморезы;
-* заменить внутреннюю антенну на выносную;
-* проверить, что плата с установленной выносной антенной плотно прилегает к стойкам крепления;
-* при необходимости просверлить в корпусе отверстие диаметром 10 мм, чтобы вывести фидер антенны наружу. В этом случае необходимо сначала пропустить фидер антенны через отверстие в корпусе и только потом прикрутить его к разъему на плате;
-* установить плату в корпус, прикрутив крепежные саморезы.
+* remove the device board from the case by unscrewing the fixing screws;
+* replace the internal antenna with a remote antenna;
+* check that the board with the installed remote antenna fits tightly to the posts;
+* if necessary, drill a 10 mm hole in the body to bring the antenna feeder out. In this case, first it is necessary to pass the antenna feeder through the hole in the case and then screw it to the connector on the board;
+* install the board in the case by fastening the mounting screws.
 
-Перед окончательным креплением внешней антенны на постоянное место установки необходимо обязательно проверить уровень сигнала на обеих SIM в данном конкретном месте. Если уровень сигнала неудовлетворительный, необходимо переместить антенну в другое место.
+Before final securing of the external antenna to a permanent installation site, it is necessary to check the signal level on both SIMs at this particular location. If the signal level is not satisfactory, move the antenna to a different location.
 
-Рекомендации по установке внешней антенны:
+Recommendations for installation of the external antenna:
 
-* отнести от прибора на расстояние не менее 50 см;
-* не бухтовать фидер антенны;
-* крепить антенну на диэлектрическую поверхность;
-* крепить антенну в вертикальном положении.
+* move away from the device at a distance of at least 50 cm;
+* do not coil the antenna feeder;
+* mount the antenna on the dielectric surface;
+* mount the antenna in a vertical position.
 

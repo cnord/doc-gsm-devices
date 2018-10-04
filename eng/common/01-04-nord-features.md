@@ -1,13 +1,13 @@
-## Технические возможности
+## Functionality
 
-* конфигурирование до 16 проводных шлейфов сигнализации (ШС), предназначенных для приёма извещений от аналоговых ручных и автоматических охранных и пожарных извещателей, приборов приёмно-контрольных охранных и охранно-пожарных через выходы реле ПЦН;
-* подключение до 31 беспроводного устройства;
-* конфигурирование до 32 разделов с возможностью их независимого взятия под охрану и снятия с охраны;
-* управление исполнительными устройствами и средствами автоматики с помощью выходов управления типа «открытый коллектор»;
-* управление режимом работы изделия с помощью проводных клавиатур К16-LCD, K14-LED, беспроводной клавиатуры СН-К, электронных ключей Touch Memory, считывателя рroximity карт, а также беспроводных брелоков;
-* звуковая и световая сигнализация в режиме «Тревога» и «Пожар»;
-* контроль вскрытия корпуса изделия;
-* контроль исправности ШС с автоматическим выявлением обрыва или короткого замыкания, световая и звуковая сигнализация неисправности, формирование извещений для пульта охраны о неисправности;
-* звуковое и световое оповещение при постановке изделия на охрану и снятии его с охраны;
-* сохранение информации в журнал событий.
+* configuration of up to 16 alarm wired zones intended for receiving notifications from analogue manual and automatic security and fire detectors, security and fire alarm system units through the outputs of the central security panel relays;
+* connection of up to 31 wireless devices;
+* configuration of up to 32 partitions with the possibility of their independent arming and disarming.
+* control of actuators and automation facilities using open-collector control outputs;
+* control of the product operation mode using wired keypads K16-LCD, K14-LED, wireless keypad CN-Keypad, electronic keys Touch Memory, proximity card reader, and wireless keyfobs;
+* sound and light alarm in "Alarm" and "Fire” modes;
+* control of the product case opening;
+* control of the zone operability with automatic detection of an open or short circuit, light and sound alarm signaling, formation of notifications for the receiver about the fault;
+* sound and light indication when the product is armed and disarmed;
+* storing of information to the event log.
 

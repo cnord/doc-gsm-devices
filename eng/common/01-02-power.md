@@ -1,30 +1,30 @@
-## Электропитание
+## Power Supply
 
-Основной источник электропитания изделия -- однофазная сеть переменного тока 220 В 50 Гц с огромным напряжением (127÷264) В.
+The main power source of the product is a single-phase network AC 220 V 50 Hz with a high voltage of (127÷264)V.
 
-В качестве резервного источника электропитания могут использоваться:
+The following can be used as a backup power source:
 
-* герметичная свинцово-кислотная аккумуляторная батарея (АКБ), соответствующая  стандарту  МЭК 1056-1,  номинальным напряжением (12,6±0,6) В. АКБ устанавливается в корпус изделия;
-* внешний источник бесперебойного электроснабжения (UPS), номинальным выходным напряжением 12 В и допустимой токовой нагрузкой не менее 1,5 А с установленной в нем АКБ требуемой химической системы, при этом внешний UPS должен подключаться к изделию _вместо_ АКБ.
+* sealed lead-acid battery (battery), corresponding to the standard IEC 1056-1, with a rated voltage of (12.6±0.6) V. The battery is installed inside the product body;
+* external uninterruptible power supply (UPS), with a rated nominal output voltage of 12 V and permissible current load of at least 1.5 A with the installed battery of the required chemical system. The external UPS shall be connected to the product _instead_ of the battery.
 
-Диапазон допустимых напряжений резервного источника при запуске изделия в работу при отсутствии основного источника – от 10,0 В до 14,4 В.
+The permissible voltage range of the backup source when the product is started in the absence of the main source is from 10.0 V to 14.4 V.
 
-Рекомендуемая емкость АКБ, размещаемой в пластиковом корпусе изделия – 1,2 или 2,2 (А·ч), например, DELTA DTM 12022.
+The recommended capacity of the battery installed inside the product plastic case is 1.2 or 2.2 (Ah), for example, DELTA DTM 12022.
 
-Изделие обеспечивает автоматическое обслуживание устанавливаемой в него АКБ, включающее в себя:
+The product provides automatic maintenance of the installed battery, which includes the following:
 
-* этап «щадящего» заряда глубоко разряженной АКБ током в (100±20) мА до достижения напряжения на ней в (11,5±0,2) В;
-* последующий заряд АКБ на втором этапе током в (230±25) мА;
-* достижение конечного напряжения на АКБ в конце цикла её заряда в (14,0±0,2) В с последующим удержанием его в диапазоне (13,6 ÷14,0) В в целях компенсации тока её саморазряда;
-* возможность автоматического отключения разряженной АКБ в отсутствие основного источника электроснабжения при достижении напряжения на ней в (9,0±0,3) В;
-* ограничение тока, потребляемого изделием от автоматически отключенной АКБ,  величиной, не  превышающей 25 мкА;
-* устойчивость как к обрыву, так и к короткому замыканию в цепи АКБ неограниченно по времени, при этом питание изделия будет осуществляться от основного источника;
-* защиту от «переполюсовки» при ошибочном подключении к клеммам АКБ или внешнего UPS;
-* автоматическое периодическое тестирование АКБ и оценку её состояния  по совокупности нескольких параметров с последующей отправкой соответствующих извещений в пультовую программу. Опция может быть отключена при конфигурировании  изделия;
-* автоматический «тренинг» АКБ путем периодического кратковременного отбора импульса тока во встроенную в изделие низкоомную нагрузку. Данная процедура реализует алгоритм заряда асимметричным знакопеременным током, благоприятно сказывающимся как на полноте заряда, так и на продолжительности жизненного цикла АКБ, эксплуатируемой в буферном режиме. Опция может быть отключена при конфигурировании  изделия.
+* stage of a "sparing" charge of a deeply discharged battery with a current of (100±20) mA before reaching the voltage of (11.5±0.2) V;
+* subsequent charge of the battery at the second stage with a current of (230±25) mA;
+* final voltage on the battery at the end of its charging cycle at (14.0±0.2) V and then keeping it in the range of (13.6÷14.0) V to compensate the current of its self-discharge;
+* ability to automatically turn off the discharged battery in the absence of the main power supply when the voltage on it reaches (9.0±0.3) V;
+* 25 μA limitation of the current consumed by the product from the automatically disconnected battery;
+* stability to both the break and short circuit in the battery circuit is unlimited in time, while the product will be powered from the main source;
+* protection against "reverse polarity" in case of wrong connection to the battery terminals or external UPS;
+* automatic periodic testing of the battery and evaluation of its state by several parameters with subsequent sending of the corresponding notices to the panel program. The option can be disabled while configuring the product;
+* automatic "training" of the battery by periodic short-term sampling of the current pulse into the low-resistance load built into the product. This procedure implements the charge algorithm with an asymmetric current with alternating signs current that favorably affects both the completeness of the charge and the lifetime of the battery operated in the buffer mode. The option can be disabled while configuring the product.
 
-Если в качестве резервного источника электропитания используется внешний UPS, изделие продолжает периодически контролировать факт его подключения, но при этом не осуществляет:
+If an external UPS is used as a backup power source, the product continues to periodically monitor the fact of its connection, but does not monitor the following:
 
-* заряд внешнего источника;
-* его периодическое тестирование с оценкой текущего уровня заряда и величины внутреннего сопротивления.
+* charge of an external source;
+* its periodic testing with an evaluation of the current charge level and value of internal resistance.
 

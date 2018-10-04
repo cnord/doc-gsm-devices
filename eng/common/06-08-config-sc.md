@@ -1,147 +1,147 @@
 \pagebreak
 
-## Центр охраны {#config-sc}
+## Security Center {#config-sc}
 
-На вкладке «Центр охраны» можно указать параметры, которые будет использовать прибор при передаче событий на пульт охраны по каналам GSM и Ethetnet.
+Settings that the device Security Center use when transmitting events via GSM and Ethernet channels can be specified on the “Security Center” tab.
 
-### Идентификация прибора
+### Device Identification
 
-\imgcapt{img/06-08-config-common-01.png}{Вкладка «Центр охраны», раздел «Идентификация»}
+\imgcapt{img/06-08-config-common-01.png}{“Security Center” tab, “Identification” section}
 
-В разделе «Индентификация» можно указать номер объекта, который будет использоваться при передаче событий с прибора. 
+In the "Identification" section  it is possible to specify the number of the site that will be used when transmitting events from the device. 
 
-> Поскольку передача событий с прибора в программное обеспечение «Центр охраны» выполняется в протоколе, который является информационным эквивалентом протокола Ademco ContactID, то каждое событие, если это возможно, содержит информацию о номере раздела, в котором оно произошло, а также о номере шлейфа, который вызвал формирование события, либо о номере пользователя, который выполнил взятие или снятие раздела. Таким образом, при передаче по GSM или Ethernet одного номера объекта достаточно, чтобы передавать любые событие с прибора без потери информативности.
+> Since the transmission of events from the device to the Security Center software is performed in a protocol that is the information equivalent of the Ademco ContactID protocol, each event, if possible, contains information about the number of the partition in which it occurred, as well as the zone number, which caused the formation of the event, or the number of the user who performed the partition arming or disarming. Thus, when transmitting over GSM or Ethernet, a single site number is sufficient to transmit any event from the device without loss of informativity.
 
-В разделе «Идентификация», в поле «Идентификатор устройства» отображается уникальный восьмизначный серийный номер, который устройство получает при производстве. Этот серийный номер может передаваться на пульт охраны и служить в качестве альтернативы номеру объекта при идентификации прибора. Для включения этой возможности служит параметр «Передавать идентификатор устройства в пультовую программу». В программном обеспечении «Центр охраны» возможность использовать серийный номер прибора вместо номера объекта не реализована: если передача серийного номера в пультовую программу включена, то серийный номер будет просто отображаться в карточке объекта на вкладке «Оборудование».
+In the "Identification" section, the "Device identifier" field displays the unique eight-digit serial number that the device receives at the production stage. This serial number can be transmitted to the receiver and serve as an alternative to the site number when identifying the device. The “Transmit device identifier to remote program" parameter is used to enable this feature. The possibility to use the serial number of the device instead of the site number is not implemented in the Security Center software: if the serial number is transmitted to the remote program, the serial number will simply be displayed in the site card on the “Equipment" tab.
 
-> Если в качестве пультового программного обеспечения используется «Центр охраны» версии 4, то включать передачу серийного номера в пультовую программу нельзя: прибор не сможет подключиться к «Центру охраны». 
+> If the Security Center version 4 is used as the remote software, then it is impossible to include the transmission of the serial number to the remote program: the device will not be able to connect to the Security Center. 
 
-Для того, чтобы события с прибора правильно обрабатывались программным обеспечением «Центр охраны», необходимо соблюдение следующих условий:
+To ensure that the events from the device are properly handled by the Security Center software, the following conditions shall be met:
 
-* номер объекта, заданный при настройке прибора, должен совпадать с номером объекта, созданным для прибора в программном обеспечении «Центр охраны»;
-* в модуле «Менеджер объектов», на вкладке «Оборудование» для этого объекта должно быть указано значение «Си-Норд GSM (CML)»;
-* перед первым подключением прибора к программному обеспечению «Центр охраны» необходимо убедиться в том, что значение в поле «Идентификатор» на вкладке «Оборудование» не задано.
+* the site number specified when setting up the device shall match the site number created for the device in the Security Center software;
+* in the "Site Manager" module, the value “C.Nord GSM (CML)" shall be specified on the “Equipment" tab for this site;
+* before the first connection of the device to the Security Center software, make sure that the value in the “ID” field on the “Equipment” tab is not set.
 
-\imgcapt{img/06-08-config-common-02.png}{Модуль «Менеджер объектов», вкладка «Оборудование»}
+\imgcapt{img/06-08-config-common-02.png}{"Site Manager” module, “Equipment” tab}
 
-### Параметры передачи по GPRS
+### GPRS Transmission Parameters
 
-\imgcapt{img/06-08-config-common-03.png}{Вкладка «Центр охраны», раздел «Передача по TCP/IP (GPRS)»}
+\imgcapt{img/06-08-config-common-03.png}{“Security Center” tab, "Transfer via TCP/IP (GPRS)" section}
 
-В разделе «Передача по TCP/IP (GPRS)» можно задать до двух пар «адрес:порт», которые будут использоваться прибором при подключении к пульту охраны по каналу GSM/GPRS.
+In the "Transfer via  TCP/IP (GPRS)" section it is possible to specify up to two pairs of "address: port", which will be used by the device when connecting to the receiver via GSM/GPRS.
 
-> В качестве значения для полей «Адрес 1» и «Адрес 2» можно указать как IP-адрес, так и DNS-имя.
+> It is possible to specify both the IP address and the DNS name for the "Address 1" and "Address 2" fields.
 
-При инициализации подключения по GPRS, прибор сначала пытается выполнить подключение к серверу с параметрами «Адрес 1:Порт 1». Если подключение установить не удастся, то будет выполнена попытка подключения к серверу с параметрами «Адрес 2:Порт 2». При этом обе пары «адрес:порт» воспринимаются прибором, как равнозначные: отличия между ними заключаются только в том, какая пара будет использоваться для инициализации подключения первой. Если прибор подключится к пульту охраны с использованием пары «Адрес 2:Порт 2», то это подключение не будет считаться подключением по резервному каналу и будет закрыто только в том случае, если связь с пультом охраны с использованием этого подключения будет потеряна.
+When initializing a GPRS connection, the device first tries to connect to the server with the parameters "Address 1:Port 1". If the connection cannot be established, an attempt will be made to connect to the server with the parameters "Address 2:Port 2". In this case, both pairs "address:port" are perceived by the device as equivalent: the differences between them are only in what pair will be used first to initialize the connection. If the device is connected to the receiver using the "Address 2:Port 2" pair, then this connection will not be considered a connection on the backup channel and will be closed only if communication with the receiver using this connection is lost.
 
-Обе пары «адрес:порт» действительны для обеих SIM, установленных в приборе: вне зависимости от того, какая из SIM в настоящий момент является активной, прибор сначала выполнит попытку подключения к пульту охраны с параметрами «Адрес 1:Порт 1», и только если эта попытка будет неудачной – попытку подключения с параметрами «Адрес 2:Порт 2».
+Both pairs "address:port" are valid for both SIMs installed in the device: irrespective of which SIM is currently active, the device will first attempt to connect to the receiver with the parameters "Address 1:Port 1", and only if this attempt fails - it will try to connect with the parameters "Address 2:Port 2".
 
-При наличии на пульте охраны только одного адреса для подключения приборов по TCP/IP, то при конфигурировании прибора значения для параметров «Адрес 2:Порт 2» следует оставить пустыми.
+If there is only one TCP/IP address on the receiver, when configuring the device, the values for the parameters "Address 2:Port 2" shall be left blank.
 
-Если к прибору не подключен опциональный модуль «Адаптер Ethernet», то канал GSM/GPRS на SIM1 считается *основным* для прибора.
+If an optional "Ethernet Adapter" is not connected to the device, the GSM/GPRS channel on SIM1 is considered the *main* for the device.
 
-**Прием событий в «Центре охраны»**
+**Reception of Events in Security Center**
 
-Для приема событий от прибора по каналам TCP/IP (GSM/GPRS и Ethernet) в программном обеспечении «Центр охраны» необходимо использовать источник событий «Си-Норд GSM (CML)». Добавить этот источник событий или изменить его параметры можно в модуле «Менеджер событий». 
+To receive events from the device via TCP/IP (GSM/GPRS and Ethernet) in the Security Center software it is necessary to use the “C.Nord GSM (CML)" event source. This source of events can be added or it can be changed in the "Event manager" module. 
 
-Для того, чтобы открыть окно настроек службы источников событий нужно выбрать пункт «Источники событий (службы)...» в контекстном меню, которое появляется при щелчке левой правой кнопки мыши по иконке модуля в системной области панели задач.
+To access the settings of event sources select the "Event sources (services)..." in the module menu that appears after right-clicking on the module icon in the system tray of the taskbar.
 
-\imgcapt{img/06-08-config-common-04.png}{Контекстное меню модуля «Менеджера событий»}
+\imgcapt{img/06-08-config-common-04.png}{Context menu of "Event manager" module}
 
-Для того, чтобы добавить источник событий «Си-Норд GSM (CML)» в службу источников событий, нужно нажать на кнопку «Добавить» и выбрать пункт, соответствующий источник, в появившемся меню.
+To add the event source “C.Nord GSM (CML)" to the service of event sources, click the "Add" button and select the item corresponding to the source in the appeared menu.
 
-\imgcapt{img/06-08-config-common-05.png}{Меню окна настроек службы источников событий}
+\imgcapt{img/06-08-config-common-05.png}{Menu of settings window of event source service}
 
-\imgcapt{img/06-08-config-common-06.png}{Окно настроек источника событий «Си-Норд GSM (CML)»}
+\imgcapt{img/06-08-config-common-06.png}{Event settings window of “C.Nord GSM (CML)”}
 
-Подробнее о назначении параметров источника событий «Си-Норд GSM (CML)» можно прочитать в документации на программное обеспечение «Центр охраны».
+See more information about the parameters of the source of events for “C.Nord GSM (CML)” in the documentation for the Security Center software.
 
-**IP-адрес или DNS-имя?**
+**IP Address or DNS Name?**
 
-В качестве адреса сервера рекомендуется указывать DNS-имя, а не IP-адрес и вот почему. Выделенный IP-адрес, как правило, принадлежит конкретному оператору связи, который предоставляет доступ в интернет и не может быть перенесен на подключение, которое предоставляет *другой* оператор связи. Что же касается DNS-имени, то оно принадлежит той организации, которая его зарегистрировала, например – охранному предприятию. Кроме того, соответствие DNS-имени и IP-адреса также задает охранное предприятие. 
+As the server address, it is recommended to specify a DNS name, not an IP address, and here’s the reason. As a rule, dedicated IP-address belongs to a specific carrier, which provides access to the Internet and cannot be transferred to a connection that is provided by *another* carrier. As for the DNS name, it belongs to the organization that registered it, for example - to a security company. Besides, the compliance of the DNS name and IP address is also specified by the security company. 
 
-Что произойдет, если по каким-то причинам придется расторгнуть договор с оператором связи, который предоставляет охранному предприятию доступ в интернет? Если в качестве адреса для подключения к пульту охраны указано DNS-имя, то достаточно будет изменить запись, которая задает соответствие DNS-имени и IP-адреса. Если же указан IP-адрес, то придется организовать выезд на каждый объект, чтобы изменить значение адреса.
+What happens if, for some reason, it is necessary to cancel the contract with the carrier, which gives the security company access to the Internet? If you specify a DNS name for the connection to the receiver, it will be enough to change the entry that specifies the DNS name and IP address. If you specify an IP address, you will have to visit each site to change the address value.
 
-Исходя из изложенного *настоятельно рекомендуется* использовать именно DNS-имя, а не IP-адрес.
+Proceeding from the above, it is strongly *recommended* to use the DNS name, not the IP address.
 
-### Параметры передачи по Ethernet
+### Transmission Parameters over Ethernet
 
-\imgcapt{img/06-08-config-common-07.png}{Вкладка «Центр охраны», раздел «Передача по TCP/IP (Ethernet)»}
+\imgcapt{img/06-08-config-common-07.png}{“Security Center” tab, “Transfer via TCP/IP (Ethernet)" section}
 
-В разделе «Передача по TCP/IP (Ethernet)», так же, как и в предыдущем разделе можно задать две пары «адрес:порт», которые будут использоваться прибором при подключении к пульту охраны по каналу Ethernet. Все комментарии, которые даны в отношении пар «адрес:порт» в описании раздела «Передача по TCP/IP (GPRS)» распространяются и на параметры в разделе «Передача по TCP/IP (Ethernet)».
+In the “Transfer via TCP/IP (Ethernet)" section, just like in the previous section, it is possible to specify two pairs of "address:port" that will be used by the device when connecting to the receiver via Ethernet. All comments that are given regarding the pairs "address:port" in the description of the “Transfer via TCP/IP (GPRS)" section apply to the parameters in the "Transfer via TCP/IP (Ethernet)" section.
 
-> В общем случае значения параметров «адрес:порт» должны быть одинаковыми для разделов «Передача по TCP/IP (GPRS)» и «Передача по TCP/IP (Ethernet)». Тем не менее, в некоторых случаях эти значения могут быть разными. Например, если для канала GSM/GPRS используется защищенное VPN-подключение, предоставленное оператором сотовой связи, то адреса для подключения по GSM/GPRS и Ethernet могут быть разными, так как подключение по Ethernet будет выполняться через публичную сеть. Но даже и в этом случае можно организовать подключение по каналу GSM/GPRS таким образом, чтобы в качестве адреса пульта использовалось DNS-имя, а не IP-адрес.
+> In the general case, the values of the parameters "address:port" shall be the same for the "Transfer via TCP/IP (GPRS)" and "Transfer via TCP/IP (Ethernet)” sections. However, in some cases these values may be different. For example, if a secure VPN connection provided by a carrier is used for the GSM/GPRS channel, the addresses for GSM/GPRS and Ethernet connection may be different, since the Ethernet connection will be performed via a public network. But even in this case it is possible to arrange a connection via the GSM/GPRS channel so that the DNS address, rather than the IP address, is used as the address of the receiver.
 
-Если к прибору подключен опциональный модуль «Адаптер Ethernet», то канал Ethernet считается *основным* для прибора.
+If an optional "Ethernet Adapter" is not connected to the device, the Ethernet channel is considered the *main* for the device.
 
-Раздел «Передача по TCP/IP (Ethernet)» отображается в конфигураторе только в том случае, если к прибору подключен опциональный модуль «Адаптер Ethernet».
+The “Transfer via TCP/IP (Ethernet)” section is displayed in the configurator only if an optional “Ethernet Adapter” module is connected to the device.
 
-### Параметры передачи в CSD-канале GSM
+### Transmission Parameters in GSM CSD-Channel
 
-\imgcapt{img/06-08-config-common-08.png}{Вкладка «Центр охраны», раздел «Передача в CSD-канале GSM»}
+\imgcapt{img/06-08-config-common-08.png}{“Security Center” tab, partition "Transfer via GSM CSD channel"
 
-В разделе «Передача в CSD-канале GSM» можно указать номера телефонов, которые будут использоваться для дозвона на пульт охраны при передаче событий в CSD-канале GSM.
+In the “Transfer via GSM CSD channel" section it is possible to specify the phone numbers that will be used for dialing to the receiver when transmitting events in the GSM CSD channel.
 
-В отличии от каналов GSM/GPRS и  Ethernet, номера телефонов для передачи в канале CSD задаются отдельно для каждой SIM. Связано это с тем, что стоимость услуги передачи по CSD внутри сети оператора связи может быть существенно дешевле. 
+Unlike the GSM/GPRS and Ethernet channels, the phone numbers for transmission in the CSD channel are set separately for each SIM. This is due to the fact that the cost of the CSD transmission service within the carrier network can be substantially cheaper. 
 
-При передаче в канале CSD прибор сначала выполняет дозвон по первому номеру, указанному для активной в настоящий момент SIM, а если передача события не удалась, то по второму. Если на пульте охраны установлен только один модем для приема событий по каналу CSD, то второй номер телефона следует оставить пустым.
+When transmitting via the CSD channel, the device first dials the first number specified for the currently active SIM, and if the transmission of the event fails, then it dials the second one. If only one modem is installed on the receiver to receive events via CSD, then the second phone number shall be left blank.
 
-Канал CSD считается активным, если задан хотя бы один номер телефона. Если прибор не должен использовать канал CSD для передачи событий, то оба телефонных номера должны быть пустыми.
+The CSD channel is considered active if at least one phone number is specified. If the device does not have to use the CSD channel to transmit events, then both telephone numbers shall be empty.
 
-**Прием событий в «Центре охраны»**
+**Reception of Events in Security Center**
 
-Для приема событий от прибора по каналу CSD в программном обеспечении «Центр охраны» необходимо использовать «Источник событий по GSM». Добавить этот источник событий или изменить его параметры можно в модуле «Менеджер событий». 
+To receive events from the device via the CSD channel in the Security Center software it is necessary to use "GSM Events Source". This source of events can be added or it can be changed in the "Event manager" module. 
 
-В качестве оборудования для приема событий по каналу CSD может использоваться любой GSM-модем, система команд которого совместима с модемом Siemens MC35.
+Any GSM modem, which command system is compatible with the Siemens MC35 modem can be used as an equipment for receiving events via the CSD channel.
 
 
-### Параметры передачи в голосовом канале GSM
+### Transmission Parameters via GSM voice channel
 
-\imgcapt{img/06-08-config-common-09.png}{Вкладка «Центр охраны», раздел «Передача в голосовом канале GSM»}
+\imgcapt{img/06-08-config-common-09.png}{“Security Center” tab, "Transfer via GSM voice channel”}
 
-В разделе «Передача в голосовом канале GSM» можно указать номера телефонов, которые будут использоваться для дозвона на пульт охраны при передаче событий в голосовом канале GSM. Передача в голосом канале осуществляется с помощью аналоговых сигналов DTMF, в качестве информационного протокола используется Ademco Contact ID.
+In the "Transfer via GSM voice channel” section, it is possible to specify the phone numbers that will be used for dialing to the receiver when transmitting events via the GSM voice channel. The transmission via the voice channel is performed with the help of analog DTMF signals, and Ademco Contact ID is used as an information protocol.
 
-Номера телефонов для передачи в голосовом канале задаются отдельно для каждой SIM, так как голосовой звонок внутри сети оператора связи может быть дешевле. 
+Telephone numbers for voice channel transmission are set separately for each SIM, since a voice call within the communication channel network can be cheaper. 
 
-При передаче в голосовом канале прибор сначала выполняет дозвон по первому номеру, указанному для активной в настоящий момент SIM, а если передача события не удалась, то по второму. Если на пульте охраны есть только один номер для голосового дозвона, то второй номер телефона следует оставить пустым.
+When transmitting via the voice channel, the device first dials the first number specified for the currently active SIM, and if the transmission of the event fails, then it dials the second one. If there is only one number for voice dialing on the receiver, then the second phone number shall be left blank.
 
-Голосовой канал GSM считается активным, если задан хотя бы один номер телефона. Если прибор не должен использовать голосовой канал для передачи событий, то оба телефонных номера должны быть пустыми.
+The GSM voice channel is considered active if at least one phone number is specified. If the device does not have to use the voice channel to transmit events, then both telephone numbers shall be empty.
 
-**Прием событий в «Центре охраны»**
+**Reception of Events in Security Center**
 
-Для приема событий от прибора в голосовом канале GSM необходимо использовать специально предназначенное для этого пультовое оборудование. В качестве примера такого оборудования можно привести процессор центральной станции "Sentinel" производства компании "Pima Electronics" или процессоры центральной станции "SG System III" / "SG System IV" производства компании "DSC".
+To receive events from the device via the GSM voice channel, it is necessary to use the dedicated receiver equipment. As an example of such equipment, we can mention the processor of the central station "Sentinel" manufactured by Pima Electronics or processors of the central station “SG System III”/”SG System IV” manufactured by DSC.
 
-### Параметры передачи по SMS
+### SMS Transmission Parameters
 
-\imgcapt{img/06-08-config-common-10.png}{Вкладка «Центр охраны», раздел «Передача по SMS»}
+\imgcapt{img/06-08-config-common-10.png}{“Security Center” tab, “Transfer via SMS" section}
 
-В разделе «Передача по SMS» можно указать номера телефонов, которые будут использоваться для передачи событий на пульт охраны с помощью канала SMS. 
+In the “Transfer via SMS" section it is possible to specify the phone numbers that will be used to send events to the receiver via the SMS channel. 
 
-При передаче по каналу SMS прибор использует протокол, позволяющий в одном SMS-сообщении передать до 5 событий. Этот протокол предназначен исключительно для передачи информации на пульт охраны *и не может быть использован* для информирования пользователей о событиях на объекте.
+When sending via SMS, the device uses a protocol that allows sending up to 5 events in one SMS message. This protocol is intended solely for transmitting information to the receiver *and cannot be used* to inform users of events on the site.
 
-Номер телефона для передачи по каналу SMS задается отдельно для каждой SIM, так как отправка SMS внутри сети оператора связи может быть дешевле.
+The phone number for SMS transmission is set separately for each SIM, since sending SMS within the carrier's network can be cheaper.
 
-Канал SMS считается активным, если для него задан номер телефона. Если прибор не должен использовать канал SMS для передачи событий, то телефонный номер должен быть пуст.
+SMS channel is considered active if a phone number is specified for it. If the device does not have to use the SMS channel to transmit events, the phone number shall be empty.
 
 
-**Прием событий в «Центре охраны»**
+**Reception of Events in Security Center**
 
-Для приема событий от прибора по каналу SMS в программном обеспечении «Центр охраны» необходимо использовать «Источник событий по GSM». Добавить этот источник событий или изменить его параметры можно в модуле «Менеджер событий». 
+To receive events from the device via the SMS channel in the Security Center software it is necessary to use "GSM Events Source". This source of events can be added or it can be changed in the "Event manager" module. 
 
-В качестве оборудования для приема событий по каналу SMS может использоваться любой GSM-модем, система команд которого совместима с модемом Siemens MC35.
+Any GSM modem, which command system is compatible with the Siemens MC35 modem can be used as an equipment for receiving events via the SMS channel.
 
-### Переключение каналов связи
+### Communication Channel Switching
 
-Для определения следующего канала связи, если текущий IP-канал не работает, действует следующее правило:
+To determine the next communication channel, if the current IP channel does not work, the following rule applies:
 
-* если нет событий на передачу, то выполняется переход на другой IP-канал. Например, если не работает GPRS на SIM1, то прибор переходит на GPRS на SIM2 и наоборот;
-* если события есть, то выполняется попытка их передачи с помощью резервного канала на той SIM, которая сейчас активна. По завершению отправки событий возобновляются попытки подключения по IP-каналам.
+* if there are no events for transmission, then switching to another IP channel is performed. For example, if GPRS does not work on SIM1, then the device switches to GPRS on SIM2 and vice versa;
+* if there are events, then an attempt is made to transmit them via the backup channel on the SIM that is currently active. After the completion of sending events, attempts to connect via IP channels are renewed.
 
-Если передача на резервных каналах на SIM1 не удалась, то будет переход на SIM2 и перебор каналов там. 
+If the transmission via the backup channels to SIM1 failed, then the device will switch to SIM2 and will select channels there. 
 
-Если событий на передачу нет, то прибор будет перебирать IP-каналы до тех пор, пока выполнит подключение, либо пока не появится событие на передачу. Важно и то, что прибор  может отличить ситуацию «GPRS не работает» от ситуации «нет подключения к «Центру охраны». В первом случае выполняется переход на другой IP-канал, во втором случае продолжаются попытки подключения к пульту внутри одной GPRS-сессии. 
+If there are no events to transmit, the device will search through the IP channels until the connection is made, or until the event for transmission appears. It is also important that the device can distinguish the situation "GPRS does not work" from the situation "no connection to Security Center". In the first case, switching to another IP channel is performed, in the second case, attempts to connect to the console inside one GPRS session continue. 
 
-\imgcapt{img/06-08-config-common-11.png}{Схема переключения каналов связи}
+\imgcapt{img/06-08-config-common-11.png}{Diagram of communication channel switching}
 
-Порядок переключения IP-каналов при отсутствии событий показана на рисунке синими прерывистыми линиями. Черными сплошными линиями показана схема переключения всех настроенных каналов при наличии событий на передачу.
+The order of switching IP channels in the absence of events is shown in the figure with blue dashed lines. Black solid lines show the scheme for switching all configured channels when there are events for transmission.
 

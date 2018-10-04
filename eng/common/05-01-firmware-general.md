@@ -1,25 +1,25 @@
 \pagebreak
 
-# Обновление программного обеспечения {#firmware-general}
+# Software Update {#firmware-general}
 
-Прежде чем приступить к настройке прибора, необходимо убедиться, что версия программного обеспечения, которая на нем установлена, является актуальной. Для того чтобы это сделать, нужно подключить прибор к компьютеру и запустить утилиту для обновления прошивки прибора по USB.
+Before setting the device, it is necessary to make sure that the version of the software that is installed on it is up-to-date. For this connect the device to the computer and run the utility to update the firmware of the device via USB.
 
-Пакет программ, которые потребуются для того, чтобы подключить прибор к компьютеру и выполнить обновление версии программного обеспечения, можно загрузить с официального сайта технической поддержки НТКФ «Си-Норд» ([support.cnord.ru](http://support.cnord.ru)), со страницы «[Файлы для загрузки](https://support.cnord.ru/hc/ru/articles/203372340)».
+The software package that will be required to connect the device to the computer and update the software version can be downloaded from the official support site of C.Nord company([support.cnord.ru](http://support.cnord.ru)), from page «[Files for download](https://support.cnord.ru/hc/ru/articles/203372340)».
 
-Пакет для обновления версии программного обеспечения приборов поставляется в виде zip-архива с именем вида **CnordFirmware-YYYYMMDD-XX.XX.zip**, где **YYYYMMDD** – дата релиза программного обеспечения, а **XX.XX** – версия программного обеспечения в архиве. Содержимое архива необходимо распаковать в папку на жесткий диск компьютера. В архив включены следующие программы:
+The package for updating the software version of the devices comes in the form of a zip-archive with the name of type **CnordFirmware-YYYYMMDD-XX.XX.zip**, where **YYYYMMDD** is the release date of the software, and **XX.XX** is a version of the software in the archive. The contents of the archive shall be unpacked in a folder on the hard disk of the computer. The following programs are included in the archive:
 
-* драйвер для подключения прибора к компьютеру;   
-Драйвер находится в папке **Driver**
-* утилита, предназначенная для обновления версии программного обеспечения прибора;   
-Исполняемый файл утилиты называется **CnordFirmware.exe**, именно этот файл необходимо запускать для обновления версии программного обеспечения прибора.
+* driver for connecting the device to the computer;   
+The driver is located in the folder **Driver**
+* utility program, intended to update the software version of the device;   
+The executable utility file is called **CnordFirmware.exe**, this file shall be run to update the software version of the device.
 
-В пакет для обновления версии программного обеспечения прибора включены актуальные версии прошивок для следующих устройств: 
+The package for updating the software version of the device includes the latest firmware versions for the following devices: 
 
-* «Норд GSM», «Норд GSM WRL», «Норд LAN», «Норд RF»;
-* «Норд GSM Mini»;
-* «Норд GSM Air»;
+* «Nord GSM», «Nord GSM WRL», «Nord LAN», «Nord RF»;
+* «Nord GSM Mini»;
+* «Nord GSM Air»;
 * «ТР-100 GSM IV»; 
-* «Сержант GSM»;
-* «Союз GSM»;
-* «Союз PCB GSM». 
+* «Serzhant GSM»;
+* «Soyuz GSM»;
+* «Soyuz PCB GSM». 
 

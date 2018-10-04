@@ -1,25 +1,25 @@
 \pagebreak
 
-## Облако {#config-cloud}
+## Cloud {#config-cloud}
 
-Подключение прибора к «Облаку» обеспечивает работу сервисных функций прибора и позволяет удаленно взаимодействовать с ним с помощью мобильного приложения «MyAlarm» и сервиса «Панель инженера». Подробное описание технологии находится в разделе [Удалённый доступ к прибору](#remote-access).
+Connecting the device to the "Cloud" provides the service functions of the device and allows to interact with it remotely with the help of the "MyAlarm" mobile application and the “Engineering panel” service. A detailed description of the technology can be found in [Remote Access to Device](#remote-access) section.
 
-На вкладке «Облако» можно  выбрать, к какому именно «Облаку» должен подключаться прибор. 
+On the "Cloud" tab it is possible to choose to which "Cloud" the device shall be connected. 
 
-Если для работы Вы используете публичное «Облако Си-Норда», то все просто – нужно нажать на кнопку с таким же названием:
+If you use the public “C.Nord Cloud" for work, then everything is simple - you need to click the button with the same name:
 
-\imgcapt{img/06-10-config-cloud-01.png}{Вкладка «Облако», выбрано использование публичного «Облака».}
+\imgcapt{img/06-10-config-cloud-01.png}{"Cloud” tab, public "Cloud" is selected.}
 
 
-Если прибор должен работать с «Частным облаком», то необходимо нажать на кнопку «Частное облако», после чего ввести пин-код, который Вам сообщили при развертывании Вашего «Частного облака»:
+If the device shall work with the “Private Cloud”, then click the "Private Cloud" button, and then enter the pin code which you received when configuring your "Private Cloud":
 
-\imgcapt{img/06-10-config-cloud-02.png}{Вкладка «Облако», выбрано использование «Частного облака».}
+\imgcapt{img/06-10-config-cloud-02.png}{“Cloud” tab, "Private Cloud" is selected.}
 
-Если пин-код сервера «Частного облака» будет введен правильно, то при нажатии на кнопку с «галочкой» вместо поля ввода отобразится название «Частного облака», соответствующее пин-коду:
+If the “Private Cloud” server pin is entered correctly, when you click the button with a “tick”  the name of the “Private Cloud corresponding” to the pin code is displayed instead of the input field:
 
-\imgcapt{img/06-10-config-cloud-03.png}{Вкладка «Облако», отображается название «Частного облака».}
+\imgcapt{img/06-10-config-cloud-03.png}{“Cloud” tab, name of the "Private Cloud" is displayed.}
 
-Если же по каким-то причинам необходимо задать настройки для подключения к «Частному облаку» вручную, то и такая возможность есть: нужно нажать на кнопку «Настроить вручную» и указать адреса и порты для подключения к «Облаку» по каналам GPRS и Ethernet (отображается только в том случае, если адаптер Ethernet подключено к прибору):
+If for some reason you need to configure the settings for connecting to the Private Cloud manually, then this option is also available: you need to click the "Configure manually" button and specify the addresses and ports to connect to the "Cloud" via GPRS and Ethernet (displayed only if the Ethernet adapter is connected to the device):
 
-\imgcapt{img/06-10-config-cloud-04.png}{Вкладка «Облако», настройка параметров для подключения вручную.}
+\imgcapt{img/06-10-config-cloud-04.png}{"Cloud” tab, settings for manual connection.}
 

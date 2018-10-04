@@ -1,57 +1,57 @@
 \pagebreak
 
-## Подключение проводных шлейфов
+## Connection of Wired Zones
 
-Сигнальные кабели шлейфов подключаются к клеммам «Z1»–«Z8».
+The signal cables of the zones are connected to the terminals "Z1"-"Z8".
 
-Общие кабели шлейфов подключаются к клеммам «GND».
+The common zone cables are connected to the “GND” terminals.
 
-Плюсовые кабели питания охранных шлейфов (12 В) подключаются к клеммам «PWR».
+The plus power supply cables of the security zones (12 V) are connected to the "PWR” terminals.
 
-Плюсовые кабели питания пожарных шлейфов (12 В) подключаются к клемме «SMOKE».
+The plus power supply cables of the fire zones (12 V) are connected to the "SMOKE” terminal.
 
-### Нормально замкнутый и нормально разомкнутый шлейф
+### Normally Closed and Normally Open Zone
 
-Нормальное состояние шлейфа определяется извещателями, который в него включены:
+The normal state of the zone is determined by its detectors:
 
-* если нормальное состояние для шлейфа определено, как *замкнутый*, то в таком шлейфе должны использоваться извещатели, которые также имеют *замкнутые* контакты своего выходного реле в нормальном состоянии. При тревоге такие извещатели должны *размыкать* контакты выходного реле;
-* если нормальное состояние для шлейфа определено, как *разомкнутый*, то в таком шлейфе должны использоваться извещатели, которые имеют *разомкнутые* контакты своего выходного реле в нормальном состоянии. При тревоге такие извещатели должны *замыкать* контакты выходного реле.
+* if the normal state for the zone is defined as *closed*, then there shall be detectors in this zone. which also have *closed* contacts of their output relay in the normal state. In case of alarm, these detectors shall *open* the contacts of the output relay;
+* if the normal state for the zone is defined as *open*, then there shall be detectors in this zone, which have *open* contacts of their output relay in the normal state. In case of alarm, these detectors shall *close* the contacts of the output relay;
 
-Необходимо отметить, что подавляющее большинство современных инфракрасных и магнитоконтактных извещателей имеют *нормально замкнутые* контакты своего выходного реле. Таким образом, для шлейфов, в которые включены эти извещатели, нормальное состояние должно быть определено, как *замкнутый*.
+It shall be noted that the vast majority of modern infrared and magnetic contact detectors have *normally closed* contacts of their output relay. Thus, for zones with these detectors, the normal state shall be defined as *closed*.
 
-Нормально разомкнутые извещатели включаются в шлейф параллельно, а нормально замкнутые – последовательно.
+Normally open detectors are connected to the zone in parallel, and normally closed - in series.
 
-В один и тот же шлейф можно включать извещатели только одного типа: либо нормально замкнутые, либо нормально разомкнутые.
+One zone can include detectors of only one type: either normally closed, or normally open.
 
-### Оконечные резисторы
+### Terminating Resistors
 
-Если при подключении шлейфа не используется оконечных резисторов, то для такого шлейфа прибор может определить только одно из двух состояний: «Тревога» или «Норма». Такой шлейф весьма уязвим: если нормальное состояние для шлейфа определено, как *разомкнутый*, то достаточно просто перекусить кабель шлейфа в любом доступном месте, и шлейф навсегда останется в нормальном состоянии, тревоги по такому шлейфу не будет никогда. Ничуть не лучше выглядит шлейф, нормальное состояние для которого определено, как *замкнутый*: если удастся замкнуть сигнальные кабели шлейфа накоротко, то тревоги по нему также никогда не будет.
+If the terminating resistors are not used when connecting the zone, then for this zone the device can determine only one of two states: "Alarm" or "Norm". This zone is very vulnerable: if the normal state for the zone is defined as *open*, then it is very simple to cut the zone cable in any accessible location, and the zone will remain in the normal state forever, there will never be any alarms on such a zone. The zone, which normal state is defined as *closed*, does not look any better: if one can short-circuit the signal cables of the zone, then there will never be any alarms on it.
 
-Один оконечный резистор, установленный в шлейфе, позволяет отличить неисправность в шлейфе от тревоги. Какая именно неисправность может быть определена – обрыв или короткое замыкание – зависит от нормального состояния шлейфа: для нормального состояния шлейфа *разомкнутый* один оконечный резистор позволяет определить обрыв шлейфа, а для нормального состояния *замкнутый* – короткое замыкание.
+One terminating resistor, installed in the zone, allows to distinguish the failure in the zone from the alarm. What kind of fault can be detected - break or short circuit - depends on the normal state of the zone: for the zone *open* normal state, one terminating resistor allows to determine the zone break, and for the *closed* normal state – short circuit.
 
-Два оконечных резистора позволяют определить и обрыв, и короткое замыкание для шлейфа с любым нормальным состоянием.
+Two terminating resistors allow to determine both break and short circuit for a zone with any normal state.
 
-> Для минимального противодействия выводу шлейфов сигнализации из строя, рекомендуется включать в шлейфы как минимум один оконечный резистор.
+> For *minimum* counteraction against the alarm zone disabling, it is recommended to include at least one terminating resistor in the zones.
 
-### Шлейф без оконечных резисторов
+### Zone without Terminating Resistors
 
-\imgcapt{img/04-02-v51-52-no-resitor-normal-open.png}{Нормально разомкнутый шлейф}
+\imgcapt{img/04-02-v51-52-no-resitor-normal-open.png}{Normally open zone}
 
-\imgcapt{img/04-02-v51-52-no-resitor-normal-close.png}{Нормально замкнутый шлейф}
+\imgcapt{img/04-02-v51-52-no-resitor-normal-close.png}{Normally closed zone}
 
-### Шлейф с одним оконечным резистором
+### Zone with One Terminating Resistor
 
-\imgcapt{img/04-02-v52-one-resitor-normal-open.png}{Нормально разомкнутый шлейф}
+\imgcapt{img/04-02-v52-one-resitor-normal-open.png}{Normally open zone}
 
-\imgcapt{img/04-02-v52-one-resitor-normal-close.png}{Нормально замкнутый шлейф}
+\imgcapt{img/04-02-v52-one-resitor-normal-close.png}{Normally closed zone}
 
-### Шлейф с двумя оконечными резисторами
+### Zone with Two Terminating Resistors
 
-\imgcapt{img/04-02-v52-two-resitor-normal-open.png}{Нормально разомкнутый шлейф}
+\imgcapt{img/04-02-v52-two-resitor-normal-open.png}{Normally open zone}
 
-\imgcapt{img/04-02-v52-two-resitor-normal-close.png}{Нормально замкнутый шлейф}
+\imgcapt{img/04-02-v52-two-resitor-normal-close.png}{Normally closed zone}
 
-### Проводные шлейфы в конфигураторе
+### Wired Zones in Configurator
 
-При конфигурировании прибора необходимо явно указать норму для проводного шлейфа, а также количество оконечных резисторов. Сделать это можно на вкладке «[Шлейфы](#config-zones)».
+When configuring the device, it is necessary to explicitly specify the rate for the wired zone, and the number of terminating resistors. It is possible to do this on the “[Zones](#config-zones)” tab.
 

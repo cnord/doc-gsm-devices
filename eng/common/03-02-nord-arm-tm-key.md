@@ -1,94 +1,94 @@
 
-## ТМ-ключ
+## TM-Key
 
-\imgcapt{img/tm-with-key.png}{TM-считыватель и ТМ-ключ}
+\imgcapt{img/tm-with-key.png}{TM-reader and TM-key}
 
-Прибор обладает встроенным интерфейсом для подключения считывателей ТМ-ключей. Кроме того, в приборе предусмотрена возможность подключения светодиодного индикатора, который размещен непосредственно в корпусе некоторых моделей считывателей ТМ-ключей.
+The device has a built-in interface for connecting the TM-key readers. In addition, the device provides the ability to connect the LED indicator, which is located directly in the case of some models of TM-key readers.
 
-Светодиодный индикатор, размещенный в корпусе ТМ-считывателя, предназначен для индикации считывания ТМ-ключа, взятия и снятия, а также для индикации текущего состояния прибора.
+The LED indicator located in the TM-reader case is intended for indication of the TM-key reading, arming and disarming, and also for indicating the device current state.
 
-С помощью одного ТМ-ключа можно взять под охрану или снять с охраны один раздел.Если одному пользователю необходимо иметь возможность ставить или снимать с охраны несколько разделов одновременно, то нужно настроить соответствующие правила в разделе «Автоматика». 
+With a single TM-key it is possible to arm or disarm one partition. If one user has to be able to arm or disarm several partitions at the same time, then the appropriate rules shall be set in the "Automatic controls" section. 
 
-### Индикация считывания
+### Reading Indication
 
-Если операция считывания ключа завершилась успешно, то прибор индицирует этот факт, вне зависимости от того, найден этот ключ в памяти прибора или нет. Другими словами, при успешном считывании прибор просто подтверждает, что к считывателю поднесен ключ и этот ключ считан. 
+If the key reading operation has completed successfully, the device indicates this fact, regardless of whether the key is found in the device memory or not. In other words, if the reading is successful, the device simply confirms that a key has been brought to the reader and this key has been read. 
 
-Индикации успешного считывания ТМ-ключа: светодиод «мигает» (включается на 0.1 с. горит, после чего выключается на 0.1 с.) в течение 1 секунды.
+Indication of successful reading of the TM-key: the LED “flashes" (turns on for 0.1 sec., then turns off for 0.1 sec.) for 1 second.
 
-### Индикация ошибок
+### Error Indication
 
-При считывании ключа возможны следующие ошибки:
+The following errors are possible during a key reading:
 
-* ключ не найден в памяти прибора;
-* отказ от взятия.
+* key is not found in the device memory;
+*arming rejection.
 
-Индикация ошибки: светодиод «мигает» (включается на 0.5 с., после чего выключается на 0.5 с.) в течение 3 секунд.
+Error indication: the LED “flashes” (turns on for 0.5 s, then turns off for 0.5 s.) for 3 seconds.
 
-### Индикация снятия
+### Disarming Indication
 
-Если считан ключ, с помощью которого можно изменять состояние раздела и этот раздел взят под охрану, то раздел снимается с охраны.
+If the key, with which you can change the partition status and this partition is armed, is read, then the partition is disarmed.
 
-Индикация снятия выполняется после того, как будет выполнена индикация считывания.
+The disarming is indicated after the reading is completed.
 
-Индикация снятия: светодиод включается на 5 секунд и выключается.
+Disarming indication: the LED turns on for 5 seconds and turns off.
 
-После того, как будет выполнена индикация снятия с охраны, включается индикация дежурного режима.
+After the disarming indication is displayed, the standby mode indicator is enabled.
 
-### Индикация взятия
+### Arming Indication
 
-Если считывается ключ, с помощью которого можно изменять состояние раздела, то при отсутствии в разделе шлейфов с задержкой на выход выполняется взятие раздела под охрану. Если же в разделе присутствуют шлейфы с задержкой на выход, то начинается отсчет интервала задержки; взятие под охрану выполняется по окончании задержки на выход.
+If a key, with which it is possible to change the partition status, is read, then if there are no zones in the partition with exit delay, the partition is armed. If there are zones with exit delay, then the delay interval counting starts; arming is performed after the exit delay expires.
 
-Индикация взятия под охрану зависит от того, сколько разделов сконфигурировано в приборе.
+The arming indication depends on how many partitions are configured in the device.
 
-**Один раздел**
+**One Partition**
 
-Если в приборе сконфигурирован только один раздел, то после его взятия под охрану светодиод включается и горит постоянно: включается индикация дежурного режима с единственным разделом, взятым под охрану.
+If only one partition is configured in the device, then after it has been armed, the LED turns on and remains lit: the standby mode indicator with the only partition armed is enabled.
 
-**Несколько разделов**
+**Several Partitions**
 
-Если в приборе сконфигурировано несколько разделов, то индикация после взятия текущего под охрану зависит от того, остались снятые с охраны разделы или нет.
+If several partitions are configured in the device, then the indication after the current one is armed depends on whether the disarmed partitions remained or not.
 
-Если все разделы взяты под охрану, то светодиод включается и горит постоянно: включается индикация дежурного режима с несколькими разделами, все разделы взяты под охрану.
+If all partitions are armed, the LED turns on and remains lit: the standby mode indicator with several partitions is activated, all partitions are armed.
 
-Если же есть хотя бы один раздел, не взятый под охрану, то светодиод включается и горит в течение 20 секунд. После чего включается индикация дежурного режима с несколькими разделами, часть из которых снята с охраны.
+If there is at least one not armed partition, the LED turns on and is glowing for 20 seconds. After that, the indication of the standby mode with several partitions is enabled, some of which are disarmed.
 
-**Отказ от взятия**
+**Arming Rejection**
 
-«Отказ от взятия» -- это невозможность взять объект под охрану, если охранная сигнализация на объекте неисправна, либо взятие под охрану запрещено из-за отсутствия оплаты за услуги охраны.
+"Arming rejection" is the impossibility to arm the site, if the security alarm on the site is faulty, or arming is prohibited due to lack of payment for security services.
 
-Предусмотрены следующие причины отказа от взятия:
+There are the following reasons for arming rejection:
 
-* неисправность одного или нескольких шлейфов;
-* тревога в одном или нескольких шлейфах;
-* отсутствие связи с пультовой программой по IP-каналу;
-* отсутствие 220В на объекте;
-* отсутствие оплаты за услуги охраны;
-* открыт корпус прибора.
+* malfunction of one or more zones;
+* alarm in one or more zones;
+* no communication with the panel program via IP channel;
+* absence of 220V on the site;
+* no payment for security services;
+* the device case is opened.
 
-### Индикация дежурного режима
+### Standby Mode Indication
 
-На время индикации считывания, ошибки взятия/снятия, взятия и снятия индикация дежурного режима 
-прерывается.
+At the time of the reading indication, arming/disarming errors, arming and disarming the indication of the standby mode 
+is interrupted.
 
-Индикация дежурного режима зависит от того, сколько разделов сконфигурировано в приборе.
+The standby mode indication depends on how many partitions are configured in the device.
 
-**Один раздел**
+**One Partition**
 
-Если в приборе сконфигурирован только один раздел, то светодиод индицирует состояние раздела, наличие тревоги во время охраны и неисправности шлейфов:
+If only one partition is configured in the device, then the LED indicates the partition status, the presence of an alarm during protection and faulty zones:
 
-* светодиод включен непрерывно, если раздел взят под охрану;
-* светодиод выключен, если раздел снят с охраны;
-* светодиод «мигает»[^blink], если есть неисправности в шлейфах;
-* светодиод «мигает», если после взятия раздела под охрану была тревога и раздел не снимался с охраны.
+* LED is on continuously if the partition is armed;
+* LED is not on if the partition is disarmed;
+* the LED “flashes” [^blink], if there are faults in the zones;
+* the LED "flashes", if after the partition was armed, there was an alarm and the partition was not disarmed.
 
-> «Мигает» означает, что светодиод включается на 1 секунду, после чего выключается на 1 секунду, после чего снова включается на 1 секунду и т.д.
+> "Flashing" means that the LED turns on for 1 second, then turns off for 1 second, then turns on again for 1 second, etc.
 
-**Несколько разделов**
+**Several Partitions**
 
-Если в приборе сконфигурировано несколько разделов, то индицируется только состояние взятия всего прибора, наличие тревоги, когда весь прибор был под охраной, а также неисправности шлейфов.
+If several partitions are configured in the device, then only the following is indicated: the entire device arming, presence of an alarm, when the entire device was under protection, and also the zone faults.
 
-* светодиод включен непрерывно, если все разделы прибора взяты под охрану;
-* светодиод выключен, если хотя бы один раздел снят с охраны;
-* светодиод «мигает», если есть неисправности в шлейфах;
-* светодиод «мигает», если после взятия всего прибора под охрану была тревога и раздел, в котором была тревога, не снимался с охраны.
+* LED is on continuously if all device partitions are armed;
+* LED is off if at least one of the partitions is disarmed;
+* LED "flashes" if there are faults in the zones;
+* the LED "flashes", if after the device was armed, there was an alarm and the alarmed partition was not disarmed.
 

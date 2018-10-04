@@ -1,39 +1,39 @@
-## Подключение расширителя «РПШ-12» {#install-wze-12}
+## Connection of Expander "EW-12" {#install-wze-12}
 
-«РПШ-12» – расширитель проводных шлейфов для контрольных панелей «Норд GSM», с его помощью можно увеличить количество шлейфов до 16 или количество выходов типа «открытый коллектор».
+"EW-12" is an expander of the wired zones for the "Nord GSM” control panels, with its help it is possible to increase the number of zones up to 16 or the number of outputs of the "open collector" type.
 
-\imgcapt{img/04-05-wze-12-1.png}{«РПШ-12»}
+\imgcapt{img/04-05-wze-12-1.png}{«EW-12»}
 
-**Подключение к прибору**
+**Connection to Device**
 
-К прибору расширитель подключается к группе клемм «Считыватель», которая расположена с левого края линейки клемм прибора: клемма «1WR» расширителя подключается к клемме «DATA» прибора, а клемма «1WR GND» расширителя – к клемме «GND» прибора.
+The expander is connected to the device via group of terminals "Reader", which is located on the left edge of the device terminals: the "1WR" terminal of the expander is connected to the "DATA" terminal of the device, and the "1WR GND" terminal of the expander is to the "GND" terminal of the device.
 
-\imgcapt{img/04-05-wze-12.png}{Схема подключения «РПШ-12» к прибору}
+\imgcapt{img/04-05-wze-12.png}{Diagram of "EW-12" connection to device}
 
-Если расширитель подключен правильно, светодиод на нём должен мигать, шлейфы появятся в конфигураторе автоматически на вкладке [Шлейфы](#config-zones).
+If the expander is connected correctly, the LED on it shall flash, zones will appear in the configurator automatically on the [Zones](#config-zones) tab.
 
-**Питание расширителя**
+**Expander Power**
 
-Для подключения питания расширителя предназначены клеммы с маркировкой «GND PWR» и «+12V».
+The expander is powered via terminals marked "GND PWR" and "+ 12V".
 
-Питание можно подать двумя способами:
+Power can be supplied in two ways:
 
-* От самого прибора, при этом нужно учесть, что максимальная нагрузка – 200 мА.
-* От бесперебойного источника питания.
+* From the device itself, it shall be noted that the maximum load is 200 mA.
+* From an uninterruptible power source.
 
 
-**Подключение шлейфов к расширителю**
+**Connection of Zones to Expander**
 
-Клеммы «Z1» – «Z8» предназначены для подключения сигнального кабеля шлейфов.   
-Клеммы «GND» – для подключения «минусового» кабеля питания шлейфов и второго сигнального кабеля шлейфов.   
-Клеммы «SNS PWR» предназначены для подключения «плюсового» кабеля питания шлейфов.
+Terminals «Z1»-«Z8» are intended for connection of a signal cable of the zones.   
+The GND terminals are for connecting the minus power cable of the zones and the second signal cable of the zones.   
+The "SNS PWR" terminals are intended for connecting the “plus" power cable to the zones.
 
-Как и в самом приборе, в расширителе в каждый из шлейфов можно подключить до двух резисторов. Номиналы резисторов и схемы подключения шлейфов указаны в разделе Подключение проводных шлейфов.
+As in the device, up to two resistors can be connected to each zone in the expander. Resistor ratings and wiring diagrams are listed in the Connection of Wired Zones section.
 
-Каждая из клемм «Z1» – «Z8» может быть шлейфом или выходом типа «открытый коллектор», это указывается при конфигурировании контрольной панели:
+Each of terminals "Z1"-"Z8" can be a zone or an open collector output, which is indicated when configuring the control panel:
 
-* Если в конфигураторе шлейф выключен, то его можно использовать как открытый коллектор.
-* Если в конфигураторе шлейф включен, то как коллектор использовать нельзя.
+* If the zone is disabled in the configurator, then it can be used as an open collector.
+* If the zone is enabled in the configurator, then it cannot be used as a collector.
 
 
 

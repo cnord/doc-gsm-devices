@@ -1,194 +1,194 @@
 \pagebreak
 
-## Клавиатура К16-LCD
+## K16-LCD Keypad
 
-\imgcapt{img/k16-lcd.png}{Клавиатура К16-LCD}
+\imgcapt{img/k16-lcd.png}{К16-LCD Keypad}
 
-С помощью клавиатуры К16-LCD пользователь может выполнить следующие задачи:
+Using the K16-LCD keypad, the user can perform the following tasks:
 
-* узнать состояние раздела (взят / снят);
-* взять раздел под охрану или снять раздел с охраны;
-* узнать о начавшейся или продолжающейся задержке на вход или выход;
-* узнать состояние всего прибора;
-* узнать о наличии неисправности электропитания прибора;
-* узнать о наличии неисправностей.
+* check the partition status (armed/disarmed);
+* arm or disarm a partition;
+* check about the beginning or active exit or entry delay;
+* check the entire device status;
+* find out if there is a power failure of the device;
+* find out about the presence of faults.
 
-### Взятие и снятие
+### Arming and Disarming
 
-В приборе реализована возможность взятия и снятия с охраны нескольких разделов одним кодом пользователя. Настройка разделов, которые могут быть взяты или сняты с охраны конкретным кодом, выполняется при конфигурировании прибора.
+The device has the ability to arm and disarm several partitions with one user code. The partitions that can be armed or disarmed with a specific code are configured during the device configuration.
 
-**Взятие и снятие без выбора раздела**
+**Arming and Disarming without Partition Selection**
 
-Если за кодом пользователя закреплен только один раздел, то при наборе кода будет выполнена попытка изменить состояние охраны этого раздела:
+If only one partition is assigned to the user code, then when typing the code, an attempt will be made to change the security status of this partition:
 
-* если раздел взят под охрану, то при наборе кода он будет снят с охраны;
-* если раздел снят с охраны, то при наборе кода начнется процедура взятия раздела под охрану.
+* if the partition is armed, then when the code is being typed, it will be disarmed;
+* if the partition is disarmed, the procedure for the partition arming will begin when the code is being typed.
 
-Если взятие под охрану разрешено, то выполняется взятие под охрану, либо включается отсчет интервала задержки на выход, которая сопровождается звуковой, светодиодной и экранной индикацией.
+If arming is enabled, then arming is performed, or the exit delay interval is started, which is accompanied by a sound, LED and screen indication.
 
-Если взятие под охрану запрещено, то выполняется звуковая индикация отказа от взятия, а на экране клавиатуры отображается причина, по которой взятие невозможно.
+If arming is prohibited, then a sound indication of the rejection is made, and the reason for which the arming is impossible is displayed on the keypad screen.
 
-**Взятие и снятие с выбором раздела** 
+**Arming and Disarming with Partition Selection** 
 
-Если за кодом пользователя закреплено несколько разделов, то сначала пользователь должен выбрать раздел, состояние которого он хочет изменить, а после этого набрать код.
+If several partitions are assigned to the user code, then first the user shall select the partition, which state he/she wants to change, and then type the code.
 
-Для выбора раздела пользователь должен сначала ввести номер раздела, состояние которого он хочет изменить, а после этого нажать на кнопку «#».
+To select a partition, the user shall first enter the number of the partition, which state he/she wants to change, and then click the "#" button.
 
-> *Предположим, что пользователь хочет снять с охраны раздел номер 2 с помощью кода 1234. Для этого ему нужно нажать на клавиатуре следующую последовательность кнопок: 2#1234*
+> * Let’s suppose that the user wants to disarm partition number 2 using the code 1234. To do this, he/she shall press the following sequence of buttons on the keypad: 2#1234*
 
-Если пользователь набрал правильный код, за которым закреплено несколько разделов, но предварительно не выбрал раздел, состояние которого он хочет изменить, то такой код обрабатывается, как неправильный.
+If the user types the correct code with several partitions assigned, but previously he/she has not selected the partition, which state shall be changed, then such code is treated as incorrect.
 
-**Отказ от взятия**
+**Arming Rejection**
 
-«Отказ от взятия» -- это невозможность взять объект под охрану, если охранная сигнализация на объекте неисправна, либо взятие под охрану запрещено из-за отсутствия оплаты за услуги охраны.
+"Arming rejection" is the impossibility to arm the site, if the security alarm on the site is faulty, or arming is prohibited due to lack of payment for security services.
 
-Предусмотрены следующие причины отказа от взятия:
+There are the following reasons for arming rejection:
 
-* неисправность одного или нескольких шлейфов;
-* тревога в одном или нескольких шлейфах;
-* отсутствие связи с пультовой программой по IP-каналу;
-* отсутствие 220В на объекте;
-* отсутствие оплаты за услуги охраны;
-* открыт корпус прибора.
+* malfunction of one or more zones;
+* alarm in one or more zones;
+* no communication with the panel program via IP channel;
+* absence of 220V on the site;
+* no payment for security services;
+* the device case is opened.
 
-### Светодиодная индикация
+### LED Indication
 
-На клавиатуре К16-LCD расположены два светодиода: «Авария» и «Охрана».
+There are two LEDs on the K16-LCD keypad: “Emergency" and “Arm".
 
-**Светодиод «Охрана»**
+**“Arm” LED**
 
-Для светодиода предусмотрено два режима индикации: дежурный режим и режим взятия.
+The LED has two display modes: standby mode and arming mode.
 
-В дежурном режиме светодиод «Охрана» отображает состояние охраны всего прибора:
+In standby mode, the “Arm” LED displays the status of the entire device:
 
-* если для прибора сконфигурирован только один раздел, то светодиод включен, если этот раздел взят под охрану, и выключен, если снят;
-* если для прибора сконфигурировано несколько разделов, то светодиод включен, если все разделы взяты под охрану, и выключен, если хотя бы один раздел снят с охраны;
-* если ни одно из условий, описанных выше, не выполняется, то светодиод выключен.
+* if only one partition is configured for the device, the LED is on, if this partition is armed, and turned off if disarmed;
+* if several partitions are configured for the device, the LED is on, if all partitions are armed, and turned off if at least one partition is disarmed;
+* if none of the conditions described above are met, then the LED is off.
 
-В режиме взятия светодиод «быстро мигает» в течение интервала задержки на выход.
+In the arming mode, the LED "flashes rapidly" during the exit delay.
 
-**Светодиод «Авария»**
+**”Emergency” LED**
 
-Светодиод предназначен для индикации отсутствия основного питания, а также для индикации неисправности резервного источника питания:
+The LED is intended to indicate the absence of main power, as well as a malfunction of the backup power source:
 
-* светодиод включен, если присутствует основное питание, а источник резервного питания отсутствует, разряжен или неисправен; 
-* светодиод «медленно мигает», если отсутствует основное питание;
-* светодиод выключен, если присутствует основное питание, а неисправности резервного питания отсутствуют.
+* the LED is on if the main power is present and the backup power source is missing, discharged or defective; 
+* the LED “flashes slowly", if there is no main power;
+* the LED is off if main power is present, and there are no backup power failures.
 
-> *Неисправность источника резервного питания индицируется только в том случае, если в настройках прибора в качестве источника резервного питания указана аккумуляторная батарея, а также включен контроль качества резервного источника питания.*
+> *The failure of the backup power source is indicated only if the battery is indicated as the backup power source in the device settings, and the backup power quality control is switched on.*
 
-### Звуковая индикация
+### Sound Indication
 
-Нажатие кнопок на клавиатуре сопровождается звуковым сигналом, подтверждающим нажатие.
+Pressing the buttons on the keypad is accompanied by a beep that confirms the press.
 
-Отсчет интервала задержки на вход или интервала задержки на выход индицируется прерывистым звуком, который воспроизводится в течение всего интервала задержки. Звуковая индикация задержки на вход или выход отключается при нажатии на любую кнопку на клавиатуре.
+The exit or entry delay countdown is indicated by the intermittent sound, which is reproduced during the entire delay interval. The sound indication of the exit or entry delay is disabled when any button on the keypad is pressed.
 
-> *В отличие от светодиода «Охрана», который индицирует только задержку на выход, звуковой извещатель, встроенный в клавиатуру К16-LCD, индицирует и задержку на выход, и задержку на вход.*
+> *Unlike the “Arm" LED, which indicates only the exit delay, the sound annunciator built into the K16-LCD keypad indicates both the exit and entry delay.*
 
-### Экранная индикация
+### Screen Indication
 
-Клавиатура К16-LCD снабжена двухстрочным жидкокристаллическим индикатором, в каждой строке которого может быть отображено до 16 алфавитно-цифровых символов.
+The K16-LCD keypad is equipped with a two-line liquid crystal display, each line of which can display up to 16 alphanumeric characters.
 
-Информация, которая отображается на экране клавиатуры К16-LCD, зависит от текущего состояния прибора, а также от операций, 
-которые выполняет пользователь.
+The information displayed on the K16-LCD keypad screen depends on the current status of the device, as well as on operations 
+performed by the user.
 
-**Дежурная индикация – прибор  полностью снят с охраны**
+**Standby indication - the device is completely disarmed**
 
-Если все разделы прибора сняты с охраны и пользователей не выполняет никаких операций с клавиатурой, то на экране клавиатуры отображается текущая дата и текущее время, а также информация о текущих неисправностях прибора, если они есть.
+If all partitions of the device are disarmed and users do not perform any operations with the keypad, the keypad screen displays the current date and time, as well as information about the current faults of the device, if any.
 
-Информация о текущей дате и времени отображается в первой строке экрана.
+Information about the current date and time is displayed on the first line of the screen.
 
-Информация об имеющихся неисправностях отображается во второй строке экрана.
+The information on the faults is displayed on the second line of the screen.
 
-Пример дежурного экрана клавиатуры, когда прибор полностью снят с охраны:  
+Example of the keypad screen when the device is completely disarmed:  
 
 	12.02.2015 10:25
-	220В НЕ ПОДКЛЮЧ.
+	220В NOT CONNECTED
 
-Если в приборе имеется несколько неисправностей, то на экране клавиатуры отображается только одна, самая приоритетная.
+If there are several faults in the device, only the one of the highest priority is displayed on the keypad screen.
 
-Перечень неисправностей (перечислены в порядке приоритета при отображении):
+List of faults (listed in order of priority during display):
 
 \definecolor{light-gray}{gray}{0.7}
 \renewcommand{\arraystretch}{1.4}
 \begin{tabularx}{\textwidth}{lX}
-\textbf{Неисправность} & \textbf{Описание} \\ \midrule
-\texttt{ОПЛАТИТЬ ОХРАНУ!} & Строка отображается в том случае, если в настройках объекта, которые выполняются в программном обеспечении «Центр охраны», выставлено одно из значений, подразумевающих информирование пользователя контрольной панели о необходимости оплаты услуг охраны. \\ \arrayrulecolor{light-gray}\hline
-\texttt{220В НЕ ПОДКЛЮЧ.} & Строка отображается в том случае, если отсутствует основное питание прибора. При конфигурировании прибора может быть включен запрет на взятие прибора под охрану при отсутствии основного питания. \\ \arrayrulecolor{light-gray}\hline
-\texttt{НЕТ IP-СВЯЗИ}  & Строка отображается при отсутствии IP-подключения (по Ethernet или GPRS) к «Центру охраны». При конфигурировании прибора может быть включен запрет на взятие прибора под охрану при отсутствии IP-связи с «Центром охраны». \\ \arrayrulecolor{light-gray}\hline
-\texttt{КОРПУС ОТКРЫТ!} & Строка отображается, если корпус прибора открыт. \\ \arrayrulecolor{light-gray}\hline
-\texttt{ЗОНА NN НЕИСПРАВ} & Строка отображается, если в проводном или беспроводной шлейфе, подключенном к прибору, обнаружена неисправность: обрыв или короткое замыкание в шлейфе, отсутствие связи с беспроводным устройством, разряд источника питания беспроводного устройства и т.д. \\ \arrayrulecolor{light-gray}\hline
-\texttt{АКБ НЕ ПОДКЛЮЧЕНА} & Строка отображается, если источник резервного питания не подключен к прибору. \\ \arrayrulecolor{light-gray}\hline
-\texttt{АКБ РАЗРЯЖЕНА} & Строка отображается, если значение напряжения, измеренное на клеммах для подключения источника резервного питания, свидетельствует о том, что источник резервного питания разряжен. \\
+\textbf{Неисправность} & \textbf{Description} \\ \midrule
+\texttt{PAY FOR SECURITY!} & The line is displayed if one of the values in the site settings that are performed in the Security Center software is intended to inform the user of the control panel of the need to pay for security services. \\ \arrayrulecolor{light-gray}\hline
+\texttt{220В NOT CONNECTED} & The line is displayed if there is no main power on the device. When configuring the device, the device may not be allowed to arm when there is no main power. \\ \arrayrulecolor{light-gray}\hline
+\texttt{NO IP CONNECTION}  & The string is displayed if there is no IP connection (over Ethernet or GPRS) with the Security Center. When configuring the device, the device may not be allowed to arm when there is no IP connection with the Security Center.\\ \arrayrulecolor{light-gray}\hline
+\texttt{OPEN CASE!} & The line is displayed if the device case is open. \\ \arrayrulecolor{light-gray}\hline
+\texttt{NN ZONE FAULT} & The line is displayed if a fault is detected in the wired or wireless zone connected to the device: an open or short circuit in the zone, no communication with the wireless device, discharged power supply of the wireless device, etc. \\ \arrayrulecolor{light-gray}\hline
+\texttt{BATTERY IS NOT CONNECTED} & The line is displayed if the backup power source is not connected to the device. \\ \arrayrulecolor{light-gray}\hline
+\texttt{BATTERY IS DISCHARGED} & The line is displayed if the voltage measured on the terminals for connecting the backup power source indicates that the backup power source is empty. \\
 \bottomrule
 \end{tabularx}
 
-**Дежурная индикация – прибор частично взят под охрану**
+**Standby indication - the device is partially armed**
 
-Если часть разделов прибора взята под охрану, а часть – снята с охраны и пользователь не выполняет никаких операций с клавиатурой, то на экране клавиатуры отображается текущее время, а также список разделов, взятых под охрану.
+If some part of the device is armed and another part is disarmed and the user does not perform any operations with the keypad, the current time and a list of armed partitions is displayed on the keypad screen.
 
-Информация о наличии разделов, взятых под охрану, и текущее время отображаются в первой строке экрана.
+Information about armed partitions and current time are displayed in the first screen line.
 
-Список номеров разделов, взятых под охрану, отображается во второй строке экрана.
+The list of the armed partition numbers is displayed in the second screen line.
 
-Пример дежурного экрана клавиатуры, когда прибор частично взят под охрану:  
+Example of the keypad screen when the device is partially armed:  
 
-	ВЗЯТ       10:25
-	РАЗДЕЛЫ 1,4,5
+	ARMED       10:25
+	PARTITIONS 1,4,5
 
-**Дежурная индикация – прибор полностью взят под охрану**
+**Standby indication - the device is fully armed**
 
-Если прибор полностью взят под охрану и пользователь не выполняет никаких операций с клавиатурой, то на экране клавиатуры отображается текущее время, а также информация о том, что прибор полностью взят под охрану.
+If the device is fully armed and the user does not perform any operations with the keypad, the current time information that the device is fully armed are displayed on the keypad screen.
 
-Пример дежурного экрана клавиатуры, когда прибор полностью взят под охрану:  
+Example of the keypad screen when the device is fully armed:  
 
-	ВЗЯТ       10:25
-	ВСЕ РАЗДЕЛЫ
+	ARMED       10:25
+	ALL PARTITIONS
 
-> Если для прибора сконфигурирован только один раздел, то при его взятии под охрану строка «\texttt{ВСЕ РАЗДЕЛЫ}» не отображается.
+> If only one partition is configured for the device, then when it is armed, the line «\texttt{ALL PARTITIONS}» is not displayed.
 
-**Индикация взятия**
+**Arming Indication**
 
-Если взятие разрешено и задержки на выход нет, то в первой строке экрана клавиатуры в течение 3 секунд отображается фраза «\texttt{ВЗЯТИЕ...}», после чего экран клавиатуры переключается в дежурный режим, соответствующий состоянию охраны прибора. 
+If the arming is allowed and there is no exit delay, the phrase «\texttt{ARMING...}» is displayed on the first line of the keypad screen for 3 seconds, after which the keypad screen switches to the standby mode corresponding to the device security state. 
 
-Если есть задержка на выход, то в течение задержки на выход в первой строке экрана клавиатуры отображается фраза «\texttt{ВЗЯТИЕ... NN}», где NN – время в секундах, в течение которого будет продолжаться задержка на выход. Информация о времени, в течение которого будет продолжаться задержка на выход, обновляется каждую секунду.
+If there is an exit delay, then during the exit delay , the phrase «\texttt{ARMING...NN}» is displayed in the first line of the keypad screen, where NN is the time in seconds of the exit delay. Information about the time, during which the exit delay will continue, is updated every second.
 
-> Светодиодная, звуковая и экранная индикация задержки на выход отключается при нажатии на любую кнопку на клавиатуре.
+> The LED, sound and screen indication of the exit delay is disabled when any button on the keypad is pressed.
 
-Если в настройках объекта, которые выполняются в программном обеспечении «Центр охраны», выставлено одно из значений, подразумевающих информирование пользователя о необходимости оплаты услуг охраны во время взятия и снятия, то во второй строке экрана клавиатуры отображается фраза «\texttt{ОПЛАТИТЬ ОХРАНУ!}».
+If according to the site settings in the Security Center software the user shall be informed about the need to pay for security services during arming and disarming, the second line of the keypad screen displays the phrase «\texttt{PAY FOR SECURITY!}».
 
-Пример экрана клавиатуры с индикацией взятия:  
+Example of a keypad screen with arming indication:  
 
-	ВЗЯТИЕ...     18
-	ОПЛАТИТЬ ОХРАНУ!
+	ARMING...     18
+	PAY FOR SECURITY!
 
-**Индикация снятия**
+** Disarming Indication **
 
-Если снятие разрешено, то в первой строке экрана клавиатуры в течение 3 секунд отображается «\texttt{СНЯТИЕ...}», после чего экран клавиатуры переключается в дежурный режим, соответствующий состоянию охраны прибора. 
+If the disarming is allowed, then «\texttt{DISARMING...}» is displayed on the first line of the keypad screen for 3 seconds, after which the keypad screen switches to the standby mode corresponding to the device security status. 
 
-Если в настройках объекта, которые выполняются в программном обеспечении «Центр охраны», выставлено одно из значений, подразумевающих информирование пользователя о необходимости оплаты услуг охраны во время взятия и снятия, то во второй строке экрана клавиатуры отображается фраза «\texttt{ОПЛАТИТЬ ОХРАНУ!}».
+If according to the site settings in the Security Center software the user shall be informed about the need to pay for security services during arming and disarming, the second line of the keypad screen displays the phrase «\texttt{PAY FOR SECURITY!}».
 
-Пример экрана клавиатуры с индикацией снятия:  
+Example of a keypad screen with disarming indication:  
 
-	СНЯТИЕ...     
+	DISARMING...     
 
-**Индикация отказа от взятия**
+** Indication of Arming Rejection**
 
-Если при взятии под охрану будет обнаружена причина, по которой взятие под охрану невозможно, то на экране клавиатуры отображается информация об отказе от взятия, а кроме того, отображается причина отказа.
+If during arming a reason for which arming is impossible is detected, the information on the arming rejection and the reason are displayed on the keypad screen.
 
-Кроме того, для индикации отказа от взятия используется звуковая индикация: четыре одиночных звуковых сигнала.
+In addition, to indicate the arming rejection the sound indication is used: four single sound signals.
 
-В первой строке экрана клавиатуры отображается фраза «\texttt{ОТКАЗ ОТ ВЗЯТИЯ}».
+The first line of the keypad screen displays the phrase «\texttt{ARMING REJECTION}».
 
-Во второй строке экрана клавиатуры отображается одна возможных причин отказа от взятия:
+The second line of the keypad screen displays one possible reason for rejection:
 
-* \texttt{ОПЛАТИТЬ ОХРАНУ!}
-* \texttt{220В НЕ ПОДКЛЮЧ.}
-* \texttt{НЕТ IP-СВЯЗИ}
-* \texttt{КОРПУС ОТКРЫТ!}
-* \texttt{ЗОНА NN НЕИСПРАВ} 
-* \texttt{ЗОНА NN ТРЕВОГА}
+* \texttt{PAY FOR SECURITY!}
+* \texttt{220V NOT CONNECTED}
+* \texttt{NO IP CONNECTION}
+* \texttt{OPEN CASE!}
+* \texttt{NN ZONE FAULT} 
+* \texttt{NN ZONE ALARM}
 
-> Соответствие фраз, отображаемых при отказе от взятия, причинам, вызвавшим отказ, приведено выше.
+> Correspondence of the phrases displayed in case of rejection according to the reasons that caused the fault is given above.
 
-Экранная индикация отказа от взятия отображается в течение 5 секунд, после чего экран клавиатуры переключается в дежурный режим, соответствующий состоянию охраны прибора.
+The screen indication of the rejection is displayed for 5 seconds, after which the keypad screen switches to the standby mode corresponding to the device security state.

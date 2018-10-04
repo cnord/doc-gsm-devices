@@ -1,41 +1,41 @@
-## Удалённое конфигурирование устройств
+## Device Remote Configuration
 
-**Важно:** удалённая настройка доступна только для устройств, которые сконфигурированы для использования IP-каналов связи: Ethernet или GPRS.
+**Important:** Remote configuration is only available for devices that are configured to use IP communication channels: Ethernet or GPRS.
 
-**Важно:** описанные в данном разделе функции работают только, если устройство подключено к программному обеспечению «Центр охраны». 
+**Important:** The functions described in this section work only if the device is connected to the Security Center software. 
 
-### Выбор объекта для конфигурирования
+### Selection of Site to Configure
 
-Для удалённого изменения настроек в приборах предназначена вкладка «Удалённый доступ к объектам» в панели инженера:
+To remotely change the settings in the devices, the tab "Remote access to sites" is located in the engineering panel:
 
 \imgcapt{img/remote-config.png}{}
 
-В данной владке отображается список объектов, которые доступны инженеру для конфигурирования в данный момент. Перечень и время действия разрешений настраиваются в программном обеспечнии «Центр охраны».
+This tab displays a list of sites that are available to the engineer for configuration at the moment. The list and duration of the permissions are set in the Security Center software.
 
-Чтобы приступить к настройке, необходимо нажать на соответствующий номер объекта.
+To configure, click the corresponding site number.
 
-### Работа с конфигурацией
+### Working with Configuration
 
-Открывшееся окно настройки прибора аналогично конфигуратору, предназначенному для настройки прибора, подключенного к компьютеру, который описан в разделе «Конфигурирование»:
+The opened window for setting up the device is similar to the configurator intended for setting up the device connected to the computer, which is described in the "Configuration” section:
 
 \imgcapt{img/remote-config-nord.png}{}
 
-При открытии окна настройки с прибора считывается его текущая конфигурация. Далее можно внести необходимые изменения и записать их на устройство соответствующей кнопкой. После успешной загрузки конфигурации на прибор выведется сообщение: `Настройки сохранены для записи на устройство`.
+When you open the settings window from the device, its current configuration is read. Then it is possible to make the necessary changes and write them to the device with the corresponding button. After a successful download of the configuration, the message "Settings saved for writing to device" appears on the device.
 
-**Важно:** считывание и изменение конфигурации доступны только для устройств, которые в данный момент находятся на связи с «Облаком». Если это не так, будет выведено сообщение об ошибке: `Коммуникатор, установленный на объекте, в настоящий момент не подключен к "Облаку".`
-`Пожалуйста, попробуйте подключиться к объекту позже.`
+**Important:** configuration reading and change are only available for devices that are currently connected to the "Cloud". Otherwise an error message will be displayed: `Communicator installed on site is not currently connected to Cloud.'
+`Please try to connect to site later. '
 
-Обратите внимание, что некоторые поля конфигурации, к примеру, адреса для подключения к пульту, удалённо изменить нельзя. Это исключает возможность удалённо сломать связь прибора с пультом и с «Облаком».
+Note that some configuration fields, for example, addresses to connect to the remote control, cannot be remotely changed. This excludes the possibility of remotely breaking the connection of the device with the receiver and "Cloud".
 
-Также недоступны действия, которые требуют локального взаимодействия с прибором на объекте, например, связывание беспроводных датчиков или добавление TM-ключей.
+Actions that require local interaction with the device on the site are also not available, for example, connection of wireless sensors or addition of TM keys.
 
-### Особенности работы
+### Work Features
 
-**Одновременная работа**
+**Simultaneous Operation**
 
-Несмотря на то что разрешения на конфигурирование одного объекта могут быть одновременно выданы нескольким инженерам, непосредственную настройку одновременно может осуществлять только один инженер. Доступ остальных инженеров к панели настройки блокируется и при попытке открыть объект для настройки выводится предупреждение: `Объект в настоящий момент уже конфигурируется или обновляется.`
+Although the permissions for configuring one site can be simultaneously issued to several engineers, only one engineer can perform the direct configuration at a time. Access of the remaining engineers to the configuration panel is blocked and when they try to open the site for configuration, a warning is displayed: The site is currently being configured or updated.
 
-**Приоритет локального конфигурирования**
+**Priority of Local Configuration**
 
-Если во время удалённого конфигурирования одним инженером, другой инженер изменит настройки прибора локально при помощи «настольного» конфигуратора, применить удалённые настройки уже станет невозможно – будет выведено сообщение об ошибке загрузки конфигурации.
+If during the remote configuration by one engineer, another engineer will change the device settings locally using the "desktop" configurator, it will be impossible to apply remote settings - the configuration download error message will be displayed.
 

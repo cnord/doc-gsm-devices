@@ -1,49 +1,49 @@
-## Настройка удалённого доступа
+## Remote Access Setting
 
-Удалённый доступ к прибору возможен только в случае, если на пульте, к которому подключен прибор, установлено совместимое программное обеспечение, например, «Центр охраны». Чтобы воспользоваться функцией удалённого доступа к прибору, необходимо:
+Remote access to the device is possible only if compatible software, for example, "Security Center" is installed on the receiver to which the device is connected. To use remote access to the device, it is necessary to do the following:
 
-1. Создать инженера в пультовом ПО
+1. Create an engineer in the alarm monitoring software
 
-2. Выдать инженеру права на удалённый доступ к определенным объектам
+2. To give the engineer the right to remote access to certain sites
 
-### Создание инженера
+### Creating Engineer
 
-Для того чтобы создать учетную запись для инженера в программном обеспечении «Центр охраны», необходимо запустить модуль «Менеджер персонала» и нажать на кнопку «Создать» на вкладке «Инженеры»:
+To create an account for an engineer in the Security Center software, start the “Personnel manager” module and click the “New” button on the “Engineers” tab:
 
 \imgcapt{img/sc-eng-list-1.png}{}
 
-В открывшемся окне необходимо заполнить все поля с информацией об инженере:
+In the opened window fill in all fields with information about the engineer:
 
 \imgcapt{img/sc-eng-list-2.png}{}
 
 
-Особо внимательно следует указывать значение для поля «Электронная почта». Именно на адрес электронной почты, указанный в этом поле, будет отправлено письмо со ссылкой, по которой инженеру необходимо будет перейти для завершения регистрации учётной записи в «Облаке». Электронная почта инженера служит для его идентификации в «Облаке». После того как инженер будет создан, изменить значение этого поля нельзя.
+Pay particular attention to the "Email" field. It is to the e-mail address specified in this field that an email will be sent with a link where the engineer will need to go to complete the registration of the account in the “Cloud”. The engineer's email serves to identify him in the “Cloud”. After the engineer is created, it is not possible to change the value of this field.
 
-Если инженер, для которого создается учетная запись, должен иметь возможность удалённо обновлять программное обеспечение на приборах, которые установлены на объектах, необходимо установить галочку «Разрешить инженеру удаленно обновлять программное обеспечение на объектовых приборах». *Данная настройка доступна в «Центре охраны» версии 5 и выше.*
+If the engineer for whom the account is created shall be able to remotely update the software on devices that are installed on the sites, check the box "Allow an engineer to remotely update software on site devices". *This setting is available in the "Security Center" version 5 and above.*
 
-**Важно:** разрешение инженера на обновление программного обеспечения распространяется на все объекты охранного предприятия с функцией удалённого обновления «прошивки».
+**Important:** The engineer's permission to update the software applies to all sites of the security company with the function of remote firmware upgrade.
 
-Для того чтобы изменения вступили в силу, нужно на вкладке «Инженеры» нажать на кнопку «Сохранить». После этого информация об инженерах и их праве обновлять приборы синхронизируется с «Облаком».
+In order for the changes to take effect, click the "Save" button on the "Engineers" tab. After this information about the engineers and their right to update the devices is synchronized with the "Cloud".
 
-### Выдача разрешений инженеру
+### Granting Permissions to Engineer 
 
-Для того чтобы в ПО «Центр охраны» предоставить инженеру разрешение на удалённый доступ к оборудованию, установленному на объекте, необходимо выполнить следующие действия:
+To give the engineer permission to remote access to equipment installed on the site in the Security Center software, the following actions shall be performed:
 
-1. Запустить модуль «Менеджер объектов»
+1. Run the "Site manager” module
 
-2. Выбрать объект, к которому необходимо разрешить удалённый доступ
+2. Select the site to which you want to allow remote access
 
-3. Перейти на вкладку «Обслуживание»
+3. Go to the "Maintenance" tab
 
-4. Нажать на кнопку «Добавить разрешение»
+4. Click the "Add permission” button
    
 \imgcapt{img/sc-eng-perm-1.png}{}
 
-5. В появившемся окне выбрать инженера, которому необходимо предоставить удалённый доступ к объекту 
+5. In the window that appears, select the engineer who needs remote access to the site 
    
 \imgcapt{img/sc-eng-perm-2.png}{}
 
-6. Указать временной интервал, в течение которого будет действовать разрешение.
+6. Specify the time interval during which the permission will be valid.
    
-7. Нажать на кнопку «Выдать разрешение».
+7. Click the “Give permission” button.
 

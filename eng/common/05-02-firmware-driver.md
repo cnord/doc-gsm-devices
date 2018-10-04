@@ -1,76 +1,76 @@
-## Подключение прибора к компьютеру {#firmware-driver}
+## Device Connection to computer {#firmware-driver}
 
-На компьютере, к которому подключается прибор, должна быть установлена операционная система семейства Windows (XP/7/8/10). Разрядность операционной системы (32 или 64 бита) значения не имеет.
+The operating system of the Windows family (XP/7/8/10) shall be installed on the computer to which the device is connected. The operating system bitness (32 or 64 bits) does not matter.
 
-> Перед тем, как подключать прибор к компьютеру, *настоятельно рекомендуется* подать на него основное или резервное питание. Если прибор будет запитан *только* по USB, то его работа может быть нестабильной.
+> Before connecting the device to the computer, *it is strongly recommended* to supply the main or backup power to it. If the device is powered by *only* USB, then its operation may be unstable.
 
-Прежде чем приступить к работе с прибором, необходимо установить драйвер. Прибор подключается к компьютеру с помощью кабеля USB-Mini, а драйвер – это специальное программное обеспечение, которое позволяет программам, с которыми взаимодействует пользователь, обмениваться данными с прибором.
+Before you start working with the device, install the driver. The device is connected to the computer using a USB-Mini cable, and the driver is a special software that allows programs with which the user interacts to exchange data with the device.
 
-Для всех операционных систем поставляется один и тот же драйвер.
+The same driver is supplied for all operating systems.
 
-## Установка драйвера в Windows XP и Windows 7
+## Driver Installation in Windows XP and Windows 7
 
-При первом подключении прибора к компьютеру в системной области панели задач появится уведомление о том, что найдено новое оборудование.
-Установку драйвера можно оуществить через Диспетчер устройств. Для этого нужно войти в меню «Пуск», щелкнуть правой кнопкой мыши на пункт «Компьютер» и выбрать Управление, затем в меню слева выбрать «Диспетчер устройств».
+When you first connect the device to the computer, a notification will appear in the system tray of the taskbar that new hardware has been found.
+You can install the driver through Device Manager. To do this, go to the "Start" menu, right-click "Computer" and select Manage, then in the left menu select "Device Manager".
 
 \imgcapt{img/05-02-driver-02.png}{}
 
 \imgcapt{img/05-02-driver-03.png}{}
 
-Необходимо щелкнуть правой кнопкой мыши по устройству Souz CDC и выбрать пункт меню «Обновить драйверы».
+Right-click on the Soyuz CDC device and select the menu item "Update drivers".
 
 \imgcapt{img/05-02-driver-04.png}{}
 
-Нужно отказаться от предложения автоматически найти драйвер для нового оборудования, выбрать установку драйвера вручную.
+Reject the proposal to automatically find the driver for the new hardware, select the driver installation manually.
 
-\imgcapt{img/05-02-driver-05.png}{Выбор установки вручную}
+\imgcapt{img/05-02-driver-05.png}{Selection of manual installation}
 
-Указать путь к папке **Driver** и нажать Далее.
+Specify the path to the **Driver** folder and click Next.
 
-\imgcapt{img/05-02-driver-06.png}{Выбор места поиска драйвера}
+\imgcapt{img/05-02-driver-06.png}{Selection of driver location}
 
-Драйвер для прибора «Норд GSM» не имеет цифровой подписи. Поэтому необходимо явно подтвердить операционной системе необходимость его установки.
+The driver for the Nord GSM device does not have a digital signature. Therefore, you shall explicitly confirm to the operating system the need to install it.
 
-\imgcapt{img/05-02-driver-07.png}{Подтверждение установки драйвера без цифровой подписи}
+\imgcapt{img/05-02-driver-07.png}{Confirming the driver installation without a digital signature}
 
-После завершения установки драйвера необходимо нажать на кнопку «Закрыть».
+After the driver installation is complete, click the "Close" button.
 
-\imgcapt{img/05-02-driver-08.png}{Завершение установки драйвера}
+\imgcapt{img/05-02-driver-08.png}{Completing the driver installation}
 
-Для того чтобы убедиться в том, что драйвер для устройства установлен, можно открыть диспетчер устройств Windows и найти виртуальный последовательный порт, который соответствует прибору, подключенному к компьютеру.
+To make sure that the driver for the device is installed, open the Windows Device Manager and find the virtual serial port that corresponds to the device connected to the computer.
 
-\imgcapt{img/05-02-driver-09.png}{Последовательный порт прибора в «Диспетчере устройств»}
+\imgcapt{img/05-02-driver-09.png}{Device serial port of in the "Device Manager”}
 
 
-## Установка драйвера в Windows 8
+## Driver Installation in Windows 8
 
-Операционная система Windows 8 не позволяет устанавливать драйвера без цифровой подписи так, как это было возможно в предыдущих версиях. Поэтому, прежде чем приступить к установке драйвера для прибора в этой операционной системе, необходимо загрузить её в специальном режиме – с  отключенной обязательной проверкой подписи драйверов.
+Windows 8 operating system does not allow you to install drivers without a digital signature, as it was possible in previous versions. Therefore, before installing the driver for the device in this operating system, load it in a special mode - with the mandatory check of driver signature disabled.
 
-Для того чтобы загрузить операционную систему Windows 8 с отключенной проверкой подписи драйверов, необходимо выполнить следующую последовательность действий.
+To download the Windows 8 operating system with driver verification disabled, perform the following sequence of steps.
 
-Нажать комбинацию клавиш **Win+I**, после чего, удерживая кнопку **Shift** выбрать пункт «**Выключение**» – «**Перезагрузка**»:
+Press the key combination **Win + I**, then hold the button **Shift** and select the item "**Shutdown**" - “**Reboot**":
 
-\imgcapt{img/05-02-driver-10.png}{Перезагрузка для изменения параметров загрузки}
+\imgcapt{img/05-02-driver-10.png}{Reboot to change boot parameters}
 
-После того как операционная система перезагрузится, появится окно параметров запуска. Необходимо выбрать пункт «**Диагностика**»:
+After the operating system restarts, the startup parameters window will appear. Select "**Diagnostics**":
 
-\imgcapt{img/05-02-driver-11.png}{Вход в режим диагностики}
+\imgcapt{img/05-02-driver-11.png}{Entering the diagnostic mode}
 
-В окне «**Диагностика**» необходимо выбрать пункт «**Дополнительные параметры**»:
+In the window "**Diagnostics**”, select the "**Additional parameters**":
 
-\imgcapt{img/05-02-driver-12.png}{Дополнительные параметры диагностики}
+\imgcapt{img/05-02-driver-12.png}{Advanced diagnostics parameters}
 
-В окне «**Дополнительные параметры**» нужно выбрать пункт «**Параметры загрузки**»:
+In the "**Additional parameters**" window, select "**Boot parameters**":
 
-\imgcapt{img/05-02-driver-13.png}{Параметры загрузки операционной системы}
+\imgcapt{img/05-02-driver-13.png}{Operating system boot parameters}
 
-В окне «**Параметры загрузки**» нужно щелкнуть левой кнопкой мыши по кнопке «**Перезагрузить**»:
+In the "**Boot parameters**" window, left-click the “**Reboot**" button:
 
-\imgcapt{img/05-02-driver-14.png}{Перезагрузка}
+\imgcapt{img/05-02-driver-14.png}{Reboot}
 
-Операционная система перезагрузится еще раз, после чего появится окно «**Параметры загрузки**». В этом окне необходимо нажать на кнопку F7, чтобы продолжить загрузку операционной системы с отключенной проверкой подписи драйверов:
+The operating system will reboot again, after which the "**Boot parameters**" window will appear. In this window, press the F7 button to continue loading the operating system with driver signature verification disabled:
 
-\imgcapt{img/05-02-driver-15.png}{Отключение обязательно проверки подписи драйверов}
+\imgcapt{img/05-02-driver-15.png}{Disabling mandatory driver signature verification}
 
-После того как операционная система загрузится, нужно установить драйвер прибора так же, как и в операционных системах Windows XP / Windows 7. После установки драйвера необходимо еще раз перезагрузить компьютер, для того чтобы включить проверку подписи драйверов.
+After the operating system starts, install the device driver in the same way as in the operating systems Windows XP/Windows 7. After installing the driver, restart your computer again to enable driver signature verification.
 

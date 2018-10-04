@@ -1,5 +1,5 @@
-## Подключение проводных клавиатур
+## Connection of Wired Keypads
 
-Проводные клавиатуры, такие как «К16-LCD», «К14-LED» подключаются к прибору на клеммы группы «Клавиатура».
+Wired keypads, such as "K16-LCD", "K14-LED”, are connected to the device to the terminals of the "Keypad" group.
 
-\imgcapt{img/04-10-install-keyboard.png}{Схема подключения проводных клавиатур}
+\imgcapt{img/04-10-install-keyboard.png}{Connection of wired keypads}
