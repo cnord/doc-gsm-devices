@@ -17,7 +17,7 @@ The product provides automatic maintenance of the installed battery, which inclu
 * subsequent charge of the battery at the second stage with a current of (230±25) mA;
 * final voltage on the battery at the end of its charging cycle at (14.0±0.2) V and then keeping it in the range of (13.6÷14.0) V to compensate the current of its self-discharge;
 * ability to automatically turn off the discharged battery in the absence of the main power supply when the voltage on it reaches (9.0±0.3) V;
-* 25 μA limitation of the current consumed by the product from the automatically disconnected battery;
+* 25 mA limitation of the current consumed by the product from the automatically disconnected battery;
 * stability to both the break and short circuit in the battery circuit is unlimited in time, while the product will be powered from the main source;
 * protection against "reverse polarity" in case of wrong connection to the battery terminals or external UPS;
 * automatic periodic testing of the battery and evaluation of its state by several parameters with subsequent sending of the corresponding notices to the panel program. The option can be disabled while configuring the product;
@@ -27,4 +27,3 @@ If an external UPS is used as a backup power source, the product continues to pe
 
 * charge of an external source;
 * its periodic testing with an evaluation of the current charge level and value of internal resistance.
-

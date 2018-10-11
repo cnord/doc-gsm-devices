@@ -12,7 +12,7 @@ The configurator is supplied as a zip-archive with the name **hubble-X.XX.zip**,
 
 The executable configurator file is called **hubble.exe**, this file shall be run to change the device settings.
 
-> The Hubble configurator is intended for changing the settings of the following devices: “Nord GSM”, “Nord RF”, “Nord LAN”, “Soyuz GSM”, “Soyuz PCB GSM”, “ТР-100 GSM IV” and “Serzhant GSM”.   
+> The Hubble configurator is intended for changing the settings of the following devices: Nord GSM, Nord RF, Nord LAN, Soyuz GSM, Soyuz PCB GSM, TR-100 GSM IV and Serzhant GSM.
 
 To start configuring the device, it is necessary to connect it to the computer via USB and run the configurator. In order for the configurator to be more convenient to run, it is recommended to place a shortcut for launching it on the desktop or in a folder of frequently used programs.
 

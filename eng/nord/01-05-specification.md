@@ -2,7 +2,7 @@
 
 * The minimum number of the product wired security zones, designed to connect different detectors, is 8;
 * The number of the product security zones, when the product is equipped with an expander for the number of wired zones, is 16;
-* The maximum allowable total resistance of two wires of each zone - no more than 330 Ω;
+* The maximum allowable total resistance of two wires of each zone - no more than 330 Om;
 * The number of wireless (stand-alone) terminal units supported by the product when installing the radio channel signaling zone extension unit CN-WRL is up to 31;
 * For joint operation with the product in the version of the "Nord GSM/WRL" (with the installed radio expander CN-WRL), the following radio channel terminal units can be used:
 	* manual security detector «CN-KeyFob»;
@@ -32,14 +32,14 @@
 * The product is equipped with terminals for connecting K16-LCD and K14-LED wired keypads. The power lines of the keypad interface are short-circuit protected by a self recovering thermal switch, the absence or violation of traffic in the keypad interface is detected by the product controller;
 * A piezoelectric siren can be connected to the product for sound confirmation of the "Alarm" state with a current consumption up to 200 mA, at the same time the product detects such malfunctions in its connection circuit as a break and short circuit, both in the absence and in the presence of “Alarm” signal. The output for the siren connection is protected by the self recovering thermal switch;
 * The product has seven controlled discrete outputs of "open collector” type, allowing connecting the switched load to the product, for example, electromagnetic relays, acoustic or electrooptical devices. The maximum allowable sink load current of discrete outputs is 500 mA; the maximum permissible DC voltage supplied to the outputs is plus 50 V;
-* The main board is equipped with a multifunctional three-color process LED designed to display the current state of the product and the estimated values of some of the parameters monitored by it; 
+* The main board is equipped with a multifunctional three-color process LED designed to display the current state of the product and the estimated values of some of the parameters monitored by it;
 * The product provides voice support to the user (maintenance staff) by playing audio files through the built-in speaker if problems are detected that prevent the normal operation of the product, for example, when troubleshooting security zones with the specification of the failure nature and location, reaching a negative balance of the bill for security services, etc. 
 * The product is equipped with a vertical connector of the "mini USB B" type for its configuration after connecting to the computer USB port;
 * By means of special software it is possible to remotely change the product configuration parameters, as well as update the controller software;
-* The product is designed for continuous (twenty-four-hour) operation in the operating temperature range (without taking into account the temperature limitations of the backup power supply) from minus 30°С to plus 50°С;
+* The product is designed for continuous (twenty-four-hour) operation in the operating temperature range (without taking into account the temperature limitations of the backup power supply) from -30°C to +50°C;
 	
 	> The permissible product operating temperature range with a backup source is determined by the characteristics of the battery installed in it, and first of all by the maximum permissible temperature values during charging.
 
-* Overall dimensions of the plastic case, mm, maximum, - 188х200х62;
+* Overall dimensions of the plastic case, mm, maximum, - 188x200x62;
 * The product weight in a plastic case (without a backup power source, power cord and packaging), kg, maximum, - 0,6;
 

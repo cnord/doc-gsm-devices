@@ -11,7 +11,7 @@ With a single TM-key it is possible to arm or disarm one partition. If one user 
 
 ### Reading Indication
 
-If the key reading operation has completed successfully, the device indicates this fact, regardless of whether the key is found in the device memory or not. In other words, if the reading is successful, the device simply confirms that a key has been brought to the reader and this key has been read. 
+If the key reading operation has completed successfully, the device indicates this fact, regardless of whether the key is found in the device memory or not. In other words, if the reading is successful, the device simply confirms that a key has been brought to the reader and this key has been read.
 
 Indication of successful reading of the TM-key: the LED “flashes" (turns on for 0.1 sec., then turns off for 0.1 sec.) for 1 second.
 
@@ -20,7 +20,7 @@ Indication of successful reading of the TM-key: the LED “flashes" (turns on fo
 The following errors are possible during a key reading:
 
 * key is not found in the device memory;
-*arming rejection.
+* arming rejection.
 
 Error indication: the LED “flashes” (turns on for 0.5 s, then turns off for 0.5 s.) for 3 seconds.
 
@@ -40,11 +40,11 @@ If a key, with which it is possible to change the partition status, is read, the
 
 The arming indication depends on how many partitions are configured in the device.
 
-**One Partition**
+#### One Partition
 
 If only one partition is configured in the device, then after it has been armed, the LED turns on and remains lit: the standby mode indicator with the only partition armed is enabled.
 
-**Several Partitions**
+#### Several Partitions
 
 If several partitions are configured in the device, then the indication after the current one is armed depends on whether the disarmed partitions remained or not.
 
@@ -52,7 +52,7 @@ If all partitions are armed, the LED turns on and remains lit: the standby mode 
 
 If there is at least one not armed partition, the LED turns on and is glowing for 20 seconds. After that, the indication of the standby mode with several partitions is enabled, some of which are disarmed.
 
-**Arming Rejection**
+#### Arming Rejection
 
 "Arming rejection" is the impossibility to arm the site, if the security alarm on the site is faulty, or arming is prohibited due to lack of payment for security services.
 
@@ -72,18 +72,18 @@ is interrupted.
 
 The standby mode indication depends on how many partitions are configured in the device.
 
-**One Partition**
+#### One Partition
 
 If only one partition is configured in the device, then the LED indicates the partition status, the presence of an alarm during protection and faulty zones:
 
 * LED is on continuously if the partition is armed;
 * LED is not on if the partition is disarmed;
-* the LED “flashes” [^blink], if there are faults in the zones;
+* the LED “flashes” (blink), if there are faults in the zones;
 * the LED "flashes", if after the partition was armed, there was an alarm and the partition was not disarmed.
 
 > "Flashing" means that the LED turns on for 1 second, then turns off for 1 second, then turns on again for 1 second, etc.
 
-**Several Partitions**
+#### Several Partitions
 
 If several partitions are configured in the device, then only the following is indicated: the entire device arming, presence of an alarm, when the entire device was under protection, and also the zone faults.
 
@@ -91,4 +91,3 @@ If several partitions are configured in the device, then only the following is i
 * LED is off if at least one of the partitions is disarmed;
 * LED "flashes" if there are faults in the zones;
 * the LED "flashes", if after the device was armed, there was an alarm and the alarmed partition was not disarmed.
-

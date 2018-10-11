@@ -115,7 +115,7 @@ The alarm repeat interval set for the device is not used for this type of zone. 
 
 **"Temperature Sensor" Zone Type**
 
-If a wired temperature sensor is connected to the device, and the 1-Wire line polling mode is enabled (enabled on the [Miscellaneous] tab(#control-indication)), it will appear automatically in the "Zones" tab and will have a zone number in the range from 48 to 51. For temperature sensors, the upper and lower thresholds shall be specified, at which alarms will be generated. Range of permissible values for thresholds: from -55°С to 127°С. Read more [about connecting temperature sensors](#install-temp).
+If a wired temperature sensor is connected to the device, and the 1-Wire line polling mode is enabled (enabled on the [Miscellaneous] tab(#control-indication)), it will appear automatically in the "Zones" tab and will have a zone number in the range from 48 to 51. For temperature sensors, the upper and lower thresholds shall be specified, at which alarms will be generated. Range of permissible values for thresholds: from -55°C to 127°C. Read more [about connecting temperature sensors](#install-temp).
 A total of 4 temperature sensors can be connected to the device.
 
 

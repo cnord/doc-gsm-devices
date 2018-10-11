@@ -22,8 +22,7 @@ The opened window for setting up the device is similar to the configurator inten
 
 When you open the settings window from the device, its current configuration is read. Then it is possible to make the necessary changes and write them to the device with the corresponding button. After a successful download of the configuration, the message "Settings saved for writing to device" appears on the device.
 
-**Important:** configuration reading and change are only available for devices that are currently connected to the "Cloud". Otherwise an error message will be displayed: `Communicator installed on site is not currently connected to Cloud.'
-`Please try to connect to site later. '
+**Important:** configuration reading and change are only available for devices that are currently connected to the "Cloud". Otherwise an error message will be displayed: "Communicator installed on site is not currently connected to Cloud. Please try to connect to site later."
 
 Note that some configuration fields, for example, addresses to connect to the remote control, cannot be remotely changed. This excludes the possibility of remotely breaking the connection of the device with the receiver and "Cloud".
 

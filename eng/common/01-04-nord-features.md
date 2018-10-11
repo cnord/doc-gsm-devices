@@ -10,4 +10,3 @@
 * control of the zone operability with automatic detection of an open or short circuit, light and sound alarm signaling, formation of notifications for the receiver about the fault;
 * sound and light indication when the product is armed and disarmed;
 * storing of information to the event log.
-
