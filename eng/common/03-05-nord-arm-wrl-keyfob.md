@@ -1,6 +1,6 @@
 ## CN-Keypad Wireless Keypad
 
-\imgcapt{imgk14.png}{CN-Keypad}
+\imgcapt{img/k14.png}{CN-Keypad}
 
 The device state can be controlled or its status can be recognized using the "CN-Keypad” wireless keypad. All wireless devices are connected to the "Nord GSM" device via the CN-WRL expander. 
 To add a keypad to the device configuration, it is necessary to do the following.
@@ -12,8 +12,7 @@ To add a keypad to the device configuration, it is necessary to do the following
 
 (For more details, see Section 5.3. Wireless devices)
 
-
-\imgcapt{img03-05-cn-k.png}{Battery compartment of the CN-Keypad keypad}
+\imgcapt{img/03-05-cn-k.png}{Battery compartment of the CN-Keypad keypad}
 
 The device can connect no more than four wireless keypads, and the device can work with all simultaneously.
 
