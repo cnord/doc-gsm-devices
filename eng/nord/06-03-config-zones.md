@@ -95,7 +95,7 @@ Temperature sensor & E159 / R159 & No & Yes & Low temperature \\
 If "Yes" is specified in the “Arming/disarming" column for the zone type, it means that this type of zone can be armed or disarmed together with any of the part, into which it is included. If "No" is specified in the “Arming/disarming" column for the zone type, it means that this type of zone is *always* armed.   
 If "Yes" is specified in the “Siren" column for the zone type, it means that in case of an alarm in a zone, the horn will be activated.
 
-**”Bypass” Zone Type**
+#### ”Bypass” Zone Type
 
 If the zone type is set to “Bypass", then this zone is specially handled during arming and disarming.
 
@@ -103,19 +103,19 @@ When arming the bypass zone state is ignored: the device will be armed even if t
 
 If the part, into which the bypass zone is included, is armed and the bypass zone becomes alarming, then first the check is made to see if the entry delay count for another part zone has started. If the entry delay count is in process, the alarm in the bypass zone is ignored. If there is no entry delay, the "Alarm" (**E130**) event will be generated for the bypass zone.
 
-**”Fire” Zone Type**
+#### ”Fire” Zone Type
 
 When generating an alarm on zones with the "Fire” type, the device uses the "Warning"/"Fire" mechanism: it is based on the logic of the detector's repeated operation after a power reset. The device switches to the generalized "Fire” state, which is accompanied by fire siren, as well as the repetition of fire alarms. This state is stored in the device memory, i.e. when the power or panel is reset, the generalized "Fire” state is saved.
 
-**”Panic button without fixation” Zone Type**
+#### ”Panic button without fixation” Zone Type
 
 If the zone type is “Panic button without fixation", then such a zone has its own interval of alarm repeat. 
 
 The alarm repeat interval set for the device is not used for this type of zone. Instead, it is set to a value of 5 seconds. Thus, pressing the panic button again not earlier than after 5 seconds will result in the transition of another event to the panel.
 
-**"Temperature Sensor" Zone Type**
+#### "Temperature Sensor" Zone Type
 
-If a wired temperature sensor is connected to the device, and the 1-Wire line polling mode is enabled (enabled on the [Miscellaneous] tab(#control-indication)), it will appear automatically in the "Zones" tab and will have a zone number in the range from 48 to 51. For temperature sensors, the upper and lower thresholds shall be specified, at which alarms will be generated. Range of permissible values for thresholds: from -55°C to 127°C. Read more [about connecting temperature sensors](#install-temp).
+If a wired temperature sensor is connected to the device, and the 1-Wire line polling mode is enabled (enabled on the [Miscellaneous](#control-indication) tab), it will appear automatically in the "Zones" tab and will have a zone number in the range from 48 to 51. For temperature sensors, the upper and lower thresholds shall be specified, at which alarms will be generated. Range of permissible values for thresholds: from -55°C to 127°C. Read more [about connecting temperature sensors](#install-temp).
 A total of 4 temperature sensors can be connected to the device.
 
 
@@ -148,7 +148,7 @@ How does the entry delay work? Suppose that we have a zone, it includes a magnet
 
 The value of the "Entry delay" parameter can be specified only for zones of the type specified as “Arm" or “Arm without siren". This is due to the fact that zones of all other types (with the exception of “Bypass") cannot be armed or disarmed: they are always armed. As for the “Bypass” zone, the zones of this type are handled during arming or disarming in a special way, as described above, in the section "Zone Types".
 
-**"Probable Alarm” Event**
+#### "Probable Alarm” Event
 
 If the zone with entry delay is violated, the device certainly generates the "Probable alarm" event (** E138 **). The number of the violated zone and the smallest number of the part, into which this zone is included, are transmitted as the event arguments. If several zones with entry delay are violated, an event "Probable alarm" will be generated for each zone.
 

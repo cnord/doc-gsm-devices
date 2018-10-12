@@ -90,4 +90,4 @@ If several partitions are configured in the device, then only the following is i
 * LED is on continuously if all device partitions are armed;
 * LED is off if at least one of the partitions is disarmed;
 * LED "flashes" if there are faults in the zones;
-* the LED "flashes", if after the device was armed, there was an alarm and the alarmed partition was not disarmed.
+* LED "flashes", if after the device was armed, there was an alarm and the alarmed partition was not disarmed.

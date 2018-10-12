@@ -28,7 +28,7 @@ When creating rules, it is important to remember the following:
 
 ### Light indicator
 
-**Light indicator connection**
+#### Light indicator connection
 
 Connect the light indicator to the device as follows:
 
@@ -40,7 +40,7 @@ Connect the light indicator to the device as follows:
 If the EW-12 expander is connected to the Nord, then the terminals "Z1" - "Z8" of the expander can be used.   
 Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
-**Rule setting**
+#### Rule setting
 
 For a light indicator that indicates the state of site or partition, it is necessary to set up a rule with the role of "Light indicator". To create a rule in the "Automatic controls" tab, click the "Light indicator" button and select the output to which the annunciator is connected. 
 In the event that several partitions are configured on the device, then when creating the rule, it is possible to specify the partition for which the light indicator will display the state.
@@ -49,7 +49,7 @@ In the event that several partitions are configured on the device, then when cre
 \imgcapt{img/06-13-config-automation-02.png}{Creating “Light indicator” rule}
 
 
-**Annunciator operation description**
+#### Annunciator operation description
 
 If the "Light indicator" rule is configured to display the partition state:
 
@@ -68,7 +68,7 @@ If the "Light indicator" rule is configured to display the site state:
 
 ### Siren
 
-** Siren connection**
+#### Siren connection
 
 The siren is connected to the open collector as follows:
 
@@ -79,7 +79,7 @@ If the EW-12 expander is connected to the Nord, then the terminals "Z1" - "Z8" o
 Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
 
-**Rule setting**
+#### Rule setting
 
 For siren it is necessary to set up a rule with the role of "Siren". To create a rule in the "Automatic controls" tab, click the “Siren" button and select the output to which the annunciator is connected. 
 
@@ -96,7 +96,7 @@ In addition to the predefined rules, up to 16 other rules can be created in the 
 \imgcapt{img/06-13-config-automation-05.png}{Window for creating rule}
 
 
-**Rule setting**
+#### Rule setting
 
 Let’s consider setting up rules for a specific example.
 

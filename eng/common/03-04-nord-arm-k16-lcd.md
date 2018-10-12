@@ -34,7 +34,7 @@ If several partitions are assigned to the user code, then first the user shall s
 
 To select a partition, the user shall first enter the number of the partition, which state he/she wants to change, and then click the "#" button.
 
-> * Let’s suppose that the user wants to disarm partition number 2 using the code 1234. To do this, he/she shall press the following sequence of buttons on the keypad: 2#1234*
+> *Let’s suppose that the user wants to disarm partition number 2 using the code 1234. To do this, he/she shall press the following sequence of buttons on the keypad: 2 # 1234 *
 
 If the user types the correct code with several partitions assigned, but previously he/she has not selected the partition, which state shall be changed, then such code is treated as incorrect.
 

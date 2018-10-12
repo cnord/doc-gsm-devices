@@ -13,7 +13,7 @@ To load events from the device to the configurator, click the "Update" button.
 
 \imgcapt{img/06-15-config-history-02.png}{“Event history” tab, event list}
 
-The volume of device non-volatile memory allows to save at least 10,000 events. But on the “Event history" tab, no more than 200 recent events are displayed. Use the _Save to file.._ button to download the full list of events to a file with the extension _*.csv_.
+The volume of device non-volatile memory allows to save at least 10,000 events. But on the “Event history" tab, no more than 200 recent events are displayed. Use the _Save to file.._ button to download the full list of events to a file with the extension _.csv_.
 
 The following information is displayed for each event history:
 

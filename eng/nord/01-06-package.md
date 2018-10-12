@@ -25,7 +25,7 @@ Packing                                                                         
 
 -----------------------------------------------------------------------------------------
 
-> * Note: (m) - for the product in a metal case*
+> *Note: (m) - for the product in a metal case*
 
 ### Marking
 

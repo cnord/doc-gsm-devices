@@ -4,7 +4,7 @@
 
 \imgcapt{img/04-05-wze-12-1.png}{«EW-12»}
 
-**Connection to Device**
+#### Connection to Device
 
 The expander is connected to the device via group of terminals "Reader", which is located on the left edge of the device terminals: the "1WR" terminal of the expander is connected to the "DATA" terminal of the device, and the "1WR GND" terminal of the expander is to the "GND" terminal of the device.
 
@@ -12,7 +12,7 @@ The expander is connected to the device via group of terminals "Reader", which i
 
 If the expander is connected correctly, the LED on it shall flash, zones will appear in the configurator automatically on the [Zones](#config-zones) tab.
 
-**Expander Power**
+#### Expander Power
 
 The expander is powered via terminals marked "GND PWR" and "+ 12V".
 
@@ -21,10 +21,9 @@ Power can be supplied in two ways:
 * From the device itself, it shall be noted that the maximum load is 200 mA.
 * From an uninterruptible power source.
 
+#### Connection of Zones to Expander
 
-**Connection of Zones to Expander**
-
-Terminals «Z1»-«Z8» are intended for connection of a signal cable of the zones.   
+Terminals "Z1"-"Z8" are intended for connection of a signal cable of the zones.   
 The GND terminals are for connecting the minus power cable of the zones and the second signal cable of the zones.   
 The "SNS PWR" terminals are intended for connecting the “plus" power cable to the zones.
 
@@ -34,6 +33,5 @@ Each of terminals "Z1"-"Z8" can be a zone or an open collector output, which is 
 
 * If the zone is disabled in the configurator, then it can be used as an open collector.
 * If the zone is enabled in the configurator, then it cannot be used as a collector.
-
 
 

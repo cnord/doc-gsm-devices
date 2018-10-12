@@ -36,14 +36,14 @@ For wireless devices, the following information is displayed in the “State pan
 \imgcapt{img/06-16-config-dashboard-03.png}{“State panel” tab, at the top - icons of wireless devices, at the bottom - detailed information}
 
 
-**Device status**
+#### Device status
 
 The “Wireless devices” tab displays information about all wireless devices recorded in the device configuration.
 
 If the device is in alarm, the entire icon will be colored red, and if there is any malfunction, this will be indicated at the bottom of the icon.
 By clicking on the wireless device icon, it is possible to get more detailed information about its status.
 
-**Evaluation of wireless device signal quality**
+#### Evaluation of wireless device signal quality
 
 The wireless expander connected to the device performs evaluation of the signal quality of each wireless device. The communication quality indicator is a circle around the number and name of the device. 
 

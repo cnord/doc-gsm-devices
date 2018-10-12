@@ -40,7 +40,7 @@ If there is only one TCP/IP address on the receiver, when configuring the device
 
 If an optional "Ethernet Adapter" is not connected to the device, the GSM/GPRS channel on SIM1 is considered the *main* for the device.
 
-**Reception of Events in Security Center**
+#### Reception of Events in Security Center
 
 To receive events from the device via TCP/IP (GSM/GPRS and Ethernet) in the Security Center software it is necessary to use the “C.Nord GSM (CML)" event source. This source of events can be added or it can be changed in the "Event manager" module. 
 
@@ -56,7 +56,7 @@ To add the event source “C.Nord GSM (CML)" to the service of event sources, cl
 
 See more information about the parameters of the source of events for “C.Nord GSM (CML)” in the documentation for the Security Center software.
 
-**IP Address or DNS Name?**
+#### IP Address or DNS Name?
 
 As the server address, it is recommended to specify a DNS name, not an IP address, and here’s the reason. As a rule, dedicated IP-address belongs to a specific carrier, which provides access to the Internet and cannot be transferred to a connection that is provided by *another* carrier. As for the DNS name, it belongs to the organization that registered it, for example - to a security company. Besides, the compliance of the DNS name and IP address is also specified by the security company. 
 
@@ -88,7 +88,7 @@ When transmitting via the CSD channel, the device first dials the first number s
 
 The CSD channel is considered active if at least one phone number is specified. If the device does not have to use the CSD channel to transmit events, then both telephone numbers shall be empty.
 
-**Reception of Events in Security Center**
+#### Reception of Events in Security Center
 
 To receive events from the device via the CSD channel in the Security Center software it is necessary to use "GSM Events Source". This source of events can be added or it can be changed in the "Event manager" module. 
 
@@ -107,7 +107,7 @@ When transmitting via the voice channel, the device first dials the first number
 
 The GSM voice channel is considered active if at least one phone number is specified. If the device does not have to use the voice channel to transmit events, then both telephone numbers shall be empty.
 
-**Reception of Events in Security Center**
+#### Reception of Events in Security Center
 
 To receive events from the device via the GSM voice channel, it is necessary to use the dedicated receiver equipment. As an example of such equipment, we can mention the processor of the central station "Sentinel" manufactured by Pima Electronics or processors of the central station “SG System III”/”SG System IV” manufactured by DSC.
 
@@ -124,7 +124,7 @@ The phone number for SMS transmission is set separately for each SIM, since send
 SMS channel is considered active if a phone number is specified for it. If the device does not have to use the SMS channel to transmit events, the phone number shall be empty.
 
 
-**Reception of Events in Security Center**
+#### Reception of Events in Security Center
 
 To receive events from the device via the SMS channel in the Security Center software it is necessary to use "GSM Events Source". This source of events can be added or it can be changed in the "Event manager" module. 
 

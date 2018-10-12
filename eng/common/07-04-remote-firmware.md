@@ -1,10 +1,10 @@
-##Remote Software Update on Device
+## Remote Software Update on Device
 
 **Important:** Remote software update works only for devices that are configured to use IP communication channels: Ethernet or GPRS.
 
 **Important:** The functions described in this section work only if the device is connected to the Security Center software.
 
-###Information about Sites on Receiver
+### Information about Sites on Receiver
 
 To remotely update the "firmware" in devices, the tab “Site software update" is located in the engineering panel:
 
@@ -27,7 +27,7 @@ To open the software update page on devices of this type, click the "Update ..."
 
 The software update process on the device consists of several steps and is intended to work even on networks with a very unstable GPRS signal.
 
-**Queuing for Upgrade**
+#### Queuing for Upgrade
 
 From the "Cloud" engineering panel, a command is given to set the device in the queue for updating.
 
@@ -35,27 +35,27 @@ If the device is connected to the "Cloud", then a command will be sent to the de
 
 If the device is not connected to the Cloud, then the update process will not start until the device is connected.
 
-**Downloading Current "Firmware"**
+#### Downloading Current "Firmware"
 
 Once the device has received the update command, it starts downloading the archive with the current software version. The total file size is from 200 to 500 Kb, depending on the type of device. "Firmware" is downloaded in parts to reduce the impact of communication interruptions.
 
 Downloading duration heavily depends on the communication quality and can range from several minutes on the Ethernet channel to several hours on the GPRS channel.
 
-**Archive Checking**
+#### Archive Checking
 
 After the "firmware" file is fully downloaded, the device checks its integrity and suitability for use on this type of device and on this hardware version of the board. If all checksums match and all compatibility checks are completed, the "firmware" is marked as "ready for installation".
 
-**Update**
+#### Update
 
 Next, the device waits for a state when at least one of the partitions is disarmed, and reboots to apply the update.
 
 Upgrade duration is no more than 10 seconds.
 
-**Start**
+#### Start
 
 After updating the firmware, the device starts normally. All settings and protection status for partitions are saved in the same state as they were before updating.
 
-###Updating Software on Selected Site
+### Updating Software on Selected Site
 
 If it is necessary to check the functions of the new software version on one or more sites before mass installation, it is possible to use the software update on the selected site.
 

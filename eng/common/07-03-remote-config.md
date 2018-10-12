@@ -30,11 +30,11 @@ Actions that require local interaction with the device on the site are also not 
 
 ### Work Features
 
-**Simultaneous Operation**
+#### Simultaneous Operation
 
 Although the permissions for configuring one site can be simultaneously issued to several engineers, only one engineer can perform the direct configuration at a time. Access of the remaining engineers to the configuration panel is blocked and when they try to open the site for configuration, a warning is displayed: The site is currently being configured or updated.
 
-**Priority of Local Configuration**
+#### Priority of Local Configuration
 
 If during the remote configuration by one engineer, another engineer will change the device settings locally using the "desktop" configurator, it will be impossible to apply remote settings - the configuration download error message will be displayed.
 
