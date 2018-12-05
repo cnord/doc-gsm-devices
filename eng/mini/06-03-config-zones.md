@@ -10,11 +10,6 @@ Use the “Zones" tab to configure the parameters of the wired zones connected t
 
 The numbers of zones displayed in the configurator correspond to the marking of the terminals on the printed circuit board: "Z1" - zone No. 1, "Z2" - zone No. 2 and so on.
 
-If the expander EW-12 is connected to the device, the expander zones correspond to the numbers 9-16, that is, the "Z1" terminal on the expander corresponds to the zone No. 9 in the configurator, the "Z2" terminal to the zone No. 10, (...), the "ZN" terminal corresponds to a zone (N + 8).
-
-If the expander EW-8 is connected to the device, the terminal "Z1" is intended for connection of signal cables from zones No. 1 and No. 9, terminal "Z2" - for cables from zones No. 2 and No. 10 and so on. In other words, the N terminal is intended to connect the cables from the "N" and "N + 8" zones. 
-
-
 ### Turning Zone On and Off
 
 The on/off button of the zone is in the left column, just behind the zone number. The button color reflects the current status of the zone: if the button is green, the zone is on, if the button is red, then it is off. The inscription on the button corresponds to the operation that will be performed when the button is pressed: the green button says “Disable", because when the button is pressed, the zone is turned off, and the red button says "Enable", because when the red button is pressed, the zone is turned on.

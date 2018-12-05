@@ -37,7 +37,6 @@ Connect the light indicator to the device as follows:
 
 \imgcapt{img/06-13-config-automation-03.png}{Light indicator connection to the device}
 
-If the EW-12 expander is connected to the Nord, then the terminals "Z1" - "Z8" of the expander can be used.   
 Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
 #### Rule setting
@@ -75,7 +74,6 @@ The siren is connected to the open collector as follows:
 * The "plus" cable of the siren can be connected to any plus output of the control panel, for example, to the output for powering keypad or zones. 
 * Connect the siren "minus" cable to one of seven open collectors: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
-If the EW-12 expander is connected to the Nord, then the terminals "Z1" - "Z8" of the expander can be used.   
 Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
 
