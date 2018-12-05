@@ -3,29 +3,21 @@
 ### Scope of Delivery
 
 --------------------------------------------------------------------------------- -------
-Receiving and monitoring security and fire alarm device "Nord GSM"/"Nord GSM WRL" 1 pcs.
+Receiving and monitoring security and fire alarm device "Nord GSM Mini"           1 pcs.
 
-Output resistor 0.25 W (0.16 W) - 2.2 kOm                                         16 pcs.
+Output resistor 0.25 W (0.16 W) - 2.2 kOm                                         8 pcs.
 
-Output resistor 0.25 W (0.16 W) - 4.3 kOm                                         16 pcs.
+Output resistor 0.25 W (0.16 W) - 4.3 kOm                                         8 pcs.
 
-Fuse link VPB6-7, 1 A, 250 V                                                      1 pc.
+Battery with dimension 18650                                                      1 pc.
 
-Plastic battery retainer with a capacity of 1.2 Ah in the product case            1 pc.
+Network adapter                                                                   1 pc.
 
-Grounding set ZK-15 (m)                                                           1 pc.
+Technical specification                                                           1 pc.
 
-Set of fasteners (m)                                                              1 pc.
-
-Remote GSM antenna 2J520-SMA-male (or similar) (m)                                1 pc.
-
-Certificate                                                                       1 pc.
-
-Packing                                                                           1 pc.
+Package                                                                           1 pc.
 
 -----------------------------------------------------------------------------------------
-
-> *Note: (m) - for the product in a metal case*
 
 ### Marking
 
