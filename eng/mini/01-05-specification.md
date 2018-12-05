@@ -4,7 +4,7 @@
 * The number of the product security zones, when the product is equipped with an expander for the number of wired zones, is 16;
 * The maximum allowable total resistance of two wires of each zone - no more than 330 Om;
 * The number of wireless (stand-alone) terminal units supported by the product when installing the radio channel signaling zone extension unit CN-WRL is up to 31;
-* For joint operation with the product in the version of the "Nord GSM/WRL" (with the installed radio expander CN-WRL), the following radio channel terminal units can be used:
+* For joint operation with the product in the version of the "Nord GSM Mini" (with the installed radio expander CN-WRL), the following radio channel terminal units can be used:
 	* manual security detector «CN-KeyFob»;
 	* volume electro-optical security detector «CN-PIR»;
 	* volume electro-optical street security detector «CN-PIR-Outdoor»;

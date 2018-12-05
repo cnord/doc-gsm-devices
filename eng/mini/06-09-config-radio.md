@@ -2,7 +2,7 @@
 
 ## Radio {#config-radio}
 
-"Nord GSM" can transmit events to the receiver not only via GSM and Ethernet, but also via the radio channel. Radio transmission can be done both in the duplication mode, when all events are always sent by radio, and in the backup mode, when the events are transmitted by radio if there is no IP communication with the receiver.
+"Nord GSM Mini" can transmit events to the receiver not only via GSM and Ethernet, but also via the radio channel. Radio transmission can be done both in the duplication mode, when all events are always sent by radio, and in the backup mode, when the events are transmitted by radio if there is no IP communication with the receiver.
 
 > Radio transmission is performed *only* in the EPAF protocol, PAF protocol support is not provided.
 
@@ -41,5 +41,5 @@ On the one hand, the metal case has large dimensions compared to plastic. But on
 
 * there is room for installing a radio transmitter;
 * the case itself serves as a counterbalance to the pin antenna;
-* it is possible to install a wired expander and CN-WRL wireless expander. Thus, up to 16 wired zones and up to 31 wireless devices can be connected to the "Nord GSM" device in the metal case;
+* it is possible to install a wired expander and CN-WRL wireless expander. Thus, up to 16 wired zones and up to 31 wireless devices can be connected to the "Nord GSM Mini" device in the metal case;
 * it is possible to install a battery of a larger capacity - up to 7.2 A*h.

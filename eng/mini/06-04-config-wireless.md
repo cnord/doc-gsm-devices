@@ -3,7 +3,7 @@
 ## Wireless Devices
 
 Use the "Wireless devices" tab to record wireless devices and their parameters, such as type, entry delay, exit delay, etc.    
-All wireless devices are connected to the "Nord GSM" device via the CN-WRL expander. The expander supports connection of 31 devices. The entire list of devices is on the [site] (https://shop.cnord.ru/sn.html).
+All wireless devices are connected to the "Nord GSM Mini" device via the CN-WRL expander. The expander supports connection of 31 devices. The entire list of devices is on the [site] (https://shop.cnord.ru/sn.html).
 
 ### Connection of New Device
 
