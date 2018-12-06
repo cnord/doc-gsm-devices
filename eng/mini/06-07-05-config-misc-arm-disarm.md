@@ -16,7 +16,7 @@ If this parameter is set, the device cannot be armed if it is running on a backu
 
 **Disable arming when no IP communication with the Security Center is available**
 
-If this parameter is set, the device cannot be armed if there is no GPRS or Ethernet communication.
+If this parameter is set, the device cannot be armed if there is no GPRS communication.
    
 
 **Enable remote arm/disarm from the Security Center**
@@ -31,8 +31,4 @@ The code of forced disarming is a code that differs from the user code by one un
 * if the user code ends with "0", then the forced disarming code will be only one – one more. For example, if the user code is "5840", then the forced disarming code will be only "5841".
 * if the user code ends with "9", then the forced disarming code will be only one – one less. For example, if the user code is "5849", then the forced disarming code will be only "5848".
     
-
-**No indication for entry delay for CN-K**
-
-Since the CN-K keypad is wireless and runs on batteries, disabling the indication of the entry delay will increase the battery life in the CN-Keypad keypad.
 

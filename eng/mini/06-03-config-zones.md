@@ -138,7 +138,7 @@ To automatically monitor the reception of a disarming after a possible alarm in 
 
 The purpose of the "Exit delay" parameter is very similar to that of the "Entry delay" parameter, but it is intended to allow the user to exit the guarded premises after he/she performed the arming. As a rule, the exit delay is set for zones that protect the entrance doors to the protected premises.
 
-After the user arms the part (using the keyboard, wireless controller or TM reader), the device checks the status of all zones included in the part:
+After the user arms the part (using the keyboard or TM reader), the device checks the status of all zones included in the part:
 
 * if a faulty cable is detected, the device refuses to arm;
 * if the alarm zone is detected, the device also refuses to arm;
@@ -147,8 +147,6 @@ After the user arms the part (using the keyboard, wireless controller or TM read
 The arming event (**E401**) is generated immediately during arming, before the exit delay starts, if any. The number of the protected part and the number of the user, who performed the arming, are transmitted as arguments of the event.
 
 After the exit delay countdown starts, the device ignores the status of all zones for which an exit delay is specified, as well as zones with a “Bypass" type. If the user has time to leave the premises and close the entrance door before the exit delay countdown has expired, then there will be no alarm after arming. If any of the zones are violated after the exit delay ends, an alarm will be generated.
-
-For wireless devices, the state that was received during the last poll of the device is taken as current. Thus, the user of the wireless system may need to wait until the wireless detector sends a normal state to the device. In case you do not want to wait, it is possible to set the minimum possible delay for the wireless detectors.
 
 It may happen that during the arming it is impossible to achieve the normal state of one or several zones, for example, if the detectors in the zones monitor the keyboard area. In this case, the zones shall be configured as *bypass*. The bypass zones are described in more detail above, in the section "Zone Types".
 

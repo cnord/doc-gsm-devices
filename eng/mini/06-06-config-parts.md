@@ -18,7 +18,7 @@ Use the recycle bin icon to delete previously created partitions.
 
 In order for a user to use his or her personal code during the partition arming or disarming, the user shall be mapped to this partition. To do this, click the "Add code" button and select those users from the drop-down list who will be able to manage a particular partition.
 
-If a user has a wireless keyfob or TM-key and wants to manage partitions with them, they also shall be added to the selected partition.
+If a user has a TM-key and wants to manage partitions with it, they also shall be added to the selected partition.
 
 It is important to consider the following:
 

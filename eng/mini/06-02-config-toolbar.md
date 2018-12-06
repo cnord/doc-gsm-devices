@@ -10,7 +10,6 @@ The following information is displayed on the left side of the control panel:
 
 * device type;
 * device software version;
-* software version of the wireless expander, if it is connected; 
 * site number, specified in the device settings;
 * device serial number.
 The serial number of the device is assigned to it during production and is unique for the entire population of devices manufactured by the C.Nord company.
@@ -39,11 +38,7 @@ In the left part of the main window of the configurator there is a tab panel, wi
 
 On the "Zones" tab, the parameters of the wired zones connected to the device are configured.
 
-The "Wireless devices" tab is intended for connection of wireless devices to the device – detectors, keyfobs, keypads and repeaters. On the same tab, it is possible to configure their settings. This tab is displayed in the configurator only if a wireless extender is connected to the device.
-
-User codes that will arm and disarm the device can be set on the "Users" tab. Here it is possible to assign one or more TM-keys to the user, and also specify the wireless keyfob given to a user. 
-
-The "Partitions" tab configures the partitions of the site. On this tab it is possible to specify in which partitions which wired and wireless zones are included, and in addition, specify which users can arm or disarm the partitions.
+The "Partitions" tab configures the partitions of the site. On this tab it is possible to specify in which partitions which wired zones are included, and in addition, specify which users can arm or disarm the partitions.
 
 On the "Miscellaneous" tab, it is possible to set the intervals that are used when repeating the events sent to the Security Center, specify the type of backup power source connected to the device, turn on or off the sound and light indicator, etc.
 
@@ -61,5 +56,5 @@ The “Automatic controls” tab is intended for programming the device behavior
 
 Events that are stored in the device non-volatile memory can be viewed on the "Event history" tab. Here it is possible to mark, as posted, the events that are waiting for delivery to the Security Center in the transmission queue.
 
-The “State panel" tab displays the status of communication channels, wired and wireless zones in real time.
+The “State panel" tab displays the status of communication channels and wired zones in real time.
 

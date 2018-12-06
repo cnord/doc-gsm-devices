@@ -33,7 +33,6 @@ It is recommended to set the maximum values of the *pause before reset* paramete
 If this function is enabled and the changes are stored in the device, then the values of the following parameters can no longer be changed for this device:
 
 * addresses for GPRS connection;
-* addresses for connecting over Ethernet;
 * station format for radio transmission.   
 
 Before saving the configuration, the device issues a warning:
