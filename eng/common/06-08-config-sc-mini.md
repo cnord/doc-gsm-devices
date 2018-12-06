@@ -2,7 +2,7 @@
 
 ## Security Center {#config-sc}
 
-Settings that the device Security Center use when transmitting events via GSM and Ethernet channels can be specified on the “Security Center” tab.
+Settings that the device Security Center use when transmitting events via GSM channels can be specified on the “Security Center” tab.
 
 ### Device Identification
 
@@ -10,7 +10,7 @@ Settings that the device Security Center use when transmitting events via GSM an
 
 In the "Identification" section  it is possible to specify the number of the site that will be used when transmitting events from the device. 
 
-> Since the transmission of events from the device to the Security Center software is performed in a protocol that is the information equivalent of the Ademco ContactID protocol, each event, if possible, contains information about the number of the partition in which it occurred, as well as the zone number, which caused the formation of the event, or the number of the user who performed the partition arming or disarming. Thus, when transmitting over GSM or Ethernet, a single site number is sufficient to transmit any event from the device without loss of informativity.
+> Since the transmission of events from the device to the Security Center software is performed in a protocol that is the information equivalent of the Ademco ContactID protocol, each event, if possible, contains information about the number of the partition in which it occurred, as well as the zone number, which caused the formation of the event, or the number of the user who performed the partition arming or disarming. Thus, when transmitting over GSM, a single site number is sufficient to transmit any event from the device without loss of informativity.
 
 In the "Identification" section, the "Device identifier" field displays the unique eight-digit serial number that the device receives at the production stage. This serial number can be transmitted to the receiver and serve as an alternative to the site number when identifying the device. The “Transmit device identifier to remote program" parameter is used to enable this feature. The possibility to use the serial number of the device instead of the site number is not implemented in the Security Center software: if the serial number is transmitted to the remote program, the serial number will simply be displayed in the site card on the “Equipment" tab.
 
@@ -38,11 +38,11 @@ Both pairs "address:port" are valid for both SIMs installed in the device: irres
 
 If there is only one TCP/IP address on the receiver, when configuring the device, the values for the parameters "Address 2:Port 2" shall be left blank.
 
-If an optional "Ethernet Adapter" is not connected to the device, the GSM/GPRS channel on SIM1 is considered the *main* for the device.
+The GSM/GPRS channel on SIM1 is considered the *main* for the device.
 
 #### Reception of Events in Security Center
 
-To receive events from the device via TCP/IP (GSM/GPRS and Ethernet) in the Security Center software it is necessary to use the “C.Nord GSM (CML)" event source. This source of events can be added or it can be changed in the "Event manager" module. 
+To receive events from the device via TCP/IP (GSM/GPRS) in the Security Center software it is necessary to use the “C.Nord GSM (CML)" event source. This source of events can be added or it can be changed in the "Event manager" module. 
 
 To access the settings of event sources select the "Event sources (services)..." in the module menu that appears after right-clicking on the module icon in the system tray of the taskbar.
 
