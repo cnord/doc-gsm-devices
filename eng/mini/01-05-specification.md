@@ -19,7 +19,7 @@
 
 	> The optional radio expander CN-WRL is connected to the product main board by means of a special 4-pin connector via RS-232 v.24 interface (with TTL logic signal levels), and the radio extender is powered through the same connector.
 
-* The maximum number of wired zone states controlled by the product is four ("norm", "alarm", "break", "closing"). In this case, the type of each of the organized zones is normally closed or normally open, as well as the number of termination resistors, with one or two termination resistors - is set by the user when configuring the product;
+* The maximum number of wired zone states controlled by the product is four ("normal", "alarm", "break", "closing"). In this case, the type of each of the organized zones is normally closed or normally open, as well as the number of termination resistors, with one or two termination resistors - is set by the user when configuring the product;
 * The product allows connection of four-wire fire sensors to the security wired zones, providing the possibility of their automatic restart (alarm reset) by switching in their power lines. 
 * The maximum current consumption of all wired sensors connected to the product is limited by the value of self recovering thermal switch and shall not exceed 200 mA;
 * The product is equipped with a microswitch installed on its board, which acts as a tamper switch.

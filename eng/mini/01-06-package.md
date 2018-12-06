@@ -11,7 +11,7 @@ Output resistor 0.25 W (0.16 W) - 4.3 kOm                                       
 
 Battery with dimension 18650                                                      1 pc.
 
-Network adapter                                                                   1 pc.
+Power supply adapter                                                              1 pc.
 
 Technical specification                                                           1 pc.
 
