@@ -1,6 +1,6 @@
-# Technical Description
+# Technical description
 
-## Purpose and Capabilities
+## Purpose and capabilities
 
 The "Nord GSM Mini" device is intended for operation as the head unit of the security and fire complex - the receiving and monitoring security and fire alarm device (PKKOP), installed in the premises at the protected sites.
 
