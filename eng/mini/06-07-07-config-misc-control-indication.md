@@ -13,6 +13,6 @@ To use six-digit codes for arming and disarming, first it is necessary to set th
    
 **Enable continuous poll mode for the 1-Wire interface**
 
-The continuous poll mode of 1-Wire shall be switched on if the wired temperature sensors or EW-12 expander are connected to the device.
+The continuous poll mode of 1-Wire shall be switched on if the wired temperature sensors is connected to the device.
 This mode is incompatible with some proximity card readers and the Rif-KTM (C.Nord) keypad.
 

@@ -12,7 +12,6 @@ The product in a plastic case is equipped with a small GSM stub antenna without 
 To transmit events to the monitoring panel, the device can use the following communication channels:
 
 * GPRS;
-* CSD (for devices of hardware version 5.1, 5.2, 5.7);
 * VOICE (voice channel with DTMF-encoding);
 * SMS.
 

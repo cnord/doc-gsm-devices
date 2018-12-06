@@ -6,7 +6,6 @@
 * control of actuators and automation facilities using open-collector control outputs;
 * control of the product operation mode using electronic keys Touch Memory, proximity card reader, and wireless keyfobs;
 * sound and light alarm in "Alarm" and "Fire” modes;
-* control of the product case opening;
 * control of the zone operability with automatic detection of an open or short circuit, light and sound alarm signaling, formation of notifications for the receiver about the fault;
 * sound and light indication when the product is armed and disarmed;
 * storing of information to the event log.

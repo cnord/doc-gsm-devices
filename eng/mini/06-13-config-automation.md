@@ -22,7 +22,6 @@ When creating rules, it is important to remember the following:
 
 * If the collector is used to connect other devices (for example, fire indication device), it cannot be used anywhere else, including remote control, which will appear a little later.
 * If the collector is already used for roles (Light indicator, Siren), then it cannot be used anywhere else.
-* If the EW-12 is connected to the device and the zone is enabled in the device settings, then the collector-on-circuit cannot be used for automation rules or for roles.
 * It is possible to create 8 rules with the role of “Light indicator" or "Siren". And these rules do not depend on the number of standard rules of automation.
 
 
