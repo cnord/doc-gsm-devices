@@ -3,11 +3,7 @@
 ### Scope of Delivery
 
 --------------------------------------------------------------------------------- -------
-Receiving and monitoring security and fire alarm device "Nord GSM Mini"           1 pcs.
-
-Output resistor 0.25 W (0.16 W) - 2.2 kOm                                         8 pcs.
-
-Output resistor 0.25 W (0.16 W) - 4.3 kOm                                         8 pcs.
+Receiving and monitoring security and fire alarm device "Nord GSM Air"            1 pc.
 
 Battery with dimension 18650                                                      1 pc.
 
