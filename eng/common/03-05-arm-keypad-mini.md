@@ -83,4 +83,3 @@ If the device configuration prohibits the use of the keypad as a panic button, t
 
 To turn on or turn off the sound confirmation of pressing the buttons, simultaneously press and hold "#" and "9" buttons. 
 To turn the backlight on or off, simultaneously press and hold "#" and "0" buttons. 
-
