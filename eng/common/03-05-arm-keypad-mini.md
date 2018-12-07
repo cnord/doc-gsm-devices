@@ -49,7 +49,7 @@ The exit or entry delay countdown is indicated by the intermittent sound, which 
 
 ### Getting Information about Status
 
-The K14-LED keypad has green and red LEDs:
+The device's keypad has green and red LEDs:
 
 * Red LED is lighted when a partition is armed.
 * If the partition is disarmed, the green LED is lighted.
