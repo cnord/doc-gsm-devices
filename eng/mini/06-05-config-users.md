@@ -4,7 +4,7 @@
 
 On the "Users" tab, the users of the site are created. It is possible to create up to 32 users in the device, and each user, in addition to personal code, can also have TM-keys.
 
-\imgcapt{img/06-05-config-nord-01.png}{“Users” tab}
+\imgcapt{img/06-05-config-mini-01.png}{“Users” tab}
 
 
 To create a new user, it is necessary to click the _Add user_ button and enter the code in the new window, which the user will use when arming or disarming the site.

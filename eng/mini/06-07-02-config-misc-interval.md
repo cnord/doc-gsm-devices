@@ -1,6 +1,6 @@
 ### Intervals
 
-\imgcapt{img/06-07-config-nord-01.png}{“Miscellaneous” tab, “Intervals” section}
+\imgcapt{img/06-07-config-mini-01.png}{“Miscellaneous” tab, “Intervals” section}
 
 **Interval for repeating alarms**  
 

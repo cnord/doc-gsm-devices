@@ -1,6 +1,6 @@
 ### Control and indication {#control-indication}
 
-\imgcapt{img/06-07-config-nord-06-01.png}{“Miscellaneous” tab, “Management and indication” section}
+\imgcapt{img/06-07-config-mini-06-01.png}{“Miscellaneous” tab, “Management and indication” section}
    
 
 **Light alarm is set up on the "Automatic controls" tab**

@@ -4,7 +4,7 @@ The device is equipped with an built-in GSM-modem, which can work alternately wi
 
 ### SIM Card Installation
 
-\imgcapt{img/sim-s1.png}{SIM Cards Installation}
+\imgcapt{img/channel-switch-button-mini.png}{SIM Cards Installation}
 
 The SIM card holder is located on the middle part of the device board.
 

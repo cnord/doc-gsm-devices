@@ -4,7 +4,7 @@
 
 Use the “Zones" tab to configure the parameters of the wired zones connected to the device.
 
-\imgcapt{img/06-03-config-nord-01.png}{“Zones” tab}
+\imgcapt{img/06-03-config-mini-01.png}{“Zones” tab}
 
 ### Zones Numbering
 

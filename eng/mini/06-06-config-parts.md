@@ -5,7 +5,7 @@
 The "Partitions" tab configures the partitions of the site.
 It is possible to create up to 32 partitions i the device with the possibility of their independent arming and disarming.
 
-\imgcapt{img/06-06-config-nord-01.png}{“Partitions” tab}
+\imgcapt{img/06-06-config-mini-01.png}{“Partitions” tab}
 
 To create a partition, click the “Add partition” button. Each partition is assigned its own number, the numbers are given sequentially from 1 to 32.
 Each partition has the "Add zone" and "Add code” buttons located in the second and third column respectively.

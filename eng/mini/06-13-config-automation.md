@@ -34,7 +34,7 @@ Connect the light indicator to the device as follows:
 * Connect the siren "plus" cable to any plus output of the control panel, for example, to the output for powering the keypad or zones. 
 * Connect the siren "minus" cable to one of seven open collectors: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
-\imgcapt{img/06-13-config-automation-03.png}{Light indicator connection to the device}
+\imgcapt{img/06-13-config-automation-03-mini.png}{Light indicator connection to the device}
 
 Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
@@ -44,7 +44,7 @@ For a light indicator that indicates the state of site or partition, it is neces
 In the event that several partitions are configured on the device, then when creating the rule, it is possible to specify the partition for which the light indicator will display the state.
 
 
-\imgcapt{img/06-13-config-automation-02.png}{Creating “Light indicator” rule}
+\imgcapt{img/06-13-config-automation-02-mini.png}{Creating “Light indicator” rule}
 
 
 #### Annunciator operation description
@@ -78,9 +78,9 @@ Any light indicator with a voltage of 12 V can be connected to the devices. The 
 
 #### Rule setting
 
-For siren it is necessary to set up a rule with the role of "Siren". To create a rule in the "Automatic controls" tab, click the “Siren" button and select the output to which the annunciator is connected. 
+For siren it is necessary to set up a rule with the role of "Siren". To create a rule in the "Automatic controls" tab, click the “Siren" button and select the output to which the annunciator is connected.
 
-\imgcapt{img/06-13-config-automation-04.png}{Creating “Siren” rule}
+\imgcapt{img/06-13-config-automation-04-mini.png}{Creating “Siren” rule}
 
 The siren connected to the open collector differs from the siren connected to the same name "Siren" output: in the first case the device does not control the condition of this line.
 To configure the siren sound settings, go to the [Siren](#config-misc-siren) section of the “Miscellaneous” tab.

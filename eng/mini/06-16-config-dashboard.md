@@ -6,7 +6,7 @@ When performing work on the installation of a site, the engineer usually needs t
 
 In the configurator, the “State panel” tab displays the current information on the status of wired zones and the status of communication channels.
 
-\imgcapt{img/06-16-config-dashboard-01.png}{“State panel” tab, communication channels}
+\imgcapt{img/06-16-config-dashboard-01-mini.png}{“State panel” tab, communication channels}
 
 ### Communication channels
 

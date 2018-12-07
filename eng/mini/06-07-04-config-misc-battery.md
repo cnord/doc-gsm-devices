@@ -7,7 +7,7 @@ Use the "Type of backup power supply" parameter to specify which backup source i
 
 **If battery is connected**
 
-\imgcapt{img/06-07-config-nord-03-01.png}{“Miscellaneous” tab, “Backup power supply” section}
+\imgcapt{img/06-07-config-mini-03-01.png}{“Miscellaneous” tab, “Backup power supply” section}
 
 If the battery is selected as a backup power source, then it is possible to include two parameters:
 
