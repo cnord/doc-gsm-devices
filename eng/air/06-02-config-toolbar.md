@@ -4,7 +4,7 @@
 
 The control panel is located at the top of the configurator main window:
 
-\imgcapt{img/06-02-config-nord-01.png}{Control panel}
+\imgcapt{img/06-02-config-air-01.png}{Control panel}
 
 The following information is displayed on the left side of the control panel:
 
@@ -28,7 +28,7 @@ The "Save..." button is designed to save the current settings to the file, which
 
 \begin{wrapfigure}{L}{0.25\textwidth}
 \begin{center}
-\includegraphics{img/06-02-config-nord-02.png}
+\includegraphics{img/06-02-config-air-02.png}
 \end{center}
 \vspace{-5pt}
 \caption{Tab panel}

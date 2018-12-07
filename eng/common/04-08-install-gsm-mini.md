@@ -44,4 +44,3 @@ Recommendations for installation of the external antenna:
 * do not coil the antenna feeder;
 * mount the antenna on the dielectric surface;
 * mount the antenna in a vertical position.
-
