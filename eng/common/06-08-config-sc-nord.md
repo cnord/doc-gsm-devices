@@ -76,18 +76,6 @@ If an optional "Ethernet Adapter" is not connected to the device, the Ethernet c
 
 The “Transfer via TCP/IP (Ethernet)” section is displayed in the configurator only if an optional “Ethernet Adapter” module is connected to the device.
 
-### Transmission Parameters in GSM CSD-Channel
-
-\imgcapt{img/06-08-config-common-08.png}{“Security Center” tab, partition "Transfer via GSM CSD channel"
-
-In the “Transfer via GSM CSD channel" section it is possible to specify the phone numbers that will be used for dialing to the receiver when transmitting events in the GSM CSD channel.
-
-Unlike the GSM/GPRS and Ethernet channels, the phone numbers for transmission in the CSD channel are set separately for each SIM. This is due to the fact that the cost of the CSD transmission service within the carrier network can be substantially cheaper. 
-
-When transmitting via the CSD channel, the device first dials the first number specified for the currently active SIM, and if the transmission of the event fails, then it dials the second one. If only one modem is installed on the receiver to receive events via CSD, then the second phone number shall be left blank.
-
-The CSD channel is considered active if at least one phone number is specified. If the device does not have to use the CSD channel to transmit events, then both telephone numbers shall be empty.
-
 #### Reception of Events in Security Center
 
 To receive events from the device via the CSD channel in the Security Center software it is necessary to use "GSM Events Source". This source of events can be added or it can be changed in the "Event manager" module. 

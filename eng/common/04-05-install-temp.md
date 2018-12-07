@@ -7,6 +7,6 @@ In order for the device to detect a wired temperature sensor, it is necessary to
 
 \imgcapt{img/04-05-temp.png}{Diagram of wired temperature sensor connection to device}
 
-It is possible to connect a wired sensor to the wireless temperature sensor CN-Celsius.
+It is possible to connect several wired temperature sensors to the device.
 
-\imgcapt{img/04-05-temp2.png}{Diagram of wired temperature sensor connection to CN Celsius}
+\imgcapt{img/04-05-temp2.png}{Diagram of several wired temperature sensors connection to the device}

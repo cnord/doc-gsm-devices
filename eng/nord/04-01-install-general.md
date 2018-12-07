@@ -4,5 +4,5 @@
 
 ## Device Wiring Diagram
 
-\imgcapt{img/04-01-nord-gsm-installation-scheme.png}{}
+\imgcapt{img/04-01-nord-installation-scheme.png}{}
 

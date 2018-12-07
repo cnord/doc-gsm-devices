@@ -1,6 +1,6 @@
 ## Device Remote Configuration
 
-**Important:** Remote configuration is only available for devices that are configured to use IP communication channels: Ethernet or GPRS.
+**Important:** Remote configuration is only available for devices that are configured to use IP communication channels – GPRS or Etehernet (if available).
 
 **Important:** The functions described in this section work only if the device is connected to the Security Center software. 
 
@@ -37,4 +37,3 @@ Although the permissions for configuring one site can be simultaneously issued t
 #### Priority of Local Configuration
 
 If during the remote configuration by one engineer, another engineer will change the device settings locally using the "desktop" configurator, it will be impossible to apply remote settings - the configuration download error message will be displayed.
-

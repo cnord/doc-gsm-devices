@@ -1,15 +1,15 @@
-## K14-LED Keypad
+## Built-in keypad
 
 \imgcapt{img/k14.png}{K14-LED keypad}
 
-Using the K14-LED keypad, the user can perform the following tasks:
+Using the keypad, the user can perform the following tasks:
 
 * check the partition status (armed/disarmed);
 * arm or disarm a partition;
 * check about the beginning or active exit or entry delay;
 * check the protection state of the entire device;
 
-The K14-LED keypad has green and red LEDs:
+The keypad has green and red LEDs:
 
 * the red LED is on continuously if all device partitions are armed;
 * if the partition is disarmed, the red LED goes out and the green LED is lit.
@@ -19,8 +19,8 @@ The K14-LED keypad has green and red LEDs:
 
 To get information about a site status press **i** button:
 
-* if the partitions are configured on the device and all partitions are armed, the keypad will say: "Site is armed" and the red LED will turn on.
-* if the partitions are configured on the device and all partitions are disarmed, the keypad will say: "Site is disarmed" and the green LED will turn on.
+* if the partitions are configured on the device and all partitions are armed, the red LED will turn on.
+* if the partitions are configured on the device and all partitions are disarmed, the green LED will turn on.
 * if the partitions are configured on the device and some of them are armed and others are disarmed, the keypad displays an error indication.
 * if the partitions are not configured on the device, the keypad displays an error indication.
 
@@ -28,7 +28,8 @@ To get information about a site status press **i** button:
 
 To get information about a partition status press the partition number button and **i** button:
 
-* if the partition exists, the keypad says its state and turns on the corresponding LED.
+* if the partition is armed, the red LED will turn on
+* if the partition is disarmed, the green LED will turn on.
 * if the partition does not exist, the keypad displays an error indication.
 
 ### Arming and Disarming
@@ -45,7 +46,7 @@ To arm a partition, it is necessary to press the "house" icon and enter the user
 
 \imgcapt{img/arm.png}{}
 
-If several partitions are assigned to the user code, then first the user shall click the "house" button, select the partition, which state he/she wants to change, and then type the code.
+If several partitions are assigned to the user code, then first the user shall click the "house" button, select the partition, which state he/she wants to change, then # and enter the user code.
 
 \imgcapt{img/arm_part.png}{Example of partition arming}
 

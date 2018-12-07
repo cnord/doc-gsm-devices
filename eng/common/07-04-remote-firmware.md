@@ -1,6 +1,6 @@
 ## Remote Software Update on Device
 
-**Important:** Remote software update works only for devices that are configured to use IP communication channels: Ethernet or GPRS.
+**Important:** Remote software update works only for devices that are configured to use IP communication channels – GPRS or Ethernet (if available).
 
 **Important:** The functions described in this section work only if the device is connected to the Security Center software.
 
