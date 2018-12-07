@@ -1,6 +1,6 @@
 ## Main Technical Characteristics
 
-* The minimum number of the product wired security zones, designed to connect different detectors, is 4;
+* The minimum number of the product wired security zones, designed to connect different detectors, is 2;
 * The maximum allowable total resistance of two wires of each zone - no more than 330 Om;
 * The maximum number of wired zone states controlled by the product is four ("normal", "alarm", "break", "closing"). In this case, the type of each of the organized zones is normally closed or normally open, as well as the number of termination resistors, with one or two termination resistors - is set by the user when configuring the product;
 * The product allows connection of four-wire fire sensors to the security wired zones, providing the possibility of their automatic restart (alarm reset) by switching in their power lines. 
