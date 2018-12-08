@@ -85,7 +85,7 @@ If the device configuration prohibits the use of the keypad as a panic button, t
 
 ### Backlight and Sound Turning Off
 
-Built-in can turn on and off the sound and backlight.
+Built-in keypad can turn on and off the sound and backlight.
 
 To turn on or turn off the sound confirmation of pressing the buttons, simultaneously press and hold "#" and "9" buttons.
 To turn the backlight on or off, simultaneously press and hold "#" and "0" buttons. 

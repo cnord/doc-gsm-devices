@@ -48,8 +48,6 @@ Parameters that determine the transmission of events over a radio channel are sp
 
 The "Cloud" tab is intended to indicate to which Cloud the device shall be connected in order for the engineer to have a remote access to it. The parameter values on this tab shall only be changed if you are using Private Cloud, or it is necessary to specify the parameters for connecting to the Cloud manually.
 
-On the "Ethernet" tab, it is possible to change the device connection settings to the local network. This tab is displayed in the configurator only if an optional Ethernet Adapter module is connected to the device.
-
 The parameters of cellular operators, such as the access point name (APN), user name and password for access to packet data services, can be changed on the "GSM Operators" tab.
 
 The “Automatic controls” tab is intended for programming the device behavior depending on various conditions. Any events formed by the device or time can act as the conditions. Arming or disarming and actions with open collectors are actions that the device can perform.
