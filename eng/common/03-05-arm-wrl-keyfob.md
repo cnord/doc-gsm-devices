@@ -2,7 +2,7 @@
 
 \imgcapt{img/k14.png}{CN-Keypad}
 
-The device state can be controlled or its status can be recognized using the "CN-Keypad” wireless keypad. All wireless devices are connected to the "Nord GSM" device via the CN-WRL expander. 
+The device state can be controlled or its status can be recognized using the "CN-Keypad” wireless keypad.
 To add a keypad to the device configuration, it is necessary to do the following.
 
 * Remove the cover from the keypad.
@@ -99,13 +99,11 @@ If the device configuration prohibits the use of the keypad as a panic button, t
 
 “CN-Keypad" can turn on and off the sound and backlight.
 
-To turn on or turn off the sound confirmation of pressing the buttons, simultaneously press and hold "#" and "9" buttons. 
+To turn on or turn off the sound confirmation of pressing the buttons, simultaneously press and hold "#" and "9" buttons.
 To turn the backlight on or off, simultaneously press and hold "#" and "0" buttons. 
-
 
 ## Wireless Keyfob
 
-Wireless keyfob, as TM key, is assigned to a user. With a single TM-key it is possible to arm or disarm one partition. If one user has to be able to arm or disarm several partitions at the same time, then the appropriate rules shall be set in the "Automatic controls" section.
+Wireless keyfob, as a TouchMemory key, is assigned to a user. With a single TouchMemory key it is possible to arm or disarm only one partition. If one user has to be able to arm or disarm several partitions at the same time, then the appropriate rules shall be set in the "Automatic controls" section.
 
-The keyfob is equipped with a panic button. If the button is pressed, the device will create an alarm event.
-
+The keyfob is equipped with a panic button. If the button is pressed, the device will create an panic button alarm event.
