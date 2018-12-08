@@ -1,6 +1,6 @@
-# Technical description
+# Technical Description
 
-## Purpose and capabilities
+## Purpose and Capabilities
 
 The "Nord GSM Air" device is wireless control panel with built-in keypad for security systems.
 

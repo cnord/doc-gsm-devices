@@ -1,7 +1,7 @@
 \pagebreak
 
-# Installation and first start
+# Installation and First Start
 
-## Device wiring diagram
+## Device Wiring Diagram
 
 \imgcapt{img/04-01-air-installation-scheme.png}{}

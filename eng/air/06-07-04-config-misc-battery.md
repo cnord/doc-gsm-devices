@@ -1,11 +1,10 @@
 ### Backup Power Supply
 
-**Type of backup power supply**  
+#### Type of backup power supply
 
 Use the "Type of backup power supply" parameter to specify which backup source is connected to the device: Battery or UPS.
-   
 
-**If battery is connected**
+#### If battery is connected
 
 \imgcapt{img/06-07-config-nord-03-01.png}{“Miscellaneous” tab, “Backup power supply” section}
 
@@ -18,9 +17,8 @@ If this parameter is selected, then when voltage reaches 8.5 V on the battery te
 * *Check battery quality.* 
 
 To check the battery quality, the device periodically connects the load and monitors the voltage drop. If the voltage drop under the load exceeds 2 V, the event **E309** - *Faulty battery* is generated.
-   
 
-**If UPS is connected**
+#### If UPS is connected
 
 \imgcapt{img/06-07-config-nord-03-02.png}{“Miscellaneous” tab, “Backup power supply” section, "UPS" is selected for “Type of backup power supply"}
 

@@ -12,6 +12,7 @@ The following information is displayed on the left side of the control panel:
 * device software version;
 * site number, specified in the device settings;
 * device serial number.
+
 The serial number of the device is assigned to it during production and is unique for the entire population of devices manufactured by the C.Nord company.
 
 The "Read" button is designed to load the settings, that are currently stored in the device, into the configurator interface. It shall be remembered that if you make any changes in the device settings in the configurator, and then click on the "Read" button, all changes will be lost: the settings that were made in the configurator will be replaced with the settings loaded from the device.
@@ -57,4 +58,3 @@ The “Automatic controls” tab is intended for programming the device behavior
 Events that are stored in the device non-volatile memory can be viewed on the "Event history" tab. Here it is possible to mark, as posted, the events that are waiting for delivery to the Security Center in the transmission queue.
 
 The “State panel" tab displays the status of communication channels and wired zones in real time.
-

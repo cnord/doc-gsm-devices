@@ -4,14 +4,11 @@
 
 On the "Users" tab, the users of the site are created. It is possible to create up to 32 users in the device, and each user, in addition to personal code, can also have wireless keyfobs and TM-keys.
 
-
 \imgcapt{img/06-05-config-nord-01.png}{“Users” tab}
-
 
 To create a new user, it is necessary to click the _Add user_ button and enter the code in the new window, which the user will use when arming or disarming the site.
 
 \imgcapt{img/06-05-config-nord-02.png}{“Users” tab, code entry dialog}
-
 
 To add a Touch Memory key, click the **Scan** button in the "Keys" column, then attach the TM-key to the reader. If the reader is connected correctly, the key code will be displayed. 
 It is possible to manually add a TM-key. To do this, press the button **Enter the number** and enter information from the key in the new window.
@@ -26,4 +23,3 @@ If the wireless keyfob is attached to the device, it is possible to add it to a 
 \imgcapt{img/06-05-config-nord-04.png}{“Users” tab, adding a keyfob}
 
 Use the recycle bin icon to delete previously created users.
-

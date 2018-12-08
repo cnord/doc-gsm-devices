@@ -17,7 +17,7 @@ Package                                                                         
 
 ### Marking
 
-The product printed circuit board has a marking indicating the polarity of the terminals of the terminal blocks and their purpose. 
+The product printed circuit board has a marking indicating the polarity of the terminals of the terminal blocks and their purpose.
 
 The product is marked in the form of labels with the name of the product and bar code. The labels are glued on the front side of the product printed circuit board and case. In addition, the label is glued in the product certificate.
 

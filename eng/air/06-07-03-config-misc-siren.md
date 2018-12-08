@@ -14,12 +14,11 @@ The siren is connected to the open collector as follows:
 * The "minus" siren cable shall be connected to one of seven open collectors: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 * After connecting the siren, the output shall be configured using the automation rules. See more about the rules in the partition [Automatic controls section](# config-automation)
 
-
-**Siren interval**
+#### Siren interval
 
 The "Siren interval" parameter is responsible for duration of the siren sound, regardless of how it is connected. After the parameter interval expires, the siren will stop.
 
-**Interval for repeated enabling of the sound**
+#### Interval for repeated enabling of the sound
 
 Use the "Interval for repeated enabling of the sound" parameter to specify the interval within which the siren will start to sound again, if the alarm reset has not occurred.
 

@@ -2,7 +2,7 @@
 
 \imgcapt{img/06-07-config-nord-01.png}{“Miscellaneous” tab, “Intervals” section}
 
-**Interval for repeating alarms**  
+#### Interval for repeating alarms
 
 Use the “Interval for repeating alarms" parameter to specify the interval with which the device will generate *similar* alarms and transmit them to the receiver. The alarms are considered *similar* if they are originated in the same wired zone.
 
@@ -28,8 +28,7 @@ If the “Interval for repeating alarms" parameter is set to “Do not repeat”
 
 The “Interval for repeating alarms” parameter does not relate to the alarms that are generated when the device tamper is triggered. Events about breaking or restoring a tamper are always generated after the tamper state changes.
 
-
-**Interval for repeating fire alarms**
+#### Interval for repeating fire alarms
 
 The "Interval for repeating fire alarms" parameter specifies the interval with which the device will generate *similar* alarms on zones of the "Fire” type, and transmit them to the receiver. The alarms are considered *similar* if they are originated in the same wired zone.
 
@@ -41,8 +40,7 @@ The value of the "Interval for repeating fire alarms" parameter is applied as fo
 * upon completion of the specified interval, the "Fire" event will be generated repeatedly on all zones along which it was generated during the interval counting. After that, the interval count will start again;
 * if the generalized "Fire” state is reset, the interval count will be completed.
   
-
-**Interval for repeating troubles**
+#### Interval for repeating troubles
 
 The "Interval for repeating troubles" parameter specifies the interval with which the device will generate *similar* troubles on zones, connected to the device. The alarms are considered *similar* if they are originated in the same wired zone. In this case, in contrast to the repetition intervals of repetition of security or fire alarms, the interval for repeating faults *stops*, if a recovery of the fault is detected and an event about it is generated.
 
@@ -62,8 +60,7 @@ The value of the “Interval for repeating troubles" parameter does not cover th
 * discharge of the backup battery connected to the device. The event about the backup battery discharge (code **E302**) is formed once and repeated only when the device is turned on;
 * malfunction of the backup battery connected to the device. The event about the backup battery failure (code **E309**) is formed every 12 hours, based on the results of each quality test of the backup battery;
 
-
-**Interval for switching to the main channel**
+#### Interval for switching to the main channel
 
 With the "Interval for switching to the main channel” parameter, it is possible to set the interval over which the device will attempt to initialize the connection to the repeater via the main IP channel. The main communication channel is the GPRS channel on SIM1.
 
@@ -71,14 +68,12 @@ For more details about the configuration of IP channels, as well as the rules fo
 
 It shall be noted that it is possible to specify "Do not switch” as the value for the "Interval for switching to the main channel" parameter. In this case, the forced switching to the main communication channel will be disabled. This feature allows to use "equivalent" SIMs - if the device is connected via GPRS on SIM2, it will remain on this channel until the channel is operational.
 
-
-**Test transfer interval** 
+#### Test transfer interval
 
 Use the "Test transfer interval" parameter to specify the interval with which the device will generate a test event and transfer it over the currently available communication channel. It is important to understand that this interval is always counted from the last event that was transmitted by the device. If there are no events for transfer at the expiration of the interval, a test event will be generated and transferred.
 If this parameter is set to "Do not transfer", then the device will not generate test events (code **E602**). 
 
-
-**Interval for event transfer control**
+#### Interval for event transfer control
 
 Use the "Interval for event transfer control" parameter to specify the interval during which the audit system is waiting for the event to be sent. The *audit system* is a program mechanism that controls the fact of the event transfer to the receiver.
 
@@ -90,6 +85,4 @@ If the "Interval for event transfer control" parameter is set to any numerical v
 * If the channel switching does not help, and events are still not transferred, then the audit system reboots the device after the expiry of the event transfer control interval.
 * After the reboot, two events will be generated. The code of the first event is **R305**, this event registers the very fact of the device reboot. The second event code is **R754**, this event means that the reboot occurred by the audit system command.
 
-The default value for this parameter is 7 minutes. If necessary, the value can be increased. If "Do not monitor" is specified for this parameter, the audit system will be disabled. 
-
-
+The default value for this parameter is 7 minutes. If necessary, the value can be increased. If "Do not monitor" is specified for this parameter, the audit system will be disabled.

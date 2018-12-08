@@ -2,16 +2,15 @@
 
 ## Wireless Devices
 
-Use the "Wireless devices" tab to record wireless devices and their parameters, such as type, entry delay, exit delay, etc.    
+Use the "Wireless devices" tab to record wireless devices and their parameters, such as type, entry delay, exit delay, etc.
 All wireless devices are connected to the "Nord GSM Air" device via the CN-WRL expander. The expander supports connection of 31 devices. The entire list of devices is on the [site] (https://shop.cnord.ru/sn.html).
 
 ### Connection of New Device
 
 \imgcapt{img/06-04-config-nord-02.png}{Device adding, «Wireless devices» tab}
-   
 
-**Most of Devices**
- 
+#### Most of Devices
+
 To connect devices CN-PIR, CN-PIR-Outdoor, CN-PIR-Mini, CN-Magnetic, CN-Magnetic-Mini, CN-Glass, CN-Fire, CN-Flood, CN-Flood-Mini, CN-Celsius , CN-Keypad, CN-Repeat, CN-Repeat 220, CN-Exit, CN-Smoke it is necessary to:
 
 * Remove the device cover;
@@ -21,9 +20,8 @@ To connect devices CN-PIR, CN-PIR-Outdoor, CN-PIR-Mini, CN-Magnetic, CN-Magnetic
 
 The green device LED will confirm the transition to the connection mode.
 If the red indicator is on for 2 seconds, it means the successful completion of the device connection.
-   
 
-**CN-Siren**
+#### CN-Siren
 
 To connect devices such as "CN-Siren" and “CN-Smoke" it is necessary to:
 
@@ -32,9 +30,8 @@ To connect devices such as "CN-Siren" and “CN-Smoke" it is necessary to:
 * Switch the wireless device to the connection mode by closing the “minus" contact of the battery holder and contact "4" on the siren base.
 
 If the red indicator is on for 2 seconds, it means the successful connection.
-   
 
-**CN-KeyFob**
+#### CN-KeyFob
 
 To connect the CN-KeyFob to the device it is necessary to:
 
@@ -43,7 +40,6 @@ To connect the CN-KeyFob to the device it is necessary to:
 * Press and release any key on the keyfob. The device will periodically turn on the green indicator, indicating that it is in the “Connection" mode. If there is no such indication, press and hold all three buttons simultaneously for 2 seconds or more, and the indicator shall turn green. Hold the buttons until the indicator turns red.
 
 > If the keyfob will serve as a panic button, then after the connection it is necessary to check “Panic button enabled".
-
 
 ### Repeater
 
@@ -59,7 +55,6 @@ A chain of repeaters cannot be built: there can be only one repeater between the
 
 The algorithm of the wireless devices is implemented in such a way that if the repeater fails, and the device “listens” to the device without a repeater, then the signals from such devices will be received without a repeater.
 
-
 ### Assembly Instructions
 
 1. Install the panel in such a place that there are no metal or other shielding structures in the area of direct radio visibility towards the intended installation sites of the detectors. For example, there may be a ventilation duct behind the wall from the installation site of the panel that prevents the passage of the signal;
@@ -71,4 +66,3 @@ The algorithm of the wireless devices is implemented in such a way that if the r
 Press and hold the device tamper for 3 seconds. If the green LED flashes more than once, the communication quality is good. If the red LED turns on, it is necessary to change the installation location of the device.
 	* On the device side:
 After recording the configuration, open the “State Panel" tab - "Wireless Devices” in the "Hubble". If the connection quality is marked as "bad" for the selected device, then it is recommended to change the supposed installation location of the device or use the repeater “CN-Repeater".
-

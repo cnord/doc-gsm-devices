@@ -1,6 +1,6 @@
 \pagebreak
 
-## Automatic controls {#config-automation}
+## Automatic Controls {#config-automation}
 
 "Automatic controls" mechanism is designed to program the behavior of the device depending on certain conditions. Any events formed by the device or time can act as the conditions. Arming or disarming and actions with open collectors are actions that the device can perform.
 
@@ -24,8 +24,7 @@ When creating rules, it is important to remember the following:
 * If the collector is already used for roles (Light indicator, Siren), then it cannot be used anywhere else.
 * It is possible to create 8 rules with the role of “Light indicator" or "Siren". And these rules do not depend on the number of standard rules of automation.
 
-
-### Light indicator
+### Light Indicator
 
 #### Light indicator connection
 
@@ -43,9 +42,7 @@ Any light indicator with a voltage of 12 V can be connected to the devices. The 
 For a light indicator that indicates the state of site or partition, it is necessary to set up a rule with the role of "Light indicator". To create a rule in the "Automatic controls" tab, click the "Light indicator" button and select the output to which the annunciator is connected. 
 In the event that several partitions are configured on the device, then when creating the rule, it is possible to specify the partition for which the light indicator will display the state.
 
-
 \imgcapt{img/06-13-config-automation-02.png}{Creating “Light indicator” rule}
-
 
 #### Annunciator operation description
 
@@ -63,7 +60,6 @@ If the "Light indicator" rule is configured to display the site state:
 * The light indicator flashes if there is at least one partition in the alarm;
 * The light indicator flashes with double flashes during the exit delay.
 
-
 ### Siren
 
 #### Siren connection
@@ -75,7 +71,6 @@ The siren is connected to the open collector as follows:
 
 Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
-
 #### Rule setting
 
 For siren it is necessary to set up a rule with the role of "Siren". To create a rule in the "Automatic controls" tab, click the “Siren" button and select the output to which the annunciator is connected. 
@@ -85,13 +80,11 @@ For siren it is necessary to set up a rule with the role of "Siren". To create a
 The siren connected to the open collector differs from the siren connected to the same name "Siren" output: in the first case the device does not control the condition of this line.
 To configure the siren sound settings, go to the [Siren](#config-misc-siren) section of the “Miscellaneous” tab.
 
-
 ### Miscellaneous
 
 In addition to the predefined rules, up to 16 other rules can be created in the device. When the conditions specified in the rule are met, the device can perform arming or disarming of one or all partitions, close or open the digital output, and also start the periodic closing and opening of the digital output at a predetermined interval.
 
 \imgcapt{img/06-13-config-automation-05.png}{Window for creating rule}
-
 
 #### Rule setting
 
@@ -104,7 +97,6 @@ Configure arming of partition No. 1 on a schedule at 19.30 on Tuesdays and Wedne
 _Solution_
 
 To solve the task, it is necessary to create an action that arms the partition on a schedule.
-
 
 1. On the "Automatic controls" tab, click the “Miscellaneous" button.
 2. In the "Action" field, from the drop-down list, select the “Arming".
@@ -126,4 +118,3 @@ It is possible to configure arming of all site partitions using the “All parti
 Arming can be set for certain days of the week, as in the example considered; for each day; only for weekdays (from Monday to Friday); and also for weekends only.
 
 Automatic arming, like any other action, can be performed not only on a schedule, but also for an event. In this case, it is necessary to know the event code that will be used in the rule.
-
