@@ -1,6 +1,6 @@
 ## Built-In Keypad
 
-\imgcapt{img/k14.png}{CN-Keypad}
+\imgcapt{img/k14.png}{Keypad}
 
 The device state can be controlled or its status can be recognized using the built-in keypad. 
 
@@ -55,7 +55,7 @@ The exit or entry delay countdown is indicated by the intermittent sound, which 
 
 ### Getting Information about Status
 
-The K14-LED keypad has green and red LEDs:
+The keypad has green and red LEDs:
 
 * Red LED is lighted when a partition is armed.
 * If the partition is disarmed, the green LED is lighted.
@@ -85,7 +85,7 @@ If the device configuration prohibits the use of the keypad as a panic button, t
 
 ### Backlight and Sound Turning Off
 
-Buit-in can turn on and off the sound and backlight.
+Built-in can turn on and off the sound and backlight.
 
 To turn on or turn off the sound confirmation of pressing the buttons, simultaneously press and hold "#" and "9" buttons.
 To turn the backlight on or off, simultaneously press and hold "#" and "0" buttons. 

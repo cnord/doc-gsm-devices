@@ -33,8 +33,6 @@ Connect the light indicator to the device as follows:
 * Connect the siren "plus" cable to any plus output of the control panel, for example, to the output for powering the keypad or zones. 
 * Connect the siren "minus" cable to one of seven open collectors: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
-\imgcapt{img/06-13-config-automation-03.png}{Light indicator connection to the device}
-
 Any light indicator with a voltage of 12 V can be connected to the devices. The maximum current shall not exceed 250 mA.
 
 #### Rule setting

@@ -1,7 +1,7 @@
 ## Functionality
 
 * configuration of 2 alarm wired zones intended for receiving notifications from analogue manual and automatic security and fire detectors, security and fire alarm system units through the outputs of the central security panel relays;
-* * connection of up to 31 wireless devices;
+* connection of up to 31 wireless devices;
 * configuration of up to 32 partitions with the possibility of their independent arming and disarming.
 * control of actuators and automation facilities using open-collector control outputs;
 * control of the product operation mode using electronic keys Touch Memory, proximity card reader and wireless keyfobs;
