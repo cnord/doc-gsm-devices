@@ -1,109 +1,112 @@
-## Беспроводная клавиатура СН-К
+## Teclado inalámbrico CN-K
 
-\imgcapt{img/k14.png}{Клавиатура СН-К}
-Управлять состоянием прибора или узнать его состояние можно с помощью беспроводной клавиатура «СН-К». Она подключаются к прибору «Норд GSM» через расширитель «СН-Радио». 
-Для добавления клавиатуры в конфигурацию прибора нужно выполнить действия:
+\imgcapt{img/k14.png}{Teclado CN-K}
+El equipo se puede controlar o informarse sobre su estado a través del teclado inalámbrico "CN-K". El teclado se conecta al equipo "Nord GSM" a través del expansor "CN-Rasio". Para añadir el teclado a la configuración del equipo hay que realizar las siguientes acciones:
 
-* Снять крышку с клавиатуры.
-* Подключить питание -- питание клавиатуры осуществляется от двух литиевых батарей типа CR123A (основной и резервной). Для замены батарей необходимо открыть крышку батарейного отсека клавиатуры, установить сначала резервную батарею, а затем основную.
-* В конфигураторе прибора перейти вкладку «Беспроводные устройства» и нажать на кнопку «Добавить беспроводное устройство».
-* Перевести клавиатуру в режим «Связывание». Для этого нужно замкнуть контакты «Сброс», расположенные на плате устройства. Вспышками зеленого светодиода «СН-К» подтвердит переход в режим «Связывание».
+* Quitar la tapa del teclado.
+* Conectar la alimentación - la alimentación del teclado se realiza a través de dos baterías de litio de tipo CR123A (principal y de reserva). Para cambiar las baterías hay que abrir la tapa de la sección de baterías, instalar primero la batería de reserva y a continuación la principal.
+* En el configurador del equipo ir a la pestaña "Dispositivos inalámbricos" y pulsar el botón "Añadir dispositivo inalámbrico".
+* Cambiar el teclado al modo "Unión". Para ello hay que cruzar los contactos "Reseteo", ubicados en la placa del dispositivo. Mediante destellos del LED verde, "CN-K" confirmará el cambio al modo de "Unión".
 
-(Подробнее в разделе 5.3. Беспроводные устройства)
+(Más información en el apartado 5.3. Dispositivos inalámbricos)
 
 
-\imgcapt{img/03-05-cn-k.png}{Батарейный отсек клавиатуры СН-К}
-К прибору можно подключить не более четырех беспроводных клавиатур, причем прибор может работать со всеми одновременно.
+\imgcapt{img/03-05-cn-k.png}{Sección de baterías del teclado CN-K}
+Al equipo se puede conectar un máximo de cuatro teclados inalámbricos, teniendo en cuenta que el equipo puede funcionar con todos los teclados al mismo tiempo.
 
-### Взятие и снятие
+### Arme y desarme
 
-В приборе реализована возможность взятия и снятия с охраны нескольких разделов одним кодом пользователя. Настройка разделов, которые могут быть взяты или сняты с охраны конкретным кодом, выполняется при конфигурировании прибора.
+En el equipo está realizada la posibilidad de arme y desarme del sistema de seguridad de varias particiones con un código de usuario. El ajuste de particiones que pueden ser armadas o desarmadas con un código en concreto, se realiza al realizar la configuración del equipo.
 
-**Взятие под охрану**
+**Arme del sistema de seguridad**
 
-Для взятия раздела под охрану нужно нажать «домик» и ввести код пользователя.
+Para armar la partición hay que pulsar "casita" e introducir el código del usuario.
 
-* если код верный, то объект (раздел) будет взят под охрану, клавиатура подтвердит взятие включением красного светодиода. Либо включится отсчет интервала задержки на выход, которая сопровождается звуковой и светодиодной индикацией.
-* если код неверный или пользователю, которому принадлежит этот код, соответствует более одного раздела, то клавиатура отобразит ошибку.
-* если взятие под охрану невозможно, то клавиатура отобразит ошибку.
+* si el código es correcto, el sistema de seguridad del objeto (partición) será armado, el teclado confirmará el arme mediante la activación del LED rojo. O se activará la cuenta del intervalo de retraso de salida que va acompañada por una indicación acústica o LED.
+* si el código es incorrecto o al usuario al que le pertenece ese código, le corresponde más de una partición, el teclado mostrará un error.
+* si el arme del sistema de seguridad no es posible, el teclado mostrará un error.
 
 \imgcapt{img/arm.png}{}
 
-Если за пользователем закреплено несколько разделов, то сначала нужно нажать кнопку «домик», выбрать раздел, состояние которого будет изменено, а после этого набрать код.
+Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón "casita", elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.
 
-\imgcapt{img/arm_part.png}{Пример взятия раздела №1 кодом 1234}
+\imgcapt{img/arm_part.png}{Ejemplo de arme de la partición №1 con el código 1234}
 
-**Отказ от взятия**
+**Denegación del arme del sistema de seguridad**
 
-«Отказ от взятия» -- это невозможность взять объект под охрану, если охранная сигнализация на объекте неисправна, либо взятие под охрану запрещено из-за отсутствия оплаты за услуги охраны.
+La "Denegación del arme" - es la imposibilidad de armar el sistema de seguridad del objeto, si la alarma de seguridad en el objeto no funciona correctamente, o si el arme del sistema de seguridad está prohibido por el impago de los servicios de seguridad.
 
-Предусмотрены следующие причины отказа от взятия:
+Están previstos los siguientes motivos de denegación del arme:
 
-* неисправность одного или нескольких шлейфов;
-* тревога в одном или нескольких шлейфах;
-* отсутствие связи с пультовой программой по IP-каналу;
-* отсутствие 220В на объекте;
-* отсутствие оплаты за услуги охраны;
-* открыт корпус прибора.
+* fallo de una o varias zonas;
+* alarma en una o varias zonas;
+* ausencia de comunicación con el programa de la consola por el canal IP;
+* ausencia de 220 V en el objeto;
+* impago de los servicios de seguridad;
+* está abierto el cuerpo del equipo.
 
-**Снятие с охраны**
 
-Если пользователь может управлять только одним разделом, для снятия с охраны нужно ввести код пользователя.
+**Desarme del sistema de seguridad**
 
-* если код верный, то объект (раздел) снимется с охраны. Клавиатура подтвердит снятие включением зелёного светодиода;
-* если код неверный или пользователь, которому принадлежит этот код, может управлять несколькими разделами, клавиатура отобразит ошибку.
+Si el usuario puede controlar sólo una partición, para desarmar el sistema de seguridad hay que introducir el código del usuario.
+
+
+* si el código es correcto, el sistema de seguridad del objeto (partición) será desarmado. El teclado confirmará el desarme mediante la activación del LED verde.
+* si el código es incorrecto o el usuario al que le pertenece ese código puede controlar varias particiones, el teclado mostrará un error.
+
 
 \imgcapt{img/disarm.png}{}
 
-Если пользователь может управлять несколькими разделами, для снятия с охраны нужно набрать номер раздела, затем # и ввести код пользователя.
+Si el usuario puede controlar varias particiones, para desarmar el sistema de seguridad hay que teclear el número de la partición y a continuación # e introducir el código del usuario.
 
-* Если код верный, то раздел снимется с охраны. Клавиатура подтвердит снятие включением зелёного светодиода.
-* При повторном снятии того же раздела клавиатура отобразит его состояния: включится зеленый светодиод.
-
-\imgcapt{img/disarm_part.png}{Пример снятия раздела №1 кодом 1234}
-
-Отсчет интервала задержки на вход или интервала задержки на выход индицируется прерывистым звуком, который воспроизводится в течение всего интервала задержки. Звуковая индикация задержки на вход или выход отключается при нажатии на любую кнопку на клавиатуре.
-
-### Получение состояния
-
-На клавиатуре «СН-К» расположены зеленый и красный светодиоды:
-* Красный светодиод загорается при взятие раздела под охрану.
-* При снятии раздела с охраны загорается зеленый светодиод.
-* Красный и зеленый светодиоды одновременно мигают, если произошла ошибка. Например, при вводе неправильного кода пользователя или при отказе от взятия.
-
-**Получение состояния объекта**
-
-Для получения информации о состоянии объекта нужно нажать кнопку **i**:
-
-* если все разделы прибора сняты с охраны, то включится зеленый светодиод;
-* если часть разделов взята под охрану, а часть – снята с охраны, клавиатура отобразит ошибку, так как необходимо явно указать номер раздела, состояние которого нужно получить;
-* если в конфигурации прибора нет ни одного раздела, то прибор отобразит ошибку;
-
-**Получение состояния раздела**
-
-Для получения информации о состоянии раздела нужно нажать кнопку номера раздела и кнопку **i**:
-
-* если раздел взят под охрану, то включится красный светодиод;
-* если раздел снят с охраны, то включится зеленый светодиод;
-* если в конфигурации прибора нет раздела с таким номером, индицируется ошибка.
-
-### Тревожная кнопка
-
-Если в конфигурации прибора разршено использование клавиатуры в качестве тревожной кнопки, то для активации нужно нажать и удерживать нажатыми в течение 3 секунд кнопки «домиков». Включение зеленого и красного светодиодов на 1 секунду в сопровождении звука говорит о подтверждении нажатия тревожной кнопки.
-
-Если в конфигурации прибора запрещено использование клавиатуры в качестве тревожной кнопки, то клавиатура отобразит ошибку.
-
-### Отключение подсветки и звука
-
-На клавиатуре «СН-К» есть возможность включения и выключения звука и подсветки.
-
-Для включения или выключения звука подтверждения нажатия на кнопки, необходимо одновременно нажать и удерживать кнопки «#» и «9». 
-Для включения или выключения подсветки, необходимо одновременно нажать и удерживать кнопки «#» и «0». 
+* Si el código es correcto, el sistema de seguridad de la partición será desarmado. El teclado confirmará el desarme mediante la activación del LED verde.
+* Si se vuelve a desarmar el sistema de seguridad de la misma partición, el teclado mostrará su estado: se encenderá el LED verde.
 
 
-## Беспроводной брелок
+\imgcapt{img/disarm_part.png}{Ejemplo de desarme de la partición №1 con el código 1234}
 
-Беспроводной брелок, как и ТМ-ключ, привязывается к пользователю. С помощью брелка можно взять на охрану или снять с охраны один раздел. Если пользователю необходимо иметь возможность ставить или снимать с охраны несколько разделов одновременно, то нужно настроить соответствующие правила в разделе «Автоматика».
+La cuenta del intervalo de retraso de entrada o intervalo de retraso de salida se indica mediante un sonido intermitente que se reproduce durante todo el intervalo de retraso. La indicación acústica de retraso de entrada o salida se desconecta al pulsar cualquier botón del teclado.
 
-На брелке есть кнопка тревожной сигнализации, по нажатию которой прибор сформирует тревожное событие.
+### Recepción del estado
+
+En el teclado "CN-K" hay un LED verde y uno rojo: 
+
+* El LED rojo se enciende al armar la partición. 
+* Al desarmar la partición se enciende el LED verde. 
+* Los LEDs rojo y verde parpadean simultáneamente si se produjo un error. Por ejemplo, al introducir un código incorrecto del usuario o en caso de denegación del arme.
+
+**Recepción del estado del objeto**
+
+Para recibir la información sobre el estado del objeto hay que pulsar el botón **i**:
+
+* si todas las particiones del equipo están desarmadas, se encenderá el LED verde;
+* si una parte de las particiones está armada y una parte está desarmada, el teclado mostrará un error, ya que hay que indicar expresamente el número de la partición cuyo estado hay que recibir;
+* si en la configuración del equipo no hay ninguna partición, el equipo mostrará un error;
+
+**Recepción del estado de la partición**
+
+Para recibir la información sobre el estado de la partición hay que pulsar el botón del número de la partición y el botón **i**:
+
+* si la partición está armada, se encenderá el LED rojo;
+* si la partición está desarmada, se encenderá el LED verde;
+* si en la configuración del equipo no existe una partición con tal número, se indicará un error.
+
+
+### Botón de emergencia
+
+Si en la configuración del equipo está permitido el uso del teclado en calidad de botón de emergencia, para la activación hay que pulsar y mantener pulsados durante 3 segundos los botones de las "casitas". La activación de los LEDs verde y rojo durante 1 segundo acompañada con sonido confirma que fue pulsando el botón de emergencia.
+
+Si en la configuración del equipo está prohibido el uso del teclado en calidad de botón de emergencia, el teclado mostrará un error.
+
+### Desactivación de la iluminación y el sonido
+
+En el teclado "CN-K" existe la posibilidad de activación y desactivación del sonido y la iluminación.
+
+Para activar o desactivar el sonido de confirmación de pulsación de las teclas, al mismo tiempo hay que pulsar y mantener pulsadas las teclas «#» y «9». Para la activación y la desactivación de la iluminación, al mismo tiempo hay que pulsar y mantener pulsadas las teclas «#» y «0».
+
+## Llavero inalámbrico
+
+El llavero inalámbrico así como la llave - TM se vinculan al usuario. Mediante el llavero se puede armar o desarmar el sistema de seguridad de una partición. Si el usuario desea tener la posibilidad de armar o desarmar varias particiones al mismo tiempo, hay que configurar las correspondientes reglas en el apartado "Sistema automático".
+
+El llavero dispone de un botón de alarma de emergencia, que una vez pulsado hará que el equipo cree un evento de emergencia.
 

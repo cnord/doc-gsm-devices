@@ -1,94 +1,93 @@
 
-## ТМ-ключ
+## Llave TM
 
-\imgcapt{img/tm-with-key.png}{TM-считыватель и ТМ-ключ}
+\imgcapt{img/tm-with-key.png}{Dibujo 1: Lector - TM y llave - TM}
 
-Прибор обладает встроенным интерфейсом для подключения считывателей ТМ-ключей. Кроме того, в приборе предусмотрена возможность подключения светодиодного индикатора, который размещен непосредственно в корпусе некоторых моделей считывателей ТМ-ключей.
+El equipo dispone de una interfaz integrada para la conexión de lectores de llaves TM. Aparte de esto, en el dispositivo se prevé la posibilidad de conectar un indicador LED que se ubica directamente en el cuerpo de algunas marcas de lectores de llaves TM.
 
-Светодиодный индикатор, размещенный в корпусе ТМ-считывателя, предназначен для индикации считывания ТМ-ключа, взятия и снятия, а также для индикации текущего состояния прибора.
+El indicador LED ubicado en el cuerpo del lector TM, sirve para la indicación de la lectura de la llave TM, el arme y desarme del sistema de seguridad, así como para la indicación del estado actual del equipo.
 
-С помощью одного ТМ-ключа можно взять под охрану или снять с охраны один раздел.Если одному пользователю необходимо иметь возможность ставить или снимать с охраны несколько разделов одновременно, то нужно настроить соответствующие правила в разделе «Автоматика». 
+Mediante una llave TM se puede armar el sistema de seguridad o desarmar el sistema de seguridad de una partición. Si un usuario necesita tener la posibilidad de armar o desarmar varias particiones al mismo tiempo, hay que configurar las correspondientes reglas en el apartado "Sistema automático". 
 
-### Индикация считывания
+### Indicación de lectura
 
-Если операция считывания ключа завершилась успешно, то прибор индицирует этот факт, вне зависимости от того, найден этот ключ в памяти прибора или нет. Другими словами, при успешном считывании прибор просто подтверждает, что к считывателю поднесен ключ и этот ключ считан. 
+Si la operación de lectura de la llave finaliza con éxito, el equipo lo indica, independientemente de si la llave fue encontrada en la memoria del equipo o no. En otras palabras, en caso de que se produzca una lectura con éxito el equipo simplemente confirma que al lector fue acercada una llave y esta llave fue leída.
 
-Индикации успешного считывания ТМ-ключа: светодиод «мигает» (включается на 0.1 с. горит, после чего выключается на 0.1 с.) в течение 1 секунды.
+Indicación de una lectura con éxito de la llave TM: LED "parpadeante" (se enciende por 0,1 seg, permanece encendido, después se apaga por 0,1 seg ) durante 1 segundo.
 
-### Индикация ошибок
+### Indicación de errores
 
-При считывании ключа возможны следующие ошибки:
+Al realizar la lectura de la llave, pueden producirse los siguientes errores:
 
-* ключ не найден в памяти прибора;
-* отказ от взятия.
+•	llave no encontrada en la memoria del equipo;
+•	denegación de arme.
 
-Индикация ошибки: светодиод «мигает» (включается на 0.5 с., после чего выключается на 0.5 с.) в течение 3 секунд.
+Indicación de error: LED "parpadeante" (se enciende por 0,5 seg, después se apaga por 0,5 seg) durante 3 segundos.  
 
-### Индикация снятия
+### Indicación de desarme
 
-Если считан ключ, с помощью которого можно изменять состояние раздела и этот раздел взят под охрану, то раздел снимается с охраны.
+Si ha sido leída la llave, mediante la cual se puede cambiar el estado de la partición y está armado el sistema de seguridad de esa partición, se desarma el sistema de seguridad de la partición.
 
-Индикация снятия выполняется после того, как будет выполнена индикация считывания.
+La indicación de desarme se realiza después de que se haya realizado la indicación de lectura.
 
-Индикация снятия: светодиод включается на 5 секунд и выключается.
+Indicación de desarme: el LED se enciende por 5 segundos y se apaga.
 
-После того, как будет выполнена индикация снятия с охраны, включается индикация дежурного режима.
+Después de que se realice la indicación de desarme del sistema de seguridad, se enciende la indicación del modo de guardia.
 
-### Индикация взятия
+### Indicación de arme
 
-Если считывается ключ, с помощью которого можно изменять состояние раздела, то при отсутствии в разделе шлейфов с задержкой на выход выполняется взятие раздела под охрану. Если же в разделе присутствуют шлейфы с задержкой на выход, то начинается отсчет интервала задержки; взятие под охрану выполняется по окончании задержки на выход.
+Si se lee la llave con la cual se puede cambiar el estado de la partición, en caso de que en la partición no haya zonas con retraso de salida, se realiza el arme del sistema de seguridad de la partición. Si en la partición hay zonas con retraso de salida, empieza la cuenta del intervalo de retraso; el arme del sistema de seguridad se realiza al finalizar el retraso de salida.
 
-Индикация взятия под охрану зависит от того, сколько разделов сконфигурировано в приборе.
+La indicación de arme del sistema de seguridad depende de la cantidad de particiones configuradas en el equipo.
 
-**Один раздел**
+**Una partición**
 
-Если в приборе сконфигурирован только один раздел, то после его взятия под охрану светодиод включается и горит постоянно: включается индикация дежурного режима с единственным разделом, взятым под охрану.
+Si en el equipo sólo está configurada una partición, después de su arme el LED se enciende y permanece encendido constantemente: se enciende la indicación del modo de guardia con la única partición armada.
 
-**Несколько разделов**
+**Varias particiones**
 
-Если в приборе сконфигурировано несколько разделов, то индикация после взятия текущего под охрану зависит от того, остались снятые с охраны разделы или нет.
+Si en el equipo están configuradas varias particiones, la indicación después del arme del sistema de seguridad de la partición actual depende de si quedan particiones desarmadas o no.
 
-Если все разделы взяты под охрану, то светодиод включается и горит постоянно: включается индикация дежурного режима с несколькими разделами, все разделы взяты под охрану.
+Si todas las particiones están armadas, el LED se enciende y permanece encendido de forma continua: se apaga la indicación del modo de guardia con varias particiones, todas las particiones están armadas.
 
-Если же есть хотя бы один раздел, не взятый под охрану, то светодиод включается и горит в течение 20 секунд. После чего включается индикация дежурного режима с несколькими разделами, часть из которых снята с охраны.
+Si existe aunque sea una partición que no está armada, el LED se enciende y permanece encendido durante 20 segundos. A continuación se enciende la indicación del modo de guardia con varias particiones, parte de las cuales está desarmada.
 
-**Отказ от взятия**
+**Denegación del arme**
 
-«Отказ от взятия» -- это невозможность взять объект под охрану, если охранная сигнализация на объекте неисправна, либо взятие под охрану запрещено из-за отсутствия оплаты за услуги охраны.
+La "denegación del arme" - es la imposibilidad de armar el sistema de seguridad del objeto, si la alarma de seguridad en el objeto no funciona correctamente, o si el arme del sistema de seguridad está prohibido por el impago de los servicios de seguridad.
 
-Предусмотрены следующие причины отказа от взятия:
+Están previstos los siguientes motivos de denegación del arme:
 
-* неисправность одного или нескольких шлейфов;
-* тревога в одном или нескольких шлейфах;
-* отсутствие связи с пультовой программой по IP-каналу;
-* отсутствие 220В на объекте;
-* отсутствие оплаты за услуги охраны;
-* открыт корпус прибора.
+•	fallo de una o varias zonas;
+•	alarma en una o varias zonas;
+•	ausencia de comunicación con el programa de la consola por el canal IP;
+•	ausencia de 220 V en el objeto;
+•	impago de los servicios de seguridad;
+•	está abierto el cuerpo del equipo.
 
-### Индикация дежурного режима
 
-На время индикации считывания, ошибки взятия/снятия, взятия и снятия индикация дежурного режима 
-прерывается.
+### Indicación de modo de guardia
 
-Индикация дежурного режима зависит от того, сколько разделов сконфигурировано в приборе.
+Durante el tiempo de la indicación de lectura, error de arme/desarme, arme y desarme, la indicación del modo de guardia se interrumpe.
 
-**Один раздел**
+La indicación del modo de guardia depende de la cantidad de particiones configuradas en el equipo.
 
-Если в приборе сконфигурирован только один раздел, то светодиод индицирует состояние раздела, наличие тревоги во время охраны и неисправности шлейфов:
+**Una partición**
 
-* светодиод включен непрерывно, если раздел взят под охрану;
-* светодиод выключен, если раздел снят с охраны;
-* светодиод «мигает»[^blink], если есть неисправности в шлейфах;
-* светодиод «мигает», если после взятия раздела под охрану была тревога и раздел не снимался с охраны.
+Si en el equipo sólo está configurada una partición, el LED indica el estado de la partición, la existencia de alarma durante el período de seguridad y el fallo de las zonas;
 
-> «Мигает» означает, что светодиод включается на 1 секунду, после чего выключается на 1 секунду, после чего снова включается на 1 секунду и т.д.
+•	LED encendido de forma ininterrumpida, si la partición está armada;
+•	LED apagado, si la partición está desarmada;
+•	LED "parpadeante" [ˆblink], si hay fallos en las zonas;
+•	LED "parpadeante", si después de armar la partición se produjo una alarma y el sistema de seguridad de la partición no fue desarmado
 
-**Несколько разделов**
+> "Parpadea" significa que el LED se enciende por 1 segundo, después de lo cual se apaga por 1 segundo, después de lo cual, de nuevo se enciende por 1 segundo, etc.
 
-Если в приборе сконфигурировано несколько разделов, то индицируется только состояние взятия всего прибора, наличие тревоги, когда весь прибор был под охраной, а также неисправности шлейфов.
+**Varias particiones**
 
-* светодиод включен непрерывно, если все разделы прибора взяты под охрану;
-* светодиод выключен, если хотя бы один раздел снят с охраны;
-* светодиод «мигает», если есть неисправности в шлейфах;
-* светодиод «мигает», если после взятия всего прибора под охрану была тревога и раздел, в котором была тревога, не снимался с охраны.
+Si en el equipo están configuradas parias particiones, se indica sólo el estado del arme de todo el dispositivo, presencia de alarma, cuando todo el equipo estaba armado, así como los fallos de las zonas.
 
+•	LED encendido de forma ininterrumpida, si todas las particiones del equipo están armadas;
+•	LED apagado, si aunque sea una partición está desarmada;
+•	LED "parpadeante", si hay fallos en las zonas;
+•	LED "parpadeante", si después de armar el sistema de seguridad de todo el equipo se produjo una alarma y la partición donde se produjo la alarma no fue desarmada.

@@ -1,100 +1,104 @@
-## Клавиатура К14-LED
+## Teclado K14-LED
 
-\imgcapt{img/k14.png}{Клавиатура К14-LED}
+\imgcapt{img/k14.png}{Dibujo 2: Teclado K14-LED}
 
-С помощью клавиатуры К14-LED пользователь может выполнить следующие задачи:
+Mediante el teclado K14-LED el usuario puede realizar las siguientes tareas:
 
-* узнать состояние раздела (взят / снят);
-* взять раздел под охрану или снять раздел с охраны;
-* узнать о начавшейся или продолжающейся задержке на вход или выход;
-* узнать состояние охраны всего прибора;
+•	conocer el estado de la partición (armada / desarmada);
+•	armar la partición o desarmar la partición;
+•	informarse de un retraso de entrada o salida que acaba de empezar o continua;
+•	conocer el estado de seguridad de todo el equipo;
 
-На клавиатуре К14-LED расположены зеленый и красный светодиоды:
+En el teclado K14-LED se ubica un LED verde y otro rojo:
 
-* Красный светодиод постоянно горит, если все разделы прибора взяты под охрану.
-* При снятии раздела с охраны гаснет красный светодиод, а зелёный загорается.
-* Красный и зеленый светодиоды одновременно мигают, если произошла ошибка. Например, при вводе неправильного кода пользователя или при отказе от взятия.
+•	El LED rojo permanece encendido constantemente si todas las particiones del equipo están armadas.
+•	Al desarmar la partición se apaga el LED rojo y se enciende el verde.
+•	Los LEDs rojo y verde parpadean al mismo tiempo si se produjo un error. Por ejemplo, al introducir un código incorrecto del usuario o en caso de denegación del arme del sistema de seguridad.
 
-### Получение состояния объекта
+### Recepción del estado del objeto
 
-Для получения информации о состоянии объекта нужно нажать кнопку **i**:
+Para recibir la información sobre el estado del objeto hay que pulsar el botón **i**:
 
-* если на приборе сконфигурированы разделы и все разделы взяты под охрану, клавиатура произнесёт: "Объект взят под охрану" и включит красный светодиод.
-* если на приборе сконфигурированы разделы и все разделы сняты с охраны, клавиатура произнесёт: "Объект снят с охраны" и включит зеленый светодиод.
-* если на приборе сконфигурированы разделы и некоторые из них взяты под охрану, а некоторые – сняты с охраны, клавиатура отображает индикацию ошибки.
-* если на приборе не сконфигурированы разделы, клавиатура отображает индикацию ошибки.
+* si en el equipo están configuradas las particiones y todas las particiones están armadas, el teclado reproducirá: "Sistema de seguridad del objeto armado" y encenderá el LED rojo.
+* si en el equipo están configuradas las particiones y todas las particiones están desarmadas, el teclado reproducirá: "Sistema de seguridad del objeto desarmado" y encenderá el LED verde.
+* si en el equipo están configuradas las particiones y algunas de ellas están armadas, y otras desarmadas, el teclado muestra la indicación de error.
+* si en el equipo no están configuradas las particiones, el teclado muestra la indicación de error.
 
-### Получение состояния раздела
+### Recepción del estado de la partición
 
-Для получения информации о состоянии раздела нужно нажать кнопку номера раздела и кнопку **i**:
+Para recibir la información sobre el estado de la partición hay que pulsar el botón del número de la partición y el botón **i**:
 
-* если раздел существует, то клавиатура произносит его состояние и включает соответствующий светодиод.
-* если раздел не существует, клавиатура отображает индикацию ошибки.
+* si la partición existe, el teclado reproduce su estado y enciende el correspondientes LED.
+* si la partición no existe, el teclado muestra la indicación de error.
 
-### Взятие и снятие
+### Arme y desarme
 
-В приборе реализована возможность взятия и снятия с охраны нескольких разделов одним кодом пользователя. Настройка разделов, которые могут быть взяты или сняты с охраны конкретным кодом, выполняется при конфигурировании прибора.
+En el equipo está realizada la posibilidad de arme y desarme del sistema de seguridad de varias particiones con un código de usuario. El ajuste de particiones que pueden ser armadas o desarmadas con un código en concreto, se realiza al realizar la configuración del equipo.
 
-#### Взятие под охрану
+#### Arme del sistema de seguridad
 
-Для взятия раздела под охрану нужно нажать «домик» и ввести код пользователя.
+Para armar la partición hay que pulsar  "casita" e introducir el código del usuario.
 
-* если код верный, то объект (раздел) будет взят под охрану, клавиатура подтвердит взятие включением красного светодиода. Либо включится отсчет интервала задержки на выход, которая сопровождается звуковой и светодиодной индикацией.
-* если код неверный или пользователю, которому принадлежит этот код, соответствует более одного раздела, то клавиатура отобразит ошибку.
-* если взятие под охрану невозможно, то клавиатура отобразит ошибку.
+* si el código es correcto, el sistema de seguridad del objeto (partición) será armado, el teclado confirmará el arme mediante la activación del LED rojo. O se activará la cuenta del intervalo de retraso de salida, que va acompañada por una indicación acústica y LED.
+* si el código es incorrecto o al usuario al que le pertenece ese código, le corresponde más de una partición, el teclado mostrará un error.
+* si el arme del sistema de seguridad no es posible, el teclado mostrará un error.
+
 
 \imgcapt{img/arm.png}{}
 
-Если за кодом пользователя закреплено несколько разделов, то сначала пользователь должен нужно нажать кнопку «домик», выбрать раздел, состояние которого он хочет изменить, а после этого набрать код.
+Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón "casita", elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.
 
 \imgcapt{img/arm_part.png}{Пример взятия с выбором раздел}
 
-#### Отказ от взятия
+#### Denegación del arme del sistema de seguridad
 
-«Отказ от взятия» -- это невозможность взять объект под охрану, если охранная сигнализация на объекте неисправна, либо взятие под охрану запрещено из-за отсутствия оплаты за услуги охраны.
+La "Denegación del arme" - es la imposibilidad de armar el sistema de seguridad del objeto, si la alarma de seguridad en el objeto no funciona correctamente, o si el arme del sistema de seguridad está prohibido por el impago de los servicios de seguridad.
 
-Предусмотрены следующие причины отказа от взятия:
+Están previstos los siguientes motivos de denegación del arme:
 
-* неисправность одного или нескольких шлейфов;
-* тревога в одном или нескольких шлейфах;
-* отсутствие связи с пультовой программой по IP-каналу;
-* отсутствие 220В на объекте;
-* отсутствие оплаты за услуги охраны;
-* открыт корпус прибора.
+* fallo de una o varias zonas;
+* alarma en una o varias zonas;
+* ausencia de comunicación con el programa de la consola por el canal IP;
+* ausencia de 220 V en el objeto;
+* impago de los servicios de seguridad;
+* está abierto el cuerpo del equipo.
 
-#### Снятие с охраны
 
-Если пользователь может управлять только одним разделом, для снятия с охраны нужно ввести код пользователя.
+#### Desarme del sistema de seguridad
 
-* если код верный, то объект (раздел) снимется с охраны. Клавиатура подтвердит снятие включением зелёного светодиода;
-* если код неверный или пользователь, которому принадлежит этот код, может управлять несколькими разделами, клавиатура отобразит ошибку.
+Si el usuario puede controlar sólo una partición, para desarmar el sistema de seguridad hay que introducir el código del usuario.
+
+* si el código es correcto, el sistema de seguridad del objeto (partición) será desarmado. El teclado confirmará el desarme mediante la activación del LED verde.
+* si el código es incorrecto o el usuario al que le pertenece ese código, puede controlar varias particiones, el teclado mostrará un error.
+
 
 \imgcapt{img/disarm.png}{}
 
-Если пользователь может управлять несколькими разделами, для снятия с охраны нужно набрать номер раздела, затем # и ввести код пользователя.
+Si el usuario puede controlar varias particiones, para desarmar el sistema de seguridad hay que teclear el número de la partición y a continuación # e introducir el código del usuario.
 
-* Если код верный, то раздел снимется с охраны. Клавиатура подтвердит снятие включением зелёного светодиода.
-* При повторном снятии того же раздела клавиатура отобразит его состояния: включится зеленый светодиод.
+* Si el código es correcto, el sistema de seguridad de la partición será desarmado. El teclado confirmará el desarme mediante la activación del LED verde.
+* Si se vuelve a desarmar el sistema de seguridad de la misma partición, el teclado mostrará su estado: se encenderá el LED verde.
 
-\imgcapt{img/disarm_part.png}{Пример снятия с выбором раздел}
+\imgcapt{img/disarm_part.png}{Ejemplo de desarme con selección de partición}
 
-Отсчет интервала задержки на вход или интервала задержки на выход индицируется прерывистым звуком, который воспроизводится в течение всего интервала задержки. Звуковая индикация задержки на вход или выход отключается при нажатии на любую кнопку на клавиатуре.
+La cuenta del intervalo de retraso de entrada o intervalo de retraso de salida se indica mediante un sonido intermitente que se reproduce durante todo el intervalo de retraso. La indicación acústica de retraso de entrada o salida se desconecta al pulsar cualquier botón del teclado.
 
-### Звуковая и голосовая индикация
+### Indicación acústica y por voz
 
-Клавиатура имеет встроенный динамик, через который производится голосовая индикация и индикация бипером. Нажатие кнопок на клавиатуре сопровождается звуковым сигналом, подтверждающим нажатие.
+El teclado dispone de un altavoz integrado, a través del cual se realiza la indicación por voz e indicación por el zumbador. La pulsación de teclas en el teclado va acompañada con una señal acústica que confirma la pulsación.
 
-Голосом индицируется:
+Con voz se indica:
 
-* Взятие под охрану и снятие с охраны разделов и объекта в целом;
-* Отказы от взятия;
-* Предупреждения о дебиторской задолженности при взятии под охрану;
-* Состояние раздела или объекта в целом (при нажатии клавиши i).
+* Arme del sistema de seguridad y desarme del sistema de seguridad de particiones y el objeto en general;
+* Denegación de arme del sistema de seguridad;
+* Advertencias sobre saldo insuficiente al armar el sistema de seguridad;
+* Estado de la partición o del objeto en general (al pulsar las tecla i).
 
-В клавиатуре предусмотрена регулировка громкости встроенного динамика. Регулировка пятиступенчатая - от состояния «выключен» до уровней громкости с первого по четвёртый. Выбор уровня громкости осуществляется с помощью комбинации клавиш "#" и "9".
 
-### Тревожная кнопка
+En el teclado se está prevista la función de ajuste del volumen del altavoz integrado. Ajuste de cinco niveles - empezando por el estado "desactivado" hasta los niveles de volumen del primero hasta el cuarto. La selección del nivel de sonido se realiza mediante la combinación de las teclas “#” y “9”.
 
-Если в конфигурации прибора разршено использование клавиатуры в качестве тревожной кнопки, то для активации нужно нажать и удерживать нажатыми в течение 3 секунд кнопки «домиков». Включение зеленого и красного светодиодов на 1 секунду в сопровождении звука говорит о подтверждении нажатия тревожной кнопки.
+### Botón de emergencia
 
-Если в конфигурации прибора запрещено использование клавиатуры в качестве тревожной кнопки, то клавиатура отобразит ошибку.
+Si en la configuración del equipo está permitido el uso del teclado en calidad de botón de emergencia, para la activación hay que pulsar y mantener pulsados durante 3 segundos los botones de las "casitas", la activación de los LEDs verde y rojo durante 1 segundo acompañada con sonido confirma que fue pulsando el botón de emergencia.
+
+Si en la configuración del equipo está prohibido el uso del teclado en calidad de botón de emergencia, el teclado mostrará un error. 

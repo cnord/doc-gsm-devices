@@ -1,11 +1,11 @@
 \pagebreak
 
-# Управление прибором
+# Control del equipo
 
-Для взятия / снятия прибора могут использоваться следующие устройства управления:
+Para armar / desarmar el sistema de alarma del equipo se pueden usan los siguientes dispositivos de control:
 
-* [ТМ-ключ](https://www.cnord.ru/katalog#keyboards);
-* клавиатура [К14-LED](https://www.cnord.ru/katalog#keyboards);
-* клавиатура [К16-LCD](https://www.cnord.ru/katalog#keyboards);
-* [беспроводной брелок](https://www.cnord.ru/katalog#keyboards);
-* [мобильное приложение MyAlarm](https://www.cnord.ru/myalarm).
+* [llave TM](https://www.cnord.ru/katalog#keyboards);
+* teclado [К14-LED](https://www.cnord.ru/katalog#keyboards);
+* teclado [К16-LCD](https://www.cnord.ru/katalog#keyboards);
+* [llavero inalámbrico](https://www.cnord.ru/katalog#keyboards);
+* [dispositivo móvil MyAlarm](https://www.cnord.ru/myalarm).
