@@ -1,8 +1,8 @@
 \pagebreak
 
-# Монтаж и первый запуск
+# Montaje y primera puesta en marcha
 
-## Монтажная схема прибора
+## Esquema de montaje del equipo
 
 \imgcapt{img/04-01-nord-gsm-installation-scheme.png}{}
 

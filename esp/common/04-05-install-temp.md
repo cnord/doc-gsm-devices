@@ -1,12 +1,12 @@
 \pagebreak
 
-## Подключение датчиков температуры {#install-temp}
+## Conexión de sensores de temperatura {#install-temp}
 
-Проводной датчик температуры подключается к группе клемм «Считыватель». Черный и красный провода, идущие от датчика, должны быть скручены вместе и подключены к клемме «GND», а желтый – к клемме «DATA» – так, как показано на картинке ниже. Если нужно подключить несколько проводных датчиков температуры, то все они должны подключаться параллельно друг другу.   
-Для того чтобы прибор мог обнаружить проводной датчик температуры, нужно в настройках прибора включить режим постоянного опроса интерфейса 1-Wire. Сделать это можно на вкладке «Разное» в разделе [Управление и индикация](#control-indication).
+El sensor de temperatura por cable se conecta al grupo de los bornes "Lector". Los cables negro y rojo que provienen del sensor, deben estar torcidos juntos y conectados al borne "GND" y el cable amarillo al borne "DATA" - tal como se indica en la imagen de abajo. Si hay que conectar varios sensores por cable al mismo tiempo, todos ellos deben conectarse de forma paralela el uno al otro.
+Para que el equipo pueda detectar el sensor de temperatura por cable, en la configuración del equipo hay que activar el modo de solicitud continua de la interfaz 1-Wire. Esto se puede hacer en la pestaña "Varios" en el apartado "[Control e indicación](#control-indication)".
 
-\imgcapt{img/04-05-temp.png}{Схема подключения проводного датчика температуры к прибору}
+\imgcapt{img/04-05-temp.png}{Esquema de conexión del sensor de temperatura por cable al equipo}
 
-К беспроводному датчику температуры СН-Цельсий можно подключить проводной.
+Al sensor de temperatura inalámbrico CN-Celsius se puede conectar un sensor por cable.
 
-\imgcapt{img/04-05-temp2.png}{Схема подключения проводного датчика температуры к СН-Цельсий}
+\imgcapt{img/04-05-temp2.png}{Esquema de conexión del sensor de temperatura por cable al CN-Celsius}

@@ -1,19 +1,19 @@
 \pagebreak
 
-## Подключение пожарных извещателей
+## Conexión de avisadores de incendio
 
-### Четырехпроводные пожарные извещатели
+### Avisadores de incendio de cuatro cables
 
-Сигнальные кабели, к которым подключены четырехпроводные пожарные извещатели подключаются к клеммам «Z1»–«Z8».
+Los cables de señal, a los cuales están conectados los avisadores de incendio de cuatro cables se conectan a los bornes «Z1»–«Z8».
 
-Общие кабели шлейфов подключаются к клеммам «GND».
+Los cables comunes de las zonas se conectan a los bornes «GND».
 
-Если необходимо осуществлять сброс питания пожарных извещателей после тревоги, то плюсовой кабель питания шлейфа нужно подключить к клемме SMOKE. В таком случае после завершения интервала повтора тревог (см. раздел «Конфигурирование») питание с датчиков будет кратковременно отключаться.
+Si hay que resetear la alimentación de los avisadores de incendio después de la alarma, el cable positivo de alimentación de la zona hay que conectarlo al borne SMOKE. En este caso, después de finalizar el intervalo de repetición de alarmas (ver apartado "Configuración") en la alimentación de los sensores se producirán desconexiones a corto plazo.
 
-Если сброс питания пожарных извещателей не требуется, то плюсовой кабель питания пожарного шлейфв нужно подключить к клемме PWR. 
+Si no se requiere el reseteo de la alimentación de los avisadores de incendio, hay que conectar el cable positivo de alimentación de la zona de incendio al borne PWR. 
 
-### Двухпроводные пожарные извещатели
+### Avisadores de incendio de dos cables
 
-Двухпроводные _дымовые_ пожарные извещатели подключаются к прибору только через устройство согласования «ППШ-2», которое позволяет подключать двухпроводные извещатели по четырехпроводной схеме.
+Los avisadores de incendio de humo de dos cables se conectan al equipo sólo a través del dispositivo de coordinación "EF-2", que permite conectar avisadores de dos cables por un esquema de cuatro cables.
 
-\imgcapt{img/04-04-ppsh-2.png}{Схема подключения двухпроводных дымовых пожарных извещателей через «ППШ-2»}
+\imgcapt{img/04-04-ppsh-2.png}{Esquema de conexión de avisadores de incendio de humo de dos cables a través del "EF-2"}

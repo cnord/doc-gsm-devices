@@ -1,57 +1,57 @@
 \pagebreak
 
-## Подключение проводных шлейфов
+## Conexión de zonas por cable
 
-Сигнальные кабели шлейфов подключаются к клеммам «Z1»–«Z8».
+Los cables de señal de las zonas se conectan a los bornes «Z1»–«Z8».
 
-Общие кабели шлейфов подключаются к клеммам «GND».
+Los cables comunes de las zonas se conectan a los bornes «GND».
 
-Плюсовые кабели питания охранных шлейфов (12 В) подключаются к клеммам «PWR».
+Los cables positivos de alimentación de las zonas de seguridad (12 V) se conectan a los bornes "PWR".
 
-Плюсовые кабели питания пожарных шлейфов (12 В) подключаются к клемме «SMOKE».
+Los cables positivos de alimentación de las zonas de incendio (12 V) se conectan al borne "SMOKE".
 
-### Нормально замкнутый и нормально разомкнутый шлейф
+### Zona normal cerrada y normal abierta
 
-Нормальное состояние шлейфа определяется извещателями, который в него включены:
+El estado normal de la zona se determina por los avisadores que están incluidos en la misma:
 
-* если нормальное состояние для шлейфа определено, как *замкнутый*, то в таком шлейфе должны использоваться извещатели, которые также имеют *замкнутые* контакты своего выходного реле в нормальном состоянии. При тревоге такие извещатели должны *размыкать* контакты выходного реле;
-* если нормальное состояние для шлейфа определено, как *разомкнутый*, то в таком шлейфе должны использоваться извещатели, которые имеют *разомкнутые* контакты своего выходного реле в нормальном состоянии. При тревоге такие извещатели должны *замыкать* контакты выходного реле.
+* si el estado normal para la zona está determinado como cerrado, en tal zona deben usarse avisadores que también disponen de contactos cerrados de su relé de salida en estado normal. En caso de alarma tales avisadores deben abrir los contactos del relé de salida;
+* si el estado normal para la zona está determinado como abierto, en tal zona deben usarse avisadores que disponen de contactos abiertos de su relé de salida en estado normal. En caso de alarma tales avisadores deben cerrar los contactos del relé de salida.
 
-Необходимо отметить, что подавляющее большинство современных инфракрасных и магнитоконтактных извещателей имеют *нормально замкнутые* контакты своего выходного реле. Таким образом, для шлейфов, в которые включены эти извещатели, нормальное состояние должно быть определено, как *замкнутый*.
+Hay que destacar que la gran mayoría de los avisadores infrarrojos y de contacto magnético modernos disponen de contactos normalmente cerrados de su relé de salida. De esta forma, para las zonas en las cuales se incluyen estos avisadores, el estado normal debe determinarse como cerrado.
 
-Нормально разомкнутые извещатели включаются в шлейф параллельно, а нормально замкнутые – последовательно.
+Los avisadores normalmente abiertos se conectan a la zona en paralelo y los normalmente cerrados - en serie.
 
-В один и тот же шлейф можно включать извещатели только одного типа: либо нормально замкнутые, либо нормально разомкнутые.
+En una zona se pueden conectar avisadores sólo de un tipo: o normalmente cerrados, o normalmente abiertos.
 
-### Оконечные резисторы
+### Resistencias terminales
 
-Если при подключении шлейфа не используется оконечных резисторов, то для такого шлейфа прибор может определить только одно из двух состояний: «Тревога» или «Норма». Такой шлейф весьма уязвим: если нормальное состояние для шлейфа определено, как *разомкнутый*, то достаточно просто перекусить кабель шлейфа в любом доступном месте, и шлейф навсегда останется в нормальном состоянии, тревоги по такому шлейфу не будет никогда. Ничуть не лучше выглядит шлейф, нормальное состояние для которого определено, как *замкнутый*: если удастся замкнуть сигнальные кабели шлейфа накоротко, то тревоги по нему также никогда не будет.
+Si al conectar la zona no se usan resistencias terminales, para tal zona el equipo puede determinar sólo uno de dos estados: "Alarma" o "Norma". Tal zona es muy vulnerable: si el estado normal para la zona se determina como abierto, es suficiente simplemente con cortar el cable de la zona en cualquier lugar accesible, y la zona para siempre se quedará en estado normal, en tal zona nunca se producirá una alarma. Nada mejor será una zona cuyo estado normal está determinado como cerrado: si se consigue cerrar los cables de alarma de la zona en cortocircuito, en esta zona tampoco nunca habrá una señal de alarma.
 
-Один оконечный резистор, установленный в шлейфе, позволяет отличить неисправность в шлейфе от тревоги. Какая именно неисправность может быть определена – обрыв или короткое замыкание – зависит от нормального состояния шлейфа: для нормального состояния шлейфа *разомкнутый* один оконечный резистор позволяет определить обрыв шлейфа, а для нормального состояния *замкнутый* – короткое замыкание.
+Una resistencia terminal instalada en la zona permite diferenciar un fallo en la zona de una alarma. Qué tipo de fallo puede ser determinado - ruptura o cortocircuito - depende del estado normal de la zona: para el estado normal de la zona abierta una resistencia terminal permite determinar la ruptura de la zona y para el estado normal cerrada - cortocircuito.
 
-Два оконечных резистора позволяют определить и обрыв, и короткое замыкание для шлейфа с любым нормальным состоянием.
+Dos resistencias terminales permite determinar la ruptura y el cortocircuito para la zona con cualquier estado normal.
 
-> Для минимального противодействия выводу шлейфов сигнализации из строя, рекомендуется включать в шлейфы как минимум один оконечный резистор.
+> Para minimizar los fallos de las zonas de alarma, se recomienda conectar a las zonas como mínimo una resistencia terminal.
 
-### Шлейф без оконечных резисторов
+### Zona sin resistencias terminales
 
 \imgcapt{img/04-02-v51-52-no-resitor-normal-open.png}{Нормально разомкнутый шлейф}
 
 \imgcapt{img/04-02-v51-52-no-resitor-normal-close.png}{Нормально замкнутый шлейф}
 
-### Шлейф с одним оконечным резистором
+### Zona con una resistencia terminal
 
 \imgcapt{img/04-02-v52-one-resitor-normal-open.png}{Нормально разомкнутый шлейф}
 
 \imgcapt{img/04-02-v52-one-resitor-normal-close.png}{Нормально замкнутый шлейф}
 
-### Шлейф с двумя оконечными резисторами
+### Zona con dos resistencias terminales
 
 \imgcapt{img/04-02-v52-two-resitor-normal-open.png}{Нормально разомкнутый шлейф}
 
 \imgcapt{img/04-02-v52-two-resitor-normal-close.png}{Нормально замкнутый шлейф}
 
-### Проводные шлейфы в конфигураторе
+### Zonas por cable en el configurador
 
-При конфигурировании прибора необходимо явно указать норму для проводного шлейфа, а также количество оконечных резисторов. Сделать это можно на вкладке «[Шлейфы](#config-zones)».
+Al realizar la configuración del equipo hay que especificar expresamente la norma para la zona por cable, así como la cantidad de resistencias terminales. Se puede hacer en la pestaña "[Zonas](#config-zones)".
 

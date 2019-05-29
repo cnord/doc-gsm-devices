@@ -1,5 +1,5 @@
-## Подключение проводных клавиатур
+## Conexión de teclados por cable
 
-Проводные клавиатуры, такие как «К16-LCD», «К14-LED» подключаются к прибору на клеммы группы «Клавиатура».
+Los teclados por cable, tales como "K16-LCD", "K14-LED" se conectan al equipo en los bornes del grupo "Teclado".
 
-\imgcapt{img/04-10-install-keyboard.png}{Схема подключения проводных клавиатур}
+\imgcapt{img/04-10-install-keyboard.png}{Esquema de conexión de teclados por cable}
