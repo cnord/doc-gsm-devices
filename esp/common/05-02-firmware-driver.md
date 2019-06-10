@@ -1,76 +1,76 @@
-## Подключение прибора к компьютеру {#firmware-driver}
+## Conexión del equipo a la computadora {#firmware-driver}
 
-На компьютере, к которому подключается прибор, должна быть установлена операционная система семейства Windows (XP/7/8/10). Разрядность операционной системы (32 или 64 бита) значения не имеет.
+En la computadora a la cual se conecta al equipo, debe estar instalado un sistema operativo de la familia Windows (XP/7/8/10). No importa si el sistema operativo es de 32 o de 64 bits.
 
-> Перед тем, как подключать прибор к компьютеру, *настоятельно рекомендуется* подать на него основное или резервное питание. Если прибор будет запитан *только* по USB, то его работа может быть нестабильной.
+> Antes de conectar el equipo a la computadora, le recomendamos *insistentemente* que lo conecte a una alimentación principal o de reserva. Si el equipo se alimenta únicamente por USB, puede funcionar de forma no estable.
 
-Прежде чем приступить к работе с прибором, необходимо установить драйвер. Прибор подключается к компьютеру с помощью кабеля USB-Mini, а драйвер – это специальное программное обеспечение, которое позволяет программам, с которыми взаимодействует пользователь, обмениваться данными с прибором.
+Antes de empezar a trabajar con el equipo, hay que instalar el controlador. El equipo se conecta a la computadora mediante un cable USB-Mini y el controlador es un software especial que le permite a los programas, con los cuales interacciona el usuario, intercambiar datos con el equipo.
 
-Для всех операционных систем поставляется один и тот же драйвер.
+Para todos los sistemas operativos se suministra el mismo controlador.
 
-## Установка драйвера в Windows XP и Windows 7
+## Instalación del controlador en Windows XP y Windows 7
 
-При первом подключении прибора к компьютеру в системной области панели задач появится уведомление о том, что найдено новое оборудование.
-Установку драйвера можно оуществить через Диспетчер устройств. Для этого нужно войти в меню «Пуск», щелкнуть правой кнопкой мыши на пункт «Компьютер» и выбрать Управление, затем в меню слева выбрать «Диспетчер устройств».
+Durante la primera conexión del equipo a la computadora en la bandeja del sistema del panel de tareas aparecerá una notificación de que fue encontrado un dispositivo nuevo. La instalación del controlador puede realizarse a través del Administrador de dispositivos. Para ello hay que entrar en el menú "Inicio", pulsar el botón derecho del ratón en "Equipo" y seleccionar Administrar, a continuación en el medio de la izquierda seleccionar "Administrador de dispositivos".
 
 \imgcapt{img/05-02-driver-02.png}{}
 
 \imgcapt{img/05-02-driver-03.png}{}
 
-Необходимо щелкнуть правой кнопкой мыши по устройству Souz CDC и выбрать пункт меню «Обновить драйверы».
+Hay que pulsar el botón derecho del ratón sobre el dispositivo Soyuz CDC y seleccionar el punto del menú "Actualizar software del controlador".
 
 \imgcapt{img/05-02-driver-04.png}{}
 
-Нужно отказаться от предложения автоматически найти драйвер для нового оборудования, выбрать установку драйвера вручную.
+Hay que renunciar a la propuesta de buscar automáticamente software del controlador actualizado para un nuevo dispositivo, seleccionando la instalación del controlador de forma manual.
 
-\imgcapt{img/05-02-driver-05.png}{Выбор установки вручную}
+\imgcapt{img/05-02-driver-05.png}{Selección de instalación manual}
 
-Указать путь к папке **Driver** и нажать Далее.
+Especificar la ruta hacia el archivo **Driver** y pulsar Siguiente.
 
-\imgcapt{img/05-02-driver-06.png}{Выбор места поиска драйвера}
+\imgcapt{img/05-02-driver-06.png}{Selección del lugar de búsqueda del controlador}
 
-Драйвер для прибора «Норд GSM» не имеет цифровой подписи. Поэтому необходимо явно подтвердить операционной системе необходимость его установки.
+El controlador para el equipo "Nord GSM" no tiene firma digital. Por ello hay que confirmarle expresamente al sistema operativo de que hace falta instalarlo.
 
-\imgcapt{img/05-02-driver-07.png}{Подтверждение установки драйвера без цифровой подписи}
+\imgcapt{img/05-02-driver-07.png}{Confirmar la instalación del controlador sin firma digital}
 
-После завершения установки драйвера необходимо нажать на кнопку «Закрыть».
+Después de finalizar la instalación del controlador hay que pulsar el botón "Cerrar".
 
-\imgcapt{img/05-02-driver-08.png}{Завершение установки драйвера}
+\imgcapt{img/05-02-driver-08.png}{Finalización de la instalación del controlador}
 
-Для того чтобы убедиться в том, что драйвер для устройства установлен, можно открыть диспетчер устройств Windows и найти виртуальный последовательный порт, который соответствует прибору, подключенному к компьютеру.
+Para asegurarse que el controlador para el dispositivo está instalado, se puede abrir el Administrador de dispositivos de Windows y buscar el puerto serie virtual que corresponde al equipo conectado a la computadora.
 
-\imgcapt{img/05-02-driver-09.png}{Последовательный порт прибора в «Диспетчере устройств»}
+\imgcapt{img/05-02-driver-09.png}{Puerto serie del equipo en el "Administrador de dispositivos"}
 
 
-## Установка драйвера в Windows 8
+## Instalación del controlador en Windows 8
 
-Операционная система Windows 8 не позволяет устанавливать драйвера без цифровой подписи так, как это было возможно в предыдущих версиях. Поэтому, прежде чем приступить к установке драйвера для прибора в этой операционной системе, необходимо загрузить её в специальном режиме – с  отключенной обязательной проверкой подписи драйверов.
+El sistema operativo Windows 8 no permite instalar controladores sin firma digital, tal como era posible en las versiones anteriores. Por ello, antes de empezar a instalar los controladores del equipo en este sistema operativo, hay que iniciarlo en modo especial - con comprobación obligatoria de firma de controladores deshabilitada.
 
-Для того чтобы загрузить операционную систему Windows 8 с отключенной проверкой подписи драйверов, необходимо выполнить следующую последовательность действий.
+Para iniciar el sistema operativo Windows 8 con la comprobación de la firma digital de los controladores deshabilitada, hay que hacer lo siguiente por pasos.
 
-Нажать комбинацию клавиш **Win+I**, после чего, удерживая кнопку **Shift** выбрать пункт «**Выключение**» – «**Перезагрузка**»:
+Pulsar la combinación de teclas **Win+I**, a continuación, manteniendo pulsada la tecla **Shift** seleccionar **"Apagar"** - **"Reiniciar"**
 
-\imgcapt{img/05-02-driver-10.png}{Перезагрузка для изменения параметров загрузки}
+\imgcapt{img/05-02-driver-10.png}{Reinicio para cambiar los parámetros de inicio}
 
-После того как операционная система перезагрузится, появится окно параметров запуска. Необходимо выбрать пункт «**Диагностика**»:
+Después de que el sistema operativo se reinicie, aparecerá la ventana de parámetros de inicio. Hay que seleccionar "**Solucionar problemas**";
 
-\imgcapt{img/05-02-driver-11.png}{Вход в режим диагностики}
+\imgcapt{img/05-02-driver-11.png}{Entrar en el modo de Solucionar problemas}
 
-В окне «**Диагностика**» необходимо выбрать пункт «**Дополнительные параметры**»:
+En la ventana de "**Solucionar problemas**" hay que seleccionar "**Opciones avanzadas**":
 
-\imgcapt{img/05-02-driver-12.png}{Дополнительные параметры диагностики}
+\imgcapt{img/05-02-driver-12.png}{Opciones avanzadas del menú de Solucionar problemas}
 
-В окне «**Дополнительные параметры**» нужно выбрать пункт «**Параметры загрузки**»:
+En la ventana "**Opciones avanzadas**" hay que seleccionar "**Configuración de inicio**":
 
-\imgcapt{img/05-02-driver-13.png}{Параметры загрузки операционной системы}
+\imgcapt{img/05-02-driver-13.png}{Configuración de inicio del sistema operativo}
 
-В окне «**Параметры загрузки**» нужно щелкнуть левой кнопкой мыши по кнопке «**Перезагрузить**»:
+En la ventana "**Configuración de inició**" hay que pulsar con el botón izquierdo del ratón el botón "**Reiniciar**"
 
-\imgcapt{img/05-02-driver-14.png}{Перезагрузка}
+\imgcapt{img/05-02-driver-14.png}{Reiniciar}
 
-Операционная система перезагрузится еще раз, после чего появится окно «**Параметры загрузки**». В этом окне необходимо нажать на кнопку F7, чтобы продолжить загрузку операционной системы с отключенной проверкой подписи драйверов:
+El sistema operativo se reiniciará otra vez y a continuación aparecerá la ventana "**Configuración de inicio**". En esta ventana hay que pulsar la tecla F7, para continuar el inicio del sistema operativo con la comprobación de la firma digital de los controladores deshabilitada
 
-\imgcapt{img/05-02-driver-15.png}{Отключение обязательно проверки подписи драйверов}
 
-После того как операционная система загрузится, нужно установить драйвер прибора так же, как и в операционных системах Windows XP / Windows 7. После установки драйвера необходимо еще раз перезагрузить компьютер, для того чтобы включить проверку подписи драйверов.
+\imgcapt{img/05-02-driver-15.png}{Deshabilitar el uso obligatorio de controladores firmados}
+
+Después de que el sistema operativo se reinicie, hay que instalar el controlador del equipo de la misma forma que en los sistemas operativos Windows XP / Windows 7. Después de instalar el controlador hay que reiniciar la computadora otra vez para abrir de la comprobación de la firma digital de los controladores.
 
