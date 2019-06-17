@@ -1,22 +1,22 @@
 \pagebreak
 
-# Конфигурирование прибора {#config-info}
+# Configuración del dispositivo {#config-info}
 
-Для конфигурирования (изменения настроек) прибора предназначен специальный конфигуратор, который называется «Хаббл».
+Para realizar la configuración (modificar la configuración) del equipo hay un configurador especial, denominado "Hubble".
 
-Актуальную версию конфигуратора можно загрузить с официального сайта технической поддержки НТКФ «Си-Норд» ([support.cnord.ru](http://support.cnord.ru)), со страницы «[Файлы для загрузки](https://support.cnord.ru/hc/ru/articles/203372340)».
+La versión actual del configurador se puede descargar desde el sitio oficial del soporte técnico de NTKF "C.Nord" ([support.cnord.ru](http://support.cnord.ru)), desde la página "[Archivos para descargar](https://support.cnord.ru/hc/ru/articles/203372340)".
 
-Конфигуратор поставляется в виде zip-архива с именем **hubble-X.XX.zip**, где **X.XX** – цифры, соответствующие версии конфигуратора. Содержимое архива необходимо распаковать на жесткий диск компьютера, желательно – в корневую папку. 
+El configurador se suministra en forma de archivo zip con el nombre **hubble-X.XX.zip**, donde **X.XX** son los números que corresponden a la versión del configurador. El contenido del archivo hay que descomprimirlo en una carpeta en el disco duro de la computadora y es aconsejable que se haga en una carpeta raíz.
 
-> Если распаковать архив в корень диска по каким-то причинам нельзя, необходимо распаковать его в папку, в названии которой нет кириллических символов и пробелов. Если это условие не будет соблюдено, то конфигуратор прибора будет работать некорректно. 
+> Si por algún motivo no se consigue descomprimir el archivo en la raíz del disco, hay que descomprimirlo en una carpeta cuyo nombre no tenga caracteres cirílicos y espacios. Si esta condición no se cumple, el configurador del equipo funcionará de forma incorrecta. 
 
-Исполняемый файл конфигуратора называется **hubble.exe**, именно этот файл необходимо запускать для изменения настроек прибора.
+El archivo ejecutable del configurador se llama **hubble.exe**, precisamente este archivo es el que hay que ejecutar para modificar la configuración del equipo.
 
-> Конфигуратор «Хаббл» предназначен для изменения настроек следующих приборов: «Норд GSM», «Норд RF», «Норд LAN», «Союз GSM», «Союз PCB GSM», «ТР-100 GSM IV» и «Сержант GSM».   
+> El configurador "Hubble" sirve para modificar las configuraciones de los siguientes equipo: "Nord GSM", "Nord RF", "Nord LAN", "Soyuz GSM", "Soyuz PCB GSM", "TR-100 GSM IV" y "Serzhant GSM".   
 
-Для того, чтобы приступить к конфигурированию прибора, необходимо подключить его к компьютеру по USB и запустить конфигуратор. Для того, чтобы конфигуратор было удобнее запускать, рекомендуется разместить ярлык для его запуска на рабочем столе или в папке часто используемых программ.
+Para empezar a configurar el equipo hay que conectarlo a la computadora por USB e iniciar el configurador. Para iniciar cómodamente el configurador recomendamos ubicar un acceso directo para su inicio en el escritorio o en la carpeta de programas de uso frecuente.
 
-После того, как конфигуратор будет запущен, он автоматически обнаружит подключенный к компьютеру прибор, выполнит проверку версии программного обеспечения, установленного на приборе, и загрузит настройки прибора.
+Después de ser iniciado, el configurador detectará automáticamente el equipo conectado a la computadora, realizará la comprobación de la versión del software instalado en el equipo y cargará las configuraciones del equipo
 
-Если версия программного обеспечения, установленного на приборе, не соответствует версии, необходимой для работы конфигуратора, будет выведено сообщение об ошибке с просьбой обновить программное обеспечение на приборе. В этом случае необходимо завершить работу конфигуратора и выполнить обновление программного обеспечения на приборе так, как это описано в разделе [«Обновление программного обеспечения»](#firmware-update).
+Si la versión del software instalado en el equipo no corresponde con la versión necesaria para el funcionamiento del configurador, se mostrarán un mensaje de error con la petición de actualizar el software en el equipo. En este caso hay que finalizar el trabajo del configurador y realizar la actualización del software en el equipo, tal como se describe en el apartado ["Actualización del software"](#firmware-update).
 

@@ -1,30 +1,29 @@
 \pagebreak
 
-## Пользователи
+## Usuarios
 
-На вкладке «Пользователи» выполняется создание пользователей объекта. В приборе возможно создать до 32 пользователей, а каждый пользователь, помимо личного кода, может иметь еще беспроводные брелоки и TM-ключи.
+En la pestaña "Usuarios" se realiza la creación de los usuarios del objeto. En el equipo se pueden crear hasta 32 usuarios y cada usuario aparte de su código personal, también puede tener llaveros inalámbricos y llaves TM.
 
-\imgcapt{img/06-05-config-nord-01.png}{Вкладка «Пользователи»}
-
-
-Для создания нового пользователя нужно нажать кнопку _Добавить пользователя_ и в открывшемся окне ввести код, который созданный пользователь будет использовать при взятии объекта под охрану и снятии с неё.
-
-\imgcapt{img/06-05-config-nord-02.png}{Вкладка «Пользователи», диалог ввода кода}
+\imgcapt{img/06-05-config-nord-01.png}{Pestaña "Usuarios"}
 
 
-Для добавления Touch Memory ключа нужно напротив выбранного пользователя нажать кнопку **Считать** в колонке «Ключи», после этого приложить ТМ-ключ к считывателю. Если считыватель подключен верно, то отобразится код ключа. 
-Добавить ТМ-ключ пользователю можно вручную. Для этого нужно нажать кнопку **Ввести номер** и в открывшемся окне ввести информацию с ключа.
+Para crear un nuevo usuario hay que pulsar el botón *Añadir usuario* y en la ventana abierta introducir el código que usará el usuario creado al armar el sistema de seguridad del objeto y desarmarlo.
 
-Далее следует перейти на вкладку [Разделы](#06-06-config-parts) и добавить ключ в раздел, которым он будет управлять. Одному пользователю можно добавить несколько ТМ-ключей, но с помощью одного ТМ-ключа можно управлять состоянием только одного раздела.
-
-\imgcapt{img/06-05-config-nord-03.png}{Вкладка «Пользователи», добавление TM-ключа}
-\imgcapt{img/06-05-config-nord-05.png}{Вкладка «Пользователи», добавление номера TM-ключа вручную}
+\imgcapt{img/06-05-config-nord-02.png}{Pestaña "Usuarios", diálogo de introducción del código}
 
 
-Если к прибору привязан беспроводной брелок, его можно добавить конкретному пользователю с помощью кнопки _Добавить брелок_. Подключать беспроводной брелок к прибору нужно на вкладке «[Беспроводные устройства](#06-04-config-wireless)». После того, как брелок добавлен, можно перейти на вкладку «[Разделы](#06-06-config-parts)» и сопоставить брелок разделу, которым он будет управлять. 
+Para añadir una llave Touch Memory enfrente del usuario seleccionado hay que pulsar el botón **Leer** en la columna "llaves", a continuación poner la llave TM en el lector. Si el lector está conectado correctamente, se mostrará el código de la llave. La llave TM se puede añadir al usuario de forma manual. Para hacerlo hay que pulsar el botón **Introducir el numero** y en la ventana que se abra introducir la información de la llave.
 
-\imgcapt{img/06-05-config-nord-04.png}{Вкладка «Пользователи», добавление брелока}
+A continuación hay que ir a la pestaña [Particiones](#06-06-config-parts) y añadir la llave a la partición que se va a controlar con esta llave. A un usuario se pueden añadir varias llaves TM, pero mediante una llave TM sólo se puede controlar el estado de una sola partición.
+
+\imgcapt{img/06-05-config-nord-03.png}{Apartado "Usuarios", adición de la llave TM}
+\imgcapt{img/06-05-config-nord-05.png}{Pestaña "Usuarios", adición del número de la llave TM de forma manual}
 
 
-С помощью значка корзины можно удалять ранее созданных пользователей.
+Si al equipo está vinculado un llavero inalámbrico, se puede añadir a un usuario concreto mediante el botón *Añadir llavero*. El llavero inalámbrico se debe conectar el equipo en la pestaña "[Dispositivos inalámbricos](#06-04-config-wireless)". Después de que el llavero sea añadido, hay que pasar a la pestaña "[Particiones](#06-06-config-parts)" y asignar el llavero a la partición que éste controlará. 
+
+\imgcapt{img/06-05-config-nord-04.png}{Pestaña "Usuarios", adición de llavero}
+
+
+Mediante el icono de la papelera se pueden eliminar usuarios creados anteriormente.
 

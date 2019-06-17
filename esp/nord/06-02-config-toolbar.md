@@ -1,65 +1,65 @@
-## Панель управления и панель вкладок
+## Panel de control y panel de pestañas
 
-### Панель управления
+### Panel de control
 
-В верхней части главного окна конфигуратора расположена панель управления:
+En la parte superior de la ventana principal del configurador se ubica el panel de control:
 
-\imgcapt{img/06-02-config-nord-01.png}{Панель управления}
+\imgcapt{img/06-02-config-nord-01.png}{Panel de control}
 
-В левой части панели управления отображается следующая информация:
+En la parte izquierda del panel de control se muestra la siguiente información:
 
-* тип прибора;
-* версия программного обеспечения прибора;
-* версия программного обеспечения беспроводного расширителя, если он подключен; 
-* номер объекта, указанный в настройках прибора;
-* серийный номер прибора.
-Серийный номер прибора присваивается ему при производстве и является уникальным для всей популяции приборов, выпускаемых компанией «Си-Норд».
+* tipo de equipo;
+* versión del software del equipo;
+* versión del software del expansor inalámbrico, si está conectado;
+* numero del objeto indicado en la configuración del equipo;
+* número de serie del equipo.
 
-Кнопка «Считать» предназначена для того, чтобы загрузить в интерфейс конфигуратора те настройки, которые в данный момент сохранены в приборе. Необходимо помнить, что если произвести какие-то изменения в настройках прибора в конфигураторе, а потом нажать на кнопку «Считать», то все изменения будут потеряны: настройки, которые были сделаны в конфигураторе, будут заменены на настройки, загруженные с прибора.
+El número de serie del equipo se le asigna al ser fabricado y es único para toda la familia de equipos fabricados por la compañía "C.Nord".
 
-Кнопка «Записать» нужна для того, чтобы сохранить изменения настроек, выполненные в конфигураторе, в прибор.
+El botón "Leer" sirve para cargar en la interfaz del configurador los ajustes que actualmente están guardados en el equipo. Hay que recordar que si se realiza algún cambio de la configuración del equipo en el configurador, después de pulsar el botón "Leer", todos los cambios se perderán: las configuraciones realizadas en el configurador serán reemplazadas por las configuraciones cargadas del equipo.
 
-Кнопка «Сохранить...» предназначена для того, чтобы сохранить в файл текущие настройки, которые отображаются в конфигураторе. С помощью кнопки «Открыть...», в свою очередь, можно загрузить настройки из файла. 
+El botón "Grabar" sirve para guardar los cambios de las configuraciones realizadas en el configurador, en el equipo.
 
-> Для того, чтобы избежать ошибок, связанных с настройкой каналов связи, рекомендуется сохранять в файл на диске все настройки, связанные с подключением к «Центру охраны» и «Облаку», а конфигурирование прибора, устанавливаемого на объекте, начинать c того, что загружать в конфигуратор файл с этими настройками.
+El botón "Guardar..." Sirve para guardar en el archivo las configuraciones actuales que se muestran en el configurador. Mediante el botón "Abrir...", por su parte, se puede cargar la configuración del archivo.
+
+> Para evitar errores, relacionados con la configuración de los canales de comunicación, se recomienda guardar en el archivo en el disco todas las configuraciones, relacionadas con la conexión al "Security Center" y a la "Nube", y en la configuración del equipo que se instala en el objeto, empezar por cargar en el configurador el archivo con estas configuraciones.
 
 \pagebreak
 
-### Панель вкладок
+### Panel de pestañas
 
 \begin{wrapfigure}{L}{0.25\textwidth}
 \begin{center}
 \includegraphics{img/06-02-config-nord-02.png}
 \end{center}
 \vspace{-5pt}
-\caption{Панель вкладок}
+\caption{Panel de pestañas}
 \end{wrapfigure}
 
-В левой части главного окна конфигуратора расположена панель вкладок, с помощью которой осуществляется переключение между группами настроек прибора.
+En la parte izquierda de la ventana principal del configurador se ubica el panel de pestañas, mediante el cual se realiza el cambio entre los grupos de configuraciones del dispositivo.
 
-На вкладке «Шлейфы» выполняется настройка параметров проводных шлейфов, подключенных к прибору.
+En la pestaña "Zonas" se realiza la configuración de los parámetros de las zonas por cable conectadas al equipo.
 
-Вкладка «Беспроводные устройства» предназначена для подключения к прибору беспроводных устройств – извещателей, брелоков, клавиатур и ретрансляторов. На этой же вкладке выполняется настройка их параметров. Эта вкладка отображается в конфигураторе только в том случае, если к прибору подключен беспроводной расширитель.
+La pestaña "Dispositivos inalámbricos" sirve para conectar al equipo dispositivos - notificadores inalámbricos, llaveros, teclados y retransmisores. Esta pestaña se muestra en el configurador sólo si al equipo está conectado un expansor inalámbrico.
 
-Коды пользователей, которые будут брать и снимать прибор с охраны можно задать на вкладке «Пользователи». Здесь же можно закрепить за пользователем один или несколько ТМ-ключей, а также указать беспроводной брелок, выданный пользователю. 
+Los códigos de usuarios que armarán y desarmarán el sistema de seguridad del equipo se pueden establecer en la pestaña "Usuarios". Aquí también se pueden asignar al usuario una o varias llaves TM, así como especificar el llavero inalámbrico entregado al usuario. 
 
-На вкладке «Разделы» выполняется конфигурирование разделов объекта. На этой вкладке можно указать, какие проводные и беспроводные шлейфы в какие разделы включены, а кроме того, указать какие пользователи могут брать или снимать разделы с охраны.
+En la pestaña "Particiones" se puede realizar la configuración de las particiones del objeto. En esta pestaña se pueden especificar las zonas por cable y zonas inalámbricas conectadas a determinadas particiones, así como especificar los usuarios que pueden armar o desarmar el sistema de seguridad de las particiones.
 
-На вкладке «Разное» можно настроить интервалы, которые используются при повторе событий, передаваемых в «Центр охраны», указать тип резервного источника питания, подключенного к прибору, включить или выключить звуковой и световой оповещатель и т.д.
+En la pestaña "Varios" se pueden configurar los intervalos que se usan en la repetición de eventos transmitidos al "Security Center", especificar el tipo de la fuente de alimentación de reserva conectada al equipo, activar o desactivar el avisador acústico y óptico, etc.
 
-Настройки, которые должен использовать прибор при передаче событий по каналам связи GSM и Ethernet, можно указать на вкладке «Центр охраны».
+Las configuraciones que debe usar el equipo al transferir eventos por los canales de comunicación GSM y Ethernet se pueden establecer en la pestaña "Security Center".
 
-Параметры, которые определяют передачу событий по радиоканалу, указываются на вкладке «Радио».
+Los parámetros que determinan la transmisión de eventos por el canal de radio, se indican en la pestaña "Radio".
 
-Вкладка «Облако» предназначена для указания к какому «Облаку» прибор должен подключаться для того, чтобы у инженера была возможность удаленного доступа к нему. Значения параметров на этой вкладке необходимо изменять только в том случае, если используется «Частное облако», либо параметры для подключения к «Облаку» необходимо указать вручную.
+La pestaña "Nube" sirve para especificar a qué "Nube" debe conectarse el equipo para que el técnico tenga la posibilidad de acceder de forma remota al mismo. Los valores de los parámetros en esta pestaña hay que modificarlos sólo si se usa una "Nube privada", los parámetros para la conexión a la "Nube" deben especificarse de forma manual.
 
-На вкладке «Ethernet» можно изменить настройки подключения прибора к локальной сети. Эта вкладка отображается в конфигураторе только если к прибору подключен опциональный модуль «Адаптер Ethernet».
+En la pestaña "Ethernet" se puede cambiar la configuración de la conexión del equipo a la red local. Esta pestañas se refleja en el configurador sólo si al dispositivo está conectado el módulo opcional "Adaptador Ethernet".
 
-Параметры операторов сотовой связи, такие как адрес точки доступа (APN), имя пользователя и пароль для доступа к услугам пакетной передачи данных, можно изменить на вкладке «Операторы GSM».
+Los parámetros de los operadores de comunicación móvil, tales como la dirección del punto de acceso (APN), el nombre del usuario y la contraseña para el acceso a los servicios de transmisión de paquetes de datos, se pueden modificar en la pestaña "Operadores GSM".
 
-Вкладка «Автоматика» предназначена для программирования поведения прибора в зависимости от тех или иных условий. В качестве условий могут выступать любые события, сформированные прибором или время. А в качестве действий, которые прибор может выполнить, выступают взятия или снятия, а также действия с открытыми коллекторами.
+La pestaña "Sistema automático" sirve para programar el comportamiento del dispositivo dependiendo de unas u otras condiciones. En calidad de condiciones pueden actuar cualesquiera eventos creados por el equipo o el tiempo. Y en calidad de acciones que el equipo puede realizar, actúan los armes o desarmes, así como las acciones con los colectores abiertos.
 
-События, которые хранятся в энергонезависимой памяти прибора, можно просмотреть на вкладке «История событий». Здесь же можно пометить, как отправленные, те события, которые ожидают доставки в «Центр охраны» в очереди на передачу.
+Los eventos que se almacenan en la memoria no volátil del equipo se pueden ver en la pestaña "Historial de eventos". Aquí también se pueden marcar como enviados los acontecimientos que están a la espera de ser entregados al "Security Center" en la cola de transmisión.
 
-Вкладка «Панель состояния» в реальном времени отображает состояние каналов связи, проводных и беспроводных шлейфов.
-
+La pestaña "Panel de estado" muestra en tiempo real el estado de los canales de comunicación de las zonas por cable y zonas inalámbricas.
