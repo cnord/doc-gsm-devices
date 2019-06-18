@@ -1,28 +1,29 @@
 \pagebreak
 
-## Разделы
+## Particiones
 
-На вкладке «Разделы» выполняется конфигурирование разделов объекта.
-В приборе возможно создать до 32 разделов с возможностью их независимого взятия под охрану и снятия с охраны.
+En la pestaña "Particiones" se realiza la configuración de las particiones del objeto. 
+En el dispositivo se pueden crear hasta 32 particiones con la posibilidad de su arme y desarme independiente.
 
-\imgcapt{img/06-06-config-nord-01.png}{Вкладка «Разделы»}
+\imgcapt{img/06-06-config-nord-01.png}{Pestaña "Particiones"}
 
-Для создания раздела нужно нажать кнопку «Добавить раздел». Каждому разделу присваивается свой номер, номера выдаются последовательно от 1 до 32.
-Для каждого раздела есть кнопка «Добавить шлейф» и «Добавить код», расположенные во втором и третьем столбце соотвественно.
+Para crear una partición hay que pulsar el botón "Añadir partición". A cada partición se le asigna su número, los números se generan de forma consecutiva de 1 a 32. 
+Para cada partición existe el botón "Añadir zona" y "Añadir código", ubicadas en la segunda y tercera columna correspondientemente.
 
-При помощи кнопки «Добавить шлейф» в выпадающем меню можно выбрать шлейфы, которые будут добавлены в этот раздел. В выпадающем меню отображаются только *включенные* шлейфы.
+Mediante el botón "Añadir zona" en el menú emergente se pueden seleccionar las zonas que serán añadidas a esta partición. En el menú emergente sólo se muestran las zonas *activadas*.
 
-С помощью значка корзины можно удалять ранее созданные разделы.
+Mediante el icono de la papelera se pueden eliminar las zonas creadas anteriormente. 
 
-### Управление разделами
+### Control de particiones
 
-Для того, чтобы пользователь мог использовать свой личный код при взятии раздела на охрану и снятии с неё, пользователя необходимо сопоставить этому разделу. Для этого надо нажать кнопку «Добавить код» и в выпадающем списке выбрать тех пользователей, которые смогут управлять конкретным разделом.
+Para que el usuario pueda usar su código personal al armar la partición y desarmar la partición, al usuario hay que vincularlo a esta partición. Para hacerlo hay que pulsar el botón "Añadir código" y en la lista emergente seleccionar aquellos usuarios que podrán controlar la partición concreta.
 
-Если пользователь имеет беспроводной брелок или tm-ключ и хочет с их помощью управлять разделами, то их тоже нужно добавить к выбранному разделу.
+Si el usuario tiene un llavero inalámbrico o una llave TM y con ellos quiere controlar los dispositivos, éstos también deben añadirse a la partición seleccionada.
 
-Важно учитывать следующее:
+Es importante tener en cuenta lo siguiente:
 
-* В случае если TM-ключ или брелок не добавлен ни к одному разделу, то он будет автоматически приписан к первому разделу.
-* Одним брелком нельзя управлять несколькими разделами, только одним. Такая же ситуация с TM-ключом: одному ключу может соответствовать только один раздел.
-* Один пользователь может быть закреплен за несколькими разделами. Тогда для взятия и снятия ему нужно будет указать номер раздела, который он собирается взять или снять с охраны.
-* Один и тот же шлейф может быть добавлен в несколько разделов, но при этом следует помнить, что шлейф находится под охраной, когда все разделы, в которые он входит, взяты под охрану.
+* Si la llave TM o el llavero no está añadido a ninguna partición, automáticamente será asignado a la primera partición.
+* Con un llavero no se pueden controlar varias particiones, sólo una. La misma situación se da con la llave TM: a una llave sólo puede corresponder una partición.
+* A un usuario pueden asignarse varias particiones. Entonces, para armar y desarmar el usuario deberá indicar el número de la partición que desea armar o desarmar.
+* Una misma zona puede ser añadida a varias particiones, pero con ello hay que recordar que el sistema de seguridad de la zona está armado, cuando todas las particiones en las que entra la zona están armadas.
+

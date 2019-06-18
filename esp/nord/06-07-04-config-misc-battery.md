@@ -1,25 +1,25 @@
-### Резервное питание
+### Alimentación de reserva
 
-#### Тип резервного источника питания
+#### Tipo de fuente de alimentación de reserva
 
-В пункте «Тип резервного источника питания» можно указать, какой резервный источник подключен к прибору: аккумулятор или ИБП.
+En el punto "Tipo de fuente de alimentación de reserva" se puede especificar qué fuente de reserva está conectada al dispositivo: batería o fuente de alimentación ininterrumpida. 
 
-#### Если подключена АКБ
+#### Si está conectada la batería
 
-\imgcapt{img/06-07-config-nord-03-01.png}{Вкладка «Разное», раздел «Резервное питание»}
+\imgcapt{img/06-07-config-nord-03-01.png}{Pestaña "Varios", apartado "Alimentación de reserva"}
 
-Если в качестве резервного источника выбран аккумулятор, то есть возможность включить два параметра:
+Si en calidad de fuente de reserva fue elegida la batería, existe la posibilidad de activar dos parámetros:
 
-* *Защищать резервный источник от глубокого разряда.* 
+* *Proteger la fuente de reserva contra la descarga profunda.* 
 
-Если этот параметр включен, то при достижении напряжения 8.5 В на клеммах АКБ прибор отключится, чтобы предотвратить возможность разряда аккумулятора до критически низкого уровня, при котором его заряд не может быть восстановлен. 
+Si este parámetro está activado, al alcanzar una tensión de 8,5 V en los bornes de la batería, el equipo se desconectará para prevenir la posibilidad de descarga de la batería hasta un nivel crítico, en el cual su carga no puede ser recuperada.
 
-* *Проверять качество аккумулятора.* 
+* *Comprobar la calidad de la batería.* 
 
-Для проверки качества аккумулятора прибор периодически подключает нагрузку и контролирует падение напряжения. В случае, если значение падения напряжения под нагрузкой превысило 2 В, формируется событие **E309** - *АКБ неисправна*.
+Para comprobar la calidad de la batería el equipo conecta periódicamente la carga y controla la caída de la tensión. Si el valor de la caída de la tensión bajo la carga superó 2 V, se forma el evento **E309** - *Fallo de la batería*.
 
-#### Если подключен ИБП
+#### Si está conectada la fuente de alimentación ininterrumpida
 
-\imgcapt{img/06-07-config-nord-03-02.png}{Вкладка «Разное», раздел «Резрвное питание», выбрано значение «ИБП» для параметра «Тип резервного источника питания».}
+\imgcapt{img/06-07-config-nord-03-02.png}{Pestaña "Varios", apartado "Alimentación de reserva", seleccionado el valor "Fuente de alimentación de reserva" para el parámetro "Tipo de fuente de alimentación de reserva".}
 
-Если в качестве резервного источника выбран ИБП, то включение дополнительных параметров (защита от глубокого разряда и контроль качества АКБ) недоступно.
+Si en calidad de fuente de reserva fue seleccionada la fuente de alimentación de reserva, no se pueden activar los parámetros adicionales (protección contra la descarga profunda y control de la calidad de la batería). 

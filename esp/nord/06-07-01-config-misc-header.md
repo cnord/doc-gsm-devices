@@ -1,5 +1,5 @@
 \pagebreak
 
-## Разное
+## Varios
 
-На вкладке «Разное» можно указать различные параметры, определяющие работу прибора.
+En la pestaña "Varios" se pueden especificar diferentes parámetros que determinan el funcionamiento del equipo.

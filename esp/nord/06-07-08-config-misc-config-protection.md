@@ -1,41 +1,39 @@
-### Защита конфигурации
+### Protección de la configuración
 
-С помощью этого раздела возможно настроить параметры для защиты от несанкционированного доступа и злоумышленного внесения изменений в параметры приборов.
+Mediante este apartado se pueden configurar los parámetros para la protección contra acceso no sancionado e introducción de cambios malintencionados en los parámetros de los equipos.
 
-\imgcapt{img/06-07-config-nord-07-01.png}{Вкладка «Разное», раздел «Защита конфигурации»}
+\imgcapt{img/06-07-config-nord-07-01.png}{Pestaña "Varios", apartado "Protección de la configuración"}
 
-#### Пароль для доступа к прибору
+#### Contraseña para acceder al equipo
 
-Обязательная аутентификация по паролю при подключении к прибору по USB - еще один способ обеспечения безопасности.
-По умолчанию пароль для подключения к прибору по USB - **0000**. Чтобы повысить безопасность, следует изменить стандартный пароль доступа на новый. Длина пароля может быть от 4 до 16 цифр. Рекомендуется установить пароль, состоящий из максимально допустимого количества цифр.   
+Una autentificación obligatoria a través de la contraseña al conectarse al equipo por USB es una forma más de garantizar la seguridad. De forma predeterminada la contraseña para la conexión al equipo por USB es **0000**. Para elevar la seguridad, hay que cambiar la contraseña de acceso estándar por una nueva. La longitud de la contraseña puede ser de 4 a 16 números. Se recomienda establecer una contraseña compuesta de la máxima cantidad permitida de números.
 
-\imgcapt{img/06-07-config-nord-07-02.png}{Вкладка «Разное», раздел «Защита конфигурации», диалог для изменения пароля для доступа к прибору.}
+\imgcapt{img/06-07-config-nord-07-02.png}{Pestaña "Varios", apartado "Protección de la configuración", diálogo para cambiar la contraseña para acceder al equipo.}
 
-Если пароль утерян, а удаленное подключение к прибору невозможно, восстановить доступ к прибору можно только при сбросе значений всех его параметров в заводские. При этом будут удалены все настройки прибора, включая шлейфы, пользователей, разделы и прочее, а пароль для подключения к прибору по USB примет значение по умолчанию.
+Si la contraseña fue pérdida y no es posible conectarse al equipo de forma remota, sólo se puede recuperar el acceso al equipo reseteando los valores de todos sus parámetros a los parámetros de fábrica. Con ello serán eliminadas todas las configuraciones del equipo, incluyendo las zonas, los usuarios, las particiones, etc., y la contraseña para la conexión al equipo por USB volverá al valor predeterminado.
 
-#### Разрешить сброс значений параметров в заводские
+#### Permitir el reseteo de los valores de los parámetros a los parámetros de fábrica
 
-Функцию сброса значений можно включить или выключить для конкретного прибора. Разрешая сброс значений параметров, можно задать **паузу перед сбросом**. По умолчанию этот параметр установлен на 30 секунд, однако, можно выбрать значение 5 минут, 30 минут, 12 часов или 24 часа. Сброс конфигурации возможен только при подключении по USB.
+La función de reseteo de los valores se puede activar o desactivar para un equipo en concreto. Permitiendo el reseteo de los valores de los parámetros, se puede establecer una **pausa antes del reseteo**. De forma predeterminada este parámetro está establecido por 30 segundos, sin embargo se puede elegir un valor de 5 minutos, 30 minutos, 12 horas o 24 horas. Sólo es posible resetear la configuración conectándose por USB.
 
-Если функция сброса конфигурации включена, окно для ввода пароля будет содержать кнопку «Сбросить конфигурацию».
+Si la función de reseteo de la configuración está activada, la ventana para la introducción de la contraseña tendrá el botón "Resetear la configuración"
 
-\imgcapt{img/06-07-config-nord-07-03.png}{Вкладка «Разное», раздел «Защита конфигурации», диалог для сброса конфигурации прибора.}
+\imgcapt{img/06-07-config-nord-07-03.png}{Pestaña "Varios", apartado "Protección la configuración", diálogo para resetear la configuración del equipo.}
 
-При нажатии на кнопку «Сбросить конфигурацию» прибор формирует событие с кодом **E752** и начинает отсчет заданной паузы.
+Al pulsar el botón "Resetear la configuración" el equipo crea un evento con el código **E752** y empieza la cuenta de la pausa establecida.
 
-Рекомендуется устанавливать максимальные значения параметра *Пауза перед сбросом*, так как подобная задержка обеспечивает дополнительную защиту. В случае, если конфигурацию прибора сбрасывает злоумышленник, ЧОП успевает отреагировать на несанкционированный доступ к прибору.
+Se recomienda establecer el valor máximo del parámetro *Pausa antes del reseteo*, ya que tal retraso proporciona seguridad adicional. Si la configuración del dispositivo la resetea un malhechor, a la empresa de seguridad privada le da tiempo de reaccionar a un acceso no sancionado al equipo.
 
-#### Включить функцию «Защита от угона»
+#### Activar la función "Protección de cambio de servicio"
 
-Если эта функция включена и изменения сохранены в приборе, то для этого прибора больше нельзя будет изменить значения следующих параметров:
+Si esta función está activada y los cambios fueron guardados en el equipo, para este equipo ya no se podrán cambiar los valores de los siguientes parámetros:
 
-* адреса для подключения по GPRS;
-* адреса для подключения по Ethernet;
-* формат станции для передачи по радио.   
+* direcciones para la conexión a través de GPRS;
+* direcciones para la conexión a través de Ethernet;
+* formato de estación para la transmisión por radio.
 
-Перед сохранением конфигурации в прибор выдается предупреждение:
+Antes de guardar la configuración en el equipo se muestra la advertencia:
 
-\imgcapt{img/06-07-config-nord-07-04.png}{Вкладка «Разное», раздел «Защита конфигурации», предупреждение о включении «Защиты от угона»}
+\imgcapt{img/06-07-config-nord-07-04.png}{Pestaña "Varios", apartado "Protección de la configuración", advertencia de activación de la "Protección de cambio de servicio".}
 
-Включить функцию «Защита от угона» можно как при подключении по USB, так и при удаленном программировании.
-Отключить функцию «Защита от угона» можно только, обратившись в [техническую поддержку компании](mailto:support@cnord.ru) с официальным запросом в «Си-Норд».
+La función "protección de cambio de servicio" puede activarse al conectar por USB y también bajo programación remota. La función "Protección de cambio de servicio" se puede desconectar únicamente poniéndose en [contacto con el soporte técnico](mailto:support@cnord.com) mediante una solicitud oficial a "C-Nord".

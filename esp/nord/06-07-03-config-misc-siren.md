@@ -1,23 +1,23 @@
-### Сирена {#config-misc-siren}
+### Sirena {#config-misc-siren}
 
-\imgcapt{img/06-07-config-nord-02.png}{Вкладка «Разное», раздел «Сирена»}
+\imgcapt{img/06-07-config-nord-02.png}{Pestaña "Varios", apartado "Sirena"}
 
-#### Сирена подключена
+#### Sirena conectada
 
-Если сирена подключена к одноименному выходу «Сирена», то необходимо установить соответствующую галочку. При этом включится контроль линии связи с сиреной, позволяющий детектировать обрыв и короткое замыкание линии, причем как при выключенной, так и при включенной сирене. При обнаружении любой из указанных неисправностей формируется  событие с кодом **E321** - *Сирена неисправна*, который передается на пульт охраны.
+Si la sirena está conectada a su correspondiente salida "Sirena", hay que marcar la correspondiente casilla. Con ello, se activará el control de líneas de conexión con la sirena que permite detectar la ruptura y el cortocircuito de la línea, en caso de sirena desactivada y en caso de sirena activada. Si se detecta cualquiera de los fallos especificados se crea un evento con el código **E321** - *Fallo de la sirena*, que se transmite a la consola de seguridad.
 
-Помимо одноименного выхода сирену можно подключить к любому из семи открытых коллекторов, при этом не нужно устанавливать галочку «Сирена подключена». Важно отметить, что прибор не контролирует состояние линии, если сирена подключена на открытый коллектор.
+Aparte de conectar en la salida de la sirena, la sirena se puede conectar a cualquiera de los siete colectores abiertos, con ello no hay que marcar la casilla "Sirena conectada". Es importante destacar que el equipo no controla el estado de la línea, si la sirena está conectada a un colector abierto.
 
-Подключение сирены на открытый коллектор осуществляется следующим образом:
+La conexión de la sirena a un colector abierto se realiza de la siguiente forma:
 
-* «Плюсовой» кабель оповещателя может быть подключен к любому плюсовому выходу контрольной панели, например, к выходу для питания клавиатуры или шлейфов. 
-* «Минусовой» кабель оповещателя должен быть подключен к одному из семи открытых коллекторов: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
-* После подключения оповещателя, выход необходимо настроить с помощью правил автоматики. Подробнее о правилах в [разделе Автоматика](#config-automation)
+* El cable "Positivo" del avisador puede ser conectado a cualquier salida positiva del panel de control, por ejemplo, la salida para la alimentación del teclado o las zonas.
+* El cable "Negativo" del avisador debe ser conectado a uno de los siete colectores abiertos: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
+* Después de conectar el avisador, hay que configurar la salida mediante las normas del sistema automático. Puede informarse con mayor detalle sobre las normas en el [apartado Sistema automático](#config-automation)
 
-#### Интервал звучания сирены
+#### Intervalo de sonido de la sirena
 
-Параметр «Интервал звучания сирены» отвечает за длительность звучания сирены, независимо от способа её подключения. По истечению времени, указанного в значении параметра, сирена перестанет звучать.
+El parámetro "Intervalo de sonido de la sirena" es responsable por la duración del sonido de la sirena, independientemente de la forma de su conexión. Al transcurrir el tiempo indicado en el valor del parámetro, la sirena dejará de sonar.
 
-#### Интервал повторного включения сирены
+#### Intervalo de activación reiterada de la sirena
 
-В значении параметра «Интервал повторного включения сирены» указывается время, через которое сирена начнет звучать вновь, если сброс тревоги не произошел.
+En el valor del parámetro "Intervalo de activación reiterada de la sirena", se indica el tiempo, dentro del cual la sirena empezará a sonar de nuevo si no tuvo lugar el reseteo de la alarma.

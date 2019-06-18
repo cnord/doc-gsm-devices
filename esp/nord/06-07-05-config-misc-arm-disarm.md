@@ -1,33 +1,33 @@
-### Взятие и снятие
+### Arme y desarme
 
-В этом разделе можно указать различные параметры, которые повлияют на процесс взятия на охрану или снятия с неё.
+En este apartado se pueden especificar diferentes parámetros que influirán en el proceso de arme del sistema de seguridad y desarme del sistema de seguridad.
 
-\imgcapt{img/06-07-config-nord-04.png}{Вкладка «Разное», раздел «Взятие и снятие»}
+\imgcapt{img/06-07-config-nord-04.png}{Pestaña "Varios", apartado "Arme y desarme"}
 
-#### Запретить взятие при тревоге в шлейфах с задержкой на выход
+#### Prohibir el arme en caso de alarma en las zonas con retraso de salida
 
-По умолчанию тревога в шлейфах с задержкой на выход игнорируется на момент взятия на охрану. Это сделано для того, чтобы пользователь мог поставить объект на охрану и спокойно закрыть за собой входную дверь. Но, если хочется быть уверенным, что все шлейфы сигнализации находятся в норме на момент взятия, можно включить контроль тревоги в шлейфах с задержкой на выход. Для этого нужно поставить «галочку» для параметра *Запретить взятие при тревоге в шлейфе с задержкой на выход*.
+De forma predeterminada la alarma en las zonas con retraso de salida se ignora para el momento del arme del sistema de seguridad. Esto está hecho para que el usuario pueda armar el sistema de seguridad del objeto y cerrar tranquilamente la puerta de entrada. Pero si desea tener la seguridad de que todas las zonas de alarma están bajo la norma para el momento del arme, se puede activar el control de alarma en las zonas con retraso de salida. Para ello hay que marcar la casilla para los parámetros *Prohibir el arme en caso de alarma en la zona con retraso de salida*.
 
-#### Запретить взятие при отсутствии основного электропитания (220 В)
+#### Prohibir el arme en caso de ausencia de la alimentación principal (220 V)
 
-При установке этого параметра прибор будет невозможно поставить на охрану, если он работает на резервном питании, а основное отсутствует.
+Al establecer este parámetro, será imposible armar el equipo si el equipo funciona con alimentación de reserva y no hay alimentación principal.
 
-#### Запретить взятие при отсутствии IP-связи с «Центром охраны»
+#### Prohibir el arme en caso de ausencia de comunicación IP con el "Security Center"
 
-При установке этого параметра прибор будет невозможно поставить на охрану, если связь по GPRS или Ethernet отсутствует.
+Al establecer este parámetro, será imposible armar el equipo si no hay comunicación por GPRS o Ethernet.
 
-#### Разрешить удаленное взятие и снятие из «Центра охраны»
+#### Permitir el arme y el desarme remoto desde el "Security Center"
 
-Включение этого параметра позволит удаленно управлять состоянием охраны из мобильного приложения и пульта охраны.
+La activación de este parámetro permitirá controlar de forma remota el estado del sistema de seguridad desde la aplicación móvil y la consola de seguridad.
 
-#### Включить коды снятия под принуждением
+#### Activar los códigos de desarme forzado
 
-Кодом снятия под принуждением считается код, отличающийся от кода пользователя на единицу в большую или меньшую сторону. Например, если код пользователя – «1234», то кодами снятия под принуждением будут «1233» и «1235». При этом:
+Se considera código de desarme forzado el código que se diferencia del código del usuario en una unidad en dirección mayor o menor. Por ejemplo, si el código del usuario es «1234», los códigos de desarme forzado serán «1233» y «1235». Teniendo en cuenta:
 
-* если код пользователя заканчивается на цифру «0», то код снятия под принуждением будет только один – на единицу больше. Например, если код пользователя равен «5840», то кодом снятия под принуждением будет только код «5841».
-* если код пользователя заканчивается на цифру «9», то код снятия под принуждением тоже будет только один – на единицу меньше. Например, если код пользователя равен «5849», то кодом снятия под принуждением будет только код «5848».
+* si el código del usuario termina con el número «0», el código de desarme forzado solo será uno – en una unidad superior. Por ejemplo, si el código del usuario es igual a «5840», el código de desarme forzado sólo será el código «5841».
+* si el código del usuario termina con el número «9», el código de desarme forzado también será solo uno – en una unidad inferior. Por ejemplo, si el código del usuario es igual a «5849», el código de desarme forzado sólo será el código «5848».
 
-#### Не индицировать задержку на вход на «СН-К»
+#### No iniciar el retraso de salida en el CN-K
 
-Поскольку клавиатура «СН-К» беспроводная и работает на батарейках, то выключение индикации задержки на вход позволит увеличить время работы батарей в клавиатуре «СН-К».
+Debido a que el teclado "CN-K" es inalámbrico y funciona con baterías, la desactivación de la indicación de retraso de entrada permite aumentar el tiempo de funcionamiento de las baterías en el teclado "CN-K".
 
