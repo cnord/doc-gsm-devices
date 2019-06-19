@@ -1,25 +1,24 @@
 \pagebreak
 
-## Облако {#config-cloud}
+## Nube {#config-cloud}
 
-Подключение прибора к «Облаку» обеспечивает работу сервисных функций прибора и позволяет удаленно взаимодействовать с ним с помощью мобильного приложения «MyAlarm» и сервиса «Панель инженера». Подробное описание технологии находится в разделе [Удалённый доступ к прибору](#remote-access).
+La conexión del equipo a la "Nube" proporciona el funcionamiento de las funciones de servicio del equipo y permite interactuar de forma remota con el mismo, mediante la aplicación móvil «MyAlarm» y el servicio "Panel del técnico". La descripción detallada de la tecnología se encuentra en el apartado [Acceso remoto al equipo.](#remote-access).
 
-На вкладке «Облако» можно  выбрать, к какому именно «Облаку» должен подключаться прибор. 
+En la pestaña "Nube" se puede seleccionar a qué "Nube" precisamente debe conectarse el equipo.
 
-Если для работы Вы используете публичное «Облако Си-Норда», то все просто – нужно нажать на кнопку с таким же названием:
+Si para el funcionamiento usa la "Nube de C-Nord" pública, todo es fácil - simplemente hay que pulsar el botón con el mismo nombre:
 
-\imgcapt{img/06-10-config-cloud-01.png}{Вкладка «Облако», выбрано использование публичного «Облака».}
+\imgcapt{img/06-10-config-cloud-01.png}{Pestaña "Nube", seleccionado el uso de "Nube" pública.}
 
+Si el equipo debe funcionar con una "Nube privada", hay que pulsar el botón "Nube privada", a continuación introducir el código pin que le fue proporcionado al desplegar su "Nube privada":
 
-Если прибор должен работать с «Частным облаком», то необходимо нажать на кнопку «Частное облако», после чего ввести пин-код, который Вам сообщили при развертывании Вашего «Частного облака»:
+\imgcapt{img/06-10-config-cloud-02.png}{Pestaña "Nube", seleccionado el uso de "Nube privada".}
 
-\imgcapt{img/06-10-config-cloud-02.png}{Вкладка «Облако», выбрано использование «Частного облака».}
+Si el código pin del servidor de la "Nube privada" se introduce correctamente, al pulsar el botón con la "casilla marcada" en vez del campo de introducción se mostrará el nombre de la "Nube privada" que corresponde al código pin:
 
-Если пин-код сервера «Частного облака» будет введен правильно, то при нажатии на кнопку с «галочкой» вместо поля ввода отобразится название «Частного облака», соответствующее пин-коду:
+\imgcapt{img/06-10-config-cloud-03.png}{Pestaña "Nube", se muestra el nombre de la "Nube privada".}
 
-\imgcapt{img/06-10-config-cloud-03.png}{Вкладка «Облако», отображается название «Частного облака».}
+Si por algún motivo hay que realizar una configuración para la conexión a la "Nube privada" manualmente, puede hacerlo: hay que pulsar el botón "Configuración manual" y especificar las direcciones y los puertos para la conexión a la "Nube" a través de los canales GPRS y Ethernet (se muestra sólo si el adaptador Ethernet está conectado al equipo):
 
-Если же по каким-то причинам необходимо задать настройки для подключения к «Частному облаку» вручную, то и такая возможность есть: нужно нажать на кнопку «Настроить вручную» и указать адреса и порты для подключения к «Облаку» по каналам GPRS и Ethernet (отображается только в том случае, если адаптер Ethernet подключено к прибору):
-
-\imgcapt{img/06-10-config-cloud-04.png}{Вкладка «Облако», настройка параметров для подключения вручную.}
+\imgcapt{img/06-10-config-cloud-04.png}{Pestaña "Nube", configuración de los parámetros para la conexión manual.}
 

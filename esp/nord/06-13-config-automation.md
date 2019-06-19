@@ -1,123 +1,130 @@
 \pagebreak
 
-## Автоматика {#config-automation}
+## Sistema automático {#config-automation}
 
-Механизм «Автоматика» предназначен для программирования поведения прибора в зависимости от тех или иных условий. В качестве условий могут выступать любые события, сформированные прибором или время. А в качестве действий, которые прибор может выполнить, выступают взятия или снятия, а также действия с открытыми коллекторами.
+El mecanismo "Sistema automático" sirve para la programación del comportamiento del equipo dependiendo de unas u otras condiciones. En calidad de condiciones pueden actuar cualesquiera eventos, creados por el equipo o el tiempo. Y en calidad de acciones que el equipo puede realizar, actúan los armes o desarmes, así como las acciones con los colectores abiertos.
 
-Автоматика может применяться для решения следующих задач на объектах:
+El sistema automático puede emplearse para la solución de las siguientes tareas en los objetos:
 
-* взятие и снятие объектов по расписанию;
-* взятие и снятие нескольких разделов одновременно;
-* отображение состояния раздела на световом оповещателе;
-* включние звуковых оповещателей, подключенных к открытым коллекторам прибора;
-* управление внешними устройствами, подключенными к открытым коллекторам прибора.
+* arme y desarme de objetos por horario;
+* arme y desarme de varias particiones al mismo tiempo;
+* visualización del estado de la partición en el avisador óptico;
+* activación de avisadores acústicos, conectados a los colectores abiertos del equipo;
+* control de dispositivos exteriores, conectados a los colectores abiertos del equipo.
 
-При переходе на вкладку «Автоматика» вверху окна отображаются кнопки, с помощью которых можно сконфигурировать правила.
 
-\imgcapt{img/06-13-config-automation-01.png}{Кнопки для создания правил, вкладка «Автоматика»}
+Al pasar a la pestaña "Sistema automático" arriba en la ventana se muestran los botones con los cuales se pueden configurar las reglas.
 
-> В прибор уже заложена логика работы со световыми и звуковыми оповещателями. Для настройки открытых коллекторов, к которым подключены оповещатели, нужно использовать кнопки «Маяк...» или «Сирена...», в зависимости от типа оповещателя.
+\imgcapt{img/06-13-config-automation-01.png}{Botones para la creación de reglas, pestaña "Sistema automático"}
 
-При создании правил важно помнить следующие утверждения:
+> En el equipo ya está incluida la lógica de funcionamiento con avisadores ópticos y acústicos. Para la configuración de los colectores abiertos, a los cuales están conectados los avisadores, hay que usar los botones "Notificador..." o "Sirena...", dependiendo del tipo del avisador.
 
-* Если коллектор используется для подключения других устройств (например, БВИ), то он не может использоваться больше нигде, включая удаленное управление, которое появится немного позже.
-* Если коллектор уже используется для ролей (Маяк, Сирена), то он не может использоваться больше нигде.
-* Если к прибору подключен РПШ-12 и шлейф расширителя включен в настройках прибора, то коллектор-на-шлейфе нельзя использовать для правил автоматики или для ролей.
-* Всего можно создать 8 правил с ролью «Маяк» или «Сирена». Причем эти правила не зависят от количества стандартных правил автоматики.
+Al crear las reglas es importante recordar las siguientes afirmaciones:
 
-### Маяк
+* Si el colector se usa para la conexión de otros dispositivos (por ejemplo, bloque de comunicación remota), entonces no se puede usar en ningún otro sitio, incluyendo el control remoto que aparecerá un poco más tarde.
+* Si el colector ya se usa para los roles (notificador, sirena), no puede usarse en ningún otro sitio.
+* Si al equipo está conectado el EW-12 y la zona del expansor está activada en la configuración del dispositivo, el colector en la zona no se puede usar para las reglas del sistema automático o para otros roles.
+* En total se pueden crear 8 reglas con el rol "Notificador" o "Sirena". Es de notar que estas normas no dependen de la cantidad de reglas estándares del sistema automático.
 
-#### Подключение светового оповещателя
 
-Для того чтобы подключить маяк к прибору, нужно:
+### Notificador
 
-* «Плюсовой» кабель оповещателя подключить к любому плюсовому выходу контрольной панели, например, к выходу для питания клавиатуры или шлейфов. 
-* «Минусовой» кабель оповещателя должен быть подключен к одному из семи открытых коллекторов: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
+#### Conexión del avisador óptico
 
-\imgcapt{img/06-13-config-automation-03.png}{Подключение светового оповещателя к прибору}
+Para conectar el notificador al equipo, hay que hacer lo siguiente:
 
-Если к Норду подключен расширитель РПШ-12, то можно задействовать клеммы «Z1» - «Z8» расширителя.   
-К приборам можно подключить любой световой оповещатель с напряжением питания 12 В. Максимальный коммутируемый ток не должен превышать 250 мА.
+* El cable "Positivo" del avisador conectarlo a cualquier salida positiva del panel de control, por ejemplo a la salida para la alimentación del teclado o las zonas.
+* El cable "Negativo" del avisador debe conectarse a uno de los siete colectores abiertos: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
-#### Настройка правила
 
-Для светового оповещателя, который индицирует состояние объекта или раздела нужно настроить правило с ролью «Маяк». Для создания правила во вкладке «Автоматика» следует нажать кнопку «Маяк» и выбрать выход, к которому подключен оповещатель. 
-В случае если на приборе сконфигурированно несколько разделов, то при создании правила можно указать раздел, для которого маяк будет отображать состояние.
+\imgcapt{img/06-13-config-automation-03.png}{Conexión del avisador óptico al dispositivo}
 
-\imgcapt{img/06-13-config-automation-02.png}{Создание правила «Маяк»}
+Si al Nord está conectado el expansor EW-12, se pueden incorporar los bornes «Z1» - «Z8» del expansor.
+A los equipos se puede conectar cualquier avisador óptico con una tensión de alimentación de 12 V. La corriente máxima conmutada no debe superar los 250 mA.
 
-#### Описание работы оповещателя
 
-Если правило «Маяк» настроено для отображения состояния раздела:
+#### Configuración de la regla
 
-* Маяк непрерывно горит, если раздел поставлен на охрану;
-* Маяк не горит, если раздел снят с охраны;
-* Маяк мигает, если раздел в тревоге;
-* Маяк мигает двойными вспышками во время задержки на выход.
+Para el avisador óptico que indica el estado del objeto o la partición hay que configurar la regla con el rol "Notificador". Para crear la regla en la pestaña "Sistema automático" hay que pulsar el botón "Notificador" y seleccionar la salida a la cual está conectado el avisador. 
+Si en el equipo hay varias particiones configuradas, al crear la regla hay que indicar la partición para la cual el informador reflejará el estado.
 
-Если правило «Маяк» настроено для отображения состояния объекта: 
+\imgcapt{img/06-13-config-automation-02.png}{Creación de la regla "Notificador"}
 
-* Маяк непрерывно горит, если все разделы взяты под охрану;
-* Маяк не горит, если хотя бы один из разделов снят с охраны;
-* Маяк мигает, если есть хотя бы один раздел в тревоге;
-* Маяк мигает двойными вспышками во время задержки на выход.
+#### Descripción del funcionamiento del avisador
 
-### Сирена
+Si la regla "Notificador" está configurada para mostrar el estado de la partición:
 
-#### Подключение звукового оповещателя
+* El Notificador permanece encendido permanentemente, si la partición está armada;
+* El Notificador no está encendido si la partición está desarmada;
+* El Notificador parpadea si la partición está en situación de alarma;
+* El Notificador parpadea con destellos dobles durante el retraso de la salida.
 
-Подключение сирены на открытый коллектор осуществляется следующим образом:
 
-* «Плюсовой» кабель оповещателя может быть подключен к любому плюсовому выходу контрольной панели, например, к выходу для питания клавиатуры или шлейфов. 
-* «Минусовой» кабель оповещателя должен быть подключен к одному из семи открытых коллекторов: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
+Si la regla "Notificador" está configurada para mostrar el estado del objeto:
 
-Если к Норду подключен расширитель РПШ-12, то можно задействовать клеммы «Z1» - «Z8» расширителя.   
-К приборам можно подключить любой световой оповещатель с напряжением питания 12 В. Максимальный коммутируемый ток не должен превышать 250 мА.
+* El Notificador permanece encendido permanentemente, si todas las particiones están armadas;
+* El Notificador no está encendido si aunque sea una de las particiones está desarmada;
+* El Notificador parpadea si aunque sea una de las particiones está en situación de alarma;
+* El Notificador parpadea con destellos dobles durante el tiempo de retraso de la salida
 
-#### Настройка правила
 
-Для звукового оповещателя нужно настроить правило с ролью «Сирена». Для создания правила во вкладке «Автоматика» следует нажать кнопку «Сирена» и выбрать выход, к которому она подключена. 
+### Sirena
 
-\imgcapt{img/06-13-config-automation-04.png}{Создание правила «Сирена»}
+#### Conexión del avisador acústico
 
-Сирена подключенная на открытый коллектор отличается от сирены, подключенной на одноименный выход «Сирена» тем, что в первом случае прибор не контролирует состояние этой линии.
-Для настройки параметров звучания сирены нужно перейти в блок [Сирена](#config-misc-siren) вкладки Разное.
+La conexión de la sirena al colector abierto se realiza de la siguiente forma:
 
-### Другое
+* El cable "Positivo" del avisador puede ser conectado a cualquier salida positiva del panel de control, por ejemplo a la salida para la alimentación del teclado o las zonas.
+* El cable "Negativo" del avisador debe conectarse a uno de los siete colectores abiertos: FIRE, DEFECT, LED_G, LED_Y, FIRE2, DEFECT2, DISABL.
 
-Помимо предустановленных правил, в приборе можно создать до 16 других правил. При наступлении указанных в правиле условий прибор может выполнить взятие или снятие с охраны одного или всех разделов, замкнуть или разомкнуть дискретный выход, а также начать периодическое замыкание и размыкание дискретного выхода с заданным интервалом.
 
-\imgcapt{img/06-13-config-automation-05.png}{Окно создания правила}
+Si al Nord está conectado el expansor EW-12, se pueden incorporar los bornes «Z1» - «Z8» del expansor. 
+A los equipo se puede conectar cualquier avisador óptico con una tensión de alimentación de 12 V. La corriente máxima conmutada no debe superar los 250 mA.
 
-#### Настройка правила
+#### Configuración de la regla
 
-Рассмотрим настройку правил на конкретном примере.
+Para el avisador acústico hay que configurar la regla con el rol "Notificador". Para crear la regla en la pestaña "Sistema automático" hay que pulsar el botón "Notificador" y seleccionar la salida a la cual está conectada la sirena.
 
-_Задача_
+\imgcapt{img/06-13-config-automation-04.png}{Creación de la regla "Sirena"}
 
-Настроить взятие раздела №1 под охрану по расписанию в 19 часов 30 минут по вторникам и средам.
+La sirena conectada al colector abierto se diferencia de la sirena conectada a la salida del mismo nombre "Sirena" ya que en el primer caso el equipo no controla el estado de esta línea. Para configurar los parámetros del sonido de la sirena hay que ir al bloque [Sirena](#config-misc-siren) de la pestaña Varios.
 
-_Решение_
+### Varios
 
-Для решения поставленной задачи необходимо создать действие, выполняющее взятие раздела под охрану по расписанию.
+Aparte de las reglas predeterminadas, en el equipo se pueden crear hasta 16 otras reglas. Al darse las condiciones especificadas en la regla, el equipo puede realizar el arme y el desarme de una o varias particiones, cerrar o abrir la salida discreta, así como empezar el cierre o la apertura periódica de la salida discreta con el intervalo especificado.
 
-1. На вкладке «Автоматика» нажать кнопку «Другое».
-2. В поле «Действие» из выпадающего списка выберите значение «Взять под охрану».
-3. В поле «Раздел» выберите значение «1».
-4. В поле «Условие» выберите значение «по расписанию».
-5. С помощью выпадающих меню в поле «Время» установите значение «19:30».
-6. В поле «День недели» выберите значение «указать». В появившемся при этом списке дней недели оставьте галочки в чек-боксах «вт» и «ср». В остальных чек-боксах галочки снимите.
+\imgcapt{img/06-13-config-automation-05.png}{Ventana de creación de la regla}
 
-\imgcapt{img/06-13-config-automation-06.png}{Окно создания правила}
+#### Configuración de la regla
 
-7. Нажмите «ОК» для сохранения правила. Правила вступят в силу после записи настроек в прибор.
+Analizaremos la configuración de las reglas en un ejemplo en concreto.
 
-\imgcapt{img/06-13-config-automation-07.png}{Все созданные правила}
+*Objetivo*
 
-В данном примере рассматривается автоматическое взятие под охрану, однако в качестве действия можно указать снятие объекта с охраны. В таком случае объект будет сниматься с охраны по заданному расписанию. Так же можно настроить автоматическое замыкание или/и размыкание дискретных выходов прибора.
+Configurar el arme de la partición №1 por horario a las 19 horas 30 minutos los martes y los miércoles.
 
-Настроить взятие под охрану всех разделов объекта можно с помощью значения «Все разделы» поля «Раздел». Чтобы настроить взятие под охрану нескольких конкретных разделов, для каждого из них следует выполнить настройку взятия отдельно.
+*Solución*
 
-Взятие под охрану можно задать для определенных дней недели, как в рассмотренном примере; для каждого дня; только для будних дней (с понедельника по пятницу); а также - только для выходных.
+Para la solución del objetivo planteado hay que crear una acción que realice el arme de la partición por horario.
 
-Автоматическое взятие под охрану, как и любое другое действие, можно осуществить не только по расписанию, но и по событию. В этом случае нужно знать код события, которое будет использоваться в правиле.
+1. En la pestaña "Sistema automático" pulsar el botón "Varios".
+2. En el campo "Acción" de la lista emergente seleccionar el valor "Armar el sistema de seguridad"
+3. En el campo "Partición" seleccionar el valor "1".
+4. En el campo "Condición" seleccionar el valor "por horario".
+5. Mediante los menús emergentes en el campo "Tiempo" establecer el valor «19:30».
+6. En el campo "Día de semana" seleccionar el valor "indicar". En la lista de días de semana que apareció dejar marcadas las casillas "m" y "x". Desmarcar las demás casillas.
+
+
+\imgcapt{img/06-13-config-automation-06.png}{Ventana de creación de la regla}
+
+7. Pulse "OK" para guardar la regla. Las reglas entrarán en vigor después de guardar la configuración en el equipo.
+
+\imgcapt{img/06-13-config-automation-07.png}{Todas las normas creadas}
+
+En el presente ejemplo se analiza el arme automático del sistema de seguridad, sin embargo en calidad de acción se puede indicar el desarme del sistema de seguridad del objeto. En este caso, el objeto se desarmará según el horario especificado. También se puede configurar el cierre y/o apertura automática de las salidas discretas del equipo. 
+
+Se puede configurar el arme de todas las particiones del objeto mediante el valor "Todas las particiones" el campo "Partición". Para configurar el arme de varias particiones determinadas, para cada una hay que realizar la configuración del arme por separado.
+
+El arme se puede asignar para días determinados de la semana, como en el ejemplo expuesto; para cada día; sólo para los días de semana (de lunes a viernes); también - sólo para los fines de semana.
+
+El arme automático, al igual que cualquier otra acción, puede realizarse no sólo por horario, sino también por evento. En este caso hay que conocer el código del evento que se usará en la regla.

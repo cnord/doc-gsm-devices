@@ -1,45 +1,46 @@
 \pagebreak
 
-## Радио {#config-radio}
+## Radio {#config-radio}
 
-«Норд GSM» может передавать событий на пульт охраны не только по каналам GSM и Ethernet, но и по радиоканалу. Передача по радио может осуществляться как в режиме дублирования, когда все события всегда отправляются по радио, так и в режиме резервирования, когда события по радио передаются в том случае, если IP-связь с пультом охраны отсутствует.
+"Nord GSM" puede transmitir eventos a la consola de seguridad no sólo a través de los canales GSM y Ethernet, sino también por el canal de radio. La transmisión por radio puede realizarse en modo duplicado, cuando todos los eventos siempre se envían por radio, tanto en modo de reserva, cuando los eventos por radio se transmiten si no hay comunicación IP con la consola de seguridad.
 
-> Передача по радио выполняется *только* в протоколе «EPAF», поддержка протокола «PAF» не предусмотрена.
+> La transmisión por radio se realiza *sólo* en el protocolo «EPAF», el protocolo «PAF» no se soporta.
 
-### Настройки радиоканала
+### Configuración del canal de radio
 
-\imgcapt{img/06-09-config-nord-01.png}{Вкладка «Радио», раздел «Настройки радиоканала»}
+\imgcapt{img/06-09-config-nord-01.png}{Pestaña "Radio", apartado "Configuración del canal de radio"}
 
-В разделе «Настройки радиоканала» задаются параметры, которые будет использовать прибор при передаче событий по радио.
+En el apartado "Configuración del canal de radio se asignan los parámetros que usará el equipo al transmitir eventos por radio.
 
-С помощью значения для параметра «Режим использования» можно указать режим, в котором будет осуществляться передача по радио:
+Mediante el valor para el parámetro "Modo de uso" se puede especificar el modo en el cual se realiza la transmisión por radio:
 
-* «Передатчик не подключен» – передача по радио осуществляться не будет;
-* «Передавать при отсутствии IP-связи» – передача по радио будет выполняться только в том случае, если у прибора нет подключения к пульту охраны по IP-каналам связи (Ethernet или GPRS);
-* «Передавать всегда» – все события, сформированные прибором, будут всегда передаваться по радио.
+* "Transmisor no conectado" - no se realizará la transmisión por radio;
+* "Transmitir si no hay comunicación IP" - la transmisión por radio se realizará sólo si el equipo no tiene conexión a la consola de seguridad a través de los canales de comunicación IP (Ethernet o GPRS);
+* "Trasmitir siempre" - todos los eventos creados por el equipo siempre se transmitirán por radio.
 
-Параметр «Формат станции» задает ключ, который используется при кодировании посылок при передаче по радио. Формат для каждой станции «CMS-420» / «Sentinel» задается производителем при поставке станции и указан в её сопроводительной документации.
+El parámetro "Formato de la estación" asigna la clave que se usa al realizar la codificación de los envíos al enviar por radio. El formato para cada estación «CMS-420» / «Sentinel» se asigna por el fabricante al suministrar la estación y está indicado en su documentación adjunta.
 
-Поскольку при передаче по радио нет подтверждений о приеме событий со стороны станции, объектовый прибор передает одно и то же сообщение многократно. Закодированная для передачи по радио информация, соответствующая событию, называется кадром. Несколько кадров, которые передаются подряд, без паузы между ними, называются пакетом. Несколько пакетов, которые отправляются на станцию с паузой между ними, называются посылкой. Таким образом, при передаче по радио, каждое событие будет передано в виде одной посылки, параметры для формирования которой можно задать.
+Debido a que durante la transmisión por radio no hay confirmaciones de recepción de eventos por parte de la estación, el equipo del objeto transmite el mismo evento muchas veces. La información codificada para la transmisión por radio que corresponde al evento se llama secuencia. Varias secuencias que se transmiten en serie, sin pausa entre ellas, se llaman paquete. Varios paquetes que se envían a la estación con pausa entre ellos se llaman envío. De esta forma, al transmitir por radio, cada evento se transmitirá en forma de un envío, los parámetros para crear el cual se pueden especificar.
 
-Для контроля работоспособности канала передачи по радио предназначен параметр «Интервал передачи тестов». С его помощью можно задать максимальный интервал, по истечении которого от прибора должно быть получено любое событие по радио. Этот интервал всегда отсчитывается от последнего события, которые было передано по радио. В случае, если по истечению интервала не будет событий, которые необходимо передать по радио, будет сформировано и передано тестовое событие. 
+Para controlar el funcionamiento del canal de transmisión por radio sirve el parámetro "Intervalo de transmisión de pruebas". Mediante este parámetro se puede asignar el intervalo máximo, al transcurrir el cual, del equipo debe recibirse cualquier evento por radio. Este intervalo siempre se cuenta a partir del último evento que fue transmitido por radio. Si al transcurrir el intervalo no habrá eventos que hay que transmitir por radio, se creará y se transmitirá un evento de prueba.
 
-> Необходимо понимать, что тестовые события с заданным интервалом передаются вне зависимости от наличия IP-связи с пультом охраны: даже если канал передачи по радио используется как резервный, и передача *событий* по радио осуществляется только при отсутствии IP-связи с пультом охраны, тестовые события будут передаваться с заданным интервалом. 
+> Hay que entender que los eventos de prueba con intervalo establecido se transmiten independientemente de la existencia de comunicación IP con la consola de seguridad: incluso si el canal de transmisión por radio se usa como de reserva y la transmisión de eventos por radio se realiza sólo si no hay comunicación IP con la consola de seguridad, los eventos de prueba se transmitirán con el intervalo especificado.
 
-### Объектовые номера разделов
+### Números de particiones de los objetos
 
-\imgcapt{img/06-09-config-nord-02.png}{Вкладка «Радио», раздел «Объектовые номера разделов»}
+\imgcapt{img/06-09-config-nord-02.png}{Pestaña "Radio", apartado "Números de particiones de los objetos"}
 
-Поскольку протокол передачи по радио не позволяет использовать номера разделов, для каждого раздела контрольной панели необходимо указать объектовый номер, который будет использоваться при передаче по радио. 
+Debido a que el protocolo de transmisión por radio no permite usar los números de las particiones, para cada partición del panel de control hay que especificar un número de objeto que se usará al transmitir por radio.
 
-Настоятельно рекомендуется указывать такие объектовые номера разделов, чтобы они не совпадали ни с номером объекта, который задается на вкладке «Центр охраны», ни с объектовыми номерами других разделов. Это нужно для того, чтобы события сформированные по разделу, можно было отличить от служебных событий, сформированных прибором, а кроме того, от событий, сформированных другим разделом.
+Recomendamos insistentemente especificar tales números de particiones de los objetos, que no coincidan ni con el número del objeto que se asigna en la pestaña "Security Center", ni con los números de objetos de otras particiones. Esto hace falta para que los eventos creados por la partición puedan diferenciarse de los eventos de servicio, creados por el equipo, y aparte de esto, de los eventos creados por otra partición.
 
-### Прибор в металлическом корпусе
+### Equipo en cuerpo metálico
 
-Если предполагается, что контрольная панель будет работать по радио, то она поставляется в металлическом корпусе. 
-С одной стороны, металлический корпус имеет большие габариты по сравнению с пластиковым. Но с другой стороны эти габариты дают ему целый ряд преимуществ, в том числе и при использовании радиоканала:
+Si se prevé que el panel de control funcionará por radio, se suministrará en cuerpo metálico. 
+Por una parte, el cuerpo metálico tiene grandes dimensiones en comparación con el cuerpo de plástico. Pero por otra parte, estas dimensiones le ofrecen una serie de ventajas, inclusive al usar el canal de radio:
 
-* есть место для установки радиопередатчика;
-* сам корпус служит противовесом для штыревой антенны;
-* предусмотрена возможность установки проводного расширителя и беспроводного расширителя «СН-РАДИО». Таким образом, к прибору «Норд GSM» в металлическом корпусе можно подключить до 16 проводных шлейфов и до 31 беспроводного устройства;
-* можно установить АКБ большей емкости – до 7.2 А*ч.
+* hay sitio para la instalación del transmisor de radio;
+* el cuerpo mismo sirve de contrapeso para la antena de látigo;
+* se prevé la posibilidad de instalar un expansor por cable y un expansor inalámbrico «CN-RADIO». De esta forma, al equipo "Nord GSM" en cuerpo metálico se pueden conectar hasta 16 zonas por cable y hasta 31 dispositivo inalámbrico;
+* se puede instalar una batería de mayor capacidad - hasta 7.2 A * h.
+

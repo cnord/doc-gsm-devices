@@ -2,15 +2,15 @@
 
 ## Ethernet {#config-eth}
 
-Вкладка предназначена для отображения и изменения настроек подключения по сети Ethernet.
+La pestaña sirve para mostrar y cambiar la configuración de la conexión a través de la red Ethernet.
 
-Вкладка «Ethernet» отображается в конфигураторе только в том случае, если устройство «Адаптер Ethernet» подключено к прибору.
+La pestaña "Ethernet" se muestra en el configurador sólo si el dispositivo «Adaptador Ethernet» está conectado al equipo.
 
-На вкладке отображается MAC-адрес, который используется устройством «Адаптер Ethernet». Эта информация может быть полезной, если настройки для подключения к публичной сети выполняются индивидуально для каждого устройства.
+En la pestaña se muestra la dirección MAC que se usa por el dispositivo «Adaptador Ethernet». Esta información puede ser útil, si la configuración para la conexión a la república se realiza de forma individual para cada dispositivo.
 
-\imgcapt{img/06-11-config-eth-01.png}{Вкладка «Ethernet», включен режим получения настроек от сервера DHCP.}
+\imgcapt{img/06-11-config-eth-01.png}{Pestaña "Ethernet", activado el modo de recepción de configuraciones del servidor DHCP.}
 
-Кроме того, если в сети, к которой подключен прибор, отсутствует сервер DHCP, который обеспечивает автоматическую настройку параметров подключения к сети, эти параметры можно задать вручную, явно указав IP-адрес, который должен использовать прибор, маску подсети, которой он принадлежит, IP-адрес шлюза, который должен использоваться для доступа к публичной сети, а также IP-адреса серверов DNS.
+Aparte de esto, si la red a la cual está conectado el equipo no dispone de un servidor DHCP que proporciona la configuración automática de los parámetros de conexión a la red, estos parámetros se pueden asignar manualmente, indicando expresamente la dirección IP que debe usar el equipo, la máscara de subred a la cual pertenece el equipo, la dirección IP de la puerta de enlace que debe usarse para el acceso a la red pública, así como la dirección IP de los servidores DNS.
 
-\imgcapt{img/06-11-config-eth-02.png}{Вкладка «Ethernet», установка настроек сети вручную.}
+\imgcapt{img/06-11-config-eth-02.png}{Pestaña "Ethernet", configuración manual de la red.}
 

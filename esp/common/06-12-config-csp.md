@@ -1,12 +1,10 @@
 \pagebreak
 
-## Операторы GSM {#config-csp}
+## Operadores GSM {#config-csp}
 
-С помощью вкладки «Операторы GSM» в прибор записывается информация необходимая для корректной работы sim-карт в сети GSM.
+Mediante la pestaña "Operadores GSM" en el equipo se graba la información necesaria para el correcto funcionamiento de las tarjetas SIM en la red GSM.
 
-\imgcapt{img/06-12-config-csp-01.png}{Вкладка «Операторы GSM», настройки оператора.}
+\imgcapt{img/06-12-config-csp-01.png}{Pestaña "Operadores GSM", configuraciones del operador.}
 
 
-По умолчанию в конфигураторе перечислены наиболее распространённые операторы связи. Перед запуском прибора по GSM важно убедиться, что параметры SIM-карты, используемой в приборе, указаны.
-В случае если в перечисленных блоках нет параметров для выбранного оператора связи, их нужно указать самостоятельно, заполнив поля _Название, PLMN, Точка доступа, Имя пользователя, пароль_. Все эти параметры прибор может запросить у SIM-карты во время регистрации в сети.
-
+De forma predeterminada en el configurador se enumeran los operadores de comunicación más extendidos. Antes de iniciar el equipo por GSM es importante asegurarse que están especificados los parámetros de la tarjeta SIM que se usa en el equipo. Si en los bloques enumerados no figuran los parámetros para el operador de comunicación seleccionando, hay que indicarlos manualmente, rellenando los campos *Nombre, PLMN, Punto de acceso, Nombre de usuario, Contraseña*. Todos estos parámetros el equipo puede solicitarlos a la tarjeta SIM durante el registro en la red.
