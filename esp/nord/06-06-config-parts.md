@@ -5,7 +5,7 @@
 En la pestaña "Particiones" se realiza la configuración de las particiones del objeto. 
 En el dispositivo se pueden crear hasta 32 particiones con la posibilidad de su arme y desarme independiente.
 
-\imgcapt{img/06-06-config-nord-01.png}{Pestaña "Particiones"}
+\imgcapt{img/06-06-config-nord-01.png}{Pestaña «Particiones»}
 
 Para crear una partición hay que pulsar el botón "Añadir partición". A cada partición se le asigna su número, los números se generan de forma consecutiva de 1 a 32. 
 Para cada partición existe el botón "Añadir zona" y "Añadir código", ubicadas en la segunda y tercera columna correspondientemente.

@@ -2,13 +2,13 @@
 
 Mediante este apartado se pueden configurar los parámetros para la protección contra acceso no sancionado e introducción de cambios malintencionados en los parámetros de los equipos.
 
-\imgcapt{img/06-07-config-nord-07-01.png}{Pestaña "Varios", apartado "Protección de la configuración"}
+\imgcapt{img/06-07-config-nord-07-01.png}{Pestaña «Varios», apartado «Protección de la configuración»}
 
 #### Contraseña para acceder al equipo
 
 Una autentificación obligatoria a través de la contraseña al conectarse al equipo por USB es una forma más de garantizar la seguridad. De forma predeterminada la contraseña para la conexión al equipo por USB es **0000**. Para elevar la seguridad, hay que cambiar la contraseña de acceso estándar por una nueva. La longitud de la contraseña puede ser de 4 a 16 números. Se recomienda establecer una contraseña compuesta de la máxima cantidad permitida de números.
 
-\imgcapt{img/06-07-config-nord-07-02.png}{Pestaña "Varios", apartado "Protección de la configuración", diálogo para cambiar la contraseña para acceder al equipo.}
+\imgcapt{img/06-07-config-nord-07-02.png}{Pestaña «Varios», apartado «Protección de la configuración», diálogo para cambiar la contraseña para acceder al equipo.}
 
 Si la contraseña fue pérdida y no es posible conectarse al equipo de forma remota, sólo se puede recuperar el acceso al equipo reseteando los valores de todos sus parámetros a los parámetros de fábrica. Con ello serán eliminadas todas las configuraciones del equipo, incluyendo las zonas, los usuarios, las particiones, etc., y la contraseña para la conexión al equipo por USB volverá al valor predeterminado.
 
@@ -34,6 +34,6 @@ Si esta función está activada y los cambios fueron guardados en el equipo, par
 
 Antes de guardar la configuración en el equipo se muestra la advertencia:
 
-\imgcapt{img/06-07-config-nord-07-04.png}{Pestaña "Varios", apartado "Protección de la configuración", advertencia de activación de la "Protección de cambio de servicio".}
+\imgcapt{img/06-07-config-nord-07-04.png}{Pestaña «Varios», apartado «Protección de la configuración», advertencia de activación de la "Protección de cambio de servicio".}
 
 La función "protección de cambio de servicio" puede activarse al conectar por USB y también bajo programación remota. La función "Protección de cambio de servicio" se puede desconectar únicamente poniéndose en [contacto con el soporte técnico](mailto:support@cnord.com) mediante una solicitud oficial a "C-Nord".

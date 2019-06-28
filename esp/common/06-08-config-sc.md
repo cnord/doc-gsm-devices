@@ -6,7 +6,7 @@ En la pestaña "Security Center" se pueden indicar los parámetros que usará el
 
 ### Identificación del equipo
 
-\imgcapt{img/06-08-config-common-01.png}{Pestaña "Security center", apartado "Identificación"}
+\imgcapt{img/06-08-config-common-01.png}{Pestaña «Security center», apartado «Identificación»}
 
 En el apartado "Identificación" se puede especificar el número del objeto que se usará durante la transmisión de eventos desde el equipo.
 
@@ -23,11 +23,11 @@ Para que los eventos desde el equipo se procesen correctamente por el software d
 * antes de la primera conexión del equipo al software del "Security Center" hay que asegurarse que el valor en el campo "Identificador" en la pestaña "Equipos" no está asignado.
 
 
-\imgcapt{img/06-08-config-common-02.png}{Módulo "Administrador de objetos", pestaña "Equipos"}
+\imgcapt{img/06-08-config-common-02.png}{Módulo «Administrador de objetos», pestaña «Equipos»}
 
 ### Parámetros de transmisión por GPRS
 
-\imgcapt{img/06-08-config-common-03.png}{Pestaña "Security Center", apartado "Transmisión por TCP/IP (GPRS)"}
+\imgcapt{img/06-08-config-common-03.png}{Pestaña «Security Center», apartado «Transmisión por TCP/IP (GPRS)»}
 
 En el apartado "Transmisión por TCP/IP (GPRS)" se pueden asignar hasta dos pares "dirección:puerto", que se usarán por el equipo al conectarse a la consola de seguridad a través de los canales GSM/GPRS.
 
@@ -47,7 +47,7 @@ Para recibir eventos del equipo a través de los canales TCP/IP (GSM/GPRS y Ethe
 
 Para abrir la ventana de configuración del servicio de las fuentes de eventos hay que seleccionar el punto "Fuentes de eventos (servicios)..." en el menú contextual que aparecerá al pulsar el botón derecho del ratón sobre el icono del módulo en la parte del sistema del panel de tareas.
 
-\imgcapt{img/06-08-config-common-04.png}{Menú contextual del módulo "Administrador de eventos"}
+\imgcapt{img/06-08-config-common-04.png}{Menú contextual del módulo «Administrador de eventos»}
 
 Para añadir la fuente de eventos de «C-Nord GSM (CML)» al servicio de fuentes de eventos, hay que pulsar el botón "Añadir" y seleccionar el punto, fuente correspondiente, en el menú que aparezca.
 
@@ -67,7 +67,7 @@ Partiendo de lo especificado *recomendamos insistentemente* usar precisamente el
 
 ### Parámetros de transmisión por Ethernet
 
-\imgcapt{img/06-08-config-common-07.png}{Pestaña "Security Center", apartado "Transmisión por TCP/IP (Ethernet)"}
+\imgcapt{img/06-08-config-common-07.png}{Pestaña «Security Center», apartado «Transmisión por TCP/IP (Ethernet)»}
 
 En el apartado "Transmisión por TCP/IP (Ethernet)", al igual que en el anterior apartado se pueden asignar dos pares "dirección:puerto", que se usarán por el dispositivo al conectarse a la consola de seguridad a través del canal Ethernet. Todos los comentarios hechos en relación a los pares "dirección:puerto" en la descripción del apartado "Transmisión por TCP/IP (GPRS)" se extienden también sobre los parámetros en el apartado "Transmisión por TCP/IP (Ethernet)".
 
@@ -79,7 +79,7 @@ El apartado "Transmisión por TCP/IP (Ethernet)" se muestra en el configurador s
 
 ### Parámetros de transmisión en el canal CSD GSM
 
-\imgcapt{img/06-08-config-common-08.png}{Pestaña "Security Center", apartado "Transmisión en el canal CSD GSM"}
+\imgcapt{img/06-08-config-common-08.png}{Pestaña «Security Center», apartado «Transmisión en el canal CSD GSM»}
 
 En el apartado "Transmisión en el canal CSD GSM" se pueden especificar los números de teléfonos que se usarán para llamar a la consola de seguridad al transmitir eventos en el canal CSD GSM.
 
@@ -98,7 +98,7 @@ En calidad de equipo para la recepción de eventos por el canal CSD puede usarse
 
 ### Parámetros de transmisión en el canal de voz GSM
 
-\imgcapt{img/06-08-config-common-09.png}{Pestaña "Security Center", apartado "Transmisión en el canal de voz GSM"}
+\imgcapt{img/06-08-config-common-09.png}{Pestaña «Security Center», apartado «Transmisión en el canal de voz GSM»}
 
 En el apartado "Transmisión en el canal de voz GSM" se pueden especificar los números de teléfonos que se usarán para llamar a la consola de seguridad al transmitir eventos en el canal de voz GSM. La transmisión en el canal de voz se realiza mediante las señales analógicas DTMF, en calidad de protocolo informático se usa Ademco Contact ID.
 
@@ -114,7 +114,7 @@ Para recibir eventos del equipo a en el canal GSM por voz hay que usar un equipo
 
 ### Parámetros de transmisión por SMS
 
-\imgcapt{img/06-08-config-common-10.png}{Pestaña "Security Center", apartado "Transmisión por SMS"}
+\imgcapt{img/06-08-config-common-10.png}{Pestaña «Security Center», apartado «Transmisión por SMS»}
 
 En el apartado "Transmisión por SMS " se pueden especificar los números de teléfonos que se usarán para la transmisión de eventos a la consola de seguridad mediante el canal SMS.
 

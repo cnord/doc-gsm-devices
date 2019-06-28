@@ -40,9 +40,9 @@ En la parte izquierda de la ventana principal del configurador se ubica el panel
 
 En la pestaña "Zonas" se realiza la configuración de los parámetros de las zonas por cable conectadas al equipo.
 
-La pestaña "Dispositivos inalámbricos" sirve para conectar al equipo dispositivos - notificadores inalámbricos, llaveros, teclados y retransmisores. Esta pestaña se muestra en el configurador sólo si al equipo está conectado un expansor inalámbrico.
+La pestaña «Dispositivos inalámbricos» sirve para conectar al equipo dispositivos - notificadores inalámbricos, llaveros, teclados y retransmisores. Esta pestaña se muestra en el configurador sólo si al equipo está conectado un expansor inalámbrico.
 
-Los códigos de usuarios que armarán y desarmarán el sistema de seguridad del equipo se pueden establecer en la pestaña "Usuarios". Aquí también se pueden asignar al usuario una o varias llaves TM, así como especificar el llavero inalámbrico entregado al usuario. 
+Los códigos de usuarios que armarán y desarmarán el sistema de seguridad del equipo se pueden establecer en la pestaña «Usuarios». Aquí también se pueden asignar al usuario una o varias llaves TM, así como especificar el llavero inalámbrico entregado al usuario. 
 
 En la pestaña "Particiones" se puede realizar la configuración de las particiones del objeto. En esta pestaña se pueden especificar las zonas por cable y zonas inalámbricas conectadas a determinadas particiones, así como especificar los usuarios que pueden armar o desarmar el sistema de seguridad de las particiones.
 

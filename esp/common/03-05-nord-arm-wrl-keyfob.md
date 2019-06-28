@@ -5,10 +5,10 @@ El equipo se puede controlar o informarse sobre su estado a través del teclado 
 
 * Quitar la tapa del teclado.
 * Conectar la alimentación - la alimentación del teclado se realiza a través de dos baterías de litio de tipo CR123A (principal y de reserva). Para cambiar las baterías hay que abrir la tapa de la sección de baterías, instalar primero la batería de reserva y a continuación la principal.
-* En el configurador del equipo ir a la pestaña "Dispositivos inalámbricos" y pulsar el botón "Añadir dispositivo inalámbrico".
+* En el configurador del equipo ir a la pestaña «Dispositivos inalámbricos» y pulsar el botón "Añadir dispositivo inalámbrico".
 * Cambiar el teclado al modo "Unión". Para ello hay que cruzar los contactos "Reseteo", ubicados en la placa del dispositivo. Mediante destellos del LED verde, "CN-K" confirmará el cambio al modo de "Unión".
 
-(Más información en el apartado 5.3. Dispositivos inalámbricos)
+(Más información en el apartado 5.3. «Dispositivos inalámbricos»)
 
 
 \imgcapt{img/03-05-cn-k.png}{Sección de baterías del teclado CN-K}

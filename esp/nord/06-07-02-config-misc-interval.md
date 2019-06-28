@@ -1,6 +1,6 @@
 ### Intervalos
 
-\imgcapt{img/06-07-config-nord-01.png}{Pestaña "Varios", apartado "Intervalos"}
+\imgcapt{img/06-07-config-nord-01.png}{Pestaña «Varios», apartado «Intervalos»}
 
 #### Intervalo de repetición de alarmas
 

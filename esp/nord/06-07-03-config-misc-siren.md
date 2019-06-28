@@ -1,6 +1,6 @@
 ### Sirena {#config-misc-siren}
 
-\imgcapt{img/06-07-config-nord-02.png}{Pestaña "Varios", apartado "Sirena"}
+\imgcapt{img/06-07-config-nord-02.png}{Pestaña «Varios», apartado «Sirena»}
 
 #### Sirena conectada
 

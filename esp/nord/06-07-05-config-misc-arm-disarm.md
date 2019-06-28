@@ -2,7 +2,7 @@
 
 En este apartado se pueden especificar diferentes parámetros que influirán en el proceso de arme del sistema de seguridad y desarme del sistema de seguridad.
 
-\imgcapt{img/06-07-config-nord-04.png}{Pestaña "Varios", apartado "Arme y desarme"}
+\imgcapt{img/06-07-config-nord-04.png}{Pestaña «Varios», apartado «Arme y desarme»}
 
 #### Prohibir el arme en caso de alarma en las zonas con retraso de salida
 

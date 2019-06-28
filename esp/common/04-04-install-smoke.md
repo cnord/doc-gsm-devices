@@ -16,4 +16,4 @@ Si no se requiere el reseteo de la alimentación de los avisadores de incendio, 
 
 Los avisadores de incendio de humo de dos cables se conectan al equipo sólo a través del dispositivo de coordinación "EF-2", que permite conectar avisadores de dos cables por un esquema de cuatro cables.
 
-\imgcapt{img/04-04-ppsh-2.png}{Esquema de conexión de avisadores de incendio de humo de dos cables a través del "EF-2"}
+\imgcapt{img/04-04-ppsh-2.png}{Esquema de conexión de avisadores de incendio de humo de dos cables a través del EF-2}

@@ -8,7 +8,7 @@
 
 ### Configuración del canal de radio
 
-\imgcapt{img/06-09-config-nord-01.png}{Pestaña "Radio", apartado "Configuración del canal de radio"}
+\imgcapt{img/06-09-config-nord-01.png}{Pestaña «Radio», apartado «Configuración del canal de radio»}
 
 En el apartado "Configuración del canal de radio se asignan los parámetros que usará el equipo al transmitir eventos por radio.
 
@@ -28,7 +28,7 @@ Para controlar el funcionamiento del canal de transmisión por radio sirve el pa
 
 ### Números de particiones de los objetos
 
-\imgcapt{img/06-09-config-nord-02.png}{Pestaña "Radio", apartado "Números de particiones de los objetos"}
+\imgcapt{img/06-09-config-nord-02.png}{Pestaña «Radio», apartado «Números de particiones de los objetos»}
 
 Debido a que el protocolo de transmisión por radio no permite usar los números de las particiones, para cada partición del panel de control hay que especificar un número de objeto que se usará al transmitir por radio.
 

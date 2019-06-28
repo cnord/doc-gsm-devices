@@ -43,7 +43,7 @@
 •	El producto proporciona un soporte por voz al usuario (personal de servicio) mediante la reproducción a través del cabezal dinámico integrado de archivos de audio en caso de detectar problemas que interfieren en la explotación normal del producto, por ejemplo, al detectar fallos en las zonas de seguridad concretizando su carácter y el lugar de detección, al llegar a un saldo negativo en la cuenta por los servicios de seguridad, etc.
 •	El producto dispone de un conector vertical de tipo "mini USB B" para la posibilidad de su configuración después de la conexión al puerto USB de la computadora;
 •	Mediante el software especializado es posible realizar la modificación remota de los parámetros de configuración del producto, así como la actualización del software de su controlador;
-•	El producto está diseñado para funcionar en un modo de trabajo ininterrumpido (24 horas) en el diapasón de temperaturas funcionales (sin tener en cuenta las limitaciones de temperaturas para la fuente de alimentación eléctrica de reserva) desde 30 ºС bajo cero hasta 50 ºС sobre cero;
+•	El producto está diseñado para funcionar en un modo de trabajo ininterrumpido (24 horas) en el diapasón de temperaturas funcionales (sin tener en cuenta las limitaciones de temperaturas para la fuente de alimentación eléctrica de reserva) desde 30 ºC bajo cero hasta 50 ºC sobre cero;
 
 	> El diapasón permitido de temperaturas de explotación del producto con la fuente de alimentación de reserva se determina por las características de la batería instalada en el mismo y en primer lugar el valor límite permitido de temperaturas durante su carga.
 

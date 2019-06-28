@@ -43,7 +43,6 @@ Para armar la partición hay que pulsar  "casita" e introducir el código del us
 * si el código es incorrecto o al usuario al que le pertenece ese código, le corresponde más de una partición, el teclado mostrará un error.
 * si el arme del sistema de seguridad no es posible, el teclado mostrará un error.
 
-
 \imgcapt{img/arm.png}{}
 
 Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón "casita", elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.

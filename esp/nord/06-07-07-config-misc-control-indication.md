@@ -1,6 +1,6 @@
 ### Control e indicación {#control-indication}
 
-\imgcapt{img/06-07-config-nord-06-01.png}{Pestaña "Varios", apartado "Control e indicación"}
+\imgcapt{img/06-07-config-nord-06-01.png}{Pestaña «Varios», apartado «Control e indicación»}
 
 #### La configuración del avisador óptico se realiza en la pestaña "Sistema automático"
 

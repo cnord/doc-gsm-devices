@@ -15,7 +15,7 @@ El sistema automático puede emplearse para la solución de las siguientes tarea
 
 Al pasar a la pestaña "Sistema automático" arriba en la ventana se muestran los botones con los cuales se pueden configurar las reglas.
 
-\imgcapt{img/06-13-config-automation-01.png}{Botones para la creación de reglas, pestaña "Sistema automático"}
+\imgcapt{img/06-13-config-automation-01.png}{Botones para la creación de reglas, pestaña «Sistema automático»}
 
 > En el equipo ya está incluida la lógica de funcionamiento con avisadores ópticos y acústicos. Para la configuración de los colectores abiertos, a los cuales están conectados los avisadores, hay que usar los botones "Notificador..." o "Sirena...", dependiendo del tipo del avisador.
 
@@ -48,7 +48,7 @@ A los equipos se puede conectar cualquier avisador óptico con una tensión de a
 Para el avisador óptico que indica el estado del objeto o la partición hay que configurar la regla con el rol "Notificador". Para crear la regla en la pestaña "Sistema automático" hay que pulsar el botón "Notificador" y seleccionar la salida a la cual está conectado el avisador. 
 Si en el equipo hay varias particiones configuradas, al crear la regla hay que indicar la partición para la cual el informador reflejará el estado.
 
-\imgcapt{img/06-13-config-automation-02.png}{Creación de la regla "Notificador"}
+\imgcapt{img/06-13-config-automation-02.png}{Creación de la regla «Notificador»}
 
 #### Descripción del funcionamiento del avisador
 
@@ -85,7 +85,7 @@ A los equipo se puede conectar cualquier avisador óptico con una tensión de al
 
 Para el avisador acústico hay que configurar la regla con el rol "Notificador". Para crear la regla en la pestaña "Sistema automático" hay que pulsar el botón "Notificador" y seleccionar la salida a la cual está conectada la sirena.
 
-\imgcapt{img/06-13-config-automation-04.png}{Creación de la regla "Sirena"}
+\imgcapt{img/06-13-config-automation-04.png}{Creación de la regla «Sirena»}
 
 La sirena conectada al colector abierto se diferencia de la sirena conectada a la salida del mismo nombre "Sirena" ya que en el primer caso el equipo no controla el estado de esta línea. Para configurar los parámetros del sonido de la sirena hay que ir al bloque [Sirena](#config-misc-siren) de la pestaña Varios.
 

@@ -10,7 +10,7 @@ Para todos los sistemas operativos se suministra el mismo controlador.
 
 ## Instalación del controlador en Windows XP y Windows 7
 
-Durante la primera conexión del equipo a la computadora en la bandeja del sistema del panel de tareas aparecerá una notificación de que fue encontrado un dispositivo nuevo. La instalación del controlador puede realizarse a través del Administrador de dispositivos. Para ello hay que entrar en el menú "Inicio", pulsar el botón derecho del ratón en "Equipo" y seleccionar Administrar, a continuación en el medio de la izquierda seleccionar "Administrador de dispositivos".
+Durante la primera conexión del equipo a la computadora en la bandeja del sistema del panel de tareas aparecerá una notificación de que fue encontrado un dispositivo nuevo. La instalación del controlador puede realizarse a través del «Administrador de dispositivos». Para ello hay que entrar en el menú "Inicio", pulsar el botón derecho del ratón en "Equipo" y seleccionar Administrar, a continuación en el medio de la izquierda seleccionar «Administrador de dispositivos».
 
 \imgcapt{img/05-02-driver-02.png}{}
 
@@ -36,9 +36,9 @@ Después de finalizar la instalación del controlador hay que pulsar el botón "
 
 \imgcapt{img/05-02-driver-08.png}{Finalización de la instalación del controlador}
 
-Para asegurarse que el controlador para el dispositivo está instalado, se puede abrir el Administrador de dispositivos de Windows y buscar el puerto serie virtual que corresponde al equipo conectado a la computadora.
+Para asegurarse que el controlador para el dispositivo está instalado, se puede abrir el «Administrador de dispositivos» de Windows y buscar el puerto serie virtual que corresponde al equipo conectado a la computadora.
 
-\imgcapt{img/05-02-driver-09.png}{Puerto serie del equipo en el "Administrador de dispositivos"}
+\imgcapt{img/05-02-driver-09.png}{Puerto serie del equipo en el «Administrador de dispositivos»}
 
 
 ## Instalación del controlador en Windows 8

@@ -2,7 +2,7 @@
 
 "EW-12" - expansor de zonas por cable para paneles de control "Nord GSM", con su ayuda se puede aumentar la cantidad de zonas hasta 16 o la cantidad de salidas tipo "colector abierto".
 
-\imgcapt{img/04-05-wze-12-1.png}{"EW-12"}
+\imgcapt{img/04-05-wze-12-1.png}{EW-12}
 
 **Conexión al equipo**
 
