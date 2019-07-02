@@ -1,81 +1,81 @@
 \pagebreak
 
-# Удалённый доступ к прибору {#remote-access}
+# Acceso remoto al equipo {#remote-access}
 
-## Описание технологии удалённого доступа
+## Descripción de la tecnología de acceso remoto
 
-Удалённый доступ к прибору включает в себя следующие функции:
+El acceso remoto al equipo incluye las siguientes funciones:
 
-* Удалённое обновление программного обеспечения на объекте
-* Удалённое конфигурирование объекта
-* Удалённое взятие и снятие объекта с охраны пользователем
-* Удалённое взятие и снятие объекта с охраны оператором пульта
-* Управление состоянием дебиторской задолженности
+•Actualización remota del software en el objeto
+•	Configuración remota del objeto
+•	Arme y desarme remoto del objeto por el usuario
+•	Arme y desarme remoto del objeto por el operador de la consola
+•	Control del estado del saldo
 
-Для работы всех перечисленных функций необходимо совместимое пультовое программное обеспечение, например, «Центр охраны». Дополнительно, для работы функций удалённого обновления «прошивок», конфигурирования и взятия/снятия пользователем, необходимо подключение прибора к «Облаку» (публичному Облаку Си-Норда – `cloud.cnord.net` – или частному Облаку охранной организации).
+Para el funcionamiento de todas las funciones enumeradas se requiere un software de consola compatible, por ejemplo, el 'Security Center'. Adicionalmente, para el funcionamiento de la función de actualización remota de los 'firmware', la configuración y el arme/desarme por el usuario se requiere la conexión del dispositivo a la 'Nube' (Nube de C.Nord pública - cloud.cnord.net - o Nube privada de la organización de seguridad).
 
-Схема подключения выглядит следующим образом:
+El esquema de conexión tiene el siguiente aspecto:
 
 \imgcapt{img/remote-intro.png}{}
 
 
-Прибор подключается и к пультовому ПО, и к «Облаку» по протоколу CML с использованием потокового шифрования *(Протокол CML – C.Nord Markup Language – разработка компании Си-Норд)*. Пультовое ПО также подключается к «Облаку» по зашифрованному протоколу.
+El equipo se conecta al software de la consola y a la 'Nube' a través del protocolo CML con el uso de cifrado de flujo (protocolo CML - C.Nord Markup Language - desarrollo de la compañía C.Nord). El software de la consola también se conecta a la 'Nube' a través de un protocolo cifrado.
 
-### Канал связи прибор ⟷ пульт
+### Canal de comunicación equipo ↔ consola
 
-Данный канал связи используется для работы охранных функций прибора, таких как:
+El presente canal de comunicación se usa para el funcionamiento de las funciones de seguridad del equipo, tales como:
 
-* Передача событий (тревоги/постановки/снятия/неисправности) на пультовое ПО
-* Удалённое взятие и снятие объекта с охраны оператором пульта
-* Управление состоянием дебиторской задолженности
+•	Transmisión de eventos (alarmas / armes / desarmes / fallos) al software de la consola
+•	Arme y desarme remoto del objeto por el operador de la consola
+•	Control del estado del saldo
 
 В общем случае прибор соединяется с пультом через публичную сеть (Интернет). Однако, некоторые охранные предприятия используют для связи `прибор ⟷ пульт` выделенные внутренние подсети операторов GSM-связи или локальные сети Ethernet.
 
-Для передачи событий на пульт могут использоваться разнообразные каналы связи: Ethernet, GPRS, CSD, Voice, SMS.
+En general el equipo se comunica con la consola a través de la red pública (Internet). Sin embargo, algunas empresas de seguridad usan para la comunicación equipo ↔ consola subredes internas dedicadas de operadores de comunicación GSM o redes locales Ethernet.
 
-**Важно:** удалённое взятие/снятие и управление дебиторской задолженностью работают только при подключении прибора по IP-каналу связи: Ethernet или GPRS.
+**Importante:** el arme/desarme remoto y el control del saldo sólo funcionan al conectar el equipo a través del canal IP de comunicación: Ethernet o GPRS.
 
-### Канал связи прибор ⟷ «Облако»
+### Canal de comunicación equipo ↔ 'Nube'
 
-Данный канал связи используется для работы сервисных функций прибора, таких как:
+El presente canal de comunicación se usa para el funcionamiento de las funciones de servicio del equipo, tales como:
 
-* Удалённое обновление программного обеспечения на объекте
-* Удалённое конфигурирование объекта
-* Удалённое взятие и снятие объекта с охраны пользователем
+•	Actualización remota del software en el objeto
+•	Configuración remota del objeto
+•	Arme y desarme remoto del objeto por el usuario
 
-В случае использования публичного «Облака» прибор соединяется с «Облаком» через сеть Интернет. Если же используется «Частное облако», возможна организация подключения через выделенные внутренние подсети операторов GSM-связи или локальные сети Ethernet.
+En el caso de uso de una 'Nube' pública el equipo se conecta con la 'Nube' a través de la red Internet. Si se usa una 'Nube privada', es posible organizar una conexión a través de las subredes internas dedicadas de los operadores de comunicación GSM o redes locales Ethernet.
 
-Для работы всех сервисных функций прибор должен находиться на IP-связи с «Облаком» по Ethernet или GPRS.
+Para el funcionamiento de todas las funciones de servicio el equipo debe encontrarse comunicado mediante comunicación IP con la 'Nube' a través de Ethernet o GPRS.
 
-**Важно:** возможные перерывы в связи `прибор ⟷ «Облако»` никак не влияют на охранные функции прибора.
+**Importante:** los posibles cortes en la comunicación dispositivo ↔ 'Nube' no influyen de ninguna forma en las funciones de seguridad del equipo.
 
-### Канал связи пульт ⟷ «Облако»
+### Canal de comunicación consola ↔ 'Nube'
 
-Данный канал связи используется для обеспечения работы сервисных функций прибора.
+El presente canal de comunicación se usa para proporcionar el funcionamiento de las funciones de servicio del equipo.
 
-**Пультовое ПО передает в «Облако»:**
+**El software de la consola transmite a la 'Nube':**
 
-* информацию об инженерах и их разрешениях  
-  *для работы панели инженера*
+* información sobre los técnicos y sus permisos 
+  *para el funcionamiento del panel del técnico*
   
-* информацию об администраторах личного кабинета и их объектах  
-  *для работы личного кабинета `my.cnord.net` и мобильного приложения `MyAlarm`*
+* información sobre los administradores del Acceso a MyAlarm y sus objetos 
+  *para el funcionamiento del Acceso a MyAlarm `my.cnord.net` y la aplicación móvil `MyAlarm`*
   
-* события по объектам  
-  *для работы личного кабинета и мобильного приложения*
+* eventos por objetos  
+  *para el funcionamiento del Acceso a MyAlarm y la aplicación móvil*
   
-**«Облако» передает в Пультовое ПО:**
+**La 'Nube' transmite al software de la consola:**
 
-* события о попытках подключения инженера к объекту  
-  *для работы панели инженера*
+* los eventos de intentos de conexión del técnico al objeto  
+  *para el funcionamiento del panel del técnico*
   
-* события о попытках взятия/снятия из мобильного приложения `MyAlarm`  
-  *для работы мобильного приложения*
+* los eventos sobre intentos de arme/desarme desde la aplicación móvil `MyAlarm`
+  *para el funcionamiento de la aplicación móvil*
   
-* события о проверке тревожной кнопки при помощи `Call-центра`  
-  *для работы автоматизированной проверки тревожной кнопки*
+* los eventos de comprobación del botón de emergencia mediante el `centro de llamadas` 
+  *para el funcionamiento de la comprobación automatizada del botón de emergencia*
   
-В случае использования публичного «Облака» пультовое ПО соединяется с «Облаком» через сеть Интернет. Если же используется «Частное облако», возможна организации подключения через локальные сети Ethernet.
+Si se usa una 'Nube' pública, el software de la consola se conecta con la 'Nube' a través de la red Internet. Si se usa una 'Nube privada' es posible organizar la conexión a través de la red local Ethernet.
 
-**Важно:** возможные перерывы в связи `пульт ⟷ «Облако»` никак не влияют на охранные функции прибора.
+**Importante:** los posibles cortes en la comunicación consola ↔ 'Nube' no influyen de ninguna forma en las funciones de seguridad del equipo.
 
