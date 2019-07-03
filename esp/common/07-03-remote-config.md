@@ -1,41 +1,41 @@
-## Удалённое конфигурирование устройств
+## Configuración remota de dispositivos
 
-**Важно:** удалённая настройка доступна только для устройств, которые сконфигурированы для использования IP-каналов связи: Ethernet или GPRS.
+**Importante:** la configuración remota sólo está disponible para los dispositivos configurados para el uso de canales de comunicación IP: Ethernet o GPRS.
 
-**Важно:** описанные в данном разделе функции работают только, если устройство подключено к программному обеспечению «Центр охраны». 
+**Importante:** las funciones descritas en el presente apartado funcionan sólo si el dispositivo está conectado al software del 'Security Center'.
 
-### Выбор объекта для конфигурирования
+### Selección del objeto para la configuración
 
-Для удалённого изменения настроек в приборах предназначена вкладка «Удалённый доступ к объектам» в панели инженера:
+Para cambiar la configuración de forma remota en los equipos sirve la pestaña 'Acceso remoto a los objetos' en el panel del técnico:
 
 \imgcapt{img/remote-config.png}{}
 
-В данной владке отображается список объектов, которые доступны инженеру для конфигурирования в данный момент. Перечень и время действия разрешений настраиваются в программном обеспечнии «Центр охраны».
+En esta pestaña se muestra la lista de objetos disponibles actualmente para la configuración por el técnico. La lista y la duración de los permisos se configura en el software del 'Security Center'.
 
-Чтобы приступить к настройке, необходимо нажать на соответствующий номер объекта.
+Para iniciar la configuración hay que pulsar el correspondiente numero del objeto.
 
-### Работа с конфигурацией
+### Trabajo con la configuración
 
-Открывшееся окно настройки прибора аналогично конфигуратору, предназначенному для настройки прибора, подключенного к компьютеру, который описан в разделе «Конфигурирование»:
+La ventana abierta de configuración del equipo es similar al configurador destinado a la configuración del equipo conectado a la computadora, descrito en el apartado 'Configuración':
 
 \imgcapt{img/remote-config-nord.png}{}
 
-При открытии окна настройки с прибора считывается его текущая конфигурация. Далее можно внести необходимые изменения и записать их на устройство соответствующей кнопкой. После успешной загрузки конфигурации на прибор выведется сообщение: `Настройки сохранены для записи на устройство`.
+Al abrir la ventana de la configuración desde el equipo se lee su configuración actual. A continuación se pueden realizar los cambios que hagan falta y grabarlos en el dispositivo con el correspondiente botón. Después de cargar con éxito la configuración al equipo, se mostrará el mensaje: `configuración guardada para escribir en el dispositivo`.
 
-**Важно:** считывание и изменение конфигурации доступны только для устройств, которые в данный момент находятся на связи с «Облаком». Если это не так, будет выведено сообщение об ошибке: `Коммуникатор, установленный на объекте, в настоящий момент не подключен к "Облаку".`
-`Пожалуйста, попробуйте подключиться к объекту позже.`
+**Importante:** la lectura y la modificación de la configuración sólo están disponibles para los dispositivos que actualmente están conectados con la 'Nube'. 
+De no ser así, se mostrará un mensaje de error: `el comunicador, instalado en el objeto, actualmente no está conectado a la 'Nube'. Por favor, intente conectarse al objeto más tarde.`
 
-Обратите внимание, что некоторые поля конфигурации, к примеру, адреса для подключения к пульту, удалённо изменить нельзя. Это исключает возможность удалённо сломать связь прибора с пультом и с «Облаком».
+Preste atención que algunos campos de la configuración, por ejemplo, las direcciones para la conexión a la consola, no se pueden cambiar de forma remota. Esto excluye la posibilidad de interferir de forma remota en la comunicación del equipo con el mando y con la 'Nube'. 
 
-Также недоступны действия, которые требуют локального взаимодействия с прибором на объекте, например, связывание беспроводных датчиков или добавление TM-ключей.
+Tampoco están disponibles las acciones que requieren la interacción local con el equipo en el objeto, por ejemplo la unión de los sensores inalámbricos y la adición de llaves TM.
 
-### Особенности работы
+### Características particulares del trabajo
 
-**Одновременная работа**
+**Trabajo simultaneo**
 
-Несмотря на то что разрешения на конфигурирование одного объекта могут быть одновременно выданы нескольким инженерам, непосредственную настройку одновременно может осуществлять только один инженер. Доступ остальных инженеров к панели настройки блокируется и при попытке открыть объект для настройки выводится предупреждение: `Объект в настоящий момент уже конфигурируется или обновляется.`
+A pesar de que los permisos para la configuración de un objeto pueden ser concedidos al mismo tiempo a varios técnicos, la configuración directa al mismo tiempo sólo la puede realizar uno de los técnicos. El acceso de los demás técnicos al panel de configuración se bloquea y si se intenta abrir el objeto para la configuración se muestra una advertencia: `el objeto actualmente ya se está configurando o se está actualizando.`
 
-**Приоритет локального конфигурирования**
+**Prioridad de configuración local**
 
-Если во время удалённого конфигурирования одним инженером, другой инженер изменит настройки прибора локально при помощи «настольного» конфигуратора, применить удалённые настройки уже станет невозможно – будет выведено сообщение об ошибке загрузки конфигурации.
+Si durante la configuración local por un técnico, otro técnico modifica la configuración del equipo de forma local mediante el configurador 'de sobremesa', ya será imposible aplicar la configuración remota - se mostrará un mensaje de error de carga de la configuración.
 
