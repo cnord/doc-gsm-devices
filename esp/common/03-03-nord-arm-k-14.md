@@ -19,8 +19,8 @@ En el teclado K14-LED se ubica un LED verde y otro rojo:
 
 Para recibir la información sobre el estado del objeto hay que pulsar el botón **i**:
 
-* si en el equipo están configuradas las particiones y todas las particiones están armadas, el teclado reproducirá: "Sistema de seguridad del objeto armado" y encenderá el LED rojo.
-* si en el equipo están configuradas las particiones y todas las particiones están desarmadas, el teclado reproducirá: "Sistema de seguridad del objeto desarmado" y encenderá el LED verde.
+* si en el equipo están configuradas las particiones y todas las particiones están armadas, el teclado reproducirá: 'Sistema de seguridad del objeto armado' y encenderá el LED rojo.
+* si en el equipo están configuradas las particiones y todas las particiones están desarmadas, el teclado reproducirá: 'Sistema de seguridad del objeto desarmado' y encenderá el LED verde.
 * si en el equipo están configuradas las particiones y algunas de ellas están armadas, y otras desarmadas, el teclado muestra la indicación de error.
 * si en el equipo no están configuradas las particiones, el teclado muestra la indicación de error.
 
@@ -37,7 +37,7 @@ En el equipo está realizada la posibilidad de arme y desarme del sistema de seg
 
 #### Arme del sistema de seguridad
 
-Para armar la partición hay que pulsar  "casita" e introducir el código del usuario.
+Para armar la partición hay que pulsar  'casita' e introducir el código del usuario.
 
 * si el código es correcto, el sistema de seguridad del objeto (partición) será armado, el teclado confirmará el arme mediante la activación del LED rojo. O se activará la cuenta del intervalo de retraso de salida, que va acompañada por una indicación acústica y LED.
 * si el código es incorrecto o al usuario al que le pertenece ese código, le corresponde más de una partición, el teclado mostrará un error.
@@ -45,13 +45,13 @@ Para armar la partición hay que pulsar  "casita" e introducir el código del us
 
 \imgcapt{img/arm.png}{}
 
-Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón "casita", elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.
+Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón 'casita', elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.
 
 \imgcapt{img/arm_part.png}{Пример взятия с выбором раздел}
 
 #### Denegación del arme del sistema de seguridad
 
-La "Denegación del arme" - es la imposibilidad de armar el sistema de seguridad del objeto, si la alarma de seguridad en el objeto no funciona correctamente, o si el arme del sistema de seguridad está prohibido por el impago de los servicios de seguridad.
+La 'Denegación del arme' - es la imposibilidad de armar el sistema de seguridad del objeto, si la alarma de seguridad en el objeto no funciona correctamente, o si el arme del sistema de seguridad está prohibido por el impago de los servicios de seguridad.
 
 Están previstos los siguientes motivos de denegación del arme:
 
@@ -94,10 +94,10 @@ Con voz se indica:
 * Estado de la partición o del objeto en general (al pulsar las tecla i).
 
 
-En el teclado se está prevista la función de ajuste del volumen del altavoz integrado. Ajuste de cinco niveles - empezando por el estado "desactivado" hasta los niveles de volumen del primero hasta el cuarto. La selección del nivel de sonido se realiza mediante la combinación de las teclas “#” y “9”.
+En el teclado se está prevista la función de ajuste del volumen del altavoz integrado. Ajuste de cinco niveles - empezando por el estado 'desactivado' hasta los niveles de volumen del primero hasta el cuarto. La selección del nivel de sonido se realiza mediante la combinación de las teclas “#” y “9”.
 
 ### Botón de emergencia
 
-Si en la configuración del equipo está permitido el uso del teclado en calidad de botón de emergencia, para la activación hay que pulsar y mantener pulsados durante 3 segundos los botones de las "casitas", la activación de los LEDs verde y rojo durante 1 segundo acompañada con sonido confirma que fue pulsando el botón de emergencia.
+Si en la configuración del equipo está permitido el uso del teclado en calidad de botón de emergencia, para la activación hay que pulsar y mantener pulsados durante 3 segundos los botones de las 'casitas', la activación de los LEDs verde y rojo durante 1 segundo acompañada con sonido confirma que fue pulsando el botón de emergencia.
 
 Si en la configuración del equipo está prohibido el uso del teclado en calidad de botón de emergencia, el teclado mostrará un error. 

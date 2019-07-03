@@ -6,7 +6,7 @@ Después de ser iniciada, la utilidad realiza la búsqueda del equipo conectado 
 
 \imgcapt{img/05-03-version-01.png}{Visualización de la versión del software en el dispositivo}
 
-Si la versión del software del dispositivo es inferior a la versión de la actualización, hay que actualizar el firmware en el dispositivo. Para hacerlo hay que pulsar el botón "Actualizar el dispositivo".
+Si la versión del software del dispositivo es inferior a la versión de la actualización, hay que actualizar el firmware en el dispositivo. Para hacerlo hay que pulsar el botón 'Actualizar el dispositivo'.
 
 Durante el proceso de la actualización el equipo puede reiniciarse varias veces. Después de que finalice la actualización del firmware del dispositivo, en la ventana de la utilidad aparecerá el correspondiente mensaje:
 
