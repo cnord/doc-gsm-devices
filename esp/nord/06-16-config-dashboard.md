@@ -1,52 +1,51 @@
 \pagebreak
 
-## Панель состояния
+## Panel de estado
 
-При выполнении работ по монтажу объекта инженеру обычно нужно выполнить проверку, что размещение и подключение датчиков выполнено правильно и неисправностей в их работе нет.
+Al realizar los trabajos de montaje del objeto el técnico normalmente debe verificar que la ubicación y la conexión de los sensores fue realizada correctamente y no hay fallos en su funcionamiento.
 
-В конфигураторе на вкладке "Панель состояния" отображается актуальная информация о состоянии проводных шлейфов, беспроводных устройств, подключенных к прибору, а так же состояние каналов связи.
+En el configurador, en la pestaña 'Panel de estado' se muestra la información actual sobre el estado de las zonas por cable, dispositivos inalámbricos conectados al equipo, así como el estado de los canales de comunicación.
 
-\imgcapt{img/06-16-config-dashboard-01.png}{Вкладка «Панель состояния», каналы связи}
+\imgcapt{img/06-16-config-dashboard-01.png}{ВкладкаPestaña 'Panel de estado', canales de comunicación}
 
-### Каналы связи
+### Canales de comunicación
 
-При монтаже и обслуживании прибора важно знать актуальную информацию о состоянии каналов связи. С помощью вкладки "Панель состояния" можно видеть на какой SIM-карте и по какому каналу связи работает прибор в данный момент. 
+Durante el montaje y el servicio del equipo es importante conocer la información actual sobre el estado de los canales de comunicación. Mediante la pestaña 'Panel de estado' se puede ver con qué tarjeta SIM y con qué canal de comunicación funciona el equipo actualmente.
 
-Для каждого канала связи, имеющегося в настройках прибора, отображается его текущее состояние: активен / не активен, есть ли подключение к «Центру охраны» и «Облаку», какие ошибки возникли при инициализации канала, подключении к пульту или передаче событий.
+Para cada canal de comunicación presente en la configuración del equipo, se muestra su estado actual: activo / no activo, si hay conexión con el 'Security Center' y la 'Nube', que errores aparecieron durante la inicialización del canal, conexión a la consola o transmisión de eventos.
 
-С помощью кнопки «Вкл.» можно выполнить принудительный переход на тот канал связи, работу которого нужно проверить. Для того чтобы инженер мог убедиться, что канал действительно работает, при нажатии на кнопку «Вкл.» формируется тестовое событие с кодом **E602**, которое будет передано по каналу, если он будет успешно инициализирован.
+Mediante el botón 'On' se puede realizar el cambio forzado a aquel canal de comunicación, cuyo funcionamiento hay que comprobar. Para que el técnico pueda asegurarse que el canal realmente funciona, al pulsar el botón 'On' se crea un evento de prueba con el código E602 que será transmitido a través del canal, si el canal se inicializa con éxito.
 
-Слева от кнопки «Вкл.» отображается количество событий, которые были переданы на пульт с того момента, как канал в последний раз был активен.
+A la izquierda del botón 'On' se muestra la cantidad de eventos que fueron transmitidos a la consola desde aquel momento, cuando el canal estaba activo la última vez.
 
-### Проводные шлейфы
+### Zonas por cable
 
-Для каждого проводного шлейфа, который включен на вкладке [Шлейфы](#config-zones), отображается его физическое состояние. Например, если шлейф в данный момент в нарушен (в тревоге), то значок, с номером соответствующим номеру шлейфа, будет красным. Если по шлейфу есть неисправность, то это также будет указано в панели состояния. Если шлейф выключен в настройках прибора, то информация по нему отображаться не будет.
+Para cada zona por cable, activada en la pestaña Zonas, se muestra su estado físico. Por ejemplo, si la zona actualmente está alterada (en estado de alarma), el icono con el número que corresponde al número de la zona, estará en rojo. Si hay un fallo en la zona, también se mostrará en el panel de estado. Si la zona está desactivada en la configuración del equipo, la información de la zona no se mostrará.
 
-\imgcapt{img/06-16-config-dashboard-02.png}{Вкладка «Панель состояния», Шлейфы в состоянии: норма, тревога, короткое замыкание, обрыв}
+\imgcapt{img/06-16-config-dashboard-02.png}{Pestaña 'Panel de estado', Zonas en estado: norma, alarma, cortocircuito, ruptura}
 
-### Беспроводные устройства
+### Dispositivos inalámbricos
 
-Для беспроводных устройств в "Панели состояния" отображается следующая информация:
+Para los dispositivos inalámbricos en el 'Panel de estado' se muestra la siguiente información:
 
-* Оценка качества связи;
-* Текущее состояние устройства.
+* Comprobación de la calidad de comunicación;
+* Estado actual del dispositivo.
 
-\imgcapt{img/06-16-config-dashboard-03.png}{Вкладка «Панель состояния». вверху - значки беспроводных устройств, внизу - детальная информация}
+\imgcapt{img/06-16-config-dashboard-03.png}{Pestaña 'Panel de estado', arriba - iconos de dispositivos inalámbricos, abajo - información detallada}
 
-#### Состояние устройства
+#### Estado del dispositivo
 
-На вкладке Беспроводные устройства отображается информация обо всех беспроводных устройствах, записанных в конфигурацию прибора.
+En la pestaña 'Dispositivos inalámbricos' se muestra la información sobre todos los dispositivos inalámbricos, grabados en la configuración del equipo.
 
-Если устройство в тревоге, то весь значок будет окрашен в красный цвет, а при наличии какой-либо неисправности, это будет указано внизу значка.
-При нажатии на значок беспроводного устройства, можно получить более детальную информацию о его состоянии.
+Si el dispositivo está en situación de alarma, todo el icono estará en rojo y si hay algún fallo, se mostrará abajo del icono. Al pulsar sobre el icono del dispositivo inalámbrico, se puede obtener una información más detallada sobre su estado.
 
-#### Оценка качества сигнала беспроводных устройств
+#### Valoración de la calidad de la señal de los dispositivos inalámbricos
 
-Беспроводной расширитель, подключенный к прибору, выполняет оценку качества сигнала каждого беспроводного устройства. Индикатором качества связи является кольцо вокруг номера и названия устройства. 
+El expansor inalámbrico, conectado al equipo, realiza la valoración de la calidad de la señal de cada dispositivo inalámbrico. Como indicador de calidad de comunicación sirve el anillo alrededor del número y el nombre del dispositivo. 
 
-Цвет и заполнение кольца соответствует измеренному радиомодулем отношению _сигнал / шум_ в сигнале, принятом от беспроводного устройства:
+El color y el relleno del anillo corresponde a la relación medida por el modulo de radio, de _señal / ruido_ en la señal, recibida del dispositivo inalámbrico:
 
-* Отличное - зеленый цвет, кольцо полностью заполненно;
-* Хорошее - желтый цвет, кольцо частично заполненно;
-* Плохое - красный цвет, кольцо частично заполненно;
-* Нет связи - красный цвет, кольцо полностью заполненно. 
+•	Excelente - color verde, anillo rellenado completamente;
+•	Buena - color amarillo, anillo rellenado parcialmente;
+•	Mala - color rojo, anillo rellenado parcialmente;
+•	No hay comunicación - color rojo, anillo rellenado completamente.

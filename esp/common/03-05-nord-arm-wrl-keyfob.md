@@ -1,14 +1,14 @@
 ## Teclado inalámbrico CN-K
 
 \imgcapt{img/k14.png}{Teclado CN-K}
-El equipo se puede controlar o informarse sobre su estado a través del teclado inalámbrico "CN-K". El teclado se conecta al equipo "Nord GSM" a través del expansor "CN-Rasio". Para añadir el teclado a la configuración del equipo hay que realizar las siguientes acciones:
+El equipo se puede controlar o informarse sobre su estado a través del teclado inalámbrico 'CN-K'. El teclado se conecta al equipo 'Nord GSM' a través del expansor 'CN-Rasio'. Para añadir el teclado a la configuración del equipo hay que realizar las siguientes acciones:
 
 * Quitar la tapa del teclado.
 * Conectar la alimentación - la alimentación del teclado se realiza a través de dos baterías de litio de tipo CR123A (principal y de reserva). Para cambiar las baterías hay que abrir la tapa de la sección de baterías, instalar primero la batería de reserva y a continuación la principal.
-* En el configurador del equipo ir a la pestaña «Dispositivos inalámbricos» y pulsar el botón "Añadir dispositivo inalámbrico".
-* Cambiar el teclado al modo "Unión". Para ello hay que cruzar los contactos "Reseteo", ubicados en la placa del dispositivo. Mediante destellos del LED verde, "CN-K" confirmará el cambio al modo de "Unión".
+* En el configurador del equipo ir a la pestaña 'Dispositivos inalámbricos' y pulsar el botón 'Añadir dispositivo inalámbrico'.
+* Cambiar el teclado al modo 'Unión'. Para ello hay que cruzar los contactos 'Reseteo', ubicados en la placa del dispositivo. Mediante destellos del LED verde, 'CN-K' confirmará el cambio al modo de 'Unión'.
 
-(Más información en el apartado 5.3. «Dispositivos inalámbricos»)
+(Más información en el apartado 5.3. 'Dispositivos inalámbricos')
 
 
 \imgcapt{img/03-05-cn-k.png}{Sección de baterías del teclado CN-K}
@@ -20,7 +20,7 @@ En el equipo está realizada la posibilidad de arme y desarme del sistema de seg
 
 **Arme del sistema de seguridad**
 
-Para armar la partición hay que pulsar "casita" e introducir el código del usuario.
+Para armar la partición hay que pulsar 'casita' e introducir el código del usuario.
 
 * si el código es correcto, el sistema de seguridad del objeto (partición) será armado, el teclado confirmará el arme mediante la activación del LED rojo. O se activará la cuenta del intervalo de retraso de salida que va acompañada por una indicación acústica o LED.
 * si el código es incorrecto o al usuario al que le pertenece ese código, le corresponde más de una partición, el teclado mostrará un error.
@@ -28,13 +28,13 @@ Para armar la partición hay que pulsar "casita" e introducir el código del usu
 
 \imgcapt{img/arm.png}{}
 
-Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón "casita", elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.
+Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón 'casita', elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.
 
 \imgcapt{img/arm_part.png}{Ejemplo de arme de la partición №1 con el código 1234}
 
 **Denegación del arme del sistema de seguridad**
 
-La "Denegación del arme" - es la imposibilidad de armar el sistema de seguridad del objeto, si la alarma de seguridad en el objeto no funciona correctamente, o si el arme del sistema de seguridad está prohibido por el impago de los servicios de seguridad.
+La 'Denegación del arme' - es la imposibilidad de armar el sistema de seguridad del objeto, si la alarma de seguridad en el objeto no funciona correctamente, o si el arme del sistema de seguridad está prohibido por el impago de los servicios de seguridad.
 
 Están previstos los siguientes motivos de denegación del arme:
 
@@ -69,7 +69,7 @@ La cuenta del intervalo de retraso de entrada o intervalo de retraso de salida s
 
 ### Recepción del estado
 
-En el teclado "CN-K" hay un LED verde y uno rojo: 
+En el teclado 'CN-K' hay un LED verde y uno rojo: 
 
 * El LED rojo se enciende al armar la partición. 
 * Al desarmar la partición se enciende el LED verde. 
@@ -94,19 +94,19 @@ Para recibir la información sobre el estado de la partición hay que pulsar el 
 
 ### Botón de emergencia
 
-Si en la configuración del equipo está permitido el uso del teclado en calidad de botón de emergencia, para la activación hay que pulsar y mantener pulsados durante 3 segundos los botones de las "casitas". La activación de los LEDs verde y rojo durante 1 segundo acompañada con sonido confirma que fue pulsando el botón de emergencia.
+Si en la configuración del equipo está permitido el uso del teclado en calidad de botón de emergencia, para la activación hay que pulsar y mantener pulsados durante 3 segundos los botones de las 'casitas'. La activación de los LEDs verde y rojo durante 1 segundo acompañada con sonido confirma que fue pulsando el botón de emergencia.
 
 Si en la configuración del equipo está prohibido el uso del teclado en calidad de botón de emergencia, el teclado mostrará un error.
 
 ### Desactivación de la iluminación y el sonido
 
-En el teclado "CN-K" existe la posibilidad de activación y desactivación del sonido y la iluminación.
+En el teclado 'CN-K' existe la posibilidad de activación y desactivación del sonido y la iluminación.
 
-Para activar o desactivar el sonido de confirmación de pulsación de las teclas, al mismo tiempo hay que pulsar y mantener pulsadas las teclas «#» y «9». Para la activación y la desactivación de la iluminación, al mismo tiempo hay que pulsar y mantener pulsadas las teclas «#» y «0».
+Para activar o desactivar el sonido de confirmación de pulsación de las teclas, al mismo tiempo hay que pulsar y mantener pulsadas las teclas '#' y '9'. Para la activación y la desactivación de la iluminación, al mismo tiempo hay que pulsar y mantener pulsadas las teclas '#' y '0'.
 
 ## Llavero inalámbrico
 
-El llavero inalámbrico así como la llave - TM se vinculan al usuario. Mediante el llavero se puede armar o desarmar el sistema de seguridad de una partición. Si el usuario desea tener la posibilidad de armar o desarmar varias particiones al mismo tiempo, hay que configurar las correspondientes reglas en el apartado "Sistema automático".
+El llavero inalámbrico así como la llave - TM se vinculan al usuario. Mediante el llavero se puede armar o desarmar el sistema de seguridad de una partición. Si el usuario desea tener la posibilidad de armar o desarmar varias particiones al mismo tiempo, hay que configurar las correspondientes reglas en el apartado 'Sistema automático'.
 
 El llavero dispone de un botón de alarma de emergencia, que una vez pulsado hará que el equipo cree un evento de emergencia.
 

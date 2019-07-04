@@ -1,89 +1,90 @@
-## Удалённое обновление ПО на устройстве
+## Actualización remota del software en el dispositivo 
 
-**Важно:** удалённое обновление программного обеспечения работает только для устройств, которые сконфигурированы для использования IP-каналов связи: Ethernet или GPRS.
+**Importante:** la configuración remota del software sólo funciona para dispositivos configurados con el uso de canales de comunicación IP: Ethernet o GPRS.
 
-**Важно:** описанные в данном разделе функции работают только, если устройство подключено к программному обеспечению «Центр охраны».
+**Importante:** las funciones descritas en este apartado sólo funcionan si el dispositivo está conectado al software del 'Security Center'.
 
-### Информация об объектах на пульте
+### Información sobre los objetos en la consola
 
-Для удалённого обновления «прошивок» в приборах предназначена вкладка «Обновление программного обеспечения на объектах» в панели инженера:
+Para la actualización remota de los 'firmware' en los equipos sirve la pestaña 'Actualización del software en los objetos' en el panel del técnico:
 
 \imgcapt{img/remote-firmware.png}{}
 
-На данной вкладке отображается статистика по версиям программного обеспечения, сгруппированная по типам приборов. Например, для прибора «Норд GSM»:
+En la presente pestaña se refleja la estadística de las versiones del software, agrupada por tipos de equipos. Por ejemplo, para el equipo 'Nord GSM':
 
 \imgcapt{img/nord-firmware.png}{}
 
-* 20 устройств «Норд GSM» работают на данный пульт
-* Актуальная версия ПО для «Норд GSM» – 5.40
-* 10 приборов в данный момент работают на старой версии, из них:
-  * 6 – обозначены красным – не планируется обновлять
-  * 4 – обозначены жёлтым – находятся в процессе обновления
-* 10 приборов работают на актуальной версии ПО для данного оборудования
+* 20 dispositivos 'Nord GSM' funcionan en esta consola
+* versión actual del software para 'Nord GSM' - 5.40
+* 10 dispositivos actualmente funcionan en una versión anticuada, entre ellos:
+	* 6 - están señalados en rojo - no se tiene previsto actualizar
+	* 4 - están señalados en amarillo - se encuentran en proceso de actualización
 
-Чтобы открыть страницу обновления ПО на устройствах данного типа, необходимо нажать на кнопку «Обновить...»
+* 10 dispositivos funcionan en la versión actual del software para este dispositivo
 
-### Процесс удалённого обновления ПО на устройстве
+Para abrir la página de actualización del software en los dispositivo de este tipo, hay que pulsar el botón 'Actualizar...'
 
-Процесс обновления программного обеспечения на устройстве состоит из нескольких этапов и спроектирован таким образом, чтобы работать даже в сетях с очень неустойчивым GPRS-сигналом.
+### Proceso de actualización remota del software en el dispositivo
 
-**Постановка в очередь на обновление**
+El proceso de actualización del software en el dispositivo se compone de varias fases y está realizado de una forma que se pueda trabajar incluso en redes con una señal GPRS muy inestable.
 
-Из панели инженера «Облаку» подаётся команда для постановки устройства в очередь на обновление.
+**Puesta en cola para la actualización**
 
-Если устройство находится на связи с «Облаком», то на устройство будет отправлена команда для повторного подключения и инициации процесса обновления.
+Desde el panel del técnico a la 'Nube' se envía un comando para la puesta del dispositivo en cola para la actualización.
 
-Если устройство не находится на связи с «Облаком», то процесс обновления не начнётся до тех пор, пока устройство не выйдет на связь.
+Si el dispositivo esta comunicado con la 'Nube', al dispositivo se enviará un comando para una conexión reiterada y la inicialización del proceso de la actualización.
 
-**Загрузка актуальной «прошивки»**
+Si el dispositivo no está conectado con la 'Nube', el proceso de la actualización no empezará hasta que el dispositivo no se conecte.
 
-Как только устройство получило команду на обновление, оно начинает загрузку архива с актуальной версией программного обеспечения. Полный объем файла составляет от 200 до 500 Кб в зависимости от типа устройства. Загрузка «прошивки» происходит по частям, чтобы сократить влияние обрывов связи.
+**Carga del 'firmware' actual**
 
-Длительность этапа загрузки сильно зависит от качества связи и может составлять от нескольких минут на канале Ethernet до нескольких часов на канале GPRS.
+Una vez que el dispositivo reciba el comando de actualización, empezará la carga del archivo con la versión actual del software. El volumen completo del archivo está comprendido entre los 200 Kb y los 500 Kb, dependiendo del tipo del dispositivo. La descarga del 'firmware' se realiza por partes, para reducir la influencia de las pérdidas de comunicación. 
 
-**Проверка архива**
+La duración de la fase de descarga depende mucho de la calidad de la conexión y puede durar entre varios minutos en el canal Ethernet y hasta varias horas en el canal GPRS.
 
-После полной загрузки файла «прошивки» прибор проверяет его целостность и пригодность к использованию на данном типе прибора и на данной аппаратной версии платы. Если все контрольные суммы совпадают и все проверки совместимости пройдены, «прошивка» помечается, как «готова к установке».
+**Comprobación del archivo**
 
-**Обновление**
+Después de la descarga completa del archivo del 'firmware' el equipo verifica su integridad y aptitud para usarse en este tipo de equipo y en esta versión hardware de la placa. Si todas las sumas de control coinciden y todas las verificaciones de compatibilidad se superan, el 'firmware' se marca como 'listo para la instalación'.
 
-Далее прибор ожидает состояния, когда хотя бы один из разделов будет снят с охраны, и перезагружается для применения обновления.
+**Actualización**
 
-Длительность этапа обновления составляет не более 10 секунд.
+A continuación el equipo espera el estado, cuando aunque sea una de las particiones sea desarmada y se reinicia para aplicar la actualización.
 
-**Включение**
+La fase de la actualización no dura más de 10 segundos.
 
-После обновления «прошивки» идет обычное включение прибора. Все настройки и состояние охраны для разделов сохраняются в том же состоянии, как были до обновления.
+**Activación**
 
-### Обновление ПО на выбранном объекте
+Después de la actualización del 'firmware' el equipo se enciende normalmente. Todas las configuraciones y el estado de seguridad para las particiones se guardan tal como estaban antes de la actualización.
 
-Если есть необходимость проверить функции новой версии программного обеспечения на одном или нескольких объектах перед массовой установкой, можно воспользоваться обновлением ПО на выбранном объекте.
+### Actualización del software en el objeto seleccionado
 
-Для этого на странице обновления ПО нужно нажать на кнопку «Обновить по номеру объекта...»:
+Si hay que comprobar las funciones de la nueva versión del software en uno o varios objetos antes de una instalación masiva, se puede usar la actualización del software en el objeto seleccionado.
+
+Para ello, en la página de actualización del software hay que pulsar el botón 'Actualizar por número de objeto...':
 
 \imgcapt{img/remote-update.png}{}
 
-В появившемся диалоге ввести номер объекта для обновления:
+En el diálogo que aparece introducir el numero del objeto para la actualización:
 
 \imgcapt{img/remote-update-single.png}{}
 
-И нажать кнопку «Обновить». После этого данный объект будет добавлен в очередь на обновление ПО.
+Y pulsar el botón 'Actualizar'. Después de esto el presente objeto será añadido a la cola para la actualización del software.
 
-### Обновление ПО на всех объектах
+### Actualización del software en todos los objetos
 
-После проверки ПО на нескольких объекта, можно добавить в очередь на обновление все оставшиеся с предыдущей версией ПО объекты.
+Después de comprobar el software en varios objetos, se pueden añadir en cola para la actualización todos los demás objetos con la versión anterior del software.
 
-Для этого на странице обновления ПО нужно нажать на кнопку «Обновить программное обеспечение на всех объектах...»
+Para esto en la página de actualización del software hay que pulsar el botón 'Actualizar el software en todos los objetos...'
 
-В появившемся диалоге:
+En el diálogo que aparece:
 
 \imgcapt{img/remote-update-all.png}{}
 
-нажать кнопку «Обновить все объекты». После этого все объекты данного типа с неактуальной версией ПО будут добавлены в очередь на обновление.
+pulsar el botón 'Actualizar todos los objetos'. Después de esto todos los objetos de este tipo con una versión no actual del software serán añadidos en cola para la actualización.
 
-### Остановка процесса обновления
+### Detención del proceso de actualización
 
-Если по какой-то причине появилась необходимость остановить процесс обновления, то его можно прервать до тех пор, пока прибор целиком не загрузил файл обновления.
+Si por algún motivo hay que detener el proceso de la actualización, éste se puede interrumpir hasta que el equipo no haya cargado por completo del archivo de la actualización.
 
-Для этого необходимо нажать «Отменить обновление...» и подтвердить действие.
+Para hacerlo hay que pulsar 'Cancelar la actualización...' y confirmar la acción.
 

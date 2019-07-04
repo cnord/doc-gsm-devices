@@ -1,194 +1,193 @@
 \pagebreak
 
-## Клавиатура К16-LCD
+## Teclado K16-LCD
 
 \imgcapt{img/k16-lcd.png}{Клавиатура К16-LCD}
 
-С помощью клавиатуры К16-LCD пользователь может выполнить следующие задачи:
+Mediante el teclado K16-LCD el usuario puede realizar las siguientes tareas:
 
-* узнать состояние раздела (взят / снят);
-* взять раздел под охрану или снять раздел с охраны;
-* узнать о начавшейся или продолжающейся задержке на вход или выход;
-* узнать состояние всего прибора;
-* узнать о наличии неисправности электропитания прибора;
-* узнать о наличии неисправностей.
+•	conocer el estado de la partición (armada / desarmada);
+•	armar la partición o desarmar la partición,
+•	informarse de un retraso de entrada o salida que empezó o continua;
+•	informarse del estado de todo el equipo;
+•	informarse de la existencia de fallos en la alimentación eléctrica del equipo;
+•	informarse de la existencia de fallos.
 
-### Взятие и снятие
+### Arme y desarme
 
-В приборе реализована возможность взятия и снятия с охраны нескольких разделов одним кодом пользователя. Настройка разделов, которые могут быть взяты или сняты с охраны конкретным кодом, выполняется при конфигурировании прибора.
+En el equipo está realizada la posibilidad de arme y desarme del sistema de seguridad de varias particiones con un código de usuario. El ajuste de particiones que pueden ser armadas o desarmadas con un código en concreto, se realiza al realizar la configuración del equipo.
 
-**Взятие и снятие без выбора раздела**
+**Arme y desarme sin selección de partición**
 
-Если за кодом пользователя закреплен только один раздел, то при наборе кода будет выполнена попытка изменить состояние охраны этого раздела:
+Si al código de usuario está asignada sólo una partición, al teclear el código se realizará un intento de cambiar el estado de seguridad de esta partición:
 
-* если раздел взят под охрану, то при наборе кода он будет снят с охраны;
-* если раздел снят с охраны, то при наборе кода начнется процедура взятия раздела под охрану.
+•	si la partición está armada, al teclear el código será desarmada;
+•	si la partición está desarmada, al teclear el código empezará el procedimiento de arme de la partición.
 
-Если взятие под охрану разрешено, то выполняется взятие под охрану, либо включается отсчет интервала задержки на выход, которая сопровождается звуковой, светодиодной и экранной индикацией.
+Si el arme está permitido, se realiza el arme o se activa la cuenta del intervalo de retraso de salida que va acompañado con una indicación acústica, LED y en pantalla.
 
-Если взятие под охрану запрещено, то выполняется звуковая индикация отказа от взятия, а на экране клавиатуры отображается причина, по которой взятие невозможно.
+Si el arme está prohibido, se realiza una indicación acústica de denegación del arme y en la pantalla del teclado se muestra el motivo, por el cual no es posible realizar el arme.
 
-**Взятие и снятие с выбором раздела** 
+**Arme y desarme con selección de partición** 
 
-Если за кодом пользователя закреплено несколько разделов, то сначала пользователь должен выбрать раздел, состояние которого он хочет изменить, а после этого набрать код.
+Si al código de usuario están asignadas varias particiones, primero el usuario debe seleccionar la partición, cuyo estado desea cambiar y después teclear el código.
 
-Для выбора раздела пользователь должен сначала ввести номер раздела, состояние которого он хочет изменить, а после этого нажать на кнопку «#».
+Para seleccionar la partición, el usuario primero debe introducir el numero de la partición cuyo estado desea cambiar y a continuación pulsar el botón '#'.
 
-> *Предположим, что пользователь хочет снять с охраны раздел номер 2 с помощью кода 1234. Для этого ему нужно нажать на клавиатуре следующую последовательность кнопок: 2#1234*
+> *Vamos a suponer que el usuario quiere desarmar la partición número 2 mediante el código 1234. Para hacerlo el usuario debe pulsar en el teclado la correspondiente secuencia de teclas: 2#1234*
 
-Если пользователь набрал правильный код, за которым закреплено несколько разделов, но предварительно не выбрал раздел, состояние которого он хочет изменить, то такой код обрабатывается, как неправильный.
+Si el usuario tecleó el código correcto, bajo el cual están asignadas varias particiones, pero no eligió previamente la partición, cuyo estado desea cambiar, tal código se procesa como incorrecto.
 
-**Отказ от взятия**
+**Denegación del arme**
 
-«Отказ от взятия» -- это невозможность взять объект под охрану, если охранная сигнализация на объекте неисправна, либо взятие под охрану запрещено из-за отсутствия оплаты за услуги охраны.
+La 'Denegación del arme' - es la imposibilidad de armar el sistema de seguridad del objeto, si la alarma de seguridad en el objeto no funciona correctamente, o si el arme del sistema de seguridad está prohibido por el impago de los servicios de seguridad.
 
-Предусмотрены следующие причины отказа от взятия:
+Están previstos los siguientes motivos de denegación del arme:
 
-* неисправность одного или нескольких шлейфов;
-* тревога в одном или нескольких шлейфах;
-* отсутствие связи с пультовой программой по IP-каналу;
-* отсутствие 220В на объекте;
-* отсутствие оплаты за услуги охраны;
-* открыт корпус прибора.
+•	fallo de una o varias zonas;
+•	alarma en una o varias zonas;
+•	ausencia de comunicación con el programa de la consola por el canal IP;
+•	ausencia de 220 V en el objeto;
+•	impago de los servicios de seguridad;
+•	está abierto el cuerpo del equipo.
 
-### Светодиодная индикация
+### Indicación LED
 
-На клавиатуре К16-LCD расположены два светодиода: «Авария» и «Охрана».
+El teclado K16-LCD dispone de dos LED: 'Avería' y 'Seguridad'.
 
-**Светодиод «Охрана»**
+**LED 'Seguridad'**
 
-Для светодиода предусмотрено два режима индикации: дежурный режим и режим взятия.
+Para el LED se prevén dos modos de indicación: modo de guardia y modo de arme.
 
-В дежурном режиме светодиод «Охрана» отображает состояние охраны всего прибора:
+En el modo de guardia el LED 'Seguridad' muestra el estado de seguridad de todo el equipo:
 
-* если для прибора сконфигурирован только один раздел, то светодиод включен, если этот раздел взят под охрану, и выключен, если снят;
-* если для прибора сконфигурировано несколько разделов, то светодиод включен, если все разделы взяты под охрану, и выключен, если хотя бы один раздел снят с охраны;
-* если ни одно из условий, описанных выше, не выполняется, то светодиод выключен.
+•	si para el equipo está configurada sólo una partición, el LED está encendido si ésta partición está armada, y apagado si está desarmada;
+•	si para el equipo están configuradas varias particiones, el LED está encendido si todas las particiones están armadas, y apagado si aunque sea una partición está desarmada;
+•	sin ninguna de las condiciones descritas anteriormente se cumple, el LED está apagado.
 
-В режиме взятия светодиод «быстро мигает» в течение интервала задержки на выход.
+En el modo de arme el LED 'parpadea rápido' durante el intervalo de retraso de salida.
 
-**Светодиод «Авария»**
+**LED 'Avería'**
 
-Светодиод предназначен для индикации отсутствия основного питания, а также для индикации неисправности резервного источника питания:
+El LED sirve para indicar la ausencia de la alimentación principal, así como para la indicación de fallo de la fuente de alimentación de reserva:
 
-* светодиод включен, если присутствует основное питание, а источник резервного питания отсутствует, разряжен или неисправен; 
-* светодиод «медленно мигает», если отсутствует основное питание;
-* светодиод выключен, если присутствует основное питание, а неисправности резервного питания отсутствуют.
+•	el LED está encendido si está presente la alimentación principal y no está presente la fuente de alimentación de reserva, está descargada o no funciona;
+•	el LED 'parpadea lentamente' sino está presente la alimentación principal;
+•	el LED está apagado, si está presente la alimentación principal y no hay fallos en la alimentación de reserva.
 
-> *Неисправность источника резервного питания индицируется только в том случае, если в настройках прибора в качестве источника резервного питания указана аккумуляторная батарея, а также включен контроль качества резервного источника питания.*
+> *El fallo de la fuente de alimentación de reserva se indica sólo en el caso, sin en la configuración del equipo en calidad de fuente de alimentación de reserva se indica la batería, así como si está activado el control de calidad de la fuente de alimentación de reserva.*
 
-### Звуковая индикация
+### Indicación acústica
 
-Нажатие кнопок на клавиатуре сопровождается звуковым сигналом, подтверждающим нажатие.
+La pulsación de teclas en el teclado va acompañada con una señal acústica que confirma la pulsación.
 
-Отсчет интервала задержки на вход или интервала задержки на выход индицируется прерывистым звуком, который воспроизводится в течение всего интервала задержки. Звуковая индикация задержки на вход или выход отключается при нажатии на любую кнопку на клавиатуре.
+La cuenta del intervalo de retraso de entrada o intervalo de retraso de salida se indica con un sonido intermitente, que se reproduce durante todo el intervalo de retraso. La indicación acústica de retraso de entrada o salida se desactiva al pulsar cualquier tecla en el teclado.
 
-> *В отличие от светодиода «Охрана», который индицирует только задержку на выход, звуковой извещатель, встроенный в клавиатуру К16-LCD, индицирует и задержку на выход, и задержку на вход.*
+> *A diferencia del LED 'Seguridad', que sólo indica el retraso de salida, el avisador acústico, integrado en el teclado K16-LCD indica también el retraso de salida y el retraso de entrada.*
 
-### Экранная индикация
+### Indicación en pantalla
 
-Клавиатура К16-LCD снабжена двухстрочным жидкокристаллическим индикатором, в каждой строке которого может быть отображено до 16 алфавитно-цифровых символов.
+El teclado K16-LCD dispone de un indicador LCD de dos líneas, en cada línea del cual se pueden mostrar hasta 16 caracteres alfanuméricos.
 
-Информация, которая отображается на экране клавиатуры К16-LCD, зависит от текущего состояния прибора, а также от операций, 
-которые выполняет пользователь.
+La información que se refleja en la pantalla del teclado K16-LCD, depende del estado actual del equipo, así como de las operaciones que realiza el usuario.
 
-**Дежурная индикация – прибор  полностью снят с охраны**
+**Indicación de guardia - el sistema de seguridad del equipo está completamente desarmado**
 
-Если все разделы прибора сняты с охраны и пользователей не выполняет никаких операций с клавиатурой, то на экране клавиатуры отображается текущая дата и текущее время, а также информация о текущих неисправностях прибора, если они есть.
+Si todas las particiones del equipo están desarmadas y el usuario no realiza ningunas operaciones con el teclado, en la pantalla del teclado se muestra la fecha actual y la hora actual, así como la información sobre los fallos corrientes del equipo, en caso de que existan.
 
-Информация о текущей дате и времени отображается в первой строке экрана.
+La información sobre la fecha y la hora actual se muestra en la primera línea de la pantalla.
 
-Информация об имеющихся неисправностях отображается во второй строке экрана.
+La información sobre los fallos existentes se muestra en la segunda línea de la pantalla.
 
-Пример дежурного экрана клавиатуры, когда прибор полностью снят с охраны:  
+Ejemplo de una pantalla de guardia del teclado, cuando el equipo está completamente desarmado:
 
 	12.02.2015 10:25
-	220В НЕ ПОДКЛЮЧ.
+	220ВV NO CONECTADO
 
-Если в приборе имеется несколько неисправностей, то на экране клавиатуры отображается только одна, самая приоритетная.
+Si en el equipo hay varios fallos, en la pantalla del teclado se muestra sólo uno, el de mayor prioridad.
 
-Перечень неисправностей (перечислены в порядке приоритета при отображении):
+Lista de fallos (enumerados en el orden de prioridad al mostrarse):
 
 \definecolor{light-gray}{gray}{0.7}
 \renewcommand{\arraystretch}{1.4}
 \begin{tabularx}{\textwidth}{lX}
-\textbf{Неисправность} & \textbf{Описание} \\ \midrule
-\texttt{ОПЛАТИТЬ ОХРАНУ!} & Строка отображается в том случае, если в настройках объекта, которые выполняются в программном обеспечении «Центр охраны», выставлено одно из значений, подразумевающих информирование пользователя контрольной панели о необходимости оплаты услуг охраны. \\ \arrayrulecolor{light-gray}\hline
-\texttt{220В НЕ ПОДКЛЮЧ.} & Строка отображается в том случае, если отсутствует основное питание прибора. При конфигурировании прибора может быть включен запрет на взятие прибора под охрану при отсутствии основного питания. \\ \arrayrulecolor{light-gray}\hline
-\texttt{НЕТ IP-СВЯЗИ}  & Строка отображается при отсутствии IP-подключения (по Ethernet или GPRS) к «Центру охраны». При конфигурировании прибора может быть включен запрет на взятие прибора под охрану при отсутствии IP-связи с «Центром охраны». \\ \arrayrulecolor{light-gray}\hline
-\texttt{КОРПУС ОТКРЫТ!} & Строка отображается, если корпус прибора открыт. \\ \arrayrulecolor{light-gray}\hline
-\texttt{ЗОНА NN НЕИСПРАВ} & Строка отображается, если в проводном или беспроводной шлейфе, подключенном к прибору, обнаружена неисправность: обрыв или короткое замыкание в шлейфе, отсутствие связи с беспроводным устройством, разряд источника питания беспроводного устройства и т.д. \\ \arrayrulecolor{light-gray}\hline
-\texttt{АКБ НЕ ПОДКЛЮЧЕНА} & Строка отображается, если источник резервного питания не подключен к прибору. \\ \arrayrulecolor{light-gray}\hline
-\texttt{АКБ РАЗРЯЖЕНА} & Строка отображается, если значение напряжения, измеренное на клеммах для подключения источника резервного питания, свидетельствует о том, что источник резервного питания разряжен. \\
+\textbf{Fallo} & \textbf{Descripción} \\ \midrule
+\texttt{¡PAGAR LOS SERVICIOS DE SEGURIDAD!} & La línea se muestra si en las configuraciones del objeto que se realizan en el software 'Security center' fue establecido uno de los valores que condicionan que hay que informar al usuario del panel de control sobre la necesidad de pagar los servicios de seguridad. \\ \arrayrulecolor{light-gray}\hline
+\texttt{220V NO CONECTADO} & La línea se muestra si no está presente la alimentación principal del equipo. Al configurar el equipo puede activarse la prohibición de arme del sistema de seguridad del equipo en caso de que no esté presente la alimentación principal. \\ \arrayrulecolor{light-gray}\hline
+\texttt{NO HAY COMUNICACIÓN IP}  & La línea se muestra en caso de que no haya comunicación IP (por Ethernet o GPRS) con el 'Security Center'. Al realizar la configuración del equipo puede activarse la prohibición de arme del sistema de seguridad del equipo en caso de ausencia de comunicación IP con el 'Security Center'. \\ \arrayrulecolor{light-gray}\hline
+\texttt{¡CUERPO ABIERTO!} & La línea se muestra si el cuerpo del equipo está abierto. \\ \arrayrulecolor{light-gray}\hline
+\texttt{LA ZONA NN NO FUNCIONA} & La línea se muestra si en la zona por cable o zona inalámbrica, conectada al equipo, se detecta un fallo: ruptura o cortocircuito en la zona, ausencia de comunicación con el dispositivo inalámbrico, descarga de la fuente de alimentación del dispositivo inalámbrico, etc.\\ \arrayrulecolor{light-gray}\hline
+\texttt{BATERÍA NO CONECTADA} & La línea se muestra si la fuente de alimentación de reserva no está conectada al equipo. \\ \arrayrulecolor{light-gray}\hline
+\texttt{BATERÍA DESCARGADA} & La línea se muestra si el valor de tensión medido en los bornes para la conexión de la fuente de alimentación de reserva evidencia que la fuente de alimentación de reserva está descargada. \\
 \bottomrule
 \end{tabularx}
 
-**Дежурная индикация – прибор частично взят под охрану**
+**Indicación de guardia - sistema de seguridad del equipo parcialmente armado**
 
-Если часть разделов прибора взята под охрану, а часть – снята с охраны и пользователь не выполняет никаких операций с клавиатурой, то на экране клавиатуры отображается текущее время, а также список разделов, взятых под охрану.
+Si una parte de las particiones del equipo está armada y una parte está desarmada y el usuario no realiza ningunas operaciones con el teclado, en la pantalla del teclado se muestra la hora actual, así como la lista de particiones armadas.
 
-Информация о наличии разделов, взятых под охрану, и текущее время отображаются в первой строке экрана.
+La información sobre la existencia de particiones armadas y la hora actual se refleja en la primera línea de la pantalla.
 
-Список номеров разделов, взятых под охрану, отображается во второй строке экрана.
+La línea de los números de particiones armadas se refleja en la segunda línea de la pantalla.
 
-Пример дежурного экрана клавиатуры, когда прибор частично взят под охрану:  
+Ejemplo de la pantalla de guardia del teclado, cuando el equipo está parcialmente armado:
 
-	ВЗЯТ       10:25
-	РАЗДЕЛЫ 1,4,5
+	ARMADO       10:25
+	PARTICIONES  1,4,5
 
-**Дежурная индикация – прибор полностью взят под охрану**
+**Indicación de guardia - equipo completamente armado**
 
-Если прибор полностью взят под охрану и пользователь не выполняет никаких операций с клавиатурой, то на экране клавиатуры отображается текущее время, а также информация о том, что прибор полностью взят под охрану.
+Si el equipo está completamente armado y el usuario no realiza ningunas operaciones con el teclado, en la pantalla del teclado se muestra la hora actual, así como la información de que el equipo está completamente armado.
 
-Пример дежурного экрана клавиатуры, когда прибор полностью взят под охрану:  
+Ejemplo de la pantalla de guardia del teclado, cuando el equipo está completamente armado:
 
-	ВЗЯТ       10:25
-	ВСЕ РАЗДЕЛЫ
+	ARMADO        10:25
+	TODAS LAS PARTICIONES
 
-> Если для прибора сконфигурирован только один раздел, то при его взятии под охрану строка «\texttt{ВСЕ РАЗДЕЛЫ}» не отображается.
+> Si para el equipo sólo está configurada una partición, al armarla la línea 'TODAS LAS PARTICIONES' no se muestra.
 
-**Индикация взятия**
+**Indicación de arme**
 
-Если взятие разрешено и задержки на выход нет, то в первой строке экрана клавиатуры в течение 3 секунд отображается фраза «\texttt{ВЗЯТИЕ...}», после чего экран клавиатуры переключается в дежурный режим, соответствующий состоянию охраны прибора. 
+Si el arme está permitido y no hay retraso de salida, en la primera línea de la pantalla del teclado durante 3 segundos se muestra la frase 'ARME...', después de ello la pantalla del teclado cambia al modo de guardia que corresponde al estado del sistema de seguridad del equipo.
 
-Если есть задержка на выход, то в течение задержки на выход в первой строке экрана клавиатуры отображается фраза «\texttt{ВЗЯТИЕ... NN}», где NN – время в секундах, в течение которого будет продолжаться задержка на выход. Информация о времени, в течение которого будет продолжаться задержка на выход, обновляется каждую секунду.
+Si hay un retraso de salida, durante el retraso de salida en la primera línea de la pantalla del teclado se muestra la frase 'ARME... NN', donde NN - es el tiempo en segundos, durante el cual se realizará el retraso de salida. La información sobre el tiempo durante el cual durará el retraso de salida se actualiza cada segundo.
 
-> Светодиодная, звуковая и экранная индикация задержки на выход отключается при нажатии на любую кнопку на клавиатуре.
+> La indicación LED, acústica y en pantalla de retraso de salida se desactiva al pulsar cualquier tecla en el teclado.
 
-Если в настройках объекта, которые выполняются в программном обеспечении «Центр охраны», выставлено одно из значений, подразумевающих информирование пользователя о необходимости оплаты услуг охраны во время взятия и снятия, то во второй строке экрана клавиатуры отображается фраза «\texttt{ОПЛАТИТЬ ОХРАНУ!}».
+Si en la configuración del objeto que se realiza en el software 'Security center' fue establecido uno de los valores que condicionan que hay que informar al usuario del panel de control sobre la necesidad de pagar los servicios de seguridad durante el arme y desarme, en la segunda línea de la pantalla del teclado se muestra la frase '¡PAGAR LOS SERVICIOS DE SEGURIDAD!'.
 
-Пример экрана клавиатуры с индикацией взятия:  
+Ejemplo de la pantalla del teclado con indicación de arme:
 
-	ВЗЯТИЕ...     18
-	ОПЛАТИТЬ ОХРАНУ!
+	ARME...     18
+	¡PAGAR LOS SERVICIOS DE SEGURIDAD!
 
-**Индикация снятия**
+**Indicación de desarme**
 
-Если снятие разрешено, то в первой строке экрана клавиатуры в течение 3 секунд отображается «\texttt{СНЯТИЕ...}», после чего экран клавиатуры переключается в дежурный режим, соответствующий состоянию охраны прибора. 
+Si el desarme está permitido, en la primera línea de la pantalla del teclado durante 3 segundos se muestra 'DESARME...', después de ello la pantalla del teclado cambia al modo de guardia que corresponde al estado del sistema de seguridad del dispositivo.
 
-Если в настройках объекта, которые выполняются в программном обеспечении «Центр охраны», выставлено одно из значений, подразумевающих информирование пользователя о необходимости оплаты услуг охраны во время взятия и снятия, то во второй строке экрана клавиатуры отображается фраза «\texttt{ОПЛАТИТЬ ОХРАНУ!}».
+Si en la configuración del objeto que se realiza en el software 'Security center' fue establecido uno de los valores que condicionan que hay que informar al usuario del panel de control sobre la necesidad de pagar los servicios de seguridad durante el arme y desarme, en la segunda línea de la pantalla del teclado se muestra la frase '¡PAGAR LOS SERVICIOS DE SEGURIDAD!'.
 
-Пример экрана клавиатуры с индикацией снятия:  
+Ejemplo de la pantalla del teclado con indicación de desarme:
 
-	СНЯТИЕ...     
+	DESARME...     
 
-**Индикация отказа от взятия**
+**Indicación de denegación del arme**
 
-Если при взятии под охрану будет обнаружена причина, по которой взятие под охрану невозможно, то на экране клавиатуры отображается информация об отказе от взятия, а кроме того, отображается причина отказа.
+Si al armar el sistema de seguridad será detectado el motivo por el cual no es posible realizar el arme, en la pantalla del teclado se muestra la información de denegación del arme y también se muestra el motivo de la denegación.
 
-Кроме того, для индикации отказа от взятия используется звуковая индикация: четыре одиночных звуковых сигнала.
+Aparte de ello, para la indicación de la denegación del arme se usa la indicación acústica: cuatro señales acústicas separadas.
 
-В первой строке экрана клавиатуры отображается фраза «\texttt{ОТКАЗ ОТ ВЗЯТИЯ}».
+En la primera línea de la pantalla del teclado se muestra la frase 'DENEGACIÓN DEL ARME'.
 
-Во второй строке экрана клавиатуры отображается одна возможных причин отказа от взятия:
+En la segunda línea de la pantalla del teclado se muestra uno de los posibles motivos de denegación del arme:
 
-* \texttt{ОПЛАТИТЬ ОХРАНУ!}
-* \texttt{220В НЕ ПОДКЛЮЧ.}
-* \texttt{НЕТ IP-СВЯЗИ}
-* \texttt{КОРПУС ОТКРЫТ!}
-* \texttt{ЗОНА NN НЕИСПРАВ} 
-* \texttt{ЗОНА NN ТРЕВОГА}
+* \texttt{¡PAGAR LOS SERVICIOS DE SEGURIDAD!}
+* \texttt{220V NO CONECTADO}
+* \texttt{NO HAY COMUNICACIÓN IP}
+* \texttt{¡CUERPO ABIERTO!}
+* \texttt{ZONA NN FALLO} 
+* \texttt{ZONA NN ALARMA}
 
-> Соответствие фраз, отображаемых при отказе от взятия, причинам, вызвавшим отказ, приведено выше.
+> Arriba se especifican las frases mostradas al producirse la denegación del arme, correspondientes a los motivos que produjeron la denegación
 
-Экранная индикация отказа от взятия отображается в течение 5 секунд, после чего экран клавиатуры переключается в дежурный режим, соответствующий состоянию охраны прибора.
+La indicación en pantalla de denegación del arme se muestra durante 5 segundos y a continuación la pantalla del teclado cambia al modo de guardia que corresponde al estado de seguridad del equipo.

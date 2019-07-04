@@ -1,49 +1,48 @@
-## Настройка удалённого доступа
+## Configuración del acceso remoto
 
-Удалённый доступ к прибору возможен только в случае, если на пульте, к которому подключен прибор, установлено совместимое программное обеспечение, например, «Центр охраны». Чтобы воспользоваться функцией удалённого доступа к прибору, необходимо:
+El acceso remoto al equipo sólo es posible si la consola a la cual está conectado el equipo, dispone de un software compatible instalado, por ejemplo 'Security Center'. Para usar la función de acceso remoto al dispositivo, hay que hacer lo siguiente:
 
-1. Создать инженера в пультовом ПО
+1. Crear un técnico en el software de la consola
 
-2. Выдать инженеру права на удалённый доступ к определенным объектам
+2. Concederle al técnico los derechos de acceso remoto a determinados objetos
 
-### Создание инженера
+### Creación del técnico
 
-Для того чтобы создать учетную запись для инженера в программном обеспечении «Центр охраны», необходимо запустить модуль «Менеджер персонала» и нажать на кнопку «Создать» на вкладке «Инженеры»:
+Para crear una cuenta de usuario para el técnico en el software 'Security Center' hay que ejecutar el módulo 'Administrador del personal' y pulsar el botón 'Crear' en la pestaña 'Técnicos':
 
 \imgcapt{img/sc-eng-list-1.png}{}
 
-В открывшемся окне необходимо заполнить все поля с информацией об инженере:
+En la ventana que se abra hay que rellenar todos los campos con la información sobre el técnico:
 
 \imgcapt{img/sc-eng-list-2.png}{}
 
+Hay que prestar especial atención a la hora de rellenar el campo de 'Correo electrónico'. Precisamente a esta dirección de correo electrónico, indicada en este campo, será enviada una carta con el enlace, por el cual el técnico deberá pasar para finalizar el registro de la cuenta de usuario en la 'Nube'. El correo electrónico del técnico sirve para su identificación en la 'Nube'. Después de que el técnico sea creado, el valor de este campo no se puede cambiar. 
 
-Особо внимательно следует указывать значение для поля «Электронная почта». Именно на адрес электронной почты, указанный в этом поле, будет отправлено письмо со ссылкой, по которой инженеру необходимо будет перейти для завершения регистрации учётной записи в «Облаке». Электронная почта инженера служит для его идентификации в «Облаке». После того как инженер будет создан, изменить значение этого поля нельзя.
+Si el técnico para el cual se crea la cuenta de usuario debe tener la posibilidad de actualizar de forma remota el software en los equipos instalados en los objetos, hay que marcar la casilla 'Permitirle al técnico la actualización remota del software en los equipos de los objetos'. *Esta configuración está disponible en el 'Security Center' de la versión 5 y superior.*
 
-Если инженер, для которого создается учетная запись, должен иметь возможность удалённо обновлять программное обеспечение на приборах, которые установлены на объектах, необходимо установить галочку «Разрешить инженеру удаленно обновлять программное обеспечение на объектовых приборах». *Данная настройка доступна в «Центре охраны» версии 5 и выше.*
+**Importante:** el permiso del técnico para la actualización del software se extiende sobre todos los objetos de la empresa de seguridad con la función de actualización remota del 'firmware'.
 
-**Важно:** разрешение инженера на обновление программного обеспечения распространяется на все объекты охранного предприятия с функцией удалённого обновления «прошивки».
+Para que los cambios entren en vigor, en la pestaña 'Técnicos' hay que pulsar el botón 'Guardar'. Después de ello la información sobre los técnicos y su derecho de actualizar los equipos se sincroniza con la 'Nube'.
 
-Для того чтобы изменения вступили в силу, нужно на вкладке «Инженеры» нажать на кнопку «Сохранить». После этого информация об инженерах и их праве обновлять приборы синхронизируется с «Облаком».
+### Expedición de permisos al técnico
 
-### Выдача разрешений инженеру
+Para concederle al técnico en el Software 'Security Center' el permiso de acceso remoto a los equipos instalados en el objeto, hay que hacer lo siguiente:
 
-Для того чтобы в ПО «Центр охраны» предоставить инженеру разрешение на удалённый доступ к оборудованию, установленному на объекте, необходимо выполнить следующие действия:
+1. Iniciar el módulo 'Administrador de objetos'
 
-1. Запустить модуль «Менеджер объектов»
+2. Seleccionar el objeto al cual hay que permitir el acceso remoto
 
-2. Выбрать объект, к которому необходимо разрешить удалённый доступ
+3. Ir a la pestaña 'Servicios'
 
-3. Перейти на вкладку «Обслуживание»
-
-4. Нажать на кнопку «Добавить разрешение»
+4. Pulsar el botón 'Añadir permiso'
    
 \imgcapt{img/sc-eng-perm-1.png}{}
 
-5. В появившемся окне выбрать инженера, которому необходимо предоставить удалённый доступ к объекту 
+5. En la ventana emergente hay que seleccionar al técnico al que hay que conceder el acceso al objeto
    
 \imgcapt{img/sc-eng-perm-2.png}{}
 
-6. Указать временной интервал, в течение которого будет действовать разрешение.
+6. Especificar el intervalo temporal durante el cual durará el permiso.
    
-7. Нажать на кнопку «Выдать разрешение».
+7. Pulsar el botón 'Conceder permiso'.
 
