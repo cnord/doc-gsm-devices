@@ -20,10 +20,10 @@ La ventana abierta de configuración del equipo es similar al configurador desti
 
 \imgcapt{img/remote-config-nord.png}{}
 
-Al abrir la ventana de la configuración desde el equipo se lee su configuración actual. A continuación se pueden realizar los cambios que hagan falta y grabarlos en el dispositivo con el correspondiente botón. Después de cargar con éxito la configuración al equipo, se mostrará el mensaje: `configuración guardada para escribir en el dispositivo`.
+Al abrir la ventana de la configuración desde el equipo se lee su configuración actual. A continuación se pueden realizar los cambios que hagan falta y grabarlos en el dispositivo con el correspondiente botón. Después de cargar con éxito la configuración al equipo, se mostrará el mensaje: 'configuración guardada para escribir en el dispositivo'.
 
 **Importante:** la lectura y la modificación de la configuración sólo están disponibles para los dispositivos que actualmente están conectados con la 'Nube'. 
-De no ser así, se mostrará un mensaje de error: `el comunicador, instalado en el objeto, actualmente no está conectado a la 'Nube'. Por favor, intente conectarse al objeto más tarde.`
+De no ser así, se mostrará un mensaje de error: 'el comunicador, instalado en el objeto, actualmente no está conectado a la 'Nube'. Por favor, intente conectarse al objeto más tarde.'
 
 Preste atención que algunos campos de la configuración, por ejemplo, las direcciones para la conexión a la consola, no se pueden cambiar de forma remota. Esto excluye la posibilidad de interferir de forma remota en la comunicación del equipo con el mando y con la 'Nube'. 
 
@@ -33,7 +33,7 @@ Tampoco están disponibles las acciones que requieren la interacción local con 
 
 **Trabajo simultaneo**
 
-A pesar de que los permisos para la configuración de un objeto pueden ser concedidos al mismo tiempo a varios técnicos, la configuración directa al mismo tiempo sólo la puede realizar uno de los técnicos. El acceso de los demás técnicos al panel de configuración se bloquea y si se intenta abrir el objeto para la configuración se muestra una advertencia: `el objeto actualmente ya se está configurando o se está actualizando.`
+A pesar de que los permisos para la configuración de un objeto pueden ser concedidos al mismo tiempo a varios técnicos, la configuración directa al mismo tiempo sólo la puede realizar uno de los técnicos. El acceso de los demás técnicos al panel de configuración se bloquea y si se intenta abrir el objeto para la configuración se muestra una advertencia: 'el objeto actualmente ya se está configurando o se está actualizando.'
 
 **Prioridad de configuración local**
 
