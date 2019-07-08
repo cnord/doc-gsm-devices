@@ -19,4 +19,3 @@ Para empezar a configurar el equipo hay que conectarlo a la computadora por USB 
 Después de ser iniciado, el configurador detectará automáticamente el equipo conectado a la computadora, realizará la comprobación de la versión del software instalado en el equipo y cargará las configuraciones del equipo
 
 Si la versión del software instalado en el equipo no corresponde con la versión necesaria para el funcionamiento del configurador, se mostrarán un mensaje de error con la petición de actualizar el software en el equipo. En este caso hay que finalizar el trabajo del configurador y realizar la actualización del software en el equipo, tal como se describe en el apartado ['Actualización del software'](#firmware-update).
-

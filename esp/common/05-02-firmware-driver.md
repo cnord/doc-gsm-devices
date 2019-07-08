@@ -73,4 +73,3 @@ El sistema operativo se reiniciará otra vez y a continuación aparecerá la ven
 \imgcapt{img/05-02-driver-15.png}{Deshabilitar el uso obligatorio de controladores firmados}
 
 Después de que el sistema operativo se reinicie, hay que instalar el controlador del equipo de la misma forma que en los sistemas operativos Windows XP / Windows 7. Después de instalar el controlador hay que reiniciar la computadora otra vez para abrir de la comprobación de la firma digital de los controladores.
-

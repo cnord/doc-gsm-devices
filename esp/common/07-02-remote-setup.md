@@ -45,4 +45,3 @@ Para concederle al técnico en el Software 'Security Center' el permiso de acces
 6. Especificar el intervalo temporal durante el cual durará el permiso.
    
 7. Pulsar el botón 'Conceder permiso'.
-

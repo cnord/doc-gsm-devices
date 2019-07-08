@@ -45,7 +45,7 @@ El expansor inalámbrico, conectado al equipo, realiza la valoración de la cali
 
 El color y el relleno del anillo corresponde a la relación medida por el modulo de radio, de _señal / ruido_ en la señal, recibida del dispositivo inalámbrico:
 
-•	Excelente - color verde, anillo rellenado completamente;
-•	Buena - color amarillo, anillo rellenado parcialmente;
-•	Mala - color rojo, anillo rellenado parcialmente;
-•	No hay comunicación - color rojo, anillo rellenado completamente.
+* Excelente - color verde, anillo rellenado completamente;
+* Buena - color amarillo, anillo rellenado parcialmente;
+* Mala - color rojo, anillo rellenado parcialmente;
+* No hay comunicación - color rojo, anillo rellenado completamente.

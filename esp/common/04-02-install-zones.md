@@ -54,4 +54,3 @@ Dos resistencias terminales permite determinar la ruptura y el cortocircuito par
 ### Zonas por cable en el configurador
 
 Al realizar la configuración del equipo hay que especificar expresamente la norma para la zona por cable, así como la cantidad de resistencias terminales. Se puede hacer en la pestaña '[Zonas](#config-zones)'.
-

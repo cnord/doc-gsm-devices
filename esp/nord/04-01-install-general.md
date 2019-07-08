@@ -5,4 +5,3 @@
 ## Esquema de montaje del equipo
 
 \imgcapt{img/04-01-nord-gsm-installation-scheme.png}{}
-

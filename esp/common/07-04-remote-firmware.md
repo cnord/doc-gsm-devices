@@ -87,4 +87,3 @@ pulsar el botón 'Actualizar todos los objetos'. Después de esto todos los obje
 Si por algún motivo hay que detener el proceso de la actualización, éste se puede interrumpir hasta que el equipo no haya cargado por completo del archivo de la actualización.
 
 Para hacerlo hay que pulsar 'Cancelar la actualización...' y confirmar la acción.
-

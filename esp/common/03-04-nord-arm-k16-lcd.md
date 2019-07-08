@@ -6,12 +6,12 @@
 
 Mediante el teclado K16-LCD el usuario puede realizar las siguientes tareas:
 
-•	conocer el estado de la partición (armada / desarmada);
-•	armar la partición o desarmar la partición,
-•	informarse de un retraso de entrada o salida que empezó o continua;
-•	informarse del estado de todo el equipo;
-•	informarse de la existencia de fallos en la alimentación eléctrica del equipo;
-•	informarse de la existencia de fallos.
+* conocer el estado de la partición (armada / desarmada);
+* armar la partición o desarmar la partición,
+* informarse de un retraso de entrada o salida que empezó o continua;
+* informarse del estado de todo el equipo;
+* informarse de la existencia de fallos en la alimentación eléctrica del equipo;
+* informarse de la existencia de fallos.
 
 ### Arme y desarme
 
@@ -21,8 +21,8 @@ En el equipo está realizada la posibilidad de arme y desarme del sistema de seg
 
 Si al código de usuario está asignada sólo una partición, al teclear el código se realizará un intento de cambiar el estado de seguridad de esta partición:
 
-•	si la partición está armada, al teclear el código será desarmada;
-•	si la partición está desarmada, al teclear el código empezará el procedimiento de arme de la partición.
+* si la partición está armada, al teclear el código será desarmada;
+* si la partición está desarmada, al teclear el código empezará el procedimiento de arme de la partición.
 
 Si el arme está permitido, se realiza el arme o se activa la cuenta del intervalo de retraso de salida que va acompañado con una indicación acústica, LED y en pantalla.
 
@@ -44,12 +44,12 @@ La 'Denegación del arme' - es la imposibilidad de armar el sistema de seguridad
 
 Están previstos los siguientes motivos de denegación del arme:
 
-•	fallo de una o varias zonas;
-•	alarma en una o varias zonas;
-•	ausencia de comunicación con el programa de la consola por el canal IP;
-•	ausencia de 220 V en el objeto;
-•	impago de los servicios de seguridad;
-•	está abierto el cuerpo del equipo.
+* fallo de una o varias zonas;
+* alarma en una o varias zonas;
+* ausencia de comunicación con el programa de la consola por el canal IP;
+* ausencia de 220 V en el objeto;
+* impago de los servicios de seguridad;
+* está abierto el cuerpo del equipo.
 
 ### Indicación LED
 
@@ -61,9 +61,9 @@ Para el LED se prevén dos modos de indicación: modo de guardia y modo de arme.
 
 En el modo de guardia el LED 'Seguridad' muestra el estado de seguridad de todo el equipo:
 
-•	si para el equipo está configurada sólo una partición, el LED está encendido si ésta partición está armada, y apagado si está desarmada;
-•	si para el equipo están configuradas varias particiones, el LED está encendido si todas las particiones están armadas, y apagado si aunque sea una partición está desarmada;
-•	sin ninguna de las condiciones descritas anteriormente se cumple, el LED está apagado.
+* si para el equipo está configurada sólo una partición, el LED está encendido si ésta partición está armada, y apagado si está desarmada;
+* si para el equipo están configuradas varias particiones, el LED está encendido si todas las particiones están armadas, y apagado si aunque sea una partición está desarmada;
+* sin ninguna de las condiciones descritas anteriormente se cumple, el LED está apagado.
 
 En el modo de arme el LED 'parpadea rápido' durante el intervalo de retraso de salida.
 
@@ -71,9 +71,9 @@ En el modo de arme el LED 'parpadea rápido' durante el intervalo de retraso de 
 
 El LED sirve para indicar la ausencia de la alimentación principal, así como para la indicación de fallo de la fuente de alimentación de reserva:
 
-•	el LED está encendido si está presente la alimentación principal y no está presente la fuente de alimentación de reserva, está descargada o no funciona;
-•	el LED 'parpadea lentamente' sino está presente la alimentación principal;
-•	el LED está apagado, si está presente la alimentación principal y no hay fallos en la alimentación de reserva.
+* el LED está encendido si está presente la alimentación principal y no está presente la fuente de alimentación de reserva, está descargada o no funciona;
+* el LED 'parpadea lentamente' sino está presente la alimentación principal;
+* el LED está apagado, si está presente la alimentación principal y no hay fallos en la alimentación de reserva.
 
 > *El fallo de la fuente de alimentación de reserva se indica sólo en el caso, sin en la configuración del equipo en calidad de fuente de alimentación de reserva se indica la batería, así como si está activado el control de calidad de la fuente de alimentación de reserva.*
 

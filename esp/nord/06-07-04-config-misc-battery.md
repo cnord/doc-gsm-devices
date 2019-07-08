@@ -2,11 +2,11 @@
 
 #### Tipo de fuente de alimentación de reserva
 
-En el punto "Tipo de fuente de alimentación de reserva" se puede especificar qué fuente de reserva está conectada al dispositivo: batería o fuente de alimentación ininterrumpida. 
+En el punto 'Tipo de fuente de alimentación de reserva' se puede especificar qué fuente de reserva está conectada al dispositivo: batería o fuente de alimentación ininterrumpida. 
 
 #### Si está conectada la batería
 
-\imgcapt{img/06-07-config-nord-03-01.png}{Pestaña «Varios», apartado «Alimentación de reserva»}
+\imgcapt{img/06-07-config-nord-03-01.png}{Pestaña 'Varios', apartado 'Alimentación de reserva'}
 
 Si en calidad de fuente de reserva fue elegida la batería, existe la posibilidad de activar dos parámetros:
 
@@ -20,6 +20,6 @@ Para comprobar la calidad de la batería el equipo conecta periódicamente la ca
 
 #### Si está conectada la fuente de alimentación ininterrumpida
 
-\imgcapt{img/06-07-config-nord-03-02.png}{Pestaña «Varios», apartado «Alimentación de reserva», seleccionado el valor "Fuente de alimentación de reserva" para el parámetro "Tipo de fuente de alimentación de reserva".}
+\imgcapt{img/06-07-config-nord-03-02.png}{Pestaña 'Varios', apartado 'Alimentación de reserva', seleccionado el valor 'Fuente de alimentación de reserva' para el parámetro 'Tipo de fuente de alimentación de reserva'.}
 
 Si en calidad de fuente de reserva fue seleccionada la fuente de alimentación de reserva, no se pueden activar los parámetros adicionales (protección contra la descarga profunda y control de la calidad de la batería). 

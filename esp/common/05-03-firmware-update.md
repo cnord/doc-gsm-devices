@@ -16,4 +16,3 @@ Durante el proceso de la actualización el equipo puede reiniciarse varias veces
 A continuación la utilidad para la actualización del firmware por USB se puede cerrar.
 
 Si durante el proceso de la actualización aparece un mensaje de error, se recomienda desconectar el equipo de la computadora, finalizar el trabajo de la utilidad para la actualización de la versión y a continuación conectar de nuevo el equipo a la computadora e iniciar la utilidad.
-

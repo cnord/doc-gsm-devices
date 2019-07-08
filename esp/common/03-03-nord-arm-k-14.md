@@ -4,16 +4,16 @@
 
 Mediante el teclado K14-LED el usuario puede realizar las siguientes tareas:
 
-•	conocer el estado de la partición (armada / desarmada);
-•	armar la partición o desarmar la partición;
-•	informarse de un retraso de entrada o salida que acaba de empezar o continua;
-•	conocer el estado de seguridad de todo el equipo;
+* conocer el estado de la partición (armada / desarmada);
+* armar la partición o desarmar la partición;
+* informarse de un retraso de entrada o salida que acaba de empezar o continua;
+* conocer el estado de seguridad de todo el equipo;
 
 En el teclado K14-LED se ubica un LED verde y otro rojo:
 
-•	El LED rojo permanece encendido constantemente si todas las particiones del equipo están armadas.
-•	Al desarmar la partición se apaga el LED rojo y se enciende el verde.
-•	Los LEDs rojo y verde parpadean al mismo tiempo si se produjo un error. Por ejemplo, al introducir un código incorrecto del usuario o en caso de denegación del arme del sistema de seguridad.
+* El LED rojo permanece encendido constantemente si todas las particiones del equipo están armadas.
+* Al desarmar la partición se apaga el LED rojo y se enciende el verde.
+* Los LEDs rojo y verde parpadean al mismo tiempo si se produjo un error. Por ejemplo, al introducir un código incorrecto del usuario o en caso de denegación del arme del sistema de seguridad.
 
 ### Recepción del estado del objeto
 

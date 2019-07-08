@@ -21,4 +21,3 @@ Si el código pin del servidor de la 'Nube privada' se introduce correctamente, 
 Si por algún motivo hay que realizar una configuración para la conexión a la 'Nube privada' manualmente, puede hacerlo: hay que pulsar el botón 'Configuración manual' y especificar las direcciones y los puertos para la conexión a la 'Nube' a través de los canales GPRS y Ethernet (se muestra sólo si el adaptador Ethernet está conectado al equipo):
 
 \imgcapt{img/06-10-config-cloud-04.png}{Pestaña 'Nube', configuración de los parámetros para la conexión manual.}
-

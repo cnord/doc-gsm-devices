@@ -3,7 +3,7 @@
 ### Kit de suministro
 
 ---------------------------------------------------------- ------
-Dispositivo de recepción - control de seguridad - contra incendios «Nord GSM» / «Nord GSM WRL»   1 un.
+Dispositivo de recepción - control de seguridad - contra incendios 'Nord GSM' / 'Nord GSM WRL'   1 un.
 
 Resistor 0,25 W (0,16 W) – 2,2 kOhm                                                16 un.
 

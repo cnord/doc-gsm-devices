@@ -13,4 +13,3 @@ En la pestaña se muestra la dirección MAC que se usa por el dispositivo 'Adapt
 Aparte de esto, si la red a la cual está conectado el equipo no dispone de un servidor DHCP que proporciona la configuración automática de los parámetros de conexión a la red, estos parámetros se pueden asignar manualmente, indicando expresamente la dirección IP que debe usar el equipo, la máscara de subred a la cual pertenece el equipo, la dirección IP de la puerta de enlace que debe usarse para el acceso a la red pública, así como la dirección IP de los servidores DNS.
 
 \imgcapt{img/06-11-config-eth-02.png}{Pestaña 'Ethernet', configuración manual de la red.}
-

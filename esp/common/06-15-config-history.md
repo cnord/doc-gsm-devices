@@ -1,33 +1,32 @@
 \pagebreak
 
-## История событий
+## Historial de eventos
 
-Вкладка предназначена для отображения событий, которые хранятся в энергонезависимой памяти прибора.
+La pestaña sirve para mostrar los eventos almacenados en la memoria no volátil del equipo
 
-\imgcapt{img/06-15-config-history-01.png}{Вкладка 'История событий'}
+\imgcapt{img/06-15-config-history-01.png}{Pestaña 'Historial de eventos'}
 
+Para cargar los eventos del equipo al configurador, hay que pulsar el botón 'Actualizar'. 
 
-Для того чтобы загрузить события из прибора в конфигуратор, необходимо нажать на кнопку 'Обновить'. 
+> La lista de eventos que se refleja en la pestaña 'Historial de eventos', no se actualiza automáticamente: para ver los cambios que tuvieron lugar en el historial de eventos en el transcurso del tiempo, hay que pulsar el botón 'Actualizar' otra vez.
 
-> Список событий, который отображается на вкладке 'История событий', автоматически не обновляется: для того, чтобы увидеть, какие изменения произошли в истории событий с течением времени, необходимо нажать на кнопку 'Обновить' еще раз.
+\imgcapt{img/06-15-config-history-02.png}{Pestaña 'Historial de eventos', lista de eventos}
 
-\imgcapt{img/06-15-config-history-02.png}{Вкладка 'История событий', список событий}
+El volumen de la memoria no volátil del equipo permite almacenar no menos de 10.000 eventos. Pero en la pestaña 'Historial de eventos' se muestran no más de 200 últimos eventos. Mediante el botón Guardar en archivo se puede generar una lista completa de eventos en un archivo con la extensión _ *.csv_.
 
-Объем энергонезависимой памяти прибора позволяет сохранить не менее 10.000 событий. Но на вкладке 'История событий' отображается не более 200 последних событий. С помощью кнопки _Сохранить в файл.._ можно выгрузить полный список событий в файл с расширением _*.csv_.
+Al visualizar el historial para cada evento se muestra la siguiente información:
 
-При просмотре истории для каждого события отображается следующая информация:
+* el tiempo, cuando el evento fue creado por el equipo y guardado en la memoria no volátil;
+* el código del evento que debe transmitirse a la consola de seguridad;
+* la descripción de texto del evento;
+* el numero del objeto para el cual fue creado el evento;
+* el número de la partición;
+* el número de la zona o el usuario;
+* la información sobre el estado actual del evento (columna 'Enviado'):
+	* si el evento está en espera de ser transmitido, se muestra una "raya";
+	* si el evento fue enviado a la consola de seguridad, se muestra la información sobre el canal que se usó para la transmisión del evento, así como la hora cuando fue obtenida la confirmación sobre la recepción del evento;
+	* si el envío del evento fue cancelado desde el configurador, se muestra la correspondiente información, así como la hora, cuando fue realizada la operación de cancelación de la transmisión. Para cancelar la transmisión a la consola de seguridad de todos los eventos que la esperan, hay que pulsar el botón "Marcar los eventos en el dispositivo como enviados".
 
-* время, когда событие было сформировано прибором и сохранено в энергонезависимую память;
-* код события, который передается на пульт охраны;
-* текстовое описание события;
-* номер объекта, для которого было сформировано событие;
-* номер раздела;
-* номер шлейфа или пользователя;
-* информация о текущем состоянии события (колонка 'Отправлено'):
-	* если событие ожидает передачи, то отображается 'прочерк';
-	* если событие отправлено на пульт охраны, то отображается информация о канале, который использовался для передачи события, а также время, когда было получено подтверждение о приеме события;
-	* если отправка события была отменена из конфигуратора, то отображается информация об этом, а также время, когда была выполнена операция отмены передачи.
-Для того чтобы отменить передачу на пульт охраны всех событий, её ожидающих, нужно нажать на кнопку 'Отметить события на устройстве, как отправленные'.
+Para cancelar la transmisión a la consola de seguridad de todos los eventos que la esperan, hay que pulsar el botón 'Marcar los eventos en el dispositivo como enviados'.
 
-> При создании события оно получает уникальный порядковый номер. Порядок нумерации событий *не зависит* от времени, которое установлено на приборе: события, созданные ранее, имеют меньший номер, события, созданные позже – больший. На вкладке 'История событий' события отображаются в порядке, обратном их номеру: события, созданные позже, отображаются выше, а события, созданные раньше – ниже по списку.
-
+> Al crear un evento, este recibe un número de secuencia único. El orden de numeración de los eventos no depende de la hora establecida en el equipo: los eventos creados antes, tienen un número inferior, los eventos creados después - un número superior. En la casilla 'Historial de eventos' los eventos se reflejan en el orden inverso a su número: los eventos creados más tarde, se reflejan más arriba, y los eventos creados antes - más abajo en la lista.

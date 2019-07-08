@@ -49,5 +49,3 @@ Recomendaciones de instalación de la antena externa:
 * no enrollar el alimentador de la antena;
 * fijar la antena sobre una superficie dieléctrica;
 * fijar la antena en posición vertical.
-
-

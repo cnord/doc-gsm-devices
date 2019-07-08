@@ -109,4 +109,3 @@ Para activar o desactivar el sonido de confirmación de pulsación de las teclas
 El llavero inalámbrico así como la llave - TM se vinculan al usuario. Mediante el llavero se puede armar o desarmar el sistema de seguridad de una partición. Si el usuario desea tener la posibilidad de armar o desarmar varias particiones al mismo tiempo, hay que configurar las correspondientes reglas en el apartado 'Sistema automático'.
 
 El llavero dispone de un botón de alarma de emergencia, que una vez pulsado hará que el equipo cree un evento de emergencia.
-

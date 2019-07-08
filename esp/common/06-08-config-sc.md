@@ -146,4 +146,3 @@ Si no hay eventos para la transmisión, el equipo irá seleccionando los canales
 \imgcapt{img/06-08-config-common-11.png}{Esquema de cambio de canales de comunicación}
 
 El orden de cambio de los canales de comunicación IP en caso de no haber eventos se muestra en el dibujo con líneas azules intermitentes. Con líneas negras continuas se muestra el esquema de cambio de todos los canales configurados en caso de haber eventos para la transmisión.
-

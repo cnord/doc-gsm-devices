@@ -25,4 +25,3 @@ En el paquete para la actualización de la versión del software del equipo est�
 * 'Soyuz GSM';
 * 'Soyuz PCB GSM'.
 
-

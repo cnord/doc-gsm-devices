@@ -36,5 +36,3 @@ Cada borne 'Z1' – 'Z8' puede ser una zona o salida de tipo 'colector abierto',
 * Si en el configurador la zona está conectada, no se puede usar como colector.
 
 
-
-

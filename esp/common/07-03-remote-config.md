@@ -38,4 +38,3 @@ A pesar de que los permisos para la configuración de un objeto pueden ser conce
 **Prioridad de configuración local**
 
 Si durante la configuración local por un técnico, otro técnico modifica la configuración del equipo de forma local mediante el configurador 'de sobremesa', ya será imposible aplicar la configuración remota - se mostrará un mensaje de error de carga de la configuración.
-

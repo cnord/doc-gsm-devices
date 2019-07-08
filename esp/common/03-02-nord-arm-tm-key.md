@@ -19,8 +19,8 @@ Indicación de una lectura con éxito de la llave TM: LED 'parpadeante' (se enci
 
 Al realizar la lectura de la llave, pueden producirse los siguientes errores:
 
-•	llave no encontrada en la memoria del equipo;
-•	denegación de arme.
+* llave no encontrada en la memoria del equipo;
+* denegación de arme.
 
 Indicación de error: LED 'parpadeante' (se enciende por 0,5 seg, después se apaga por 0,5 seg) durante 3 segundos.  
 
@@ -58,12 +58,12 @@ La 'denegación del arme' - es la imposibilidad de armar el sistema de seguridad
 
 Están previstos los siguientes motivos de denegación del arme:
 
-•	fallo de una o varias zonas;
-•	alarma en una o varias zonas;
-•	ausencia de comunicación con el programa de la consola por el canal IP;
-•	ausencia de 220 V en el objeto;
-•	impago de los servicios de seguridad;
-•	está abierto el cuerpo del equipo.
+* fallo de una o varias zonas;
+* alarma en una o varias zonas;
+* ausencia de comunicación con el programa de la consola por el canal IP;
+* ausencia de 220 V en el objeto;
+* impago de los servicios de seguridad;
+* está abierto el cuerpo del equipo.
 
 
 ### Indicación de modo de guardia
@@ -76,10 +76,10 @@ La indicación del modo de guardia depende de la cantidad de particiones configu
 
 Si en el equipo sólo está configurada una partición, el LED indica el estado de la partición, la existencia de alarma durante el período de seguridad y el fallo de las zonas;
 
-•	LED encendido de forma ininterrumpida, si la partición está armada;
-•	LED apagado, si la partición está desarmada;
-•	LED 'parpadeante' [ˆblink], si hay fallos en las zonas;
-•	LED 'parpadeante', si después de armar la partición se produjo una alarma y el sistema de seguridad de la partición no fue desarmado
+* LED encendido de forma ininterrumpida, si la partición está armada;
+* LED apagado, si la partición está desarmada;
+* LED 'parpadeante' [ˆblink], si hay fallos en las zonas;
+* LED 'parpadeante', si después de armar la partición se produjo una alarma y el sistema de seguridad de la partición no fue desarmado
 
 > 'Parpadea' significa que el LED se enciende por 1 segundo, después de lo cual se apaga por 1 segundo, después de lo cual, de nuevo se enciende por 1 segundo, etc.
 
@@ -87,7 +87,7 @@ Si en el equipo sólo está configurada una partición, el LED indica el estado 
 
 Si en el equipo están configuradas parias particiones, se indica sólo el estado del arme de todo el dispositivo, presencia de alarma, cuando todo el equipo estaba armado, así como los fallos de las zonas.
 
-•	LED encendido de forma ininterrumpida, si todas las particiones del equipo están armadas;
-•	LED apagado, si aunque sea una partición está desarmada;
-•	LED 'parpadeante', si hay fallos en las zonas;
-•	LED 'parpadeante', si después de armar el sistema de seguridad de todo el equipo se produjo una alarma y la partición donde se produjo la alarma no fue desarmada.
+* LED encendido de forma ininterrumpida, si todas las particiones del equipo están armadas;
+* LED apagado, si aunque sea una partición está desarmada;
+* LED 'parpadeante', si hay fallos en las zonas;
+* LED 'parpadeante', si después de armar el sistema de seguridad de todo el equipo se produjo una alarma y la partición donde se produjo la alarma no fue desarmada.

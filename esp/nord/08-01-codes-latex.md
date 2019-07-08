@@ -9,7 +9,7 @@
 \textbf{Contact ID} & \textbf{EPAF} & \textbf{Evento} & \textbf{Observación} \\ \midrule
 
 E110 & SY & Incendio & Alarma de incendio\\ \arrayrulecolor{light-gray}\hline
-E118 & SY & Advertencia & Опасность пожара\\ \arrayrulecolor{light-gray}\hline
+E118 & SY & Advertencia & Peligro de incendio\\ \arrayrulecolor{light-gray}\hline
 E120 & SX & Alarma & Botón de emergencia \\ \arrayrulecolor{light-gray}\hline 
 E121 & RP & Alarma & Desarme forzado \\ \arrayrulecolor{light-gray}\hline 
 E130 & AA..DR & Alarma & Zona de seguridad\\ \arrayrulecolor{light-gray}\hline
