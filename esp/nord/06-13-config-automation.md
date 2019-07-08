@@ -101,7 +101,7 @@ Analizaremos la configuración de las reglas en un ejemplo en concreto.
 
 *Objetivo*
 
-Configurar el arme de la partición №1 por horario a las 19 horas 30 minutos los martes y los miércoles.
+Configurar el arme de la partición No.1 por horario a las 19 horas 30 minutos los martes y los miércoles.
 
 *Solución*
 
