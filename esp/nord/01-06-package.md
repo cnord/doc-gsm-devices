@@ -2,28 +2,28 @@
 
 ### Kit de suministro
 
----------------------------------------------------------- ------
-Dispositivo de recepción - control de seguridad - contra incendios 'Nord GSM' / 'Nord GSM WRL'   1 un.
+---------------------------------------------------------------------------------------- -------
+Dispositivo de recepción-control de seguridad-contra incendios 'Nord GSM'/'Nord GSM WRL' 1 pcs.
 
-Resistor 0,25 W (0,16 W) – 2,2 kOhm                                                16 un.
+Resistencia de salida 0,25 W (0,16 W) – 2,2 kOhm                                         16 pcs.
 
-Resistor 0,25 W (0,16 W) – 4,3 kOhm                                                16 un.
+Resistencia de salida 0,25 W (0,16 W) – 4,3 kOhm                                         16 pcs.
 
-Inserción fusible VPB 6-7, 1 A, 250 V                                                            1 un.
+Inserción fusible VPB 6-7, 1 А, 250 V                                                    1 pc.
 
-Fijador de plástico de la batería con una capacidad de 1,2 Ah en el cuerpo del producto          1 un.
+Fijador de plástico de la batería con una capacidad de 1,2 Ah en el cuerpo del producto  1 pc.
 
-Kit de toma de tierra ZK-15(m)                                                                   1 un.
+Kit de toma de tierra ZK-15(m)                                                           1 pc.
 
-Kit de elementos de fijación (m)                                                                 1 un.
+Kit de elementos de fijación (m)                                                         1 pc.
 
-Antena remota GSM 2J520-SMA-male (o similar) (m)                                                 1 un. 
+Antena remota GSM 2J520-SMA-male (o similar) (m)                                         1 pc.
 
-Ficha técnica	                                                                                 1 un.
+Ficha técnica                                                                            1 pc.
 
-Embalaje                                                                                         1 un.
+Embalaje                                                                                 1 pc.
 
-----------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 > Observaciones: (m) - para productos en cuerpo metálico
 
