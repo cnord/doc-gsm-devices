@@ -114,7 +114,7 @@ Para este tipo de zona el intervalo de repetición de alarmas indicado para el e
 
 #### Tipo de zona 'Sensor de temperatura'
 
-Si al equipo está conectado un sensor de temperatura por cable y el modo de solicitud de la línea 1-Wire está activado (se activa en la pestaña [Varios](#control-indication)), éste aparece en la pestaña 'Zonas' de forma automática y tendrá un número de zona en el diapasón de 48 a 51. Para los sensores de temperatura debe especificarse el límite superior e inferior, al alcanzar los cuales se formarán las alarmas. Diapasón de valores permitidos para los en límites: de 55 °С bajo cero a 127 °С sobre cero. Más información [sobre la conexión de sensores de temperatura](#install-temp).En total al equipo se pueden conectar 4 sensores de temperatura.
+Si al equipo está conectado un sensor de temperatura por cable y el modo de solicitud de la línea 1-Wire está activado (se activa en la pestaña [Varios](#control-indication)), éste aparece en la pestaña 'Zonas' de forma automática y tendrá un número de zona en el diapasón de 48 a 51. Para los sensores de temperatura debe especificarse el límite superior e inferior, al alcanzar los cuales se formarán las alarmas. Diapasón de valores permitidos para los en límites: de 55 °C bajo cero a 127 °C sobre cero. Más información [sobre la conexión de sensores de temperatura](#install-temp).En total al equipo se pueden conectar 4 sensores de temperatura.
 
 ### Estado normal de la zona
 

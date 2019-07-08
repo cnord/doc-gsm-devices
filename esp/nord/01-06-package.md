@@ -11,7 +11,7 @@ Resistor 0,25 W (0,16 W) – 4,3 kOhm                                           
 
 Inserción fusible VPB 6-7, 1 A, 250 V                                                            1 un.
 
-Fijador de plástico de la batería con una capacidad de 1,2 Аh en el cuerpo del producto          1 un.
+Fijador de plástico de la batería con una capacidad de 1,2 Ah en el cuerpo del producto          1 un.
 
 Kit de toma de tierra ZK-15(m)                                                                   1 un.
 
