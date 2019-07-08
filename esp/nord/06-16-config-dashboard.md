@@ -6,7 +6,7 @@ Al realizar los trabajos de montaje del objeto el técnico normalmente debe veri
 
 En el configurador, en la pestaña 'Panel de estado' se muestra la información actual sobre el estado de las zonas por cable, dispositivos inalámbricos conectados al equipo, así como el estado de los canales de comunicación.
 
-\imgcapt{img/06-16-config-dashboard-01.png}{ВкладкаPestaña 'Panel de estado', canales de comunicación}
+\imgcapt{img/06-16-config-dashboard-01.png}{Pestaña 'Panel de estado', canales de comunicación}
 
 ### Canales de comunicación
 

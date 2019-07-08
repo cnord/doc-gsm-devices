@@ -4,7 +4,7 @@
 
 En la pestaña 'Zonas' se realiza la configuración de los parámetros de las zonas por cable, conectadas al equipo.
 
-\imgcapt{img/06-03-config-nord-01.png}{Вкладка 'Шлейфы'}
+\imgcapt{img/06-03-config-nord-01.png}{Pestaña 'Zonas'}
 
 ### Expansores
 

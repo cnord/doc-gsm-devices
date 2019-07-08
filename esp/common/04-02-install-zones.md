@@ -35,21 +35,21 @@ Dos resistencias terminales permite determinar la ruptura y el cortocircuito par
 
 ### Zona sin resistencias terminales
 
-\imgcapt{img/04-02-v51-52-no-resitor-normal-open.png}{Нормально разомкнутый шлейф}
+\imgcapt{img/04-02-v51-52-no-resitor-normal-open.png}{Zona normalmente abierta}
 
-\imgcapt{img/04-02-v51-52-no-resitor-normal-close.png}{Нормально замкнутый шлейф}
+\imgcapt{img/04-02-v51-52-no-resitor-normal-close.png}{Zona normalmente cerrada}
 
 ### Zona con una resistencia terminal
 
-\imgcapt{img/04-02-v52-one-resitor-normal-open.png}{Нормально разомкнутый шлейф}
+\imgcapt{img/04-02-v52-one-resitor-normal-open.png}{Zona normalmente abierta}
 
-\imgcapt{img/04-02-v52-one-resitor-normal-close.png}{Нормально замкнутый шлейф}
+\imgcapt{img/04-02-v52-one-resitor-normal-close.png}{Zona normalmente cerrada}
 
 ### Zona con dos resistencias terminales
 
-\imgcapt{img/04-02-v52-two-resitor-normal-open.png}{Нормально разомкнутый шлейф}
+\imgcapt{img/04-02-v52-two-resitor-normal-open.png}{Zona normalmente abierta}
 
-\imgcapt{img/04-02-v52-two-resitor-normal-close.png}{Нормально замкнутый шлейф}
+\imgcapt{img/04-02-v52-two-resitor-normal-close.png}{Zona normalmente cerrada}
 
 ### Zonas por cable en el configurador
 

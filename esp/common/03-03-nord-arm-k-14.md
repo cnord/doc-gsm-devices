@@ -47,7 +47,7 @@ Para armar la partición hay que pulsar  'casita' e introducir el código del us
 
 Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón 'casita', elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.
 
-\imgcapt{img/arm_part.png}{Пример взятия с выбором раздел}
+\imgcapt{img/arm_part.png}{Ejemplo de arme con selección de partición}
 
 #### Denegación del arme del sistema de seguridad
 

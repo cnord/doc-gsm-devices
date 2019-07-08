@@ -2,7 +2,7 @@
 
 ## Teclado K16-LCD
 
-\imgcapt{img/k16-lcd.png}{Клавиатура К16-LCD}
+\imgcapt{img/k16-lcd.png}{Teclado К16-LCD}
 
 Mediante el teclado K16-LCD el usuario puede realizar las siguientes tareas:
 
@@ -102,7 +102,7 @@ La información sobre los fallos existentes se muestra en la segunda línea de l
 Ejemplo de una pantalla de guardia del teclado, cuando el equipo está completamente desarmado:
 
 	12.02.2015 10:25
-	220ВV NO CONECTADO
+	220V NO CONECTADO
 
 Si en el equipo hay varios fallos, en la pantalla del teclado se muestra sólo uno, el de mayor prioridad.
 

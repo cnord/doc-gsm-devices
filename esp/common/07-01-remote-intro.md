@@ -29,7 +29,7 @@ El presente canal de comunicación se usa para el funcionamiento de las funcione
 * Arme y desarme remoto del objeto por el operador de la consola
 * Control del estado del saldo
 
-В общем случае прибор соединяется с пультом через публичную сеть (Интернет). Однако, некоторые охранные предприятия используют для связи `прибор ⟷ пульт` выделенные внутренние подсети операторов GSM-связи или локальные сети Ethernet.
+En general el equipo se comunica con la consola a través de la red pública (Internet). Sin embargo, algunas empresas de seguridad usan para la comunicación `equipo ↔ consola` subredes internas dedicadas de operadores de comunicación GSM o redes locales Ethernet.
 
 En general el equipo se comunica con la consola a través de la red pública (Internet). Sin embargo, algunas empresas de seguridad usan para la comunicación equipo ↔ consola subredes internas dedicadas de operadores de comunicación GSM o redes locales Ethernet.
 
