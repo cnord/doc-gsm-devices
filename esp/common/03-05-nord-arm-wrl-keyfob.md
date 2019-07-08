@@ -30,7 +30,7 @@ Para armar la partición hay que pulsar 'casita' e introducir el código del usu
 
 Si al código de usuario están asignadas varias particiones, primero el usuario debe pulsar el botón 'casita', elegir el apartado, cuyo estado desea cambiar y a continuación teclear el código.
 
-\imgcapt{img/arm_part.png}{Ejemplo de arme de la partición №1 con el código 1234}
+\imgcapt{img/arm_part.png}{Ejemplo de arme de la partición  No.1 con el código 1234}
 
 **Denegación del arme del sistema de seguridad**
 
@@ -63,7 +63,7 @@ Si el usuario puede controlar varias particiones, para desarmar el sistema de se
 * Si se vuelve a desarmar el sistema de seguridad de la misma partición, el teclado mostrará su estado: se encenderá el LED verde.
 
 
-\imgcapt{img/disarm_part.png}{Ejemplo de desarme de la partición №1 con el código 1234}
+\imgcapt{img/disarm_part.png}{Ejemplo de desarme de la partición  No.1 con el código 1234}
 
 La cuenta del intervalo de retraso de entrada o intervalo de retraso de salida se indica mediante un sonido intermitente que se reproduce durante todo el intervalo de retraso. La indicación acústica de retraso de entrada o salida se desconecta al pulsar cualquier botón del teclado.
 

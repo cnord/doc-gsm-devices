@@ -2,7 +2,7 @@
 
 ## Teclado K16-LCD
 
-\imgcapt{img/k16-lcd.png}{Teclado К16-LCD}
+\imgcapt{img/k16-lcd.png}{Teclado K16-LCD}
 
 Mediante el teclado K16-LCD el usuario puede realizar las siguientes tareas:
 

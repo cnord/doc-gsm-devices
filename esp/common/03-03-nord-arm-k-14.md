@@ -94,7 +94,7 @@ Con voz se indica:
 * Estado de la partición o del objeto en general (al pulsar las tecla i).
 
 
-En el teclado se está prevista la función de ajuste del volumen del altavoz integrado. Ajuste de cinco niveles - empezando por el estado 'desactivado' hasta los niveles de volumen del primero hasta el cuarto. La selección del nivel de sonido se realiza mediante la combinación de las teclas “#” y “9”.
+En el teclado se está prevista la función de ajuste del volumen del altavoz integrado. Ajuste de cinco niveles - empezando por el estado 'desactivado' hasta los niveles de volumen del primero hasta el cuarto. La selección del nivel de sonido se realiza mediante la combinación de las teclas '#' y '9'.
 
 ### Botón de emergencia
 
