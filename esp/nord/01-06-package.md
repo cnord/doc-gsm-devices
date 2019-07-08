@@ -9,7 +9,7 @@ Resistencia de salida 0,25 W (0,16 W) – 2,2 kOhm                              
 
 Resistencia de salida 0,25 W (0,16 W) – 4,3 kOhm                                         16 un.
 
-Inserción fusible VPB 6-7, 1 А, 250 V                                                    1 un.
+Inserción fusible VPB 6-7, 1 A, 250 V                                                    1 un.
 
 Fijador de plástico de la batería con una capacidad de 1,2 Ah en el cuerpo del producto  1 un.
 
